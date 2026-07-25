@@ -6,6 +6,42 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 ## Open incidents
 
+## INC-20260725-1415-writer-b01-duplicate-faq-h2
+status: open
+run_date: 2026-07-25
+role: excalibur-blog-writer
+topic_id: B01
+article_dir: memory/blog/articles/B01-primer-seo-stati
+severity: medium
+category: qa
+
+### What went wrong
+- After GEO remaster, `article.html` had two FAQ-like H2 headings: `FAQ и schema: зачем и как` and `Частые вопросы`.
+- `excalibur_blog_html_linter.py` failed with "Forbidden duplicate FAQ sections" because any H2 matching `faq|частые вопрос|задаваемые вопрос` counts as a FAQ block.
+
+### How the agent recovered this run
+- Renamed the instructional H2 to `Подключите schema JSON-LD к статье` (kept the explanatory body; left a single `<h2>Частые вопросы</h2>` with 7 h3+p pairs).
+- Preserved GEO remaster markers: no TL;DR / Быстрый инсайт; `Обновлено: 25.07.2026` present.
+- Recalculated `char_count` in `article.meta.json` to 9375.
+- Re-ran HTML linter to PASS.
+
+### Durable fix needed before next run
+- Writer / GEO remaster prompts should forbid the word `FAQ` (and FAQ-like RU phrases) in any H2 except the canonical `Частые вопросы`.
+- Add a short pitfall note: thematic sections about schema/Q&A must use action titles without `FAQ` in the heading text.
+
+### Suggested files to inspect/change
+- `skills/writer-excalibur-blog/SKILL.md`
+- `.cursor/skills/writer-excalibur-blog/SKILL.md`
+- `shared/excalibur-article-writing-contract.md`
+- `shared/agent-pipeline-pitfalls.md`
+- `scripts/excalibur_blog_html_linter.py` (docs/comment only; detection is correct)
+
+### Secrets
+- none recorded
+
+### Fixer resolution
+- pending
+
 ## INC-20260616-2015-geo-qa-html-cli-mismatch
 status: fixed
 run_date: 2026-06-16
