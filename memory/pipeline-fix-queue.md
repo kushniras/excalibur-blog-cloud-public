@@ -63,7 +63,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_interlinker.py scripts/excalibur_blog_promotion_checklist.py`
 - dry-run 84 articles `--max-out 2 --max-in 3`: kept 14 / raw 143; weak keywords / FAQ→JSON-LD / favicon→vibe not leaked
 - promotion-checklist smoke: skipped_exists on B01; create then skip; `--force` → overwritten
-commit: pending-parent-commit
+commit: df31914
 
 ## INC-20260725-1426-publish-missing-cloud-secrets
 status: needs-human
