@@ -6,10 +6,10 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 ## Open incidents
 
-(open: INC-20260725-1434-indexer-weak-anchor-filter; needs-human: INC-20260725-1426-publish-missing-cloud-secrets)
+(needs-human: INC-20260725-1426-publish-missing-cloud-secrets)
 
 ## INC-20260725-1434-indexer-weak-anchor-filter
-status: open
+status: fixed
 run_date: 2026-07-25
 role: excalibur-blog-indexer
 topic_id: multi
@@ -44,7 +44,26 @@ category: script
 - none recorded
 
 ### Fixer resolution
-- pending
+status: fixed
+fixed_at: 2026-07-25
+fix_summary:
+- Interlinker: default quality filter (weak denylist, byline vibe, exclusion/negative context, topic overlap, short_single) + `--max-out`/`--max-in`/`--min-overlap`/`--include-skipped`; `--no-quality-filter` только для отладки.
+- Новый `excalibur_blog_promotion_checklist.py`: create-if-missing; overwrite только с `--force`.
+- Indexer skill/agent + pitfalls: dry-run → caps → apply; не слепой full-corpus apply; не перезаписывать curated promotion-checklist.
+files_changed:
+- `scripts/excalibur_blog_interlinker.py`
+- `scripts/excalibur_blog_promotion_checklist.py`
+- `skills/indexer-excalibur-blog/SKILL.md`
+- `.cursor/skills/indexer-excalibur-blog/SKILL.md`
+- `agents/excalibur-blog-indexer.md`
+- `.cursor/agents/excalibur-blog-indexer.md`
+- `shared/agent-pipeline-pitfalls.md`
+- `memory/pipeline-fix-queue.md`
+checks_run:
+- `python3 -m py_compile scripts/excalibur_blog_interlinker.py scripts/excalibur_blog_promotion_checklist.py`
+- dry-run 84 articles `--max-out 2 --max-in 3`: kept 14 / raw 143; weak keywords / FAQ→JSON-LD / favicon→vibe not leaked
+- promotion-checklist smoke: skipped_exists on B01; create then skip; `--force` → overwritten
+commit: pending-parent-commit
 
 ## INC-20260725-1426-publish-missing-cloud-secrets
 status: needs-human

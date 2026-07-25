@@ -52,4 +52,5 @@
 
 - В Cloud shell используй `python3` для interlinker/llms generator; `python` может отсутствовать.
 - mayai.ru permalinks: канон `/{slug}/` (и llms `--blog-path /`). Не вставляй `/blog/{slug}/` — это только 301.
-- Dry-run перед `--apply`; пропускай слабые якоря вне интента target (пример: «настройка cursor» в контексте MCP → ruleset).
+- Dry-run перед `--apply`. Quality filter в `excalibur_blog_interlinker.py` (default ON): denylist generic/UI якорей, byline «вайбкодинг», exclusion/negative contexts, topic overlap; для full-corpus ставь `--max-out 2 --max-in 3`. Не слепой `--apply` на сырой отчёт и не `--no-quality-filter` в production.
+- `promotion-checklist.md`: только create-if-missing через `excalibur_blog_promotion_checklist.py`; не перезаписывай curated без явного `--force`.

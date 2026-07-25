@@ -22,9 +22,11 @@ incident_report: none | memory/pipeline-fix-queue.md#INC-...
 
 ## Твои задачи
 
-1. `python3 scripts/excalibur_blog_interlinker.py --apply --article-dir <dir> --site-base ${PUBLIC_SITE_URL}`
+1. Dry-run, затем apply с quality filter (default ON) и caps:
+   `python3 scripts/excalibur_blog_interlinker.py --article-dir <dir> --site-base ${PUBLIC_SITE_URL} --max-out 2 --max-in 3 --include-skipped`
+   затем `--apply` с теми же флагами. Не слепой full-corpus apply без просмотра `skipped_reasons`.
 2. `python3 scripts/excalibur_blog_llms_generator.py --blog-dir memory/blog/articles --site-base ${PUBLIC_SITE_URL} --blog-path / --out-dir memory/blog`
-3. `promotion-checklist.md` из template.
+3. `python3 scripts/excalibur_blog_promotion_checklist.py --article-dir <dir>` — create-if-missing; **не** `--force` на curated.
 4. Handoff `=== EXCALIBUR BLOG INDEXER ===`.
 
 ## Не твоя зона
