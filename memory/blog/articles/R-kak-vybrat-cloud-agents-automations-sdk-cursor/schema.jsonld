@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/#webpage",
+      "url": "https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/",
+      "name": "Лучшие AI агенты без зоопарка: один режим Cursor экономит время",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Сначала задача и файл, матрица режимов, один прогон и проверка лимита. Без дубля Make и без «всего сразу»."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/#webpage"
+      },
+      "headline": "Лучшие AI агенты без зоопарка: один режим Cursor экономит время",
+      "description": "Сначала задача и файл, матрица режимов, один прогон и проверка лимита. Без дубля Make и без «всего сразу».",
+      "datePublished": "2026-07-21",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какой ai агент лучше новичку в Cursor – Cloud, Automation или SDK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Без кода в первый вечер – Cloud для разовой длинной задачи или Automation для повтора по расписанию или событию. SDK отложите, пока агента не нужно вызывать из скрипта, бота или CI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Cloud Agents отличаются от Automations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cloud Agent – прогон в изолированной VM, обычно вручную (Test run). Automation – тот же cloud agent usage с внешним триггером: cron, GitHub, Slack, webhook и др."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда нужен Cursor SDK, а когда хватает кнопки в IDE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Кнопки и дашборд хватает, пока цикл живёт внутри Cursor. SDK – когда ваш код создаёт и гоняет агента. Без явного cloud легко остаться на local runtime."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли совместить агентов Cursor с Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если роли разные: Make – линейные шаги и таблицы; Cursor agent – рассуждение и файл в репо. Связка – webhook из Make в Automation, не два одинаковых сценария."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем платформа ai агентов в Cursor отличается от топ-списков 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Топы сравнивают бренды. В Cursor важнее карта триггеров: разово, по расписанию или из кода. \"Лучший\" режим – тот, что совпал с задачей и файлом-артефактом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С чего начать ai агенты 2026 без кода и без слива бюджета?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Одна задача, один режим (Cloud или Automation), spend limit до прогона, дешёвая модель на рутину, один Test run или один cron. Три режима сразу и дорогая модель на ежедневный max-context сканер – путь сжечь API без файла утром."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли DevOps, чтобы выбрать режим?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Выбор режима – на бумаге и в заметке. Репозиторий и секреты в Dashboard нужны на прогоне, но не для отказа от SDK и границы с Make."
+          }
+        }
+      ]
+    }
+  ]
+}

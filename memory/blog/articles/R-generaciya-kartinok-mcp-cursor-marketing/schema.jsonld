@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/#webpage",
+      "url": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/",
+      "name": "Нейросеть для создания картинок в Cursor через MCP: обложка без Midjourney",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Зелёный MCP, бриф формата и ratio, один кадр с кириллицей и вырезка фона. Файл сразу в проекте."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/#webpage"
+      },
+      "headline": "Нейросеть для создания картинок в Cursor через MCP: обложка без Midjourney",
+      "description": "Зелёный MCP, бриф формата и ratio, один кадр с кириллицей и вырезка фона. Файл сразу в проекте.",
+      "datePublished": "2026-07-13",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какая нейросеть для создания картинок подойдёт новичку в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте старт на GPT Image 2 через MCP: модель заточена под production-кадры с текстом, в том числе кириллицей. Nano Banana 2 через Kie – запасной характер стиля, если нужен другой \"вкус\". Не начинайте с десятка вкладок \"бесплатно без регистрации\" – сначала один зелёный MCP и один удачный кадр."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем MCP лучше онлайн-генератора вроде Шедеврума?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Онлайн-сервис удобен для разового эксперимента. MCP держит генерацию в том же чате, где пишете пост: меньше копирования, проще сохранить файл в проект и повторить бриф. Для серии обложек это экономит час прыжков по вкладкам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Midjourney, если есть Cursor и MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не обязательно. Midjourney силён в художественном стиле, но для длинного русского заголовка на обложке GPT Image 2 обычно практичнее. Открывайте Midjourney, только если сознательно гонитесь за \"артом\", а не за читаемостью."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как убрать фон через MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сгенерируйте кадр, затем вызовите tool удаления фона (remove background) – отдельно от генерации. У gpt-image-2 прозрачный фон из коробки не поддерживается: не ждите волшебной галочки \"transparent\" в том же вызове."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит первая генерация?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Точная цена зависит от провайдера и лимитов вашего кабинета MCP / API – не фиксируйте \"бесплатно навсегда\" из поискового хвоста. Проверьте актуальные лимиты в кабинете сервиса и у провайдера модели перед серией кадров."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если генерация зависла или вылез timeout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте MCP Logs, подождите завершения или URL/job, повторите один раз. Избегайте слепых тройных retry и параллельного запуска Midjourney \"на всякий случай\" – сначала доведите до конца один вызов в Cursor."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-parallax",
+  "slug": "effekt-parallaksa-hero-cursor",
+  "title": "Как сделать эффект параллакса в Cursor: Hero за вечер",
+  "wp_post_id": 14299,
+  "primary_query": "параллакс hero",
+  "secondary_queries": [
+    "paralaximus cursor",
+    "эффект параллакса сайт",
+    "hero лендинг ai"
+  ],
+  "char_count": 9493,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/effekt-parallaksa-hero-cursor/",
+  "datePublished": "2026-07-15",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "параллакс Hero в Cursor",
+    "PARALAXIMUS для лендинга",
+    "атлас 2×2 и preview",
+    "живой первый экран"
+  ],
+  "meta_ab": {
+    "title_seo": "Параллакс Hero в Cursor: PARALAXIMUS без дёрганого JS",
+    "title_ctr": "Баннер плоский, а JS дёргается? Один Hero с preview",
+    "title_aeo": "Как сделать эффект параллакса Hero в Cursor?",
+    "description_seo": "Бриф первого экрана, установка PARALAXIMUS, атлас 2×2 и чеклист reduce-motion. Без слепой вставки на прод.",
+    "description_ctr": "Хотите живой hero без боли на телефоне? Сначала preview, потом лендинг.",
+    "description_aeo": "Параллакс в Cursor: когда хватит CSS, как собрать слои и проверить читаемость."
+  }
+}

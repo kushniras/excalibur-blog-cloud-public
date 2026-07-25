@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/#webpage",
+      "url": "https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/",
+      "name": "ИИ для создания сайтов: трафик под ключ, не шаблон конструктора",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Плагин в ~/.cursor/plugins/local/, Reload Window, .env без паролей и один прогон тема→черновик. TEYA и FTP – позже."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/#webpage"
+      },
+      "headline": "ИИ для создания сайтов: трафик под ключ, не шаблон конструктора",
+      "description": "Плагин в ~/.cursor/plugins/local/, Reload Window, .env без паролей и один прогон тема→черновик. TEYA и FTP – позже.",
+      "datePublished": "2026-07-23",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Плагин скачал, а в Cursor пусто – что проверить первым?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Путь ~/.cursor/plugins/local/nero-network-office-page (Windows: %USERPROFILE%\\.cursor\\plugins\\local\\…), затем Developer: Reload Window, затем Customize и разрешение local/third-party. Без Reload локальная папка часто \"невидима\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли FTP в первый вечер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала черновик и ручной просмотр. Секреты – только в .env/Secrets, когда решите публиковать."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это отличается от \"нейросеть для создания сайтов\" в конструкторе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Конструктор рисует макет; офис ведёт к посадочной со структурой под ключ через роли research/SEO/текст/QA. Красивый шаблон без H1/H2 под спрос – как раз то, от чего уходите."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда ставить TEYA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После того как одна страница через Офис уже есть и вы понимаете процесс. TEYA – про сетку 20–200+, не про первую посадочную и не стартовый шаг."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обязательно ли читать другие гайды до установки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Для старта хватает Cursor, репозитория на master и шагов выше. Соседние материалы (ручная SEO-страница, ядро, TEYA) – углубление после результата, не входной билет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что должно лежать в проекте к концу вечера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Плагин виден в Customize, first-run без паролей в чате, один черновик страницы с H1 и H2 по теме. Если этого нет – результат ещё не закрыт, даже если чат \"красиво ответил\"."
+          }
+        }
+      ]
+    }
+  ]
+}

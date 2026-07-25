@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/design-md-cursor-ai/#webpage",
+      "url": "https://mayai.ru/design-md-cursor-ai/",
+      "name": "DESIGN.md в Cursor AI: нейросеть для дизайна сайта без хаоса стиля",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Минимум DESIGN.md за вечер, правило Cursor и одна секция в том же стиле. Картинки через MCP – только после контракта."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/design-md-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/design-md-cursor-ai/#webpage"
+      },
+      "headline": "DESIGN.md в Cursor AI: нейросеть для дизайна сайта без хаоса стиля",
+      "description": "Минимум DESIGN.md за вечер, правило Cursor и одна секция в том же стиле. Картинки через MCP – только после контракта.",
+      "datePublished": "2026-07-12",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/design-md-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/design-md-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/design-md-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что писать в DESIGN.md новичку, если нет дизайнера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте минимум: mood, 4–6 hex с ролями, 1–2 шрифта с кириллицей, sm/md/lg, правило hero и 5 Don’ts. Проверьте, что правило видно глазами за секунды. Полный AURADESIGN.md – следующий уровень."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем DESIGN.md отличается от промпта \"сделай красиво\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Промпт живёт в одном чате и забывается. Файл лежит в проекте и читается правилом Cursor снова и снова. Используйте контракт как источник правды: цвета правятся в файле, а не в десяти сообщениях."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли картинки сразу при генерации дизайна сайта нейросетью?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала совпадение layout с токенами. Добавьте ассеты через MCP после сверки hero – так стоки не перебьют палитру. Если картинок нет, оставьте чистый блок с CTA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли копировать стиль чужого сайта этично?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Берите mood и композицию как референс, не копируйте логотипы и уникальные иллюстрации. В AURA – source-first: контракт под ваш бренд. Избегайте \"укради пиксель в пиксель\" без разрешения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С какой секции начать генерацию?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С hero: там сразу видны primary, шрифт заголовка и правило \"один CTA\". Не делайте сразу footer, отзывы и прайсинг пакетом. После совпадения hero переходите к следующей секции тем же промптом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если русский текст превратился в кракозябры?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Уберите шрифты без кириллицы из контракта, пропишите shortlist Google Fonts с поддержкой русского и перегенерируйте только заголовок. Проверьте превью на реальной фразе из вашего оффера, не на латинице-заглушке."
+          }
+        }
+      ]
+    }
+  ]
+}

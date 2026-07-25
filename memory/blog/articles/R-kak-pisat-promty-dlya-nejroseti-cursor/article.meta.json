@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-prompts",
+  "slug": "kak-pisat-promty-dlya-nejroseti-cursor",
+  "title": "Как писать промты для нейросети: сэкономьте время на правки воды",
+  "wp_post_id": 14456,
+  "primary_query": "как писать промты для нейросети",
+  "secondary_queries": [
+    "промпт cursor",
+    "шаблоны промптов",
+    "тз для нейросети"
+  ],
+  "char_count": 9420,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/",
+  "datePublished": "2026-07-19",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "промпты для нейросети в Cursor",
+    "карточка ТЗ вместо «напиши вирусный»",
+    "папка prompts/",
+    "роль факты запреты"
+  ],
+  "meta_ab": {
+    "title_seo": "Как писать промты для нейросети в Cursor: карточка ТЗ",
+    "title_ctr": "«Напиши вирусный пост» даёт воду? Соберите пять блоков ТЗ",
+    "title_aeo": "Как писать промты для нейросети в Cursor?",
+    "description_seo": "Роль, факты, запреты, критерий готово и папка prompts/ с пятью шаблонами. Без формул для картинок в текстовом чате.",
+    "description_ctr": "Правите воду сорок минут? Сохраните шаблон поста и повторите чистый черновик завтра.",
+    "description_aeo": "Промпты Cursor: сравнение короткой фразы и карточки ТЗ, чеклист границ и Secrets."
+  }
+}

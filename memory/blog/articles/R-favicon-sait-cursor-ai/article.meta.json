@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-favicon",
+  "slug": "favicon-sait-cursor-ai",
+  "title": "Фавикон для сайта в Cursor AI без кода",
+  "wp_post_id": 14166,
+  "primary_query": "фавикон для сайта",
+  "secondary_queries": [
+    "favicon cursor",
+    "иконка вкладки сайт",
+    "favicon.ico"
+  ],
+  "char_count": 9686,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/favicon-sait-cursor-ai/",
+  "datePublished": "2026-07-10",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "фавикон для сайта в Cursor",
+    "favicon.ico в корне",
+    "иконка вкладки без Next.js",
+    "квадрат 512×512"
+  ],
+  "meta_ab": {
+    "title_seo": "Фавикон для сайта в Cursor AI без кода",
+    "title_ctr": "Во вкладке серый лист? Фавикон за один вечер",
+    "title_aeo": "Как сделать фавикон для сайта в Cursor?",
+    "description_seo": "Квадрат 512×512, favicon.ico в корне и правило, чтобы Cursor не тянул Next.js. Проверка вкладки и кэша.",
+    "description_ctr": "Лендинг готов, а вкладка безликая? Положите ico в корень и обновите кэш.",
+    "description_aeo": "Фавикон: чем не логотип в шапке, какой размер и как проверить в браузере."
+  }
+}

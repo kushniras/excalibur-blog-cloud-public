@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/favicon-sait-cursor-ai/#webpage",
+      "url": "https://mayai.ru/favicon-sait-cursor-ai/",
+      "name": "Фавикон для сайта в Cursor AI без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Квадрат 512×512, favicon.ico в корне и правило, чтобы Cursor не тянул Next.js. Проверка вкладки и кэша."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/favicon-sait-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/favicon-sait-cursor-ai/#webpage"
+      },
+      "headline": "Фавикон для сайта в Cursor AI без кода",
+      "description": "Квадрат 512×512, favicon.ico в корне и правило, чтобы Cursor не тянул Next.js. Проверка вкладки и кэша.",
+      "datePublished": "2026-07-10",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/favicon-sait-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/favicon-sait-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/favicon-sait-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какой размер фавикона нужен новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте исходник 512×512 квадратом, для вкладки хватит ico 32×32. Для Google ориентир – больше 48×48 и строго квадрат. Мелкий текст на 16×16 не читается."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем favicon.ico отличается от favicon.svg?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ICO – формат совместимости, браузер часто сам ищет /favicon.ico. SVG – вектор, чётче на Retina. Используйте оба: ico для спокойствия, svg для чёткости."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как добавить фавикон на сайт в HTML через Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Положите файл в корень, добавьте в head link rel=\"icon\" href=\"/favicon.ico\" sizes=\"32×32″. Проще поручить Agent по правилу favicon.mdc на все HTML. Не делайте правки только на одной странице."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему после замены файла во вкладке старая иконка?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Браузер кэширует favicon агрессивно. Проверьте инкогнито, hard refresh, ?v=2 в href или переименование файла. Не переписывайте весь сайт."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли apple-touch-icon на первом шаге?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для вкладки – нет. Добавьте PNG 180×180, если нужна иконка \"На экран Домой\" на iPhone. Сначала закройте вкладку с ico/svg."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Появится ли фавикон сразу в Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не ждите мгновенно: обход может занять дни или недели. Проверьте квадрат, доступность файла и один favicon на hostname. Сначала добейтесь иконки во вкладке."
+          }
+        }
+      ]
+    }
+  ]
+}

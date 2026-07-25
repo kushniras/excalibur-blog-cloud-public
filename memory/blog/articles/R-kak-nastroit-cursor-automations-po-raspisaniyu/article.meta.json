@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-schedule",
+  "slug": "kak-nastroit-cursor-automations-po-raspisaniyu",
+  "title": "Cursor agent по расписанию: бриф к утру без ручного чата",
+  "wp_post_id": 14608,
+  "primary_query": "cursor automations расписание",
+  "secondary_queries": [
+    "cursor cron",
+    "automation по утрам",
+    "cursor agent по расписанию"
+  ],
+  "char_count": 9401,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/",
+  "datePublished": "2026-07-24",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Automations по расписанию",
+    "утренний бриф без ручного чата",
+    "Test run Automation",
+    "cron и часовой пояс"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor Automations по расписанию: утренний бриф без чата",
+    "title_ctr": "Снова пишете бриф руками? Одна Automation и Test run",
+    "title_aeo": "Как настроить Cursor Automations по расписанию?",
+    "description_seo": "Одно задание без GitHub, короткий промпт, учёт UTC и обязательный Test run. Без webhook и RSS в первый вечер.",
+    "description_ctr": "Хотите бриф к утру? Сохраните Automation, сделайте пробный прогон – и не ждите «боевой» день вслепую.",
+    "description_aeo": "Automations Cursor: отличие от чата, CRON_TZ, Max Mode и критерий успешного Test run."
+  }
+}

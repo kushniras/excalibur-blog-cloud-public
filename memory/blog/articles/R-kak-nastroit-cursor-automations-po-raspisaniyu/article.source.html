@@ -1,0 +1,99 @@
+<p>Чтобы cursor agent сам писал бриф по утрам, откройте cursor.com/automations/new, создайте одно задание Automations с расписанием, не подключайте репозиторий GitHub, задайте короткий промпт на один текст и сразу сделайте пробный запуск — готовый бриф или черновик появится в истории прогонов.</p>
+<p>GitHub Actions, SDK и сравнение режимов Cursor на этот вечер не нужны. Достаточно одного таймера и одного проверяемого результата: успешный пробный прогон с понятным текстом в ответе.</p>
+<blockquote>
+<p>Получилось = задание Automations сохранено с расписанием, в истории есть успешный пробный прогон, в ответе лежит бриф, дайджест или черновик поста. Не получилось = вы снова пишете вручную в обычном чате или ждёте «боевое» утро без пробного прогона.</p>
+</blockquote>
+<h2>Чем Automations отличается от чата и кнопки Cloud Agent</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-cursor-automations-po-raspisaniyu-inline-01.jpg" alt="Сравнительная схема: чат и Cloud Agent против Automations Scheduled для утреннего брифа" loading="lazy"><br />
+</figure>
+<p>В Cursor легко перепутать три похожие кнопки. Обычный чат Agent mode — это «напиши сейчас, пока я смотрю». Кнопка Cloud Agent — разовый запуск в облаке, тоже руками. Automations — задание, которое стартует само по расписанию или событию.</p>
+<p>Если цель — утренний бриф без ручного старта, нужен третий вариант: Automations и триггер Scheduled. Scheduled — это расписание: либо готовый preset вроде «каждый день», либо строка cron. Cron — компактная запись времени; в Cursor по умолчанию она идёт в UTC, поэтому «9:00» без пояснения часового пояса часто приедет со сдвигом.</p>
+<p>Я бы не тратил вечер на разбор Slack, <a href="/webhook-make-pervyj-scenarij/">webhook</a> (входящий сигнал из другого сервиса) и GitHub. Сначала один таймер и один текст. Остальное — когда уже есть успешный прогон в истории.</p>
+<h2>Что подготовить до кликов</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-cursor-automations-po-raspisaniyu-inline-02.jpg" alt="Схема подготовки: план Cloud Agents, страница Automations и узкий промпт брифа" loading="lazy"><br />
+</figure>
+<p>Нужен аккаунт Cursor с доступом к Cloud Agents — обычно это платный план. Откройте браузер на cursor.com/automations или Agents Window в самом Cursor. Репозиторий GitHub для текстового брифа не обязателен. Канон шагов — в <a href="https://cursor.com/docs/cloud-agent/automations" target="_blank" rel="noopener">docs Cursor Automations</a>.</p>
+<p>Сформулируйте одну задачу одной фразой, например: «Напиши утренний бриф по нише X в markdown: 5 пунктов, один угол для поста, без воды». Критерий готовности должен быть в промпте: что именно считается готовым файлом или ответом. Без этого агент легко раздует ответ и сожжёт usage — расход по тарифу облака.</p>
+<p>Automations анонсировали 5 марта 2026: агент может работать по расписанию и событиям. Для маркетинга за вечер хватает узкого куска — weekly или daily digest, как в официальных примерах, только без обязательного Slack и без правок кода.</p>
+<h2>Создаём одну Automation с расписанием</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-cursor-automations-po-raspisaniyu-inline-03.jpg" alt="Чеклист создания Automation: Scheduled, No repository, узкий промпт, Save и Activate" loading="lazy"><br />
+</figure>
+<ol>
+<li>Откройте cursor.com/automations/new.</li>
+<li>В триггере выберите Scheduled. Для первого раза удобнее взять preset «каждый день» или «каждую неделю». Если нужен cron — см. следующий раздел про UTC.</li>
+<li>Вставьте узкий промпт: тема, формат markdown, длина, что не делать (не искать репозиторий, не открывать PR, не ходить по лишним инструментам).</li>
+<li>Tools оставьте минимальными. Широкий набор MCP — внешних подключений к сервисам — и секретов здесь лишний.</li>
+<li>В scope репозитория выберите No repository — без репозитория. Без явного repo агент не клонирует код и не откроет pull request: так в документации для Slack и cron без правок кода.</li>
+<li>Сохраните и активируйте Automation.</li>
+</ol>
+<p>Community-пример для понедельника 09:00 UTC выглядит как <i>0 9 * * 1</i>. Для Москвы без префикса часового пояса это будет не «девять утра у вас», а девять по UTC. Поэтому либо preset, либо cron с явным поясом.</p>
+<p>Позиция простая: для первого брифа No repository — правильный выбор. Репозиторий подключайте только когда реально нужен файл в git или PR. Иначе вы тащите страх «сломаю код» туда, где нужен обычный текст.</p>
+<h2>UTC, CRON_TZ и почему «9:00» врёт</h2>
+<p>Cron в Automations по умолчанию в UTC. Чтобы получить локальное время, в начало строки ставят префикс вида <i>CRON_TZ=Europe/Moscow 0 9 * * 1-5</i> — будни в 09:00 по Москве. На форуме Cursor сотрудник продукта прямо писал: даже внутренние разработчики путаются в этом UI. Это не ваша «нетехничность», это сырой cron без человеческой подписи.</p>
+<p>Ещё одна ловушка: если вы уже сохранили Automation и потом меняли расписание с daily на weekly, сервер иногда не применял новую схему. Workaround из треда форума — удалить Automation и создать заново, а не крутить тумблеры бесконечно.</p>
+<p>Я бы не ждал первого «боевого» утра, чтобы понять сдвиг. Сначала пробный запуск, потом уже верить будильнику.</p>
+<h2>Test run: что нажать и что считать победой</h2>
+<p>После Save и Activate найдите Test run — кнопку пробного запуска — и запустите сразу. Дождитесь статуса в history Automations, то есть в истории запусков. Откройте прогон и сохраните ответ или файл: бриф, дайджест, черновик поста — любой понятный текст по вашему критерию.</p>
+<p>Документация предупреждает: прогон по расписанию может задержаться, но не стартует раньше указанного времени. Поэтому Test run важнее «подождать до утра». Утренний слот проверяете уже после того, как текст в истории выглядит нормально.</p>
+<p>Если в ответе каша, укоротите промпт и уберите лишние tools. Если прогон пустой или ошибка доступа — проверьте, что Automation активна, план поддерживает Cloud Agents, и вы не ждёте репозиторий там, где выбрали No repository.</p>
+<table>
+<thead>
+<tr>
+<th>Что видите</th>
+<th>Что это значит</th>
+<th>Что сделать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Successful run + связный markdown</td>
+<td>Первый результат есть</td>
+<td>Оставить Scheduled, не трогать webhook</td>
+</tr>
+<tr>
+<td>Текст есть, но не вовремя</td>
+<td>Скорее UTC без CRON_TZ</td>
+<td>Preset или префикс Europe/Moscow, затем снова Test run</td>
+</tr>
+<tr>
+<td>Долгий или дорогой прогон</td>
+<td>Широкий промпт и дорогая модель</td>
+<td>Сузить задачу, выбрать более дешёвую модель из пула Cursor, смотреть usage</td>
+</tr>
+<tr>
+<td>Расписание «не то» после правки daily→weekly</td>
+<td>Известный баг применения schedule</td>
+<td>Создать Automation заново с нуля</td>
+</tr>
+</tbody>
+</table>
+<h2>Деньги, Max Mode и что не включать сегодня</h2>
+<p>Cloud Agents и Automations работают в Max Mode — режиме полной мощности модели; в Automations он включён всегда. Биллинг идёт как cloud/API usage выбранной модели — это не «бесплатная кнопка в редакторе». Отдельного лимита «не дороже N рублей за один прогон» в UI Automations на момент проверки форума не было: есть месячные лимиты и ручная отмена. Поэтому hourly-cron и расплывчатый промпт — быстрый способ сжечь бюджет.</p>
+<p>Я бы не ставил «каждый час» «на всякий случай». Один утренний слот и узкий артефакт. Permissions (Private / Team Visible / Team Owned) влияют и на доступ коллег, и на чей usage pool списывается — для личного брифа держите Private, пока не нужна команда.</p>
+<p>Не делайте в тот же вечер: webhook POST, RSS→Telegram, установку Junior или роя агентов, локальный SDK-скрипт. Это соседние задачи. Сначала текст в истории от одной Scheduled Automation.</p>
+<h2>Как проверить результат</h2>
+<p>Критерий простой. В списке Automations лежит активная запись с Scheduled. В истории есть успешный Test run. В ответе — бриф или черновик, который можно взять в работу без ручного старта чата. Если чего-то из трёх нет — сначала добейте этот контур, не собирайте «агента 24/7».</p>
+<p>Когда первый таймер стабилен, отдельно можно разобрать обзор Cloud Agents, выбор между Cloud/Automations/SDK, <a href="/avtoposting-threads-make-google-sheets/">автопостинг</a> в Telegram или экономику usage — это следующие вечера, не условие сегодня:</p>
+<ul>
+<li><a href="/cursor-cloud-agents-avtomatizaciya/">Cloud Agents и автоматизация в Cursor</a></li>
+<li><a href="/kak-vybrat-cloud-agents-automations-sdk-cursor/">Как выбрать Cloud Agents, Automations или SDK</a></li>
+<li><a href="/kak-nastroit-avtoposting-telegram-cloud-agents/">Автопостинг в Telegram на Cloud Agents</a></li>
+<li><a href="/cursor-ekonomika-ai-agentov/">Экономика AI-агентов в Cursor</a></li>
+</ul>
+<p>Практику Cursor Automations разбираем в канале <a href="https://t.me/maya_pro" target="_blank" rel="noopener">t.me/maya_pro</a> и в MAX <a href="https://max.ru/maya_pro" target="_blank" rel="noopener">max.ru/maya_pro</a>. Если нужна системная сборка автоматизаций после первого cron — курс <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank" rel="noopener">kv-ai.ru/obuchenie-po-make</a>.</p>
+<blockquote>
+<p><b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank" rel="noopener">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).</p>
+<p><b>Опора на источники:</b> docs и help Cursor Automations (триггер Scheduled, No repository, биллинг cloud/API), блог-анонс Automations от 2026-03-05, треды forum.cursor.com про UTC/CRON_TZ, баг смены daily→weekly и Max Mode; community-пример cron на GitHub Reizvikh-Automation/dependencies-audit. Проверено 2026-07-24.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Нужен ли GitHub, чтобы получить бриф?</h3>
+<p>Нет. Для текста выберите No repository: агент не клонирует код и не откроет PR. Репозиторий нужен, когда цель — правки в git, а не утренний markdown.</p>
+<h3>Почему прогон пришёл не в «мои» 9:00?</h3>
+<p>Cron Automations по умолчанию в UTC. Добавьте <i>CRON_TZ=Europe/Moscow …</i> или возьмите preset, затем проверьте Test run до боевого утра.</p>
+<h3>Можно ли сразу повесить webhook или RSS→Telegram?</h3>
+<p>Можно технически, но это другой вечер. Сначала одна Scheduled Automation и артефакт в истории — иначе вы чините три системы сразу.</p>
+<h3>Automations сожгут весь бюджет?</h3>
+<p>Риск есть: Max Mode включён, лимита стоимости одного прогона в UI нет. Узкий промпт, редкий слот, контроль usage dashboard — обязательная гигиена, не опция.</p>

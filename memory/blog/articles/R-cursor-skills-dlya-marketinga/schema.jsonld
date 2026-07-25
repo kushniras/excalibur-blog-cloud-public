@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/cursor-skills-dlya-marketinga/#webpage",
+      "url": "https://mayai.ru/cursor-skills-dlya-marketinga/",
+      "name": "Cursor Skills: первый навык маркетолога за вечер без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Отличие Skill от Rules и плагинов, одна задача на вечер и первый прогон через /create-skill. Без зоопарка alwaysApply."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/cursor-skills-dlya-marketinga/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-skills-dlya-marketinga/#webpage"
+      },
+      "headline": "Cursor Skills: первый навык маркетолога за вечер без кода",
+      "description": "Отличие Skill от Rules и плагинов, одна задача на вечер и первый прогон через /create-skill. Без зоопарка alwaysApply.",
+      "datePublished": "2026-07-16",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/cursor-skills-dlya-marketinga/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/cursor-skills-dlya-marketinga/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-skills-dlya-marketinga/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем cursor skills отличаются от rules?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rule – короткое правило всегда в фоне (тон, язык, запреты). Skill – пошаговый сценарий по запросу: бриф, UTM, чеклист. Начните с одного skill на рутину; rules добавьте позже коротко."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как создать skill без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В Agent chat наберите /create-skill и опишите задачу своими словами. Либо создайте папку .cursor/skills/имя/SKILL.md с name, description и шагами. Проверьте, что файл не в skills-cursor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли плагин, чтобы пользоваться skills?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Плагин – пакет (rules + skills + агенты + MCP). Свой SKILL.md работает без Marketplace. Плагин ставьте после того, как один свой skill уже вызывается через /."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли вызвать skill через слэш /?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. В Agent chat пишите /имя-навыка. Так надёжнее автоподбора: при большом каталоге description укорачивается. Для критичных навыков используйте явный слэш."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С какого навыка начать маркетологу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С одной еженедельной рутины: бриф поста, таблица UTM или чеклист публикации. Не SEO+GEO и не Метрика в вечер-1 – сначала свой короткий файл, потом готовые skills с GitHub."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда класть SKILL.md и почему не skills-cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В .cursor/skills/ проекта или ~/.cursor/skills/. Папка ~/.cursor/skills-cursor/ системная: community пишет, что файлы там не сохраняются. После создания откройте Customize → Skills."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем skill отличается от готового плагина из маркетплейса?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skill – один рецепт в SKILL.md. Плагин – раздаваемый набор. Сначала сделайте свой навык; Junior, SEO+GEO и Метрику подключайте как следующий шаг, не вместо first-win."
+          }
+        }
+      ]
+    }
+  ]
+}
