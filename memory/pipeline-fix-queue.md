@@ -6,8 +6,10 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 ## Open incidents
 
+(нет open; Wave B GEO remaster 2026-07-25 — INC-20260725-1426 → needs-human ниже)
+
 ## INC-20260725-1426-publish-missing-cloud-secrets
-status: open
+status: needs-human
 run_date: 2026-07-25
 role: excalibur-blog-publish
 topic_id: multi
@@ -40,7 +42,27 @@ category: env
 - none recorded
 
 ### Fixer resolution
-- pending (needs-human: Cloud Secrets / env; fixer не может создать credentials)
+status: needs-human
+fixed_at: 2026-07-25
+reason:
+- Credentials / Cloud Secrets нельзя создать кодом; runtime env в этом Cloud run пуст (`--env-check` exit 1).
+- Контракт «нет секретов → явный PUBLISH BLOCKER, не silent skip» уже был в skill/AGENTS; усилен в pitfalls, publish skill/agent, WP contract, AGENTS, Cloud runbook.
+needed_decision_or_secret:
+- Cursor Dashboard → Cloud Agents → Secrets: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL`, `SSH_HOST`, `SSH_USER`, `SSH_PASS` или `SSH_PASSWORD`, `SSH_ROOT` (часто `.`)
+- Затем re-run publish для Wave B remaster batch (не silent skip)
+files_changed:
+- `shared/agent-pipeline-pitfalls.md`
+- `skills/publish-excalibur-blog/SKILL.md`
+- `.cursor/skills/publish-excalibur-blog/SKILL.md`
+- `agents/excalibur-blog-publish.md`
+- `.cursor/agents/excalibur-blog-publish.md`
+- `shared/excalibur-wp-publish-contract.md`
+- `AGENTS.md`
+- `CURSOR-CLOUD-RUNBOOK.md`
+checks_run:
+- `rg` blocker/silent-skip guidance in publish docs
+- `python3 scripts/excalibur_blog_wp_publish.py --env-check` (ожидаемо exit 1 без secrets)
+commit: 7d2730e
 
 ## INC-20260725-1425-indexer-interlink-blog-prefix
 status: fixed
@@ -259,7 +281,7 @@ checks_run:
 - `python3 scripts/excalibur_blog_cannibalization_guard.py --help`
 - `rg` check for old Writer `<pre><code>` instruction strings
 - `rg` check for old cannibalization `--article-dir` command in source docs
-commit: pending-parent-commit
+commit: 7d2730e
 
 ## INC-20260616-2018-cover-toxic-sticker
 status: fixed
@@ -310,7 +332,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_cover_quad_prompt.py`
 - JSON parse for `memory/cover/quad-style-digital-meme-collage-ru.json`
 - JSON parse for `memory/cover/cover-design-code.json`
-commit: pending-parent-commit
+commit: 7d2730e
 
 ## INC-20260616-1950-scout-wordstat-format
 status: fixed
@@ -351,7 +373,7 @@ files_changed:
 - `shared/agent-pipeline-pitfalls.md`
 checks_run:
 - `rg` check for Wordstat cluster-first/totalCount guidance in Scout source docs
-commit: pending-parent-commit
+commit: 7d2730e
 
 ## INC-20260616-2031-indexer-python-missing
 status: fixed
@@ -398,7 +420,7 @@ files_changed:
 - `shared/agent-pipeline-pitfalls.md`
 checks_run:
 - `rg` check for old `python scripts/excalibur_blog_interlinker.py` and `python scripts/excalibur_blog_llms_generator.py` in source docs
-commit: pending-parent-commit
+commit: 7d2730e
 
 
 ## INC-20260616-2042-publish-ssh-root-dot
@@ -452,7 +474,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_wp_publish.py`
 - `python3 scripts/excalibur_blog_wp_publish.py --env-check` (JSON output validated; non-publish env may return exit 1)
 - `python3 -m json.tool /tmp/excalibur_publish_env_check.json`
-commit: pending-parent-commit
+commit: 7d2730e
 
 ## Fixed incidents
 

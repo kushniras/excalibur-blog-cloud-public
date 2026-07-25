@@ -68,7 +68,8 @@ if ($schema) {
 
 ## Blockers
 
-- `❌ PUBLISH BLOCKER` — QA не PASS, link-verify fail, нет credentials
+- `❌ PUBLISH BLOCKER` — QA не PASS, link-verify fail, нет Cloud Secrets/credentials, `EXCALIBUR_BLOG_ALLOW_PUBLISH` ≠ yes, или `python3 scripts/excalibur_blog_wp_publish.py --env-check` exit 1
+- Missing secrets / allow flag → **явный blocker**, не silent skip и не «успех» без publish
 - Production HTML не должен содержать MCP URLs — только WP media для featured image
 
 Skill: `skills/publish-excalibur-blog/SKILL.md` (alias: `skills/excalibur-wp-publish/SKILL.md`)

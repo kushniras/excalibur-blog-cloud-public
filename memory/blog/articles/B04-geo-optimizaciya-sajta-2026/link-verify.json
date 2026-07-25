@@ -1,6 +1,6 @@
 {
-  "source": "memory/blog/articles/B04-geo-optimizaciya-sajta-2026/article.html",
-  "total_links": 5,
+  "source": "/workspace/memory/blog/articles/B04-geo-optimizaciya-sajta-2026/article.html",
+  "total_links": 6,
   "failed_count": 0,
   "verdict": "pass",
   "links": [
@@ -44,6 +44,15 @@
     },
     {
       "url": "https://t.me/maya_pro",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://kv-ai.ru/artur-horosheff",
       "status": 200,
       "ok": true,
       "method": "HEAD",

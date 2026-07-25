@@ -102,6 +102,7 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 
 - `SSH_*`, `PUBLIC_SITE_URL`, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
 - Publish transport: только SSH; legacy upload-алиасы не использовать.
+- Нет allow flag / SSH / `PUBLIC_SITE_URL` → **`❌ PUBLISH BLOCKER`** (не silent skip); preflight: `python3 scripts/excalibur_blog_wp_publish.py --env-check`.
 - MCP через `${env:...}` в mcp.json
 
 ## Git hygiene

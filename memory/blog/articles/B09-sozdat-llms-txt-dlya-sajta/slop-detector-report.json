@@ -5,9 +5,9 @@
   "total_over_long_sentences": 0,
   "over_long_sentences": [],
   "readability": {
-    "score": 79.0,
-    "level": "Easy (Standard modern readable web content)",
-    "avg_sentence_len": 7.9,
-    "avg_syllables_per_word": 2.0
+    "score": 80.9,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 7.5,
+    "avg_syllables_per_word": 1.9
   }
 }
