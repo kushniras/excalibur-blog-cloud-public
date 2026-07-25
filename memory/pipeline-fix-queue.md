@@ -6,6 +6,42 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 ## Open incidents
 
+## INC-20260725-1426-publish-missing-cloud-secrets
+status: open
+run_date: 2026-07-25
+role: excalibur-blog-publish
+topic_id: multi
+article_dir: memory/blog/articles (Wave B GEO remaster batch)
+severity: blocker
+category: env
+
+### What went wrong
+- `python3 scripts/excalibur_blog_wp_publish.py --env-check` вернул exit 1.
+- `allow_publish=false`; отсутствуют `EXCALIBUR_BLOG_ALLOW_PUBLISH`, `PUBLIC_SITE_URL`, `SSH_HOST`, `SSH_USER`, `SSH_PASS/SSH_PASSWORD`; `SSH_ROOT=unset`.
+- Нет `memory/site.env.local` в runtime.
+- Wave B remaster batch готов к WP update (B04/B09 + R-* с `wp_post_id`), но publish нельзя без секретов.
+
+### How the agent recovered this run
+- Явный `❌ PUBLISH BLOCKER` без угадывания доступов и без dry-run/publish SSH.
+- Ledger `shared/published-articles.md` не менялся (publish не прошёл).
+
+### Durable fix needed before next run
+- Выставить в Cursor Dashboard Cloud Secrets: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL`, `SSH_HOST`, `SSH_USER`, `SSH_PASS`/`SSH_PASSWORD`, `SSH_ROOT` (для этого аккаунта часто `.`).
+- Либо положить эквивалент в runtime `memory/site.env.local` (не коммитить).
+- После секретов — re-run publish update для remaster batch (приоритет: B04, B09, R-mikrorazmetka, R-alisa + остальные R-* с `wp_post_id`).
+
+### Suggested files to inspect/change
+- Cursor Dashboard Cloud Secrets (values not recorded)
+- `CURSOR-CLOUD-RUNBOOK.md`
+- `shared/excalibur-wp-publish-contract.md`
+- `skills/publish-excalibur-blog/SKILL.md`
+
+### Secrets
+- none recorded
+
+### Fixer resolution
+- pending (needs-human: Cloud Secrets / env; fixer не может создать credentials)
+
 ## INC-20260725-1425-indexer-interlink-blog-prefix
 status: fixed
 run_date: 2026-07-25
