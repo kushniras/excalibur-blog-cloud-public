@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/#webpage",
+      "url": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/",
+      "name": "Cursor agent по расписанию: бриф к утру без ручного чата",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Одно задание без GitHub, короткий промпт, учёт UTC и обязательный Test run. Без webhook и RSS в первый вечер."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/#webpage"
+      },
+      "headline": "Cursor agent по расписанию: бриф к утру без ручного чата",
+      "description": "Одно задание без GitHub, короткий промпт, учёт UTC и обязательный Test run. Без webhook и RSS в первый вечер.",
+      "datePublished": "2026-07-24",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли GitHub, чтобы получить бриф?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Для текста выберите No repository: агент не клонирует код и не откроет PR. Репозиторий нужен, когда цель – правки в git, а не утренний markdown."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему прогон пришёл не в \"мои\" 9:00?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cron Automations по умолчанию в UTC. Добавьте CRON_TZ=Europe/Moscow … или возьмите preset, затем проверьте Test run до боевого утра."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сразу повесить webhook или RSS→Telegram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно технически, но это другой вечер. Сначала одна Scheduled Automation и артефакт в истории – иначе вы чините три системы сразу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Automations сожгут весь бюджет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Риск есть: Max Mode включён, лимита стоимости одного прогона в UI нет. Узкий промпт, редкий слот, контроль usage dashboard – обязательная гигиена, не опция."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что считать успехом Test run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automation сохранена с расписанием, в истории есть успешный пробный прогон, в ответе лежит бриф или черновик. Пустой прогон \"без текста\" – ещё не готово. На практике не ждите \"боевое утро\" без этой проверки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Max Mode в первый вечер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automations идут в Max Mode по модели продукта – выключить нельзя. Поэтому сегодня короткий промпт и один артефакт, без зоопарка интеграций. Иначе быстро и дорого сожжёте лимит на пустых циклах."
+          }
+        }
+      ]
+    }
+  ]
+}

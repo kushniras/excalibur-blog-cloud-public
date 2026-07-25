@@ -1,0 +1,127 @@
+<p>Марина из SMM поставила OpenClaw "как все", кинула ключ Claude и оставила heartbeat на ночь. Утром – минус около $20 кредитов и чужой "SEO-skill" из ClawHub, который полез в файлы. Боль знакома: установка openclaw пугает DevOps-ом, а в голове мешаются Make, Cursor и "агент в мессенджере". Ответ за один вечер: официальный скрипт, живой gateway, один skill с известным автором и схема "OpenClaw думает → Make шлёт уведомление" – без публичного порта наружу.</p>
+<h2 id="constraints-openclaw">Когда OpenClaw не ставить сегодня</h2>
+<p>Если нужен один сценарий Make без gateway – не усложняйте стек. Если нет времени на skill и проверку – отложите. Типичная ошибка: поставить всё и не сделать Run once. На практике gateway → один skill → связка с Make и один успешный прогон.</p>
+
+<blockquote><p>OpenClaw – это локальный gateway (шлюз) для AI-агента: он живёт у вас на компьютере и отвечает в Control UI, а не "ещё один чат в браузере". Workflow новичка: официальный install → onboard → gateway :18789 → один skill → связка с Make. Parent "openclaw" – около 13233 показов/мес, primary "установка openclaw" – 336 (Яндекс Вордстат, Россия, 14.07.2026). Само "бесплатное" ПО уже жгло людям ~$20 API overnight из‑за heartbeat раз в 30 минут; плюс в экосистеме skills находили сотни вредоносных пакетов.</p></blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<p>Исторически продукт звали Clawdbot, потом Moltbot, сейчас OpenClaw – старые гайды часто про то же. Ниже – спокойный путь маркетолога: что нажать, куда не лезть и когда хватит Make или Cursor без нового стека.</p>
+<h2 id="openclaw-vs-make-cursor">Сравните роли: OpenClaw, Make и Cursor Cloud Agents</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/ustanovka-openclaw-make-cursor-inline-01.jpg" alt="Таблица сравнения ролей OpenClaw, Make и Cursor Cloud Agents" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Боль "зачем мне ещё один инструмент, если есть Make и Cursor" закрывается не лозунгами, а ролями. На практике Make – это доставка и интеграции (пост, Sheets, Telegram). Cursor – длинная работа в IDE над сайтом и промптами. OpenClaw – 24/7 gateway рядом с мессенджерами и skills. Если нужен только сценарий "форма → уведомление", сначала смотрите <a href="/make-ai-agents-mcp-avtomatizaciya/">Make AI Agents и MCP</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Критерий</th>
+<th>OpenClaw</th>
+<th>Make</th>
+<th>Cursor Cloud Agents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Где живёт</b></td>
+<td>Локально (self-hosted gateway)</td>
+<td>Облако сценариев</td>
+<td>Облако Cursor / IDE</td>
+</tr>
+<tr>
+<td><b>Сильная сторона</b></td>
+<td>Агент + skills + чат</td>
+<td>Триггеры и модули</td>
+<td>Долгие задачи в коде</td>
+</tr>
+<tr>
+<td><b>Риск новичка</b></td>
+<td>API overnight, чужие skills</td>
+<td>Сложный сценарий без цели</td>
+<td>Лишние агенты без брифа</td>
+</tr>
+<tr>
+<td><b>Когда брать</b></td>
+<td>Нужен воркер "всегда на связи"</td>
+<td>Нужна доставка и CRM</td>
+<td>Нужна работа в проекте Cursor</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>
+<b>Вердикт:</b> не делайте стек "всё сразу". Используйте OpenClaw, если нужен агент у себя; Make – если нужна доставка; Cursor – если правите сайт и промпты. Сравнение с облачными агентами – в <a href="/cursor-cloud-agents-avtomatizaciya/">Cursor Cloud Agents</a> и <a href="/ai-agent-marketing-cursor-subagents/">AI-агентах маркетинга на субагентах</a>.
+</p></blockquote>
+<h2 id="install-gateway">Установите OpenClaw официальным скриптом и проверьте gateway</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/ustanovka-openclaw-make-cursor-inline-02.jpg" alt="Чеклист установки OpenClaw: скрипт, onboard и проверка gateway :18789" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Боль "это только для админов / сломаю систему" снимается одним официальным installer – без Docker и VPS в первый вечер. OpenClaw AI ставит себе Node нужной ветки (ориентир docs: 22/24/25). Gateway – это "диспетчер" агента; Control UI обычно слушает порт 18789 на localhost (только ваш ПК).</p>
+<ol>
+<li>Шаг 1. Откройте официальный гайд <a href="https://docs.openclaw.ai/install/" target="_blank">docs.openclaw.ai/install</a> и выберите ОС.</li>
+<li>Шаг 2. Mac/Linux/WSL: curl -fsSL https://openclaw.ai/install.sh | bash. Windows PowerShell: iwr -useb https://openclaw.ai/install.ps1 | iex.</li>
+<li>Шаг 3. Проверьте openclaw –version – команда должна ответить без ошибки.</li>
+<li>Шаг 4. Сделайте onboard: openclaw onboard –install-daemon и добавьте API-ключ модели.</li>
+<li>Шаг 5. Запустите openclaw gateway status и openclaw dashboard – откройте Control UI.</li>
+<li>Шаг 6. Отправьте тестовое "привет" и дождитесь ответа агента.</li>
+<li>Шаг 7. Убедитесь, что версия не ниже патча CVE-2026-25253 (в гайдах hardening – ≥2026.1.29) и gateway не торчит в интернет.</li>
+</ol>
+<p>Типичная ошибка – сразу "пробросить порт 18789 наружу". Избегайте публичного gateway: pairing и allowFrom – только для тех, кому доверяете. В реальном проекте достаточно localhost и одного тестового чата. Если Cursor ещё не стоит – сначала <a href="/vajbkoding-marketing-cursor-ai/">вайбкодинг маркетинга в Cursor</a>, а OpenClaw подключайте вторым слоем.</p>
+<h2 id="first-skill">Добавьте один безопасный skill под маркетинг</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/ustanovka-openclaw-make-cursor-inline-03.jpg" alt="Схема: один безопасный skill OpenClaw и путь до Make-сценария" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Skill – это папка с инструкцией SKILL.md: агент получает "специальность" (SEO, Метрика), а не бесконечный свободный доступ. Боль "поставлю левый пакет и утекут ключи" решается allowlist и автором, которого можно проверить на GitHub.</p>
+<ol>
+<li>Шаг 1. Выберите один skill: SEO+GEO (<a href="https://github.com/Horosheff/google-yandex-seo-skill" target="_blank">github.com/Horosheff/google-yandex-seo-skill</a> или зеркало на <a href="https://clawhub.ai/Horosheff/google-yandex-seo-skills" target="_blank">ClawHub</a>) либо Метрику (<a href="https://github.com/Horosheff/yandex-metrika-assistant" target="_blank">yandex-metrika-assistant</a>).</li>
+<li>Шаг 2. Установите через openclaw skills install (slug или git:owner/repo) по <a href="https://docs.openclaw.ai/clawhub/" target="_blank">доке ClawHub</a>.</li>
+<li>Шаг 3. Прогоните skills verify, если команда доступна в вашей версии.</li>
+<li>Шаг 4. Добавьте skill в allowlist; не давайте shell "на всякий случай".</li>
+<li>Шаг 5. Задайте агенту одну задачу: например, чеклист SEO-правок для одной money-page.</li>
+<li>Шаг 6. Уберите из workspace лишние community-skills без автора и README.</li>
+</ol>
+<p>На практике precedence skills идёт от workspace /skills к ~/.openclaw/skills – см. <a href="https://docs.openclaw.ai/tools/skills" target="_blank">docs по skills</a>. Не делайте "коллекцию из десяти пакетов ClawHub за ночь": аудит экосистемы уже ловил сотни вредоносных skills. Ориентир – один понятный skill под вашу задачу.</p>
+<h2 id="make-svyazka">Соберите связку с Make на одном сценарии</h2>
+<p>Боль "агент думает красиво, а в Telegram/Sheets ничего не уходит" закрывается разделением труда. OpenClaw думает и готовит текст; Make шлёт пост, строку или уведомление. Два рабочих пути без DevOps:</p>
+<blockquote><p>
+<b>Схема workflow:</b><br>
+Вариант A: Make (Webhook/HTTP) → OpenClaw /hooks/agent (Bearer) → ответ агента → модуль Telegram/Sheets<br>
+Вариант B: OpenClaw → MCP/plugin Make → сценарий доставки<br>
+Итог: один сценарий "отчёт агента → уведомление", без публичного gateway.
+</p></blockquote>
+<ol>
+<li>Шаг 1. В Make создайте сценарий с Webhooks → <a href="/webhook-make-pervyj-scenarij/">Custom webhook</a> или HTTP.</li>
+<li>Шаг 2. Подключите вызов агента (HTTP к /hooks/agent с Bearer) по гайдам интеграции; либо подключите Make-инструменты к OpenClaw через MCP/plugin.</li>
+<li>Шаг 3. Добавьте модуль доставки: Telegram, email или Google Sheets.</li>
+<li>Шаг 4. Проверьте один прогон вручную: короткий бриф → ответ → сообщение вам.</li>
+<li>Шаг 5. Сохраните сценарий и отключите лишние модули "на вырост".</li>
+<li>Шаг 6. Если нужен готовый каркас модулей – возьмите шаблон из <a href="https://kv-ai.ru/blyuprinty-make-com-podpiska" target="_blank">папки блюпринтов Make</a>.</li>
+<li>Шаг 7. Для Wordstat и картинок рядом с Cursor оставьте <a href="https://mcp-kv.ru/" target="_blank">MCP "Всё подключено"</a> – это отдельный слой инструментов, не замена gateway.</li>
+</ol>
+<p>Часто ломается связка, когда люди открывают порт агента "для удобства Make извне". Сделайте наоборот: либо вызов с доверенного HTTP и токеном, либо MCP без публикации 18789. Избегайте ночного heartbeat "на всякий" – именно он сжигал бюджет в кейсах ~$20 overnight.</p>
+<h2 id="checklist-gotovo-rano">Чеклист "готово / рано / дорого": когда OpenClaw не нужен</h2>
+<p>До FAQ зафиксируем критерий успеха: openclaw –version и gateway status зелёные; в dashboard есть ответ на тест; установлен 1 skill с известным автором; в Make есть один сценарий доставки – и gateway не торчит в интернет.</p>
+<ul>
+<li>Готово: версия с патчем CVE, localhost, один skill, один Make-сценарий, утренний чек API без сюрприза.</li>
+<li>Рано: нет ни одного стабильного сценария в Make и нет задачи "агент в мессенджере" – сначала автоматизация, потом OpenClaw.</li>
+<li>Дорого: тяжёлый heartbeat, дорогая модель 24/7, десять skills без allowlist – сравните с <a href="/cursor-ekonomika-ai-agentov/">экономикой AI-агентов в Cursor</a>.</li>
+</ul>
+<p>Сделайте паузу перед вторым агентом: чеклист выше – это ваш stop-light. Если цель – быстро собрать контент и интеграции без self-host, останьтесь на Make и Cursor. Если нужен системный разбор автоматизаций – есть <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курс Make.com и вайбкодинга</a>; разборы воркеров и связок – в <a href="https://t.me/maya_pro" target="_blank">канале Ковчег</a>.</p>
+<blockquote><p>
+<b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>
+<b>Опора на источники:</b> docs.openclaw.ai (install, getting-started, skills, ClawHub), GitHub openclaw/openclaw и skills Horosheff (SEO/GEO, Метрика), гайды hardening/CVE-2026-25253 и кейс overnight API; частотность – Яндекс Вордстат на 14.07.2026.
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Как установить OpenClaw на Windows новичку?</h3>
+<p>Откройте PowerShell и выполните официальный install.ps1 с docs.openclaw.ai/install. Проверьте openclaw –version, затем onboard и gateway status. Не публикуйте порт 18789 наружу – хватит localhost и dashboard.</p>
+<h3>Нужен ли OpenClaw, если уже есть Make?</h3>
+<p>Не всегда. Если Make закрывает доставку и интеграции – сначала доведите один сценарий до конца. OpenClaw имеет смысл, когда нужен локальный агент со skills и чатом "всегда на связи", а Make остаётся курьером.</p>
+<h3>Чем OpenClaw отличается от Cursor Cloud Agents?</h3>
+<p>OpenClaw – self-hosted gateway у вас на машине. Cursor Cloud Agents работают в экосистеме Cursor над проектом и длинными задачами. Для маркетинга часто хватает Cursor + Make; OpenClaw – отдельный слой воркера.</p>
+<h3>Какие OpenClaw skills поставить первыми (безопасно)?</h3>
+<p>Один skill с проверяемым автором: SEO+GEO или Яндекс Метрика с GitHub Horosheff. Прогоните verify, добавьте в allowlist, уберите случайные community-пакеты без README.</p>
+<h3>Сколько стоит первый месяц (API + риски overnight)?</h3>
+<p>Сам OpenClaw open-source, платите за модель (Claude/API и аналоги). Ориентир риска: heartbeat каждые 30 минут уже сжигал ~$20 overnight. Отключите лишний пульс, поставьте лимит и дешёвую модель на тесте; утром сверьте usage.</p>
+<h3>Куда класть skills и как проверить, что агент отвечает?</h3>
+<p>Skills – каталоги с SKILL.md; приоритет workspace → ~/.agents/skills → ~/.openclaw/skills. После install откройте dashboard на :18789 и отправьте тестовое сообщение – ответ в UI значит gateway жив.</p>

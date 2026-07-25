@@ -1,0 +1,38 @@
+{
+  "gate": "research-notes",
+  "status": "BLOCK",
+  "article_dir": "memory/blog/articles/B04-geo-optimizaciya-sajta-2026",
+  "notes": "memory/blog/articles/B04-geo-optimizaciya-sajta-2026/research-notes.md",
+  "context": "memory/blog/articles/B04-geo-optimizaciya-sajta-2026/research-context.json",
+  "errors": [
+    "missing required research field: accessed_at",
+    "missing required research field: reader_pain",
+    "missing required research field: success_criteria",
+    "missing required research field: voice_angle",
+    "missing required research field: reader_story",
+    "missing required research field: surprising_fact",
+    "missing required research field: pain_solution_map",
+    "missing required research field: github_evidence",
+    "missing required research field: action_outline",
+    "too few source access dates: accessed_at=0 < 5",
+    "pain_solution_map too thin: rows=0 < 3",
+    "technical topic requires GitHub evidence: github_urls=0 < 3"
+  ],
+  "warnings": [
+    "technical topic has no obvious official docs/developer documentation URL",
+    "freshness window prefer_sources_after=2026-03-13 is not cited"
+  ],
+  "metrics": {
+    "today_iso": "2026-06-11",
+    "prefer_sources_after": "2026-03-13",
+    "source_urls": 34,
+    "source_domains": 14,
+    "source_table_rows": 32,
+    "accessed_at": 0,
+    "github_urls": 0,
+    "official_doc_urls": 0,
+    "action_outline_items": 74,
+    "pain_solution_rows": 0,
+    "technical_topic": true
+  }
+}

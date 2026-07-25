@@ -16,9 +16,9 @@
     "seo текст для блога",
     "geo оптимизация статьи"
   ],
-  "char_count": 8894,
+  "char_count": 9375,
   "article_mode": "B",
-  "author_id": "elena-kovaleva",
+  "author_id": "artur-horoshev",
   "anchor_variants": [
     "как писать seo статьи для блога",
     "гайд по seo тексту с geo оптимизацией",
@@ -32,5 +32,6 @@
     "description_ctr": "Один longread вместо двух проектов: интент, Wordstat, H2-чанки, FAQ, JSON-LD и 15 пунктов чеклиста. Эталон формата на примере этой страницы.",
     "description_aeo": "SEO-статья закрывает запрос человека и упакована для AI-ответов: lead 350–500 знаков, атомарные H2, BlogPosting + FAQPage, llms.txt. Объём — по SERP, не по мифической норме."
   },
-  "cover_family": "brand_collage"
+  "cover_family": "brand_collage",
+  "dateModified": "2026-07-25"
 }

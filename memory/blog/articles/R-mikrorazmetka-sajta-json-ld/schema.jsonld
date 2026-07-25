@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/mikrorazmetka-sajta-json-ld/#webpage",
+      "url": "https://mayai.ru/mikrorazmetka-sajta-json-ld/",
+      "name": "Микроразметка сайта: JSON-LD FAQ и Article за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Практический гайд: BlogPosting и FAQPage в JSON-LD на одной статье, проверка в валидаторе Яндекса и Schema.org без плагина на весь сайт."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/mikrorazmetka-sajta-json-ld/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/mikrorazmetka-sajta-json-ld/#webpage"
+      },
+      "headline": "Микроразметка сайта: JSON-LD FAQ и Article за вечер",
+      "description": "Практический гайд: BlogPosting и FAQPage в JSON-LD на одной статье, проверка в валидаторе Яндекса и Schema.org без плагина на весь сайт.",
+      "datePublished": "2026-07-17T03:55:03",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/mikrorazmetka-sajta-json-ld/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/mikrorazmetka-sajta-json-ld/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/mikrorazmetka-sajta-json-ld/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли плагин Schema, чтобы добавить микроразметку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет для первого вечера. Сделайте один или два script JSON-LD на одной статье, проверьте валидатором. Плагин имеет смысл позже, если размечаете десятки шаблонов сразу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему валидатор пишет \"микроразметка не обнаружена\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще всего скрипт не попал в сохранённый HTML, сломан JSON или неверный @type. Откройте исходник страницы, найдите script, исправьте поля и снова проверьте URL."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Стоит ли удалять FAQPage после отмены FAQ в Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не обязательно. Тип остаётся в Schema.org, вопросы помогают понять структуру страницы. Просто не ждите аккордеон в выдаче Google – ориентир успеха сменился на валидатор."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем микроразметка отличается от llms.txt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Микроразметка описывает факты страницы для поисковиков (автор, даты, Q&A). llms.txt – отдельный файл-подсказка для AI-краулеров. Используйте оба инструмента по назначению, не смешивайте в один блок."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой формат даты принимать валидаторы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для Яндекса ориентир – ISO 8601 (например 2026-07-17 или с временем и зоной). Избегайте \"человеческих\" дат только в тексте разметки без ISO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда ждать сниппет в Яндексе после галочки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Валидатор может показать типы сразу. Структурированный сниппет в выдаче – после переобхода, в справке Яндекса ориентир около двух недель. Ускорить обход помогает IndexNow."
+          }
+        }
+      ]
+    }
+  ]
+}

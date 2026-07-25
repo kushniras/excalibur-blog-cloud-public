@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-otzyvy",
+  "slug": "stranica-otzyvov-cursor-ai",
+  "title": "Добавить отзывы на сайт: страница reviews.html в Cursor без кода",
+  "wp_post_id": 14119,
+  "primary_query": "добавить отзывы на сайт",
+  "secondary_queries": [
+    "страница отзывов",
+    "reviews.html",
+    "отзывы без кода"
+  ],
+  "char_count": 9151,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/stranica-otzyvov-cursor-ai/",
+  "datePublished": "2026-07-08",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "reviews.html",
+    "3–5 реальных отзывов",
+    "без фейковых звёзд",
+    "страница отзывов"
+  ],
+  "meta_ab": {
+    "title_seo": "Добавить отзывы на сайт: reviews.html в Cursor",
+    "title_ctr": "Нет доверия без отзывов? 3–5 проверяемых кейса",
+    "title_aeo": "Как добавить отзывы на сайт в Cursor AI?",
+    "description_seo": "Реальные отзывы с контекстом на reviews.html. Без фейковых цитат и звёзд.",
+    "description_ctr": "Шаблонные отзывы вредят. Соберите проверяемые.",
+    "description_aeo": "Страница отзывов: структура, этика и типичные ошибки."
+  }
+}

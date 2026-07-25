@@ -44,4 +44,6 @@ SEO-статья в 2026 — это не набор ключей, а едины�
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer: 0 interlink opportunities (единственная статья в `memory/blog/articles`). После публикации второй статьи — перезапустить `excalibur_blog_interlinker.py --apply`.

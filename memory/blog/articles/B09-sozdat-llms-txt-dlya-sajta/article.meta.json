@@ -10,7 +10,7 @@
     "создать llms txt",
     "llms txt в robots txt"
   ],
-  "char_count": 9492,
+  "char_count": 9221,
   "article_mode": "B",
   "author_id": "artur-horoshev",
   "anchor_variants": [
@@ -25,5 +25,6 @@
     "description_seo": "Пошаговый чек-лист llms.txt: какие страницы выбрать, как оформить Markdown, где выложить файл и как проверить без обещаний AI-трафика.",
     "description_ctr": "Разберите llms.txt спокойно: готовый шаблон, 10-30 URL, проверка в корне сайта и честные ограничения для Google и AI-ответов.",
     "description_aeo": "Чтобы создать llms.txt, соберите важные URL, оформите Markdown-файл, выложите его в корень сайта и проверьте HTTP 200, ссылки и Lighthouse."
-  }
+  },
+  "dateModified": "2026-07-25"
 }

@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/nejroset-montazh-video-reels-cursor/#webpage",
+      "url": "https://mayai.ru/nejroset-montazh-video-reels-cursor/",
+      "name": "Нейросеть для монтажа видео: Reels из эфира в Cursor",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Нарезка эфира, хук, субтитры и превью до автопоста. Без бесконечного таймлайна."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/nejroset-montazh-video-reels-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/nejroset-montazh-video-reels-cursor/#webpage"
+      },
+      "headline": "Нейросеть для монтажа видео: Reels из эфира в Cursor",
+      "description": "Нарезка эфира, хук, субтитры и превью до автопоста. Без бесконечного таймлайна.",
+      "datePublished": "2026-07-13",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/nejroset-montazh-video-reels-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/nejroset-montazh-video-reels-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/nejroset-montazh-video-reels-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какая нейросеть для монтажа видео подойдёт новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Начните с локального Whisper (или faster-whisper) плюс ffmpeg и Cursor: сначала транскрипт, потом отбор моментов, потом вертикаль. Не гонитесь за \"одной кнопкой\" SaaS без QA субтитров. Проверьте стек на 2–3 минутах тестового куска."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как сделать рилс из длинного видео за один вечер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Скопируйте MP4, напишите brief, получите транскрипт, выберите 3–5 кусков 30–60 сек с хуком в начале, сделайте crop 9:16 и субтитры. Используйте чеклист выше перед загрузкой в Instagram или Shorts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли CapCut, если есть Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, для short-from-long CapCut не обязателен. Auto Cut удобен под бит на телефоне/десктопе, но на Web его нет, а смысловые клипы из эфира лучше режет связка Whisper + отбор + ffmpeg. Не делайте CapCut условием старта."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем нарезка отличается от генерации видео нейросетью?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Генерация строит картинку и звук \"из промпта\"; нарезка берёт вашу речь и лицо из уже снятого файла. Для оффера и доверия аудитории нарезка обычно сильнее и предсказуемее. Избегайте обещаний \"полностью автогенерация уже готова\" – канал это прямо отмечает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько клипов брать с одного эфира?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир новичка – 3–5 штук по 30–60 сек, даже если ИИ предложил десятки кандидатов. Уберите слабые куски без хука. Лучше меньше файлов, но с понятным оффером и чистыми субтитрами."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что проверить в субтитрах перед публикацией?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте совпадение текста с речью на всём клипе, имена, цены и термины. Community-баг auto-clipperов – субтитры \"с чужого фрагмента\". Добавьте правку вручную, если модель ошиблась, и только потом выкладывайте."
+          }
+        }
+      ]
+    }
+  ]
+}

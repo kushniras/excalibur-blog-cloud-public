@@ -88,6 +88,8 @@ def validate_fact_check_author(
         )
 
 
+# Whitelist substrings; GEO remaster must keep ≥2 hits after removing TL;DR labels.
+# Editorial paraphrase without these markers still fails the gate (see geo-collider-remediation-rules.md).
 CONCRETE_MARKERS = (
     "например",
     "на практике",

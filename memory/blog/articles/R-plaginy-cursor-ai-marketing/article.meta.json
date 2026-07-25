@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-plaginy",
+  "slug": "plaginy-cursor-ai-marketing",
+  "title": "Плагины для Cursor: первая установка за вечер без кода",
+  "wp_post_id": 14312,
+  "primary_query": "плагины cursor",
+  "secondary_queries": [
+    "установка плагина cursor",
+    "cursor plugins marketing",
+    "local plugins"
+  ],
+  "char_count": 9026,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/plaginy-cursor-ai-marketing/",
+  "datePublished": "2026-07-15",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "плагин Cursor за вечер",
+    "local plugins путь",
+    "Reload Window",
+    "один прогон"
+  ],
+  "meta_ab": {
+    "title_seo": "Плагины для Cursor: первая установка за вечер без кода",
+    "title_ctr": "Customize пустой? Проверьте путь и Reload Window",
+    "title_aeo": "Как установить плагин в Cursor для маркетинга?",
+    "description_seo": "Путь ~/.cursor/plugins/local/, Reload и один успешный прогон. Без трёх плагинов за вечер.",
+    "description_ctr": "Поставили – не видно? Сначала путь и перезагрузка окна.",
+    "description_aeo": "Плагины Cursor: установка, проверка Customize и типичные ошибки."
+  }
+}

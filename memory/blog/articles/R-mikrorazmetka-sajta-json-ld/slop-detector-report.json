@@ -1,0 +1,26 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 3,
+  "over_long_sentences": [
+    {
+      "sentence": "За один вечер на одной статье вставите два блока JSON-LD (BlogPosting или Article плюс FAQPage с 3–5 реальными вопросами), прогоните через валидатор Яндекса или Schema Markup Validator и увидите распознанные типы без критических ошибок",
+      "word_count": 33
+    },
+    {
+      "sentence": "Инструмент Что делает Когда нужен HTML Показывает текст людям Всегда – основа страницы JSON-LD микроразметка Даёт роботам типы BlogPosting / FAQPage После публикации статьи, перед проверкой валидатором llms",
+      "word_count": 26
+    },
+    {
+      "sentence": "Дальше по желанию: ускорить переобход через IndexNow , сверить GEO-видимость в гайде по GEO 2026 или прогнать аудит скиллом SEO+GEO для Cursor и разбором в статье про SEO-аудит",
+      "word_count": 27
+    }
+  ],
+  "readability": {
+    "score": 83.0,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 9.8,
+    "avg_syllables_per_word": 1.8
+  }
+}

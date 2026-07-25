@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/stranica-404-cursor-ai/#webpage",
+      "url": "https://mayai.ru/stranica-404-cursor-ai/",
+      "name": "Страница 404 в Cursor: 404.html без кода и сервера",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Один 404.html с понятным текстом и ссылкой на главную. Проверка несуществующего URL."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/stranica-404-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/stranica-404-cursor-ai/#webpage"
+      },
+      "headline": "Страница 404 в Cursor: 404.html без кода и сервера",
+      "description": "Один 404.html с понятным текстом и ссылкой на главную. Проверка несуществующего URL.",
+      "datePublished": "2026-07-09",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/stranica-404-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/stranica-404-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/stranica-404-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как сделать страницу 404 без настройки сервера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Соберите один 404.html в корне через Cursor Agent, положите рядом с index.html и выложите папку на Vercel Drop или GitHub Pages. Платформы сами показывают 404.html на несуществующих URL. Не начинайте с .htaccess, если сайт статический."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сделать 404 страницу в Cursor – с чего начать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте папку с лендингом, создайте .cursor/rules/404.mdc с alwaysApply: true (один HTML, без npm/React), затем дайте Agentу промпт \"сделай 404.html в стиле index.html с кнопкой На главную\". Проверьте двойным кликом и публикуйте через Drop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему страница 404 появляется у посетителя?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно это опечатка в ссылке, старый URL из переписки, удалённый раздел или битая кнопка в меню. Ваша задача – не пугать серым экраном, а за 5 секунд дать выход на главную и важные разделы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли кнопка \"На главную\" на странице ошибки 404?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, это обязательный минимум. Добавьте ещё 3–4 ссылки на услуги, цены или контакты и по желанию кнопку в мессенджер. Без выхода человек чаще закрывает вкладку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем soft 404 отличается от настоящей ошибки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Настоящая 404 говорит: страницы нет. Soft 404 показывает текст \"не найдено\", но отвечает статусом 200 – это путает индексацию. На Vercel для статики не усложняйте routes: положите 404.html и не подменяйте ошибку редиректом на главную."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если хостинг просит ErrorDocument?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это подсказка Apache, какой файл показать при ошибке. На Vercel Drop в первый вечер она не нужна. На классическом хостинге укажите путь к вашему 404.html – сам файл уже готов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как проверить страницу 404 после публикации?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте адрес вида https://ваш-сайт/test-404-xyz. Должна открыться ваша вёрстка с кнопкой \"На главную\". Затем кликните ссылки разделов и повторите проверку в узком окне телефона."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-pereobhod",
+  "slug": "pereobhod-stranic-yandeks-vebmaster-make",
+  "title": "Переобход страниц в Яндекс Вебмастере через Make за вечер",
+  "wp_post_id": 14325,
+  "primary_query": "переобход страниц яндекс",
+  "secondary_queries": [
+    "вебмастер make",
+    "переобход api",
+    "индексация яндекс"
+  ],
+  "char_count": 9289,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/",
+  "datePublished": "2026-07-15",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "переобход в Вебмастере",
+    "Make и список URL",
+    "не дёргать каждый час",
+    "статус в Sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Переобход страниц в Яндекс Вебмастере через Make",
+    "title_ctr": "Страница обновлена, а индекс спит? Переобход по списку",
+    "title_aeo": "Как настроить переобход страниц Яндекса через Make?",
+    "description_seo": "Приоритетный список URL, сценарий Make и статусы в Sheets. Без спама одной ссылкой.",
+    "description_ctr": "Не жмите переобход вручную каждый час. Соберите очередь.",
+    "description_aeo": "Переобход Вебмастера: когда нужен, лимиты и связка с Make."
+  }
+}

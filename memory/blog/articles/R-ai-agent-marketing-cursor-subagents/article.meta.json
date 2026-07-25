@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-ai-mkt",
+  "slug": "ai-agent-marketing-cursor-subagents",
+  "title": "Как создать AI-агента для маркетинга в Cursor без кода",
+  "wp_post_id": 14199,
+  "primary_query": "ai агент маркетинг",
+  "secondary_queries": [
+    "создать ai агента",
+    "субагенты маркетинг cursor",
+    "офис агентов cursor"
+  ],
+  "char_count": 8927,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/ai-agent-marketing-cursor-subagents/",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "AI-агент для маркетинга",
+    "субагенты в Cursor",
+    "офис из двух ролей",
+    "research → draft"
+  ],
+  "meta_ab": {
+    "title_seo": "AI-агент для маркетинга в Cursor: два субагента без кода",
+    "title_ctr": "Пять помощников спорят за пост? Соберите офис из двух ролей",
+    "title_aeo": "Как создать AI-агента для маркетинга в Cursor без кода?",
+    "description_seo": "Чат vs агент vs субагент, один критерий готово и цикл research→draft до файла. Без зоопарка ролей.",
+    "description_ctr": "Промпт в ChatGPT каждый раз другой? Соберите двух узких сотрудников в .cursor/agents/.",
+    "description_aeo": "AI-агент маркетинг: роли, субагенты Cursor и первый артефакт за вечер."
+  }
+}

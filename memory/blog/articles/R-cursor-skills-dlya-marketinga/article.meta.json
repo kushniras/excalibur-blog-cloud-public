@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-skills",
+  "slug": "cursor-skills-dlya-marketinga",
+  "title": "Cursor Skills: первый навык маркетолога за вечер без кода",
+  "wp_post_id": 14338,
+  "primary_query": "cursor skills",
+  "secondary_queries": [
+    "create-skill cursor",
+    "skills маркетинг",
+    "skill vs rules"
+  ],
+  "char_count": 9718,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/cursor-skills-dlya-marketinga/",
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Skills для маркетинга в Cursor",
+    "/create-skill без кода",
+    "повторяемый бриф поста",
+    "Skill вместо копипаста промпта"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor Skills для маркетинга: /create-skill за один вечер",
+    "title_ctr": "Каждый понедельник один и тот же бриф? Сделайте Skill",
+    "title_aeo": "Как создать Skill в Cursor для маркетинга?",
+    "description_seo": "Отличие Skill от Rules и плагинов, одна задача на вечер и первый прогон через /create-skill. Без зоопарка alwaysApply.",
+    "description_ctr": "Агент забывает тон к среде? Один SKILL.md на бриф поста – и завтра тот же сценарий.",
+    "description_aeo": "Cursor Skills: когда нужен навык, как запустить /create-skill и проверить повтор."
+  }
+}

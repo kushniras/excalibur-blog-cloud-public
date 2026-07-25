@@ -18,7 +18,7 @@
     "чат боты для бизнеса в телеграмм",
     "чат боты для бизнеса и автоматизации"
   ],
-  "char_count": 8898,
+  "char_count": 9130,
   "article_mode": "B",
   "author_id": "artur-horoshev",
   "anchor_variants": [
@@ -35,5 +35,6 @@
     "description_aeo": "Чат боты для бизнеса в 2026: выбор задачи, RAG на FAQ, AI Agent в n8n или Make, передача оператору и целевые метрики 60-80% без человека."
   },
   "cover_family": "brand_collage",
-  "wp_post_id": 13490
+  "wp_post_id": 13490,
+  "dateModified": "2026-07-25"
 }

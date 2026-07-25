@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-gen-img",
+  "slug": "generaciya-kartinok-mcp-cursor-marketing",
+  "title": "Нейросеть для создания картинок в Cursor через MCP: обложка без Midjourney",
+  "wp_post_id": 14252,
+  "primary_query": "нейросеть для создания картинок",
+  "secondary_queries": [
+    "mcp картинки cursor",
+    "обложка поста cursor",
+    "генерация изображений mcp"
+  ],
+  "char_count": 9633,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/",
+  "datePublished": "2026-07-13",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "генерация картинок через MCP",
+    "обложка в Cursor без Midjourney",
+    "кириллица на кадре",
+    "один кадр в папке проекта"
+  ],
+  "meta_ab": {
+    "title_seo": "Нейросеть для картинок в Cursor через MCP: обложка без Midjourney",
+    "title_ctr": "Очередь Midjourney и Canva? Один MCP-кадр в проекте",
+    "title_aeo": "Как генерировать картинки в Cursor через MCP?",
+    "description_seo": "Зелёный MCP, бриф формата и ratio, один кадр с кириллицей и вырезка фона. Файл сразу в проекте.",
+    "description_ctr": "Текст поста готов, картинки нет? Соберите обложку в Cursor через MCP за вечер.",
+    "description_aeo": "MCP vs Midjourney: когда нужен кадр в папке, как снять фон и проверить кириллицу."
+  }
+}

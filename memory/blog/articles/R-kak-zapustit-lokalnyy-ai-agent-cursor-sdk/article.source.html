@@ -1,0 +1,83 @@
+<p>Чтобы запустить локальный ai агент через Cursor SDK, положите ключ в переменную окружения, поставьте Node.js 22.13+ и пакет <b>@cursor/sdk</b>, затем одним скриптом вызовите <b>Agent.create</b> с режимом <b>local</b> и узким заданием: «напиши один файл в эту папку». Так вы экономите время на рутине «открыл IDE → скопировал ответ»: в папке появится бриф или черновик поста — без кнопки Automations и без сборки офлайн-модели.</p>
+<p><b>SDK</b> здесь — библиотека для вашего скрипта: тот же <a href="/roli-subagentov-cursor-orchestrator/">агент Cursor</a>, только из терминала. Критерий готово — файл на диске, например <b>brief.md</b>. «Локальный» в docs Cursor — не <a href="/ollama-lokalnaya-llm-dlya-biznesa/">Ollama</a> и не модель без интернета: цикл агента и файлы живут на вашем ПК, а ответы модели идут через облако Cursor.</p>
+<h2>Перед первой строкой кода</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-zapustit-lokalnyy-ai-agent-cursor-sdk-inline-01.jpg" alt="Схема-сравнение: чат IDE vs Ollama vs Cursor SDK local перед первой строкой кода" loading="lazy"><br />
+</figure>
+<p>Вам нужен аккаунт Cursor с рабочим API-доступом (часто это Pro или корпоративный доступ), интернет и отдельная папка под эксперимент. Один ключ <b>CURSOR_API_KEY</b> подходит и для local, и для cloud-режима в SDK.</p>
+<p>Я бы не начинал с облачной VM, пачки вложенных агентов и кастомных инструментов. Для первого прогона хватает одного файла-скрипта и одного артефакта. Сравнение Cloud / Automations / SDK оставьте на потом — сейчас цель проще: ключ в env, пакет установлен, файл появился.</p>
+<h2>Ключ: Dashboard → env, не в код</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-zapustit-lokalnyy-ai-agent-cursor-sdk-inline-02.jpg" alt="Схема: ключ из Dashboard в env, не в код и не в git" loading="lazy"><br />
+</figure>
+<p>Откройте Cursor Dashboard → раздел API Keys и создайте пользовательский ключ (или ключ service account). Ключи Team Admin в SDK пока не поддерживаются — если авторизация падает «странно», проверьте тип ключа, а не только баланс.</p>
+<p>В терминале задайте переменную: <i>export CURSOR_API_KEY=&#187;ваш_ключ&#187;</i>. Либо положите ключ в файл <b>.env</b> рядом со скриптом и не коммитьте его: добавьте <b>.env</b> в <b>.gitignore</b>. Ключ в чате, в скриншоте и в репозитории — это уже инцидент, а не «удобный старт».</p>
+<p>Проверка: в открытом коде и в истории git строки с ключом нет. Если сомневаетесь — отзовите ключ в Dashboard и выпустите новый.</p>
+<h2>Node и пакет @cursor/sdk</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-zapustit-lokalnyy-ai-agent-cursor-sdk-inline-03.jpg" alt="Чеклист: Node 22.13+ и установка пакета @cursor/sdk" loading="lazy"><br />
+</figure>
+<p>Проверьте версию: команда <i>node -v</i> должна показать <b>22.13+</b>. Ниже — обновите Node, иначе установка или импорт пакета могут вести себя непредсказуемо.</p>
+<p>Создайте папку проекта (лучше пустую маркетинговую, не прод-репозиторий), зайдите в неё и выполните по очереди: <i>npm init -y</i>, затем <i>npm install @cursor/sdk</i>.</p>
+<p>На момент проверки документации (июль 2026) актуальный npm latest пакета — <b>1.0.24</b>. Если что-то падает на моделях или auth, сначала обновите пакет, потом ищите «SDK сломан».</p>
+<p>Официальный быстрый старт лежит в репозитории <a rel="noopener noreferrer" target="_blank" href="https://github.com/cursor/cookbook">cursor/cookbook</a> — можно свериться с примерами; для первого файла достаточно своего скрипта ниже.</p>
+<h2>Один скрипт run-agent.mjs</h2>
+<p>Создайте файл <b>run-agent.mjs</b> (модуль ESM). <b>cwd</b> — папка проекта, в которой агент читает и пишет файлы. Модель в примере — <b>composer-2.5</b>: старые id вроде composer-2 / composer-2-fast по changelog Cursor перенаправляются на Composer 2.5, но в новом коде лучше сразу писать актуальный id.</p>
+<blockquote>
+<p>import { Agent } from &#171;@cursor/sdk&#187;;</p>
+<p>const agent = await Agent.create({<br />
+&nbsp;&nbsp;apiKey: process.env.CURSOR_API_KEY,<br />
+&nbsp;&nbsp;model: { id: &#171;composer-2.5&#187; },<br />
+&nbsp;&nbsp;local: { cwd: process.cwd() },<br />
+});</p>
+<p>const run = await agent.send(<br />
+&nbsp;&nbsp;&#171;Создай в текущей папке файл brief.md: короткий бриф на пост про пользу локального агента Cursor из скрипта. Только этот файл, без лишних правок.&#187;<br />
+);</p>
+<p>for await (const event of run.stream()) {<br />
+&nbsp;&nbsp;if (event.type === &#171;assistant&#187;) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;process.stdout.write(event.message ?? &#171;&#187;);<br />
+&nbsp;&nbsp;}<br />
+}</p>
+</blockquote>
+<p>Запустите: <i>node run-agent.mjs</i>. В консоли пойдёт поток ответа. За вечер цель одна: в той же папке появился <b>brief.md</b> (или тот файл, который вы назвали в задании). Пока файла нет — результат не закрыт, даже если в терминале красивый текст. Получите файл — сможете повторять бриф без копипаста из чата.</p>
+<p>Sandbox по умолчанию выключен: вызовы инструментов (запись файла, shell) идут без вашего ручного подтверждения на каждый шаг. Поэтому на первом прогоне — узкая папка и узкий промпт, а не «почисть весь репозиторий».</p>
+<h2>Критерий «получилось» и типичные ошибки</h2>
+<p>На практике результат закрыт, если в папке есть файл от агента. Откройте папку проекта и убедитесь:</p>
+<ol>
+<li>есть новый файл-артефакт от агента;</li>
+<li>ключ не лежит в git и не зашит в код;</li>
+<li>вы можете вслух сказать: local = агент и файлы на ПК, ответы модели — через облако Cursor, не офлайн-LLM.</li>
+</ol>
+<p>Типичная ошибка новичка — решить, что «SDK сломан», когда падает auth / 403 при проверке моделей (в сообществе на Free часто ломается вызов <b>/v1/models</b> при local create). Проверьте по списку:</p>
+<ul>
+<li>проверьте, что план и API-доступ реально позволяют SDK, а не только чат в IDE;</li>
+<li>обновите <b>@cursor/sdk</b>;</li>
+<li>убедитесь, что <b>CURSOR_API_KEY</b> виден процессу (команда <i>echo $CURSOR_API_KEY</i> не пустая);</li>
+<li>не используйте Team Admin key.</li>
+</ul>
+<p>Если агент долго простаивал (порядка 15 минут), community фиксирует <b>AuthenticationError</b> вместо сетевой ошибки: создайте агента заново или resume по документации, не ждите «само оживёт».</p>
+<p>Расход токенов идёт в те же пулы usage, что IDE и Cloud Agents, с тегом SDK в dashboard. Перед длинными прогонами имеет смысл глянуть лимит расходов — для одного brief.md это обычно не драма, для цикла на весь диск уже да.</p>
+<h2>Не тащите на старте</h2>
+<p>Не путайте этот маршрут с кнопкой Automations в интерфейсе и с Cloud Agents в удалённой машине: здесь ваш скрипт дергает агента на локальных файлах. Не подменяйте задачу установкой Ollama «без интернета» — это другой продукт и другой критерий готово.</p>
+<p>Вложенные агенты, кастомные инструменты и «офис страниц» — следующий слой после того, как один файл стабильно появляется по команде. Иначе вы отлаживаете архитектуру, ещё не закрыв ключ и cwd.</p>
+<p>Я бы оставил песочницу и автопроверку инструментов на второй проход: сначала докажите себе путь «ключ → npm → файл», потом уже ужесточайте политику инструментов.</p>
+<h2>После первого файла</h2>
+<p>Когда brief.md лежит в папке, можно решать, нужен ли вам UI Automations, облачный агент или остаётесь на скрипте на своём ПК. Для выбора режима — <a href="/kak-vybrat-cloud-agents-automations-sdk-cursor/">Cloud Agents, Automations и SDK</a>; про интерфейс облака — <a href="/cursor-cloud-agents-avtomatizaciya/">гайд по Cloud Agents</a>. Если интересна экономика прогонов — <a href="/cursor-ekonomika-ai-agentov/">экономика AI-агентов в Cursor</a>. Это углубление после файла на диске, не условие старта.</p>
+<p>Практика по Cursor и агентам — в канале <a rel="noopener noreferrer" target="_blank" href="https://t.me/maya_pro">t.me/maya_pro</a> и в зеркале <a rel="noopener noreferrer" target="_blank" href="https://max.ru/maya_pro">max.ru/maya_pro</a>.</p>
+<blockquote>
+<p><b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank" rel="noopener">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).</p>
+<p><b>Опора на источники:</b> cursor.com/docs/sdk/typescript (Agent.create local/cloud, Node 22.13+, sandbox off, CURSOR_API_KEY); cursor.com/changelog/sdk-updates-jun-2026 (composer-2 → 2.5); npm @cursor/sdk 1.0.24 (июль 2026); github.com/cursor/cookbook; forum.cursor.com (Free 403 на /v1/models; idle ~15 мин → AuthenticationError); @maya_pro #1314; Яндекс Вордстат «локальный ai агент» = 183, «cursor sdk» = 34 на 21.07.2026.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Нужен ли интернет для «локального» агента Cursor SDK?</h3>
+<p>Да. Local в docs Cursor — про цикл агента и доступ к файлам на машине. Сама модель остаётся в облаке Cursor.</p>
+<h3>Чем это лучше чата в IDE?</h3>
+<p>Тем же агентом можно пользоваться из скрипта: повторять задачу, встроить в свой сценарий, не копировать ответ руками каждый раз. Для разового вопроса чат в IDE проще; для повторяемого брифа или черновика — скрипт.</p>
+<h3>Можно ли на Free-плане?</h3>
+<p>Не обещайте себе бесплатный старт без проверки. В сообществе Free иногда получает 403 на проверке моделей при local create. Рабочий путь — Pro или иной доступ, где API и список моделей реально открыты.</p>
+<h3>Нужен ли sandbox в первый день?</h3>
+<p>Не обязателен для старта. Важно сузить задачу («только файл X») и не запускать агента на всём продакшен-репозитории с широким промптом. Песочница и автопроверка инструментов — следующий слой контроля, когда сценарий уже живой.</p>
+<h3>Какую модель указать в коде?</h3>
+<p>Для нового скрипта берите <b>composer-2.5</b>. Старые id Composer 2 в changelog перенаправляют на 2.5, но явно актуальный id меньше путаницы при чтении кода через полгода.</p>
+<h3>Куда смотреть официальный пример?</h3>
+<p>Документация TypeScript SDK на <a rel="noopener noreferrer" target="_blank" href="https://cursor.com/docs/sdk/typescript">cursor.com/docs/sdk/typescript</a> и репозиторий <a rel="noopener noreferrer" target="_blank" href="https://github.com/cursor/cookbook">cookbook</a> на GitHub.</p>

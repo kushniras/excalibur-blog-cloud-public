@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-yadisk",
+  "slug": "yandeks-disk-api-make-kontent-zavod",
+  "title": "Яндекс Диск API в Make: склад медиа до автопоста",
+  "wp_post_id": 14402,
+  "primary_query": "яндекс диск api make",
+  "secondary_queries": [
+    "яндекс диск make.com",
+    "публичная ссылка диск api",
+    "склад медиа автопост"
+  ],
+  "char_count": 9018,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/yandeks-disk-api-make-kontent-zavod/",
+  "datePublished": "2026-07-18",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Яндекс Диск API в Make",
+    "склад медиа до автопоста",
+    "публичная ссылка Диска",
+    "контент-завод Make"
+  ],
+  "meta_ab": {
+    "title_seo": "Яндекс Диск API в Make: склад медиа до автопоста",
+    "title_ctr": "Снова копируете ссылку с Диска? Склад в Make за вечер",
+    "title_aeo": "Как подключить Яндекс Диск API к Make для контент-завода?",
+    "description_seo": "Папка, ключ, GET/PUT/publish и публичная ссылка в таблицу до автопоста. Без ручного браузера перед каждым постом.",
+    "description_ctr": "Обложки есть, а ссылку снова копируете руками? Соберите склад на Диске через Make.",
+    "description_aeo": "Яндекс Диск в Make: OAuth, 409, publish и когда API не нужен."
+  }
+}

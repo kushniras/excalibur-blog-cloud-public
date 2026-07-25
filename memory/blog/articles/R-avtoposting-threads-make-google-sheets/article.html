@@ -1,0 +1,122 @@
+<p>Олег скопировал "готовый" JSON из YouTube, вставил один HTTP в Make и ждал пост в Threads. Вместо ленты – ошибка контейнера. Три дня он снова публиковал с телефона: казалось, автопостинг в тредс "только для программистов". На деле не хватало второго шага и паузы. Ниже – таблица в Google Sheets и сценарий Make, чтобы за вечер увидеть тестовый текст в своём аккаунте.</p>
+<h2 id="constraints-threads">Когда автопостинг в Threads не включать</h2>
+<p>Если аккаунт не прогрет и нет ручных постов – очередь в Make рано. Если тексты сырые – сначала ручная выкладка. Типичная ошибка: одинаковые посты пачкой. На практике Sheets → один тестовый пост → лимит в день.</p>
+
+<p>На практике <a href="/otlozhennyj-posting-make-google-sheets/">очередь в Sheets</a> спасает от хаоса вкладок, но не от бана: одинаковые посты пачкой – типичная ошибка. Живой пример: один тестовый слот → проверка текста в Threads → только потом дневной лимит.</p>
+<blockquote><p>
+Суть простыми словами: официальный Threads API не умеет "одну кнопку Publish". Сначала создаёте черновик (контейнер), ждёте около 30 секунд, потом выкладываете. Сделайте строку со статусом "готово" в Google Sheets, два модуля HTTP из <a target="_blank" href="https://apps.make.com/http">apps.make.com/http</a> и Sleep между ними – и первый тестовый пост появится в ленте без кода и без VPS.
+</p></blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<p>Боль новичка понятна: токен Meta выглядит страшно, а холодный спам ссылок пугает баном. Ориентир на сегодня – один короткий текст без ссылки, зелёный History в Make и статус "опубликовано" в таблице. Картинки и карусели оставьте на потом.</p>
+<h2 id="pochemu-odin-http">Почему один HTTP не выкладывает тредс пост</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/avtoposting-threads-make-google-sheets-inline-01.jpg" alt="Сравнение: один HTTP против цепочки create → Sleep → publish для Threads" loading="lazy"><br>
+</figure>
+<p></p>
+<p>В реальном проекте люди ждут, что Make "нажмёт Publish" одним кубиком. В документации Meta иначе: сначала POST на создание контейнера, затем POST на <i>threads_publish</i> с id этого контейнера. Контейнер – черновик на стороне Meta. Publish – уже выложить в ленту. Пока черновик не обработан, второй запрос отвечает ошибкой – и кажется, что "API сломан".</p>
+<p>Важный факт для первых 30% чтения: в Threads API нет одной кнопки Publish. Официально всегда create → ждать ~30 секунд → publish. Плюс лимит 250 API-постов на профиль за скользящие 24 часа и long-lived токен примерно на 60 дней. Текст – до 500 символов. Не делайте пачку из десяти ссылок в первый вечер: сначала один безопасный тест без URL.</p>
+<p>На практике тот же Sheets→Make-паттерн уже есть для <a href="/avtoposting-instagram-make-google-sheets/">Instagram</a> и <a href="/avtoposting-max-make-google-sheets/">MAX</a>. Разница Threads – хост <i>graph.threads.net</i> и обязательные два шага. Избегайте гайдов, где показывают только один HTTP: типичная ошибка Олега. Конкуренты часто уводят в SaaS-календарь или VPS с Cron – вам для первого вечера это не нужно.</p>
+<h2 id="podgotovka-token-sheets">Подготовьте токен Meta и таблицу Google Sheets</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/avtoposting-threads-make-google-sheets-inline-02.jpg" alt="Скрин таблицы Google Sheets и карточки токена Meta для автопостинга в Threads" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Сделайте аккаунт Threads живым до автопоста. Если аккаунт свежий или долго молчал, сначала пройдите <a href="/progrev-akkauntov-pered-avtopostingom/">прогрев аккаунта</a> – это снимает страх "сломаю баннером ссылок".</p>
+<ol>
+<li>шаг 1: в Meta Developers создайте приложение с продуктом Threads API;</li>
+<li>шаг 2: выдайте права <i>threads_basic</i> и <i>threads_content_publish</i>;</li>
+<li>шаг 3: получите user token и обменяйте short-lived (около часа) на long-lived (около 60 дней);</li>
+<li>шаг 4: сохраните токен только в connection Make – не в чатах и не в публичной таблице;</li>
+<li>шаг 5: в Google Sheets заведите колонки <i>text</i>, <i>status</i>, <i>posted_at</i> (опционально <i>media_url</i>);</li>
+<li>шаг 6: добавьте одну тестовую строку: короткий текст без ссылки, статус <i>готово</i>, длина меньше 500 символов.</li>
+</ol>
+<p>Проверьте, что в строке нет "закрытого" Drive-URL для картинки. Для новичка старт – только TEXT: Meta сама скачивает IMAGE/VIDEO по публичному HTTPS, а "ссылка для себя" в Drive ломает пост. Используйте публичный URL только когда текст уже стабильно уходит. Карусель и видео оставьте вторым этапом – после зелёного текстового прогона.</p>
+<p>Например, текст "Тест автопоста из таблицы, день 1" – нормальный ориентир. Не вставляйте UTM и внешние ссылки в первый прогон; метки пригодятся позже по гайду <a href="/utm-metki-autoposting-make-google-sheets/">UTM для автопостинга</a>. Если токен внезапно "Authorization Failed", почти всегда истёк short-lived или забыли обновить long-lived в connection – это чинится за минуту, без пересборки всего сценария.</p>
+<h2 id="scenariy-make-two-http">Соберите workflow Make: два HTTP и Sleep</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/avtoposting-threads-make-google-sheets-inline-03.jpg" alt="Схема Make: два HTTP и Sleep между create и publish для Threads" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Откройте Make и соберите цепочку кубиков. Канон HTTP-модуля – <a target="_blank" href="https://apps.make.com/http">Make HTTP</a>; для соседних Telegram-сценариев удобен вход через <a target="_blank" href="https://apps.make.com/telegram">apps.make.com/telegram</a>. Не ведите читателя на www.make.com: боты часто ловят 403.</p>
+<ol>
+<li>Google Sheets → Watch Rows (или Search Rows) по листу с постами;</li>
+<li>Filter: только строки со статусом <i>готово</i>;</li>
+<li>HTTP #1: POST <i>https://graph.threads.net/v1.0/{threads-user-id}/threads</i> с полями <i>media_type=TEXT</i>, <i>text</i> из ячейки, <i>access_token</i>;</li>
+<li>Parse response и сохраните <i>id</i> контейнера;</li>
+<li>Sleep около 30 секунд (как рекомендует Meta);</li>
+<li>HTTP #2: POST <i>…/threads_publish</i> с <i>creation_id</i> = id контейнера;</li>
+<li>Google Sheets Update Row: статус <i>опубликовано</i>, <i>posted_at</i> = сейчас.</li>
+</ol>
+<p>Схема workflow одной строкой: Watch Rows → Filter "готово" → HTTP create → Sleep → HTTP publish → Update Row. Добавьте в scenario только одну тестовую строку, пока оба HTTP не станут зелёными. Уберите из первого прогона любые модули "рассылки пачкой" – они мешают увидеть ошибку контейнера. Часто ломается на мелочи: забыли <i>media_type=TEXT</i>, не передали <i>creation_id</i>, или Sleep стоит 5 секунд вместо ~30.</p>
+<p>Если не хотите собирать HTTP руками после первого успеха, в папке <a target="_blank" href="https://kv-ai.ru/blyuprinty-make-com-podpiska">блюпринтов Make</a> и в канале <a target="_blank" href="https://t.me/maya_pro">Ковчег</a> есть линейка Threads-модулей (#1177) и обновление авторизации (#1282), чтобы реже крутить токен каждые 60 дней. Но для обучения two-step руками полезнее: вы поймёте, где ломается "один HTTP". Open-source CLI и MCP вокруг Threads API тоже подтверждают ту же схему container → publish – это не "выдумка блога", а официальный поток Meta.</p>
+<h2 id="run-once-proverka">Прогоните Run once и зафиксируйте первый пост</h2>
+<p>Нажмите Run once на сценарии. Проверьте History: оба HTTP зелёные, между ними виден Sleep. Затем откройте приложение Threads – тестовый текст из строки таблицы должен быть в ленте. В таблице статус должен смениться на "опубликовано".</p>
+<p>Критерий успеха до FAQ: History зелёный на двух HTTP, статус в Sheets обновлён, пост виден в приложении, токен не светится в чатах, пауза ~30 с между create и publish есть. Если красный только второй HTTP – почти всегда рано нажали publish или забыли <i>creation_id</i>. Если красный первый – смотрите media_type, длину текста и токен.</p>
+<p>Сделайте второй прогон только после зелёного первого. Не делайте десять строк "готово" подряд в первый вечер: лимит 250/сутки щедрый, но платформа всё равно смотрит на поведение нового автопоста. Контент на неделю удобно держать в том же духе, что и <a href="/kontent-plan-google-sheets-make/">контент-план в Google Sheets</a>.</p>
+<h2 id="cheklist-zapuska">Чеклист запуска: не сожгите аккаунт автопостом</h2>
+<p>Перед регулярным автопостингом в тредс пройдите короткий чеклист. Он закрывает страх бана и типичные дыры YouTube-роликов.</p>
+<ul>
+<li>Первый пост – TEXT без ссылки; медиа – только после стабильного текста.</li>
+<li>Sleep ~30 с между create и publish; при серии постов – пауза и между строками.</li>
+<li>Long-lived токен в connection Make; календарь refresh на ~60 дней.</li>
+<li>Не копируйте URL www.make.com и help.make.com/http в сценарий – канон apps.make.com/http.</li>
+<li>Ссылки и UTM – после прогрева; одна таблица на несколько сетей возможна, но endpoints не смешивайте (см. также <a href="/avtoposting-telegram-vk-make-bez-koda/">Telegram+VK</a>).</li>
+<li>Стек Make vs n8n для маркетинга – отдельное сравнение: <a href="/make-ili-n8n-dlya-marketinga/">Make или n8n</a>.</li>
+</ul>
+<p>Избегайте "холодного" автопоста с пачкой внешних ссылок в день нулевой. Ориентир Meta: 250 API-постов / 24 ч – потолок, не план на спам. Используйте одну живую строку как контрольный образец каждую неделю, если меняли токен или модули.</p>
+<p>Олег после второго HTTP и Sleep перестал спорить с "сломанным API". Круг закрыт: не магия YouTube-JSON, а два шага и 30 секунд ожидания. Теперь у него в таблице статусы, а не хаос ручных копипастов с телефона. Если хотите разобрать Make глубже – первые уроки на <a target="_blank" href="https://kv-ai.ru/obuchenie-po-make">курсе Make.com</a>; для команды тот же курс удобен как база сценариев без VPS и без найма разработчика "на автопост".</p>
+<blockquote><p>
+<b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>
+<b>Опора на источники:</b> Meta Threads Posts / Overview / long-lived tokens (developers.facebook.com/docs/threads, 2026-07-17); Make HTTP – apps.make.com/http; сигналы GitHub saadiq/threads-cli, madebypan/threads-api-skill, baguskto/threads-mcp; частотность "автопостинг в тредс" и parent "тредс" – Яндекс Вордстат на 2026-07-17.
+</p></blockquote>
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Ручной пост</th>
+<th>Sheets + Make</th>
+<th>Отдельный SaaS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Старт за вечер</td>
+<td>Да, 1 пост</td>
+<td>Да, очередь</td>
+<td>Часто дольше из-за оплаты</td>
+</tr>
+<tr>
+<td>Контроль текста</td>
+<td>Полный</td>
+<td>Строка + превью</td>
+<td>Зависит от шаблона</td>
+</tr>
+<tr>
+<td>Риск бана</td>
+<td>Ниже при живом темпе</td>
+<td>Выше при пачке одинаковых</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>Когда выбирать</td>
+<td>Прогрев, первые посты</td>
+<td>Стабильная очередь</td>
+<td>Команда и много каналов</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Частые вопросы</h2>
+<h3>Есть ли готовый модуль Threads в Make или нужен HTTP?</h3>
+<p>Для новичка канон – HTTP через <a target="_blank" href="https://apps.make.com/http">apps.make.com/http</a>: так видно create → Sleep → publish. Когда two-step освоен, можно подключить кастомные Threads-модули из папки блюпринтов и постов канала (#1177).</p>
+<h3>Как получить токен Threads без программиста?</h3>
+<p>Зайдите в Meta Developers, создайте app с Threads API, выдайте <i>threads_basic</i> и <i>threads_content_publish</i>, сгенерируйте user token и обменяйте на long-lived (около 60 дней). Сохраните токен только в connection Make.</p>
+<h3>Чем автопостинг в тредс отличается от Instagram?</h3>
+<p>Паттерн таблицы тот же: статус "готово" → сценарий → "опубликовано". Отличие – endpoints на graph.threads.net и обязательные два HTTP плюс пауза ~30 с. Instagram-гайд: <a href="/avtoposting-instagram-make-google-sheets/">автопостинг Instagram через Sheets</a>.</p>
+<h3>Нужен ли прогрев перед автопостом?</h3>
+<p>Да, особенно перед ссылками. Сначала живой аккаунт и ручные ответы, потом один тестовый TEXT без URL, затем регулярный график. Подробный порядок – в материале про <a href="/progrev-akkauntov-pered-avtopostingom/">прогрев перед автопостингом</a>.</p>
+<h3>Можно ли брать текст из той же таблицы, что для VK и Telegram?</h3>
+<p>Да: отдельные колонки статуса или отдельные листы. Не мешайте publish-эндпоинты разных сетей в одном HTTP. Для связки TG+VK смотрите <a href="/avtoposting-telegram-vk-make-bez-koda/">автопостинг Telegram и VK</a>.</p>
+<h3>Почему картинка не уходит в пост?</h3>
+<p>Часто media_url закрыт или не HTTPS. Сделайте стабильный TEXT, затем IMAGE только с публичным URL, который Meta может скачать сама. Drive "для себя" – типичная ошибка.</p>

@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/opisanie-tovara-nejroset-cursor/#webpage",
+      "url": "https://mayai.ru/opisanie-tovara-nejroset-cursor/",
+      "name": "Описание товара нейросеть: карточка в поиске WB, не вода из чата",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Характеристики из брифа, структура карточки и проверка на маркетплейсе. Без выдуманных %."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/opisanie-tovara-nejroset-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/opisanie-tovara-nejroset-cursor/#webpage"
+      },
+      "headline": "Описание товара нейросеть: карточка в поиске WB, не вода из чата",
+      "description": "Характеристики из брифа, структура карточки и проверка на маркетплейсе. Без выдуманных %.",
+      "datePublished": "2026-07-18",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/opisanie-tovara-nejroset-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/opisanie-tovara-nejroset-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/opisanie-tovara-nejroset-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли путь с Cursor селлеру без опыта разработки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Работаете с текстовыми файлами и Agent, не с кодом. Первый результат – один .md на диске. Карта кнопок – Cursor Junior на GitHub."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем этот способ лучше онлайн-генератора за 30 секунд?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Генератор даёт текст в чужом окне. Здесь черновик лежит у вас, правила повторяются, а факты вы задаёте до генерации. Скорость похожа, контроль выше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько символов писать для WB и для Ozon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Потолки площадок выше, но на практике берите 1500–3000 для WB и 2000–3500 для Ozon. Ориентир SEO-описания около 1500–1800, если не знаете, с чего начать."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если модель снова выдумала характеристику?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте product-facts.md: правило \"не добавляй от себя\" должно быть в файле и в запросе. Уберите выдумку, исправьте черновик, только потом кабинет. Без жёстких фактов галлюцинации вернутся."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Skill с первого дня?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала один удачный cards/ -wb.md вручную. Skill имеет смысл, когда процесс уже понятен и вы хотите ускорить следующие артикулы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Стоит ли сразу заливать описания в кабинет без ручной вычитки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала текст и чеклист глазами. Автозаливка через API или community MCP к Seller API – next-step после стабильного шаблона, не замена фактчека."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли тот же файл под WB и Ozon без правок?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "База фактов общая, но лимиты и плотность ключей разные. Держите отдельные cards/ -wb.md и -ozon.md или явно просите Agent адаптировать длину под площадку."
+          }
+        }
+      ]
+    }
+  ]
+}

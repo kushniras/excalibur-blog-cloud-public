@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/#webpage",
+      "url": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/",
+      "name": "Нейросеть для создания видео: один MP4 9:16 ради охвата, не топ-15",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Сценарий → один вертикальный MP4 → проверка звука и субтитров. Без зоопарка сервисов."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/#webpage"
+      },
+      "headline": "Нейросеть для создания видео: один MP4 9:16 ради охвата, не топ-15",
+      "description": "Сценарий → один вертикальный MP4 → проверка звука и субтитров. Без зоопарка сервисов.",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли генерация ролика по тексту маркетологу без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Путь первого вечера – визуальный сценарий Make и модуль HeyGen: бриф, API-ключ, Run once, скачать MP4. Код и Cursor не обязательны для первого файла."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем генерация по тексту отличается от монтажа эфира?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Генерация берёт текст оффера и отдаёт новый MP4. Монтаж режет уже снятое длинное видео. Если эфир есть – откройте гайд по монтажу Reels; если только текст акции – оставайтесь здесь."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько ждать рендер и когда повторять Run once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дождитесь status completed или failed. Не спамьте create при processing. При failed проверьте кредиты, длину скрипта и доступ к audio_url, затем один ретрай."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли стартовать с бесплатного лимита и не слить кредиты?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно один короткий ролик 15–30 сек с готовым брифом. Не гоняйте десять аватаров \"на вкус\". Free tier и кредиты конечны – сначала качество оффера, потом объём."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли MCP-video, чтобы нейросеть сделала клип?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет для первого вечера. Mcp-video в этом репозитории – про посты WordPress. Генерацию клипа в Make даёт модуль HeyGen; MCP подключайте позже под автопост, если понадобится."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда отдать файл после проверки звука и оффера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В ручную выкладку Reels/Shorts или в соседний сценарий автопоста Shorts из Google Sheets. Раскадровку под живую съёмку подключайте только если решите снимать сами, а не генерировать."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/R-prodvizhenie-v-nejrosetyah-alisa-checklist",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 18,
+        "h2_sections": 6,
+        "faq_h3": 6,
+        "tables": 2,
+        "blockquotes": 4,
+        "ul_lists": 0,
+        "action_markers": 45,
+        "pain_markers": 5,
+        "outcome_markers": 8,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

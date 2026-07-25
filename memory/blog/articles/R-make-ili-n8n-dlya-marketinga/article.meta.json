@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-make-n8n",
+  "slug": "make-ili-n8n-dlya-marketinga",
+  "title": "N8n или make: чеклист выбора для маркетолога",
+  "wp_post_id": 14345,
+  "primary_query": "n8n или make",
+  "secondary_queries": [
+    "make vs n8n",
+    "что выбрать маркетологу",
+    "автоматизация сравнение"
+  ],
+  "char_count": 8729,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/make-ili-n8n-dlya-marketinga/",
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Make или n8n",
+    "чеклист выбора",
+    "не оба сразу",
+    "стек на квартал"
+  ],
+  "meta_ab": {
+    "title_seo": "N8n или Make: чеклист выбора для маркетолога",
+    "title_ctr": "Два инструмента – двойная боль. Выберите один",
+    "title_aeo": "Что выбрать маркетологу: Make или n8n?",
+    "description_seo": "Критерии: self-host, привычка команды, сложность сценария. Один стек на квартал.",
+    "description_ctr": "Не мигрируйте рабочий Make без причины.",
+    "description_aeo": "Make vs n8n: таблица, когда self-host, типичные ошибки выбора."
+  }
+}

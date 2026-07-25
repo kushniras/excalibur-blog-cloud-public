@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-lending",
+  "slug": "cursor-ai-lending-bez-koda",
+  "title": "Cursor AI сайт: лендинг без кода за один вечер",
+  "wp_post_id": 13856,
+  "primary_query": "cursor ai сайт",
+  "secondary_queries": [
+    "лендинг без кода cursor",
+    "vercel drop лендинг",
+    "landing.mdc cursor"
+  ],
+  "char_count": 9585,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/cursor-ai-lending-bez-koda/",
+  "datePublished": "2026-06-28",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "лендинг в Cursor без кода",
+    "landing.mdc",
+    "Vercel Drop",
+    "Formspree заявка"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor AI сайт: лендинг без кода за один вечер",
+    "title_ctr": "Боитесь npm и React? Лендинг в Cursor без терминала",
+    "title_aeo": "Как сделать лендинг в Cursor AI без кода?",
+    "description_seo": "Правило landing.mdc, один index.html, Formspree и Vercel Drop. Без npm и чёрного терминала.",
+    "description_ctr": "Agent снова тащит React? Заблокируйте стек правилом и соберите статику за вечер.",
+    "description_aeo": "Лендинг Cursor: Tailwind CDN, Formspree, Vercel Drop и чек-лист запуска."
+  }
+}

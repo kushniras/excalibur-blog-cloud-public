@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/stranica-otzyvov-cursor-ai/#webpage",
+      "url": "https://mayai.ru/stranica-otzyvov-cursor-ai/",
+      "name": "Добавить отзывы на сайт: страница reviews.html в Cursor без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Реальные отзывы с контекстом на reviews.html. Без фейковых цитат и звёзд."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/stranica-otzyvov-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/stranica-otzyvov-cursor-ai/#webpage"
+      },
+      "headline": "Добавить отзывы на сайт: страница reviews.html в Cursor без кода",
+      "description": "Реальные отзывы с контекстом на reviews.html. Без фейковых цитат и звёзд.",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/stranica-otzyvov-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/stranica-otzyvov-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/stranica-otzyvov-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько отзывов достаточно, чтобы добавить отзывы на сайт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На старте поставьте 4–6 реальных карточек. Этого хватает для первого скачка доверия. Дальше копите до 10–12, чтобы страница выглядела \"серьёзнее\". Не раздувайте блок фейками."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли вставить виджет Яндекс отзывов вместо своих карточек?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно технически, но не делайте так на старте. Сначала свои тексты и CTA в мессенджер, виджет Карт – опциональный блок ниже. Так вы не отдаёте тон страницы чужому iframe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли фото клиентов на странице отзывов компании?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Имя, результат, цитата и звёзды уже работают. Фото добавляйте только с явного разрешения. Без разрешения лучше текстовая карточка."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли npm или React, чтобы сделать страницу отзывов в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Зафиксируйте reviews.mdc, соберите один reviews.html с Tailwind CDN и открывайте файл двойным кликом. Если агент создал package.json – удалите лишнее и повторите промпт \"single static HTML\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как опубликовать reviews.html без GitHub?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Перетащите всю папку сайта на vercel.com/drop, укажите index.html как root и откройте /reviews.html по выданной ссылке. Проверьте открытие со смартфона."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если на телефоне карточки \"плывут\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Попросите Agent поставить сетку в один столбец на узком экране и две колонки на широком. Для iframe Яндекса задайте width 100% и ограничение max-width. Обновите страницу и перепроверьте чеклист."
+          }
+        }
+      ]
+    }
+  ]
+}

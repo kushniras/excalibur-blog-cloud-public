@@ -1,0 +1,111 @@
+<p>Если непонятно, куда в Cursor положить плагин Excalibur, и страшно сразу выкладывать текст в WordPress – маршрут такой: скачать репозиторий с GitHub, подключить через Customize или папку локальных плагинов, сделать Reload Window, запустить прогон с publish: no и проверить, что в папке темы появились research-notes и черновик. На сайт ничего не уходит, пока вы сами не разрешите публикацию.</p>
+<h2 id="constraints-excalibur">Когда Excalibur автоблог не запускать</h2>
+<p>Если нет темы и research – пайплайн выдаст воду. Если нужен один пост вручную – не поднимайте весь конвейер. Типичная ошибка: skip research gate и сразу writer. На практике research PASS → черновик → QA, без публикации наугад.</p>
+
+<p>Это не "ТОП-15 нейросетей для блога" и не простыня из одного Composer "напиши статью на 3000 знаков". Роли идут по очереди: research сначала кладёт факты в файл, потом пишется черновик. Публикация – только после того, как вы открыли файлы и прочитали текст.</p>
+<p>В реальном проекте боль – вода из чата без research. Типичная ошибка: пропустить gate и сразу просить статью. На практике сначала research PASS, потом writer; результат – article.html с проверяемыми фактами, не абзац из воздуха.</p>
+<blockquote>
+<p>Критерий готово: команда <i>/excalibur-blog-run … publish: no</i> (или явная фраза "без публикации") дала папку темы с <i>research-notes.md</i> и черновиком / <i>article.html</i>; роли не перетирают чужие файлы; в WordPress ничего не ушло.</p>
+</blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<h2>Что ставите и чем это не рейтинг SaaS</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-ustanovit-excalibur-avtoblog-cursor-inline-01-1.jpg" alt="Схема сравнения: рейтинг SaaS против плагина Excalibur и роя ролей" loading="lazy"><br>
+</figure>
+<p>Excalibur – публичный Cursor-плагин автоблога из репозитория <a href="https://github.com/Horosheff/EXCALIBUR" target="_blank">Horosheff/EXCALIBUR</a> (на 2026-07-23: ★23, последний push 2026-06-11, ветка master). В манифесте plugin.json имя <b>excalibur-blog</b>, версия <b>0.2.1</b>: подключаются rules, skills, agents и commands.</p>
+<p>Плагин – это папка с инструкциями, которую Cursor подхватывает после перезагрузки окна. Субагент – отдельная роль со своим контекстом (research, черновик, проверка), а не "ещё один промпт в том же чате". Рой здесь значит несколько таких ролей вместо одного Composer "напиши статью на 3000 знаков".</p>
+<p>В выдаче по "ии для блога" почти сплошь рейтинги сервисов. Готовый how-to установки роя в Cursor почти не разобран. Я бы не начинал со сравнения Jasper и подписок за $150/мес: сначала один плагин и один сухой прогон до файлов.</p>
+<p>Анонс в канале: <a href="https://t.me/maya_pro/1327" target="_blank">пост про Excalibur</a> – GitHub и порядка десяти субагентов. Разбор "зачем рой вместо одного агента" – в <a href="https://t.me/maya_pro/1337" target="_blank">посте про рои</a>; саммит смотреть не обязательно.</p>
+<h2>Шаг 1. Две вкладки GitHub</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-ustanovit-excalibur-avtoblog-cursor-inline-02-1.jpg" alt="Схема двух вкладок GitHub: EXCALIBUR и cloud-public с README" loading="lazy"><br>
+</figure>
+<p>Откройте канон: <a href="https://github.com/Horosheff/EXCALIBUR" target="_blank">github.com/Horosheff/EXCALIBUR</a>. Параллельно держите <a href="https://github.com/Horosheff/excalibur-blog-cloud-public" target="_blank">Horosheff/excalibur-blog-cloud-public</a> (★16): там полный README быстрого старта. В самом EXCALIBUR README на raw часто нет – новичок без второй вкладки застревает на пустой главной.</p>
+<p>Скачайте архив или клонируйте репозиторий плагина. Цель – локальная копия с .cursor-plugin и каталогами agents, skills, commands. Секреты WordPress и ключи в чат не пишите: для первого прогона они не нужны.</p>
+<h2>Шаг 2. Куда положить плагин</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-ustanovit-excalibur-avtoblog-cursor-inline-03-1.jpg" alt="Чеклист: Customize или local/excalibur-blog, имя из plugin.json" loading="lazy"><br>
+</figure>
+<p>По <a href="https://cursor.com/docs/plugins" target="_blank">документации Cursor Plugins</a> есть два рабочих пути:</p>
+<ul>
+<li>подключить плагин через страницу Customize в Cursor;</li>
+<li>положить копию в локальную папку плагинов: обычно ~/.cursor/plugins/local/excalibur-blog (или путь из README cloud-public, если он указан иначе).</li>
+</ul>
+<p>Имя папки лучше совпасть с name из plugin.json – <b>excalibur-blog</b>. Не раскладывайте файлы "куда попало" по корню проекта сайта: плагин живёт в зоне plugins Cursor, а статья потом появится в папке темы блога.</p>
+<p>Я бы не ставил рядом Hyperion, TEYA, AURA или офис веб-страниц "на всякий случай". Один рой – один критерий готовности. Соседние install-рои – после того, как этот dry-run дал файлы.</p>
+<h2>Шаг 3. Reload и проверка, что агенты видны</h2>
+<p>В Cursor: Developer → Reload Window (или Restart, как в вашей версии). После перезагрузки откройте Customize / список агентов и команд.</p>
+<p>Критерий "плагин встал":</p>
+<ul>
+<li>виден Excalibur / excalibur-blog;</li>
+<li>или в дереве проекта/плагина видны файлы .cursor/agents/ из поставки.</li>
+</ul>
+<p>Кастомные <a href="/roli-subagentov-cursor-orchestrator/">субагенты Cursor</a> живут в .cursor/agents/ и работают с отдельным контекстом – так описано в <a href="https://cursor.com/docs/agent/subagents" target="_blank">доках Subagents</a>. Если после Reload пусто: проверьте путь local, имя папки, что манифест .cursor-plugin/plugin.json на месте, снова Reload. Не гоните команду запуска, пока агенты не видны – получите хаос в чате, а не рой.</p>
+<h2>Шаг 4. Одна ниша и команда с publish: no</h2>
+<p>Подготовьте отдельную папку проекта под один сайт или одну нишу. Выберите одну тему – не план на квартал.</p>
+<p>Команда запуска в плагине: <b>/excalibur-blog-run</b>. Важно: по умолчанию в commands/excalibur-blog-run.md стоит publish: yes. Для первого прогона явно пишите <b>publish: no</b> (или фразу "без публикации"). Пример смысла запроса: /excalibur-blog-run topic_id: одна-тема publish: no.</p>
+<p>Dry-run здесь – прогон пайплайна без выкладки на сайт. Секреты, если позже понадобятся, только в Dashboard / переменных окружения, не в переписке с агентом.</p>
+<p>Я бы не обещал WordPress "сразу после установки". Сначала файлы и ручной просмотр. Publish + <a href="/vnutrennyaya-perelinkovka-statej-kontent-zavod/">перелинковка</a> + Cloud Automations 24/7 – следующий контур, не цель установки.</p>
+<h2>Шаг 5. Что проверить, когда прогон закончился</h2>
+<p>Откройте папку темы вида memory/blog/articles/{topic_id}-…/ и найдите:</p>
+<ol>
+<li><b>research-notes.md</b> – бриф с фактами и источниками, не вода из одного ответа чата;</li>
+<li>черновик или <b>article.html</b> – текст статьи после ролей, а не сырой dump Composer.</li>
+</ol>
+<p>Дополнительно: роли не должны перетирать чужие файлы посередине прогона; в админке WordPress новых постов от этого прогона быть не должно.</p>
+<p>Получилось <b>за вечер</b>, если одновременно: после Reload виден Excalibur, команда с publish: no отработала, research-notes и черновик лежат локально, WordPress пуст. Не получилось = нет папки темы, нет research-notes, или плагин так и не появился после Reload – возвращайтесь к шагам 2–3, не к "ещё одному промпту напиши статью".</p>
+<h2>Частые сбои по пути</h2>
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Что сделать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>После Reload нет Excalibur</td>
+<td>Проверить ~/.cursor/plugins/local/excalibur-blog и plugin.json; снова Reload Window</td>
+</tr>
+<tr>
+<td>В EXCALIBUR пусто без README</td>
+<td>Открыть README в excalibur-blog-cloud-public и идти по нему</td>
+</tr>
+<tr>
+<td>Текст "уехал" на сайт</td>
+<td>В команде не было publish: no; следующий прогон только с явным запретом публикации</td>
+</tr>
+<tr>
+<td>Вода без источников</td>
+<td>Смотреть, был ли этап research и файл research-notes; один чат Composer – не замена рою</td>
+</tr>
+<tr>
+<td>Путаница с другими роями</td>
+<td>В первый вечер только Excalibur; Ядрышко и офис страниц – после dry-run до файлов</td>
+</tr>
+</tbody>
+</table>
+<h2>Что не смешивать с установкой</h2>
+<p>Не цель установки: рейтинг SaaS "нейросеть для блога", абстрактный контент-завод без плагина, одна ручная статья в чате Cursor, перелинковка <a href="/indexnow-yandex-make/">IndexNow</a>, круглосуточные Cloud Automations. Не ставьте соседние плагины, пока нет research-notes и черновика от Excalibur.</p>
+<p>Если нужна общая логика плагинов Cursor или установка SEO-ядра – это углубление после результата, не prerequisite. Короткие next-step: <a href="/plaginy-cursor-ai-marketing/">плагины Cursor для маркетинга</a>, <a href="/kak-ustanovit-yadryshko-seo-subagent-cursor/">установка Ядрышко</a>, <a href="/napisat-statyu-nejrosetyu-cursor/">одна статья нейросетью в Cursor</a>.</p>
+<h2>Критерий готово и куда писать</h2>
+<p>Линейный чеклист без веток: GitHub EXCALIBUR (+ вкладка cloud-public) → Customize или local/excalibur-blog → Reload → агенты видны → /excalibur-blog-run … publish: no → research-notes + черновик на диске → WordPress пуст. Секреты не в чате. Publish откладываете до ручной вычитки.</p>
+<p>Разборы и обновления по роям – в сообществе: <a href="https://t.me/maya_pro" target="_blank">t.me/maya_pro</a> и <a href="https://max.ru/maya_pro" target="_blank">max.ru/maya_pro</a>. Курс по автоматизации на Make – по желанию отдельно на <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">kv-ai.ru/obuchenie-po-make</a>; для установки Excalibur он не нужен.</p>
+<blockquote><p>
+  <b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>
+  <b>Опора на источники:</b> GitHub Horosheff/EXCALIBUR (plugin.json v0.2.1, commands/excalibur-blog-run.md), Horosheff/excalibur-blog-cloud-public, документация Cursor Plugins и Subagents, пост <a href="https://t.me/maya_pro/1327" target="_blank">t.me/maya_pro/1327</a>. Проверено 2026-07-23.
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Нужен ли доступ к WordPress в первый прогон?</h3>
+<p>Нет. Цель – локальные research-notes и черновик при publish: no. Доступ к сайту подключайте после ручной проверки текста.</p>
+<h3>Почему две ссылки на GitHub?</h3>
+<p>EXCALIBUR – канон плагина из анонса. excalibur-blog-cloud-public даёт читаемый README быстрого старта, когда в каноне README нет.</p>
+<h3>Чем это лучше одного чата "напиши статью"?</h3>
+<p>Роли разделены: research собирает факты в файл, затем пишется черновик. Один Composer смешивает всё в одном контексте и чаще выдаёт воду без источников – это как раз боль, из которой люди ищут "ии для блога".</p>
+<h3>Можно ли сразу поставить Ядрышко или офис страниц?</h3>
+<p>Технически да, практически я бы не стал: смешаете критерий "готово" и отладку. Сначала один dry-run Excalibur до файлов статьи.</p>
+<h3>Это только для программистов?</h3>
+<p>Маршрут тот же, что у других готовых плагинов Cursor: скачать → положить → Reload → одна команда. Код с нуля писать не нужно. Нужны Cursor, GitHub и готовность проверить папку с файлами.</p>
+<h3>Можно ли пропустить research gate?</h3>
+<p>Нет. Без PASS research writer не должен стартовать – иначе получите воду и выдуманные цифры. Сначала research-notes-gate.json PASS.</p>

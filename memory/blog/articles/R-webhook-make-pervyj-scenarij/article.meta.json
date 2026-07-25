@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-webhook-make",
+  "slug": "webhook-make-pervyj-scenarij",
+  "title": "Webhook в Make: первый сценарий для заявок за вечер",
+  "wp_post_id": 14383,
+  "primary_query": "webhook make",
+  "secondary_queries": [
+    "custom webhook make",
+    "заявки webhook",
+    "первый сценарий make"
+  ],
+  "char_count": 9484,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/webhook-make-pervyj-scenarij/",
+  "datePublished": "2026-07-17",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "первый webhook в Make",
+    "Custom Webhook",
+    "тест payload",
+    "заявка в Sheets"
+  ],
+  "meta_ab": {
+    "title_seo": "Webhook в Make: первый сценарий для заявок за вечер",
+    "title_ctr": "Форма есть, а в таблице пусто? Соберите webhook",
+    "title_aeo": "Как настроить первый webhook в Make?",
+    "description_seo": "Custom Webhook, один модуль и проверка payload. Без пустого хука без источника.",
+    "description_ctr": "Нужен сигнал в сценарий. Сделайте тест и запись в Sheets.",
+    "description_aeo": "Webhook Make: шаги, Test и типичные ошибки новичков."
+  }
+}

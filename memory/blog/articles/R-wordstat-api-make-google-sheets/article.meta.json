@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-wordstat-api",
+  "slug": "wordstat-api-make-google-sheets",
+  "title": "Вордстат API в Make: частотности в Google Sheets за вечер",
+  "wp_post_id": 14318,
+  "primary_query": "вордстат api",
+  "secondary_queries": [
+    "wordstat make",
+    "частотности sheets",
+    "api вордстат"
+  ],
+  "char_count": 9550,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/wordstat-api-make-google-sheets/",
+  "datePublished": "2026-07-15",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Wordstat API в Make",
+    "частотности в Sheets",
+    "5–15 фраз",
+    "не тысяча строк"
+  ],
+  "meta_ab": {
+    "title_seo": "Вордстат API в Make: частотности в Google Sheets",
+    "title_ctr": "Ручной Wordstat надоел? Частотности в Sheets",
+    "title_aeo": "Как выгрузить Wordstat API в Google Sheets через Make?",
+    "description_seo": "Make → Sheets → приоритетные фразы. Без выгрузки тысяч строк без кластера.",
+    "description_ctr": "Нужны цифры под страницу, не бесконечная таблица.",
+    "description_aeo": "Wordstat API: доступ, сценарий Make, лимиты и ошибки."
+  }
+}

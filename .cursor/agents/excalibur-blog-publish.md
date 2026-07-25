@@ -56,9 +56,11 @@ incident_report: none | memory/pipeline-fix-queue.md#INC-...
 ## Preconditions
 
 - `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` в Cloud Secrets / env vars или `memory/site.env.local`
+- Также обязательны: `PUBLIC_SITE_URL`, `SSH_HOST`, `SSH_USER`, `SSH_PASS`/`SSH_PASSWORD` (и обычно `SSH_ROOT`)
 - QA PASS, cover, schema, indexer — уже выполнены директором
+- Сначала: `python3 scripts/excalibur_blog_wp_publish.py --env-check`
 
-Если allow flag ≠ yes → **`❌ PUBLISH BLOCKER`** в handoff (шаг не skipped молча).
+Если allow flag ≠ yes **или** `--env-check` exit 1 / missing credentials → **`❌ PUBLISH BLOCKER`** в handoff (не silent skip, не угадывать доступы, ledger не трогать).
 
 ## Успех
 

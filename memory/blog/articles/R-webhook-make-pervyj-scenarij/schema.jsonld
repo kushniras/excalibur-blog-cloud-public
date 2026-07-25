@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/webhook-make-pervyj-scenarij/#webpage",
+      "url": "https://mayai.ru/webhook-make-pervyj-scenarij/",
+      "name": "Webhook в Make: первый сценарий для заявок за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Custom Webhook, один модуль и проверка payload. Без пустого хука без источника."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/webhook-make-pervyj-scenarij/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/webhook-make-pervyj-scenarij/#webpage"
+      },
+      "headline": "Webhook в Make: первый сценарий для заявок за вечер",
+      "description": "Custom Webhook, один модуль и проверка payload. Без пустого хука без источника.",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/webhook-make-pervyj-scenarij/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/webhook-make-pervyj-scenarij/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/webhook-make-pervyj-scenarij/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем webhook отличается от API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "API часто значит \"вы сами запрашиваете данные\". Webhook – событие пришло само на ваш URL. Для заявок с сайта удобнее входящий вебхук: форма дернула розетку, Make уже пишет строку."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое webhook URL и куда его вставлять?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это адрес из модуля Custom Webhook. Вставьте его в приёмник формы, Tilda (сервис WEBHOOK) или в Postman как URL для POST. Не публикуйте в открытых чатах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как создать вебхук в Make без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Новый сценарий → Webhooks → Custom Webhook → Add → скопируйте URL. Дальше Run once, тестовый POST, Determine structure, затем Sheets и Telegram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли принимать заявки с Tilda через webhook?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: HTTPS URL Make, чекбокс WEBHOOK в блоке формы, публикация страницы. Ответ уложится в лимит Tilda, если оставить стандартный 200 Accepted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему после теста в Make пусто?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте Run once / Listening, свежий POST без пробела в URL и появление полей структуры. Очередь в History без Determine structure не даст маппинг в Sheets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это отличается от бота заявок в Telegram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бот ждёт сообщение от человека. Custom Webhook ждёт POST с сайта. Если нужен диалог в мессенджере – берите гайд про бота; если лендинг шлёт заявку – этот сценарий."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли n8n, если есть Make webhook?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для MVP заявок → Sheets + Telegram достаточно Make. n8n (другой конструктор сценариев) имеет смысл при других ограничениях стека – см. сравнение Make и n8n по ссылке выше."
+          }
+        }
+      ]
+    }
+  ]
+}

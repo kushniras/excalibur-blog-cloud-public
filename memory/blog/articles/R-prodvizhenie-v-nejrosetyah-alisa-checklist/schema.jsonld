@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/#webpage",
+      "url": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/",
+      "name": "Как начать продвижение в нейросетях и попасть в ответы Алисы?",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Вечерний чеклист: индекс, извлекаемый FAQ, таблица цитат и отчёт видимости в Яндекс.Вебмастере. Без гарантий \"в Алису за сутки\"."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/#webpage"
+      },
+      "headline": "Как начать продвижение в нейросетях и попасть в ответы Алисы?",
+      "description": "Вечерний чеклист: индекс, извлекаемый FAQ, таблица цитат и отчёт видимости в Яндекс.Вебмастере. Без гарантий \"в Алису за сутки\".",
+      "datePublished": "2026-07-15T23:26:32",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "С чего начать продвижение в нейросетях новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте минимум: страница в индексе Яндекса, список из 5 запросов, H2-вопрос плюс FAQ на одной URL. Затем заполните таблицу \"цитируют / нет\" в Алисе и откройте раздел видимости в Вебмастере."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем GEO-продвижение в нейросетях отличается от SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO меряет позиции и клики. GEO смотрит, стали ли вы источником в нейроответе – часто при нулевом клике. На практике оба слоя нужны: без позиций Алисе не из чего цитировать сильные страницы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как попасть в ответы Алисы без агентства?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Отдельной кнопки сабмита нет. Усильте позиции, сделайте извлекаемый текст и проверяйте цитаты вручную плюс в Вебмастере. Агентство имеет смысл после своей таблицы, а не вместо неё."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли schema FAQPage для Алисы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это важно, но не магия. Сначала текст и структура; schema помогает машинам читать пары вопрос–ответ. Не делайте только разметку без нормального FAQ на странице."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Достаточно ли llms.txt, чтобы попасть в нейроответ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. llms.txt – бонусная карта для ИИ, не замена индекса и FAQ. Используйте его после критичного минимума; подробнее – в гайде по llms.txt для сайта ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что значит \"недостаточно данных\" в видимости Алисы AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По справке Яндекса так бывает, если мало данных, низкие позиции, мало текста или по вашим запросам редко бывает AI-ответ. Проверьте индекс и контент, вернитесь через неделю после обновления отчёта."
+          }
+        }
+      ]
+    }
+  ]
+}

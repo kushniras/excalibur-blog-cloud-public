@@ -1,0 +1,7276 @@
+{
+  "audited_at": "2026-07-25",
+  "source": "GEO_AI_SEO_MASTER_KNOWLEDGE_BASE_COLLIDER_EXPANDED_2026-07-19",
+  "target_site": "https://mayai.ru",
+  "scope_error": "WRONG TARGET — mayai.ru is plugin author demo site, not customer. Do not repeat. See shared/forbidden-target-sites.md",
+  "status": "archived_wrong_target",
+  "total_posts": 5122,
+  "gap_counts": {
+    "table": 4477,
+    "updated": 2969,
+    "steps": 2912,
+    "tldr_antipattern": 16,
+    "insight_box": 4193,
+    "lead": 555,
+    "h2": 696,
+    "author": 3609,
+    "faq": 3354,
+    "thin": 26
+  },
+  "kept_posts": 400,
+  "note": "Full per-post dump omitted; kept llms.txt + thin + score<=2 samples",
+  "posts": [
+    {
+      "id": 14628,
+      "slug": "kak-udalit-fon-nejrosetyu-mcp-cursor",
+      "modified": "2026-07-25",
+      "chars": 6852,
+      "h2": 8,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Удалить фон нейросеть: быстрее PNG для поста без срыва сроков"
+    },
+    {
+      "id": 14621,
+      "slug": "kak-proverit-limity-cursor-pered-agentami",
+      "modified": "2026-07-25",
+      "chars": 6431,
+      "h2": 6,
+      "score": 7,
+      "gaps": [
+        "steps",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Cursor лимиты: как не сжечь бюджет одним Agent"
+    },
+    {
+      "id": 14615,
+      "slug": "kak-nastroit-cursor-automations-po-webhook",
+      "modified": "2026-07-24",
+      "chars": 7418,
+      "h2": 7,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как сделать вебхук в Cursor: ответ на заявку без ручного чата"
+    },
+    {
+      "id": 14608,
+      "slug": "kak-nastroit-cursor-automations-po-raspisaniyu",
+      "modified": "2026-07-24",
+      "chars": 8311,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Cursor agent по расписанию: бриф к утру без ручного чата"
+    },
+    {
+      "id": 14601,
+      "slug": "kak-ustanovit-cursor-junior-nastavnik",
+      "modified": "2026-07-24",
+      "chars": 8178,
+      "h2": 8,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "Вайбкодинг обучение: быстрее старт с наставником в Cursor"
+    },
+    {
+      "id": 14594,
+      "slug": "kak-nastroit-avtoposting-telegram-cloud-agents",
+      "modified": "2026-07-23",
+      "chars": 7030,
+      "h2": 8,
+      "score": 7,
+      "gaps": [
+        "steps",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Автопостинг телеграм: поток новостей без ручного копипаста"
+    },
+    {
+      "id": 14582,
+      "slug": "kak-ustanovit-ofis-veb-stranits-cursor",
+      "modified": "2026-07-23",
+      "chars": 8465,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "ИИ для создания сайтов: трафик под ключ, не шаблон конструктора"
+    },
+    {
+      "id": 14570,
+      "slug": "kak-ustanovit-excalibur-avtoblog-cursor",
+      "modified": "2026-07-23",
+      "chars": 8013,
+      "h2": 10,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "ИИ для блога: трафик из research, не вода из чата"
+    },
+    {
+      "id": 14558,
+      "slug": "kak-ustanovit-giperion-reels-subagent-cursor",
+      "modified": "2026-07-22",
+      "chars": 9153,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "table"
+      ],
+      "tldr": false,
+      "title": "Нейросеть для монтажа рилс: охват из эфира без ночи в CapCut"
+    },
+    {
+      "id": 14551,
+      "slug": "kak-ustanovit-karuselka-instagram-subagent-cursor",
+      "modified": "2026-07-22",
+      "chars": 7659,
+      "h2": 10,
+      "score": 9,
+      "gaps": [
+        "steps"
+      ],
+      "tldr": false,
+      "title": "Карусели для инстаграм ии: 9 слайдов 3×3 и охват без Canva-ночи"
+    },
+    {
+      "id": 14533,
+      "slug": "kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "modified": "2026-07-22",
+      "chars": 7158,
+      "h2": 9,
+      "score": 9,
+      "gaps": [
+        "steps"
+      ],
+      "tldr": false,
+      "title": "ИИ для SEO без фантазии: трафик с url-map и живым Wordstat"
+    },
+    {
+      "id": 14526,
+      "slug": "kak-sohranit-kontekst-subagentov-cursor",
+      "modified": "2026-07-22",
+      "chars": 8234,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Контекстное окно нейросети: меньше рутины повторных брифов"
+    },
+    {
+      "id": 14520,
+      "slug": "kak-zapustit-lokalnyy-ai-agent-cursor-sdk",
+      "modified": "2026-07-21",
+      "chars": 7753,
+      "h2": 8,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Локальный ai агент без рутины чата: Cursor SDK пишет файл сам"
+    },
+    {
+      "id": 14513,
+      "slug": "kak-ustanovit-aura-dizajn-subagent-cursor",
+      "modified": "2026-07-21",
+      "chars": 8687,
+      "h2": 9,
+      "score": 7,
+      "gaps": [
+        "steps",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Своя страница по референсу без чужого шаблона: нейросеть для создания дизайна эк"
+    },
+    {
+      "id": 14507,
+      "slug": "kak-vybrat-cloud-agents-automations-sdk-cursor",
+      "modified": "2026-07-21",
+      "chars": 8208,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Лучшие AI агенты без зоопарка: один режим Cursor экономит время"
+    },
+    {
+      "id": 14500,
+      "slug": "kak-nastroit-ruleset-i-skill-cursor",
+      "modified": "2026-07-21",
+      "chars": 8743,
+      "h2": 6,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Настройка Cursor: меньше рутины — правило + skill"
+    },
+    {
+      "id": 14494,
+      "slug": "kak-podklyuchit-mcp-subagentam-cursor",
+      "modified": "2026-07-21",
+      "chars": 9258,
+      "h2": 7,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как подключить MCP сервер к роли Cursor: меньше рутины с вкладками"
+    },
+    {
+      "id": 14488,
+      "slug": "roli-subagentov-cursor-orchestrator",
+      "modified": "2026-07-20",
+      "chars": 9339,
+      "h2": 7,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Агент Cursor без хаоса: роли экономят время на правках"
+    },
+    {
+      "id": 14481,
+      "slug": "lidogeneraciya-make-telegram-cursor",
+      "modified": "2026-07-20",
+      "chars": 8690,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Лидогенерация без агентства: свой канал заявок до покупки CPL"
+    },
+    {
+      "id": 14475,
+      "slug": "rassylka-telegram-make-google-sheets",
+      "modified": "2026-07-20",
+      "chars": 9594,
+      "h2": 9,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Рассылка в телеграм через Make и Sheets — тёплые в личку, не копипаст"
+    },
+    {
+      "id": 14469,
+      "slug": "nejroset-dlya-sozdaniya-video-make-cursor",
+      "modified": "2026-07-20",
+      "chars": 8907,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Нейросеть для создания видео: один MP4 9:16 ради охвата, не топ-15"
+    },
+    {
+      "id": 14462,
+      "slug": "podbor-klyuchevyh-slov-cursor-wordstat",
+      "modified": "2026-07-20",
+      "chars": 9213,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Подбор ключевых слов под трафик: 5–15 фраз Wordstat, не тысяча строк"
+    },
+    {
+      "id": 14456,
+      "slug": "kak-pisat-promty-dlya-nejroseti-cursor",
+      "modified": "2026-07-19",
+      "chars": 9057,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как писать промты для нейросети: сэкономьте время на правки воды"
+    },
+    {
+      "id": 14448,
+      "slug": "avtomatizaciya-marketinga-make-cursor",
+      "modified": "2026-07-19",
+      "chars": 9062,
+      "h2": 7,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "Автоматизация маркетинга: один сценарий Make — заявки не копируете руками"
+    },
+    {
+      "id": 14442,
+      "slug": "nejroset-dlya-reklamy-cursor",
+      "modified": "2026-07-19",
+      "chars": 9388,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Нейросеть для рекламы: 5 заголовков и текст под клики без агентства"
+    },
+    {
+      "id": 14435,
+      "slug": "scenarij-reels-nejroset-cursor",
+      "modified": "2026-07-19",
+      "chars": 9280,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Сценарий для рилс нейросетью: раскадровка, чтобы ролик досматривали"
+    },
+    {
+      "id": 14429,
+      "slug": "opisanie-tovara-nejroset-cursor",
+      "modified": "2026-07-18",
+      "chars": 9312,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Описание товара нейросеть: карточка в поиске WB, не вода из чата"
+    },
+    {
+      "id": 14422,
+      "slug": "avtootvetchik-telegram-make",
+      "modified": "2026-07-18",
+      "chars": 8907,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Автоответчик в Telegram через Make — заявки не висят без ответа"
+    },
+    {
+      "id": 14416,
+      "slug": "otlozhennyj-posting-make-google-sheets",
+      "modified": "2026-07-18",
+      "chars": 9365,
+      "h2": 7,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "Отложенный постинг в нужный час: очередь в Sheets + Make без SaaS"
+    },
+    {
+      "id": 14402,
+      "slug": "yandeks-disk-api-make-kontent-zavod",
+      "modified": "2026-07-18",
+      "chars": 8661,
+      "h2": 6,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Яндекс Диск API в Make: склад медиа до автопоста"
+    },
+    {
+      "id": 14396,
+      "slug": "oblozhka-dlya-posta-nejroset-mcp",
+      "modified": "2026-07-17",
+      "chars": 8829,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Обложка для поста: 3 размера за вечер без дизайнера"
+    },
+    {
+      "id": 14389,
+      "slug": "cursor-composer-dlya-marketinga",
+      "modified": "2026-07-17",
+      "chars": 9217,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Cursor Composer для маркетинга: первый артефакт за вечер"
+    },
+    {
+      "id": 14383,
+      "slug": "webhook-make-pervyj-scenarij",
+      "modified": "2026-07-17",
+      "chars": 9225,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Webhook в Make: первый сценарий для заявок за вечер"
+    },
+    {
+      "id": 14376,
+      "slug": "mnogostranichnyj-sait-cursor-teya",
+      "modified": "2026-07-17",
+      "chars": 8900,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "table"
+      ],
+      "tldr": false,
+      "title": "Многостраничный сайт в Cursor: сетка SEO-страниц за вечер"
+    },
+    {
+      "id": 14370,
+      "slug": "mikrorazmetka-sajta-json-ld",
+      "modified": "2026-07-17",
+      "chars": 8936,
+      "h2": 7,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Микроразметка сайта: JSON-LD FAQ и Article за вечер"
+    },
+    {
+      "id": 14364,
+      "slug": "avtoposting-threads-make-google-sheets",
+      "modified": "2026-07-17",
+      "chars": 8963,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "table"
+      ],
+      "tldr": false,
+      "title": "Автопостинг в тредс через Make и Google Sheets"
+    },
+    {
+      "id": 14358,
+      "slug": "bot-dlya-zayavok-telegram-make",
+      "modified": "2026-07-16",
+      "chars": 9093,
+      "h2": 6,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "Бот для заявок в Telegram через Make и Google Sheets"
+    },
+    {
+      "id": 14351,
+      "slug": "vnutrennyaya-perelinkovka-statej-kontent-zavod",
+      "modified": "2026-07-16",
+      "chars": 8614,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Внутренняя перелинковка: чеклист после контент-завода"
+    },
+    {
+      "id": 14345,
+      "slug": "make-ili-n8n-dlya-marketinga",
+      "modified": "2026-07-16",
+      "chars": 8441,
+      "h2": 7,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "N8n или make: чеклист выбора для маркетолога"
+    },
+    {
+      "id": 14338,
+      "slug": "cursor-skills-dlya-marketinga",
+      "modified": "2026-07-16",
+      "chars": 9376,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Cursor Skills: первый навык маркетолога за вечер без кода"
+    },
+    {
+      "id": 14332,
+      "slug": "prodvizhenie-v-nejrosetyah-alisa-checklist",
+      "modified": "2026-07-15",
+      "chars": 8931,
+      "h2": 7,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "Как начать продвижение в нейросетях и попасть в ответы Алисы?"
+    },
+    {
+      "id": 14325,
+      "slug": "pereobhod-stranic-yandeks-vebmaster-make",
+      "modified": "2026-07-15",
+      "chars": 8992,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Переобход страниц в Яндекс Вебмастере через Make за вечер"
+    },
+    {
+      "id": 14318,
+      "slug": "wordstat-api-make-google-sheets",
+      "modified": "2026-07-15",
+      "chars": 9269,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Вордстат API в Make: частотности в Google Sheets за вечер"
+    },
+    {
+      "id": 14312,
+      "slug": "plaginy-cursor-ai-marketing",
+      "modified": "2026-07-15",
+      "chars": 8712,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Плагины для Cursor: первая установка за вечер без кода"
+    },
+    {
+      "id": 14305,
+      "slug": "kviz-lidov-make-telegram",
+      "modified": "2026-07-15",
+      "chars": 9156,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Создать квиз для лидов в Telegram через Make за вечер"
+    },
+    {
+      "id": 14299,
+      "slug": "effekt-parallaksa-hero-cursor",
+      "modified": "2026-07-15",
+      "chars": 9119,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как сделать эффект параллакса в Cursor: Hero за вечер"
+    },
+    {
+      "id": 14293,
+      "slug": "napisat-statyu-nejrosetyu-cursor",
+      "modified": "2026-07-14",
+      "chars": 8706,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Написать статью с помощью нейросети в Cursor за вечер"
+    },
+    {
+      "id": 14285,
+      "slug": "yandeks-metrika-api-cursor-skill",
+      "modified": "2026-07-14",
+      "chars": 8689,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Яндекс Метрика API в Cursor: skill и отчёт за вечер"
+    },
+    {
+      "id": 14279,
+      "slug": "tilda-ai-agent-potoki-nejroset",
+      "modified": "2026-07-14",
+      "chars": 8636,
+      "h2": 8,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "Потоки Тильда: Tilda AI Agent и статья нейросетью за вечер"
+    },
+    {
+      "id": 14271,
+      "slug": "ustanovka-openclaw-make-cursor",
+      "modified": "2026-07-14",
+      "chars": 8777,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Установка OpenClaw: gateway, skill и связка с Make за вечер"
+    },
+    {
+      "id": 14264,
+      "slug": "mudbord-nejroset-cursor-marketing",
+      "modified": "2026-07-14",
+      "chars": 9022,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Создать мудборд нейросетью в Cursor: палитра и референсы за вечер"
+    },
+    {
+      "id": 14258,
+      "slug": "seo-audit-sajta-cursor-geo-skill",
+      "modified": "2026-07-14",
+      "chars": 9313,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "SEO аудит сайта в Cursor через SEO+GEO skill: 5 правок за вечер"
+    },
+    {
+      "id": 14252,
+      "slug": "generaciya-kartinok-mcp-cursor-marketing",
+      "modified": "2026-07-13",
+      "chars": 9280,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Нейросеть для создания картинок в Cursor через MCP: обложка без Midjourney"
+    },
+    {
+      "id": 14244,
+      "slug": "nejroset-montazh-video-reels-cursor",
+      "modified": "2026-07-13",
+      "chars": 8925,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Нейросеть для монтажа видео: Reels из эфира в Cursor"
+    },
+    {
+      "id": 14238,
+      "slug": "cursor-ekonomika-ai-agentov",
+      "modified": "2026-07-13",
+      "chars": 8922,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Бесплатные AI агенты: Cursor Composer вместо дорогого стека"
+    },
+    {
+      "id": 14231,
+      "slug": "karusel-instagram-nejroseti-cursor",
+      "modified": "2026-07-13",
+      "chars": 9079,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как сделать карусель в инстаграм: хук-видео + 8 кадров в Cursor"
+    },
+    {
+      "id": 14225,
+      "slug": "progrev-akkauntov-pered-avtopostingom",
+      "modified": "2026-07-12",
+      "chars": 9406,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Прогрев аккаунта перед автопостингом: чеклист для Make"
+    },
+    {
+      "id": 14218,
+      "slug": "indexnow-yandex-make",
+      "modified": "2026-07-12",
+      "chars": 8911,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "IndexNow через Make: ускорить индексацию в Яндексе"
+    },
+    {
+      "id": 14212,
+      "slug": "design-md-cursor-ai",
+      "modified": "2026-07-12",
+      "chars": 9084,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "DESIGN.md в Cursor AI: нейросеть для дизайна сайта без хаоса стиля"
+    },
+    {
+      "id": 14205,
+      "slug": "cursor-cloud-agents-avtomatizaciya",
+      "modified": "2026-07-12",
+      "chars": 9119,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "AI агенты для бизнеса: Cloud Agents и Automations в Cursor"
+    },
+    {
+      "id": 14199,
+      "slug": "ai-agent-marketing-cursor-subagents",
+      "modified": "2026-07-11",
+      "chars": 9369,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как создать AI-агента для маркетинга в Cursor без кода"
+    },
+    {
+      "id": 14192,
+      "slug": "telegram-mini-app-cursor-ai",
+      "modified": "2026-07-11",
+      "chars": 9394,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Telegram Mini App в Cursor AI без кода"
+    },
+    {
+      "id": 14186,
+      "slug": "vajbkoding-marketing-cursor-ai",
+      "modified": "2026-07-11",
+      "chars": 8653,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Вайбкодинг для маркетинга в Cursor AI без кода"
+    },
+    {
+      "id": 14179,
+      "slug": "semanticheskoe-yadro-cursor-wordstat",
+      "modified": "2026-07-11",
+      "chars": 9224,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Семантическое ядро в Cursor через Wordstat MCP"
+    },
+    {
+      "id": 14173,
+      "slug": "open-graph-sait-cursor-ai",
+      "modified": "2026-07-10",
+      "chars": 9090,
+      "h2": 7,
+      "score": 8,
+      "gaps": [
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как добавить Open Graph на сайт в Cursor AI без кода?"
+    },
+    {
+      "id": 14166,
+      "slug": "favicon-sait-cursor-ai",
+      "modified": "2026-07-10",
+      "chars": 8925,
+      "h2": 6,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Фавикон для сайта в Cursor AI без кода"
+    },
+    {
+      "id": 14160,
+      "slug": "yandeks-karta-sait-cursor-ai",
+      "modified": "2026-07-10",
+      "chars": 8844,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Яндекс карта на сайт в Cursor без кода"
+    },
+    {
+      "id": 14152,
+      "slug": "cookie-banner-sait-cursor-ai",
+      "modified": "2026-07-10",
+      "chars": 9168,
+      "h2": 7,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "Cookie баннер на сайт в Cursor без кода"
+    },
+    {
+      "id": 14146,
+      "slug": "stranica-faq-cursor-ai",
+      "modified": "2026-07-09",
+      "chars": 9180,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "FAQ на сайте: faq.html в Cursor без кода"
+    },
+    {
+      "id": 14138,
+      "slug": "stranica-o-kompanii-cursor-ai",
+      "modified": "2026-07-09",
+      "chars": 8952,
+      "h2": 8,
+      "score": 10,
+      "gaps": [],
+      "tldr": false,
+      "title": "О компании на сайте: about.html в Cursor без кода"
+    },
+    {
+      "id": 14132,
+      "slug": "stranica-404-cursor-ai",
+      "modified": "2026-07-09",
+      "chars": 9141,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Страница 404 в Cursor: 404.html без кода и сервера"
+    },
+    {
+      "id": 14125,
+      "slug": "stranica-portfolio-cursor-ai",
+      "modified": "2026-07-09",
+      "chars": 9501,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Портфолио на сайт: portfolio.html в Cursor без кода"
+    },
+    {
+      "id": 14119,
+      "slug": "stranica-otzyvov-cursor-ai",
+      "modified": "2026-07-08",
+      "chars": 8871,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Добавить отзывы на сайт: страница reviews.html в Cursor без кода"
+    },
+    {
+      "id": 13856,
+      "slug": "cursor-ai-lending-bez-koda",
+      "modified": "2026-07-05",
+      "chars": 9333,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Cursor AI сайт: лендинг без кода за один вечер"
+    },
+    {
+      "id": 13539,
+      "slug": "ollama-lokalnaya-llm-dlya-biznesa",
+      "modified": "2026-06-17",
+      "chars": 8855,
+      "h2": 7,
+      "score": 9,
+      "gaps": [
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "Ollama для бизнеса: локальная LLM от установки до API и n8n"
+    },
+    {
+      "id": 13533,
+      "slug": "sozdat-llms-txt-dlya-sajta",
+      "modified": "2026-06-16",
+      "chars": 9512,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей"
+    },
+    {
+      "id": 13490,
+      "slug": "ii-chat-bot-dlya-biznesa-workflow",
+      "modified": "2026-06-16",
+      "chars": 8901,
+      "h2": 7,
+      "score": 8,
+      "gaps": [
+        "updated",
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "Чат боты для бизнеса: пошаговый workflow n8n/Make с RAG и эскалацией"
+    },
+    {
+      "id": 13484,
+      "slug": "postroenie-rag-sistemy-vektornaya-baza",
+      "modified": "2026-06-16",
+      "chars": 8569,
+      "h2": 9,
+      "score": 9,
+      "gaps": [
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "RAG система: пошаговый workflow с векторной базой знаний"
+    },
+    {
+      "id": 13467,
+      "slug": "make-ai-agents-mcp-avtomatizaciya",
+      "modified": "2026-06-16",
+      "chars": 9251,
+      "h2": 10,
+      "score": 7,
+      "gaps": [
+        "table",
+        "updated",
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "автоматизация make с AI Agents и MCP: workflow для бизнеса"
+    },
+    {
+      "id": 13369,
+      "slug": "avtonomnyj-kontent-zavod-nejroseti",
+      "modified": "2026-06-11",
+      "chars": 9059,
+      "h2": 8,
+      "score": 6,
+      "gaps": [
+        "lead",
+        "updated",
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": ""
+    },
+    {
+      "id": 13361,
+      "slug": "geo-optimizaciya-sajta-2026",
+      "modified": "2026-06-11",
+      "chars": 8968,
+      "h2": 8,
+      "score": 9,
+      "gaps": [
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "Geo оптимизация сайта: чек-лист 2026 для ChatGPT и Алисы"
+    },
+    {
+      "id": 13335,
+      "slug": "podklyuchenie-mcp-cursor",
+      "modified": "2026-06-11",
+      "chars": 8977,
+      "h2": 10,
+      "score": 8,
+      "gaps": [
+        "updated",
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "Cursor MCP: пошаговая инструкция по подключению серверов"
+    },
+    {
+      "id": 13324,
+      "slug": "avtomatizaciya-n8n-ai-agents",
+      "modified": "2026-06-11",
+      "chars": 9602,
+      "h2": 8,
+      "score": 8,
+      "gaps": [
+        "updated",
+        "tldr_antipattern"
+      ],
+      "tldr": true,
+      "title": "Автоматизация n8n: пошаговый гайд по ИИ-агентам для бизнеса"
+    },
+    {
+      "id": 9616,
+      "slug": "messendzher-max-novyj-goluboj-okean-dlya-biznesa-v-rf-i-avtomatizacziya-cherez-make-com",
+      "modified": "2025-12-26",
+      "chars": 2947,
+      "h2": 3,
+      "score": 3,
+      "gaps": [
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Мессенджер MAX: Новый «Голубой океан» для бизнеса в РФ и автоматизация через Mak"
+    },
+    {
+      "id": 9190,
+      "slug": "chto-takoe-fajl-cursorignore-i-kak-on-pomogaet-skryt-dannye-ot-ai-uznajte-vse-tonkosti-nastrojki-i-primeneniya",
+      "modified": "2025-12-14",
+      "chars": 15072,
+      "h2": 7,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "98. Файл .cursorignore: что скрывать от AI и как его настроить"
+    },
+    {
+      "id": 9166,
+      "slug": "zadumyvaetes-kak-rasskazat-babushke-o-preimushhestvah-cursor-uznajte-prostye-sposoby-obyasnit-kak-eta-programma-uproshhaet-zhizn",
+      "modified": "2025-12-13",
+      "chars": 14096,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Cursor: 5 простых способов объяснить бабушке, как он помогает"
+    },
+    {
+      "id": 9157,
+      "slug": "stolknulis-s-vygoraniem-kak-razrabotchik-uznajte-kak-cursor-pomozhet-vam-vernut-vdohnovenie-i-produktivnost",
+      "modified": "2025-12-12",
+      "chars": 15596,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Cursor: как помочь разработчикам избавиться от выгорания в 2023 году"
+    },
+    {
+      "id": 9145,
+      "slug": "stolknulis-s-problemami-importa-iz-za-cursor-uznajte-kak-bystro-ustranit-nepoladki-i-optimizirovat-vash-kod",
+      "modified": "2025-12-12",
+      "chars": 15453,
+      "h2": 9,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "83: Почему Cursor &#171;ломает&#187; импорты и как исправить ошибку без проблем?"
+    },
+    {
+      "id": 9135,
+      "slug": "p-izbegaete-rasprostranyonnyh-oshibok-v-cursor-otkrojte-nash-rejting-top-5-oshibok-novichkov-i-nachnite-ispolzovat-platformu-effektivno",
+      "modified": "2025-12-11",
+      "chars": 12789,
+      "h2": 7,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Топ-5 ошибок новичков в Cursor: как их избежать и добиться успеха"
+    },
+    {
+      "id": 9111,
+      "slug": "hotite-uznat-kak-analizirovat-chuzhie-repozitorii-na-github-uznajte-vse-sekrety-raboty-s-cursor-dlya-glubokogo-analiza-koda",
+      "modified": "2025-12-10",
+      "chars": 15194,
+      "h2": 10,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Анализ репозитория на GitHub: 7 шагов с Cursor для глубокого изучения кода"
+    },
+    {
+      "id": 9102,
+      "slug": "hotite-uznat-kak-ya-perepisal-svoj-pet-proekt-na-novyj-stek-s-cursor-vsego-za-vyhodnye-chitajte-i-vdohnovlyajtes",
+      "modified": "2025-12-09",
+      "chars": 13231,
+      "h2": 8,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "69: Переписываем пет-проект на новый стек с Cursor за выходные — шаги и советы."
+    },
+    {
+      "id": 9093,
+      "slug": "kak-tehnologii-ai-ide-menyayut-rynok-truda-programmistov-uznajte-o-budushhih-trendah-i-vozmozhnostyah-v-nashej-state",
+      "modified": "2025-12-09",
+      "chars": 16164,
+      "h2": 9,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "66. Влияние AI IDE на рынок труда программистов: перспективы и риски для специал"
+    },
+    {
+      "id": 9009,
+      "slug": "ishhete-kak-sozdat-mobilnoe-prilozhenie-na-flutter-uznajte-o-luchshih-praktikah-razrabotki-v-cursor-i-nachnite-svoj-proekt-segodnya",
+      "modified": "2025-11-27",
+      "chars": 16244,
+      "h2": 9,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Flutter разработка: 40 шагов к созданию мобильного приложения"
+    },
+    {
+      "id": 9003,
+      "slug": "hotite-uprostit-napisanie-unit-testov-uznajte-kak-sdelat-eto-v-odin-klik-s-pomoshhyu-cursor-bystrye-i-effektivnye-resheniya-zhdut-vas",
+      "modified": "2025-11-27",
+      "chars": 11864,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Юнит-тесты: как написать их в один клик с Cursor"
+    },
+    {
+      "id": 8985,
+      "slug": "stoit-li-platit-za-podpisku-na-cursor-uznajte-kak-ona-mozhet-povysit-vashu-ekonomicheskuyu-effektivnost-i-opravdaet-li-vlozheniya",
+      "modified": "2025-11-26",
+      "chars": 15046,
+      "h2": 9,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Экономическая эффективность подписки на Cursor: стоит ли она своих денег?"
+    },
+    {
+      "id": 8979,
+      "slug": "sravnite-claude-3-5-sonnet-i-gpt-4o-uznajte-kakie-osobennosti-i-preimushhestva-predlagayut-eti-modeli-dlya-vashego-biznesa",
+      "modified": "2025-11-26",
+      "chars": 18616,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Сравнение Claude и ChatGPT: 30 моделей Cursor — какой выбрать?"
+    },
+    {
+      "id": 8973,
+      "slug": "kakoj-instrument-idealno-podhodit-dlya-startapa-cursor-ili-codeium-uznajte-v-chem-ih-plyusy-i-minusy",
+      "modified": "2025-11-26",
+      "chars": 15041,
+      "h2": 8,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Cursor vs Codeium: какой инструмент для стартапа выбрать?"
+    },
+    {
+      "id": 8925,
+      "slug": "hotite-znat-kak-command-k-ctrl-k-v-cursor-izmenit-vashu-rabotu-uznajte-ob-unikalnyh-vozmozhnostyah-i-magii-etoj-funkczii",
+      "modified": "2025-11-23",
+      "chars": 13391,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table"
+      ],
+      "tldr": false,
+      "title": "Command K (Ctrl+K) в Cursor: как работает и в чем его магия."
+    },
+    {
+      "id": 8923,
+      "slug": "ishhete-nadezhnogo-nastavnika-v-programmirovanii-uznajte-kak-funkcziya-chat-v-cursor-pomozhet-vam-stat-masterom-koda",
+      "modified": "2025-11-23",
+      "chars": 16954,
+      "h2": 10,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Cursor: как открыть чат для обучения программированию с помощью личного ментора"
+    },
+    {
+      "id": 8909,
+      "slug": "zadumyvaetes-o-perehode-na-vs-code-uznajte-chem-on-otlichaetsya-ot-cursor-i-kak-vybrat-idealnoe-reshenie-dlya-vashej-razrabotki",
+      "modified": "2025-11-21",
+      "chars": 15773,
+      "h2": 9,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Cursor vs VS Code: стоит ли переходить и что выбрать для AI-разработки?"
+    },
+    {
+      "id": 8875,
+      "slug": "ustali-ot-neeffektivnyh-tiketov-uznajte-kak-effektivno-integrirovat-wp-s-helpdesk-dlya-uproshheniya-raboty-s-jira-zendesk-i-drugimi",
+      "modified": "2025-11-19",
+      "chars": 13800,
+      "h2": 7,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "WP: интеграция с Helpdesk (Jira, Zendesk) — управление тикетами из форм"
+    },
+    {
+      "id": 8769,
+      "slug": "kak-avtomatizirovat-proczessy-razrabotki-wordpress-uznajte-o-ci-cd-s-github-actions-i-wp-cli-i-proverte-svoyu-sistemu-s-pomoshhyu-smoke-testov",
+      "modified": "2025-11-11",
+      "chars": 15907,
+      "h2": 10,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "CI/CD для WP: как настроить GitHub Actions и WP-CLI для смоук-тестов"
+    },
+    {
+      "id": 8740,
+      "slug": "kak-nastroit-triggery-dlya-sobytij-v-wp-uznajte-o-vebhukah-i-rest-api-dlya-avtomatizaczii-zakazov-i-form",
+      "modified": "2025-11-09",
+      "chars": 12420,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "WP: Webhooks и REST API — что такое триггеры для событий (заказ, форма, регистра"
+    },
+    {
+      "id": 8688,
+      "slug": "hotite-zapustit-konkurs-v-vk-bez-obmana-uznajte-o-umnyh-konkursah-antinakrutke-i-proverke-podpischikov-v-nashej-state",
+      "modified": "2025-11-05",
+      "chars": 13863,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "VK: «умные» конкурсы — как избежать накрутки подписчиков и лайков"
+    },
+    {
+      "id": 8666,
+      "slug": "zadumyvalis-o-tom-kak-uluchshit-analiticheskie-sposobnosti-telegram-uznajte-kak-eksportirovat-dialogi-i-nastraivat-alerty-na-anomalii",
+      "modified": "2025-11-03",
+      "chars": 11184,
+      "h2": 10,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Telegram: как экспортировать диалоги и метрики в BI для анализа аномалий"
+    },
+    {
+      "id": 8659,
+      "slug": "znaete-li-vy-kak-sozdat-uvlekatelnye-kvizy-v-telegram-uznajte-o-konstruktore-s-logicheskimi-vetkami-i-skoringom-lidov",
+      "modified": "2025-11-02",
+      "chars": 13352,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Конструктор квизов: создайте логические ветки и скоринг лидов онлайн бесплатно"
+    },
+    {
+      "id": 8588,
+      "slug": "zadumyvalis-o-povtornyh-prodazhah-uznajte-kak-retargeting-v-vk-pomozhet-vernut-klientov-i-uvelichit-konversii",
+      "modified": "2025-10-28",
+      "chars": 2487,
+      "h2": 3,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "International Business Corporation &#8212; Your Global Trade Partner"
+    },
+    {
+      "id": 8586,
+      "slug": "hotite-uprostit-obshhenie-v-vk-uznajte-kak-avtomatizacziya-kommentariev-pomozhet-vam-upravlyat-otvetami-skryvat-spam-i-sozdavat-faq",
+      "modified": "2025-10-28",
+      "chars": 1681,
+      "h2": 5,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Premium Pizza Boxes &#8212; International Business Corporation"
+    },
+    {
+      "id": 8584,
+      "slug": "ne-znaete-kak-otslezhivat-status-zakaza-v-internet-magazine-cherez-vk-uznajte-kak-nastroit-uvedomleniya-v-ls-i-byt-v-kurse",
+      "modified": "2025-10-28",
+      "chars": 2008,
+      "h2": 5,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Premium Dry Fruits &#8212; International Business Corporation"
+    },
+    {
+      "id": 8582,
+      "slug": "hotite-prodvinut-svoj-biznes-v-vkontakte-uznajte-kak-sozdat-dinamicheskie-vitriny-i-katalog-tovarov-v-soobshhestve",
+      "modified": "2025-10-28",
+      "chars": 2413,
+      "h2": 8,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Quality Handkerchiefs &#8212; International Business Corporation"
+    },
+    {
+      "id": 8552,
+      "slug": "kak-obespechit-bezopasnost-pokupok-uznajte-o-avtoproverke-oplat-i-vydache-liczenzij-v-telegram",
+      "modified": "2025-10-24",
+      "chars": 13171,
+      "h2": 10,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Telegram: как получить автопроверку оплаты и лицензию быстро"
+    },
+    {
+      "id": 8541,
+      "slug": "hotite-sozdat-bota-v-telegram-uznajte-kak-ispolzovat-ii-dlya-avtogeneraczii-kontenta-i-otvetov-pryamo-sejchas",
+      "modified": "2025-10-23",
+      "chars": 13780,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Telegram: автогенерация контента бота с помощью ИИ — описание и ответы"
+    },
+    {
+      "id": 8529,
+      "slug": "hotite-uvelichit-aktivnost-v-telegram-uznajte-kak-avtomaticheski-progrevat-auditoriyu-v-lichnyh-soobshheniyah-i-na-kanale",
+      "modified": "2025-10-22",
+      "chars": 12946,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Прогрев аккаунта в Telegram: как автоматизировать процесс для лички и канала"
+    },
+    {
+      "id": 8514,
+      "slug": "hotite-sdelat-svoj-telegram-kanal-unikalnym-uznajte-kak-organizovat-multishagovye-kvizy-s-ballami-i-personalnymi-offerami",
+      "modified": "2025-10-22",
+      "chars": 14436,
+      "h2": 9,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Квиз в Telegram: многопользовательские мультишаговые игры с баллами и персональн"
+    },
+    {
+      "id": 8486,
+      "slug": "kak-uluchshit-vashi-kartochki-tovara-s-pomoshhyu-ai-uznajte-sekrety-generaczii-unikalnyh-izobrazhenij-i-effektnyh-bannerov",
+      "modified": "2025-10-19",
+      "chars": 15641,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Генерация изображений: как улучшить карточки товара и баннеры с помощью AI-сорси"
+    },
+    {
+      "id": 8478,
+      "slug": "kak-sledit-za-otzyvami-na-ozon-wb-i-yandeks-kartah-uznajte-o-luchshih-instrumentah-dlya-alertov-i-avtootvetov",
+      "modified": "2025-10-18",
+      "chars": 13724,
+      "h2": 10,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Мониторинг отзывов: алерты и автоответы для Ozon, WB и Яндекс.Карт"
+    },
+    {
+      "id": 8476,
+      "slug": "kak-effektivno-upravlyat-dokumentooborotom-uznajte-o-triggerah-iz-crm-dlya-diadok-i-sbis-dlya-avtomatizaczii-proczessov",
+      "modified": "2025-10-18",
+      "chars": 15665,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Юридический документооборот: триггеры из CRM для Диадок и СБИС"
+    },
+    {
+      "id": 8456,
+      "slug": "kupit-avtovoronku-v-telegram-nastrojka-pod-klyuch",
+      "modified": "2025-10-16",
+      "chars": 716,
+      "h2": 4,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Купить автоворонку в Telegram — настройка под ключ"
+    },
+    {
+      "id": 8447,
+      "slug": "zadumyvaetes-o-vnedrenii-golosovyh-assistentov-v-koll-czentr-otkrojte-dlya-sebya-sczenarii-s-ii-kotorye-optimiziruyut-obsluzhivanie-klientov",
+      "modified": "2025-10-16",
+      "chars": 14258,
+      "h2": 9,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Голосовые ассистенты: сценарии с ИИ для колл-центров и отключение голосового пом"
+    },
+    {
+      "id": 8336,
+      "slug": "hotite-sozdat-effektivnyj-rag-pajplajn-v-make-otkrojte-dlya-sebya-poshagovoe-rukovodstvo-i-sekrety-optimizaczii",
+      "modified": "2025-10-09",
+      "chars": 13841,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "RAG-пайплайн в Make: как построить его эффективно и просто"
+    },
+    {
+      "id": 8320,
+      "slug": "kak-effektivno-integrirovat-erp-sistemy-s-mcp-uznajte-luchshie-praktiki-i-sovety-dlya-optimizaczii-biznes-proczessov",
+      "modified": "2025-10-08",
+      "chars": 14199,
+      "h2": 10,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "MCP для интеграции с ERP-системами: честные преимущества и недостатки"
+    },
+    {
+      "id": 8273,
+      "slug": "mcp-server-not-authenticated",
+      "modified": "2025-10-05",
+      "chars": 197,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "MCP Server, not authenticated!"
+    },
+    {
+      "id": 8269,
+      "slug": "zachem-tratit-vremya-na-bronirovanie-otkrojte-mir-udobstva-s-ai-agentami-dlya-bystrogo-i-nadezhnogo-booking-uslug",
+      "modified": "2025-10-05",
+      "chars": 37243,
+      "h2": 40,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "AI-агенты нового поколения: как они революционизируют рынок бронирования услуг в"
+    },
+    {
+      "id": 8239,
+      "slug": "ishhete-kak-ai-agenty-mogut-transformirovat-sozdanie-kontenta-uznajte-ob-ih-vozmozhnostyah-i-preimushhestvah-pryamo-sejchas",
+      "modified": "2025-10-02",
+      "chars": 25309,
+      "h2": 24,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Секреты использования AI-агентов для создания вирусного контента в 2024 году"
+    },
+    {
+      "id": 8197,
+      "slug": "kak-ai-agenty-mogut-preobrazit-vashu-reklamu-v-vk-uznajte-o-luchshih-instrumentah-dlya-avtomatizaczii-uzhe-segodnya",
+      "modified": "2025-10-01",
+      "chars": 22186,
+      "h2": 19,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как AI-агенты меняют автопостинг рекламы в VK: эффективные стратегии и советы"
+    },
+    {
+      "id": 8191,
+      "slug": "ishhete-bystryj-sposob-avtomatizaczii-otchetov-v-google-sheets-uznajte-kak-mcp-pomozhet-uprostit-vashu-rabotu",
+      "modified": "2025-10-01",
+      "chars": 31295,
+      "h2": 27,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Эффективный MCP для автопостинга отчетов в Google Sheets: ваш ключ к автоматизац"
+    },
+    {
+      "id": 8175,
+      "slug": "kak-vybrat-mcp-dlya-integraczii-s-rossijskimi-crm-uznajte-ob-effektivnyh-resheniyah-i-uluchshite-biznes-proczessy",
+      "modified": "2025-09-30",
+      "chars": 31247,
+      "h2": 32,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "MCP и российские CRM: простые шаги для эффективной интеграции и увеличения прибы"
+    },
+    {
+      "id": 8125,
+      "slug": "obnovlennaya-testovaya-statya",
+      "modified": "2025-09-29",
+      "chars": 32,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Обновленная тестовая статья"
+    },
+    {
+      "id": 8122,
+      "slug": "kak-uluchshit-produktivnost-otkrojte-dlya-sebya-intellektualnye-rabochie-proczessy-s-mcp-i-ai-agentami",
+      "modified": "2025-09-29",
+      "chars": 26900,
+      "h2": 26,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Увеличьте эффективность бизнеса: оптимизация рабочих процессов с помощью MCP и A"
+    },
+    {
+      "id": 8060,
+      "slug": "ishhete-kak-avtomatizirovat-rabotu-s-dannymi-uznajte-o-model-context-protocol-i-make-com-vashi-sekrety-uspeha-v-realnom-vremeni",
+      "modified": "2025-09-27",
+      "chars": 14740,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Узнайте, как Model Context Protocol и Make.com автоматизируют ваши бизнес-процес"
+    },
+    {
+      "id": 8034,
+      "slug": "kak-effektivno-avtomatizirovat-sbor-statistiki-uspevaemosti-uznajte-pochemu-make-com-vash-luchshij-pomoshhnik-dlya-dostizheniya-maksimalnyh-rezultatov",
+      "modified": "2025-09-25",
+      "chars": 14243,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация сбора статистики успеваемости: 4 минуты до освобождения от рутины "
+    },
+    {
+      "id": 8028,
+      "slug": "hotite-uznat-kak-sozdat-effektivnuyu-crm-dlya-onlajn-shkoly-otkrojte-dlya-sebya-avtomatizacziyu-proczessov-s-make-com-i-uprostite-upravlenie",
+      "modified": "2025-09-24",
+      "chars": 17020,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизировать CRM для онлайн-школы: откройте секреты Make.com и достигнит"
+    },
+    {
+      "id": 8008,
+      "slug": "kak-sozdat-moshhnuyu-sistemu-ucheta-privychek-s-pomoshhyu-make-com-chitajte-nashe-rukovodstvo-i-osvojte-avtomatizacziyu-privychek-legko-i-effektivno",
+      "modified": "2025-09-23",
+      "chars": 19618,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация привычек с Make.com: секреты легкого достижения целей без усилий"
+    },
+    {
+      "id": 7994,
+      "slug": "zabyli-pro-svoi-idei-uznajte-kak-sobrat-i-strukturirovat-ih-s-pomoshhyu-make-com-avtomatizacziya-dlya-vashego-biznesa",
+      "modified": "2025-09-22",
+      "chars": 14112,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как использовать Make.com для автоматизации идей и создания успешных проектов бе"
+    },
+    {
+      "id": 7944,
+      "slug": "avtomatizacziya-analiza-konkurentov-s-make-com-vash-sekret-k-uspeshnomu-biznesu-i-konkurentnomu-preimushhestvu",
+      "modified": "2025-09-16",
+      "chars": 16369,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация анализа конкурентов с Make.com: ваш секрет к успешному бизнесу и к"
+    },
+    {
+      "id": 7932,
+      "slug": "avtomatizacziya-google-sheets-s-make-com-uprostite-sbor-statistiki-i-sekonomte-vremya",
+      "modified": "2025-09-15",
+      "chars": 15638,
+      "h2": 2,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация Google Sheets с Make.com: Упростите сбор статистики и сэкономьте в"
+    },
+    {
+      "id": 7902,
+      "slug": "avtomatizacziya-dokumentooborota-s-make-com-legko-bystro-i-bez-rutinnyh-zadach",
+      "modified": "2025-09-12",
+      "chars": 15546,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация документооборота с Make.com: легко, быстро и без рутинных задач!"
+    },
+    {
+      "id": 7898,
+      "slug": "avtomatizacziya-hr-kak-make-com-menyaet-rutinu-na-kajf-i-povyshaet-effektivnost-biznesa",
+      "modified": "2025-09-12",
+      "chars": 15264,
+      "h2": 2,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация HR: Как Make.com меняет рутину на кайф и повышает эффективность би"
+    },
+    {
+      "id": 7876,
+      "slug": "kak-avtomatizacziya-call-trekinga-cherez-make-com-spasaet-vash-biznes-i-ustranyaet-chelovecheskie-oshibki",
+      "modified": "2025-09-11",
+      "chars": 14453,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация call-трекинга через Make.com спасает ваш бизнес и устраняет че"
+    },
+    {
+      "id": 7869,
+      "slug": "sekrety-sbora-zolotyh-lidov-s-yandeks-i-google-poshagovyj-gajd-ultimate-make-com-dlya-teh-kto-ne-hochet-nanimat-programmistov",
+      "modified": "2025-09-11",
+      "chars": 15983,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты сбора золотых лидов с Яндекс и Google: пошаговый гайд Ultimate Make.com "
+    },
+    {
+      "id": 7856,
+      "slug": "uznajte-kak-avtomatizacziya-s-pomoshhyu-make-com-prevrashhaet-rutinnye-zayavki-s-lendingov-v-uspeshnyj-biznes-polnoe-rukovodstvo",
+      "modified": "2025-09-10",
+      "chars": 17052,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Узнайте, как автоматизация с помощью Make.com превращает рутинные заявки с ленди"
+    },
+    {
+      "id": 7836,
+      "slug": "avtomatizacziya-soczsetej-s-pomoshhyu-make-com",
+      "modified": "2025-09-08",
+      "chars": 14688,
+      "h2": 10,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация соцсетей с помощью Make.com"
+    },
+    {
+      "id": 7827,
+      "slug": "proverka-novogo-podklyucheniya-4",
+      "modified": "2025-09-08",
+      "chars": 16,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Проверка нового подключения"
+    },
+    {
+      "id": 7825,
+      "slug": "proverka-novogo-podklyucheniya-3",
+      "modified": "2025-09-08",
+      "chars": 16,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Проверка нового подключения"
+    },
+    {
+      "id": 7822,
+      "slug": "proverka-novogo-podklyucheniya-2",
+      "modified": "2025-09-08",
+      "chars": 16,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Проверка нового подключения"
+    },
+    {
+      "id": 7821,
+      "slug": "proverka-novogo-podklyucheniya",
+      "modified": "2025-09-08",
+      "chars": 16,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Проверка нового подключения"
+    },
+    {
+      "id": 7812,
+      "slug": "avtomatizacziya-vozvratov-s-make-com-kak-izbavitsya-ot-byurokratii-i-uluchshit-kontrol-kachestva-tovarov",
+      "modified": "2025-09-08",
+      "chars": 14000,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация возвратов с Make.com: как избавиться от бюрократии и улучшить конт"
+    },
+    {
+      "id": 7806,
+      "slug": "kak-avtomatizacziya-dostavki-s-make-com-izbavila-menya-ot-stressa-i-podarila-vremya-na-kofe-v-rabote",
+      "modified": "2025-09-07",
+      "chars": 15973,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация доставки с Make.com избавила меня от стресса и подарила время "
+    },
+    {
+      "id": 7786,
+      "slug": "kak-avtomatizirovat-zakazy-na-ozon-v-google-sheets-5-sekretov-chtoby-sekonomit-dengi-i-vremya-na-ruchnoj-rabote",
+      "modified": "2025-09-06",
+      "chars": 15952,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизировать заказы на Ozon в Google Sheets: 5 секретов, чтобы сэкономит"
+    },
+    {
+      "id": 7780,
+      "slug": "uproshhaem-zhizn-prostye-shagi-po-avtomatizaczii-s-make-com-trello-i-asana-dlya-maksimalnoj-produktivnosti",
+      "modified": "2025-09-05",
+      "chars": 17277,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Упрощаем жизнь: простые шаги по автоматизации с make.com, Trello и Asana для мак"
+    },
+    {
+      "id": 7754,
+      "slug": "avtomatizacziya-monitoringa-czen-na-aviabilety-kak-make-com-revolyuczioniziruet-puteshestviya-i-ekonomit-vashi-dengi",
+      "modified": "2025-09-04",
+      "chars": 14637,
+      "h2": 5,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация мониторинга цен на авиабилеты: как Make.com революционизирует путе"
+    },
+    {
+      "id": 7750,
+      "slug": "avtomatizacziya-podbora-lidov-v-nedvizhimosti-stante-korolem-rynka-s-make-com-i-izbavtes-ot-rutiny",
+      "modified": "2025-09-04",
+      "chars": 15410,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация подбора лидов в недвижимости: станьте королем рынка с Make.com и и"
+    },
+    {
+      "id": 7742,
+      "slug": "kak-avtomatizacziya-uvedomlenij-na-make-com-pomozhet-vam-kontrolirovat-biznes-i-izbezhat-stressa",
+      "modified": "2025-09-03",
+      "chars": 17455,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация уведомлений на Make.com поможет вам контролировать бизнес и из"
+    },
+    {
+      "id": 7715,
+      "slug": "avtomatizacziya-biznesa-na-primere-make-com-i-power-automate-neozhidannye-rezultaty-kotorye-izmenyat-vashe-predstavlenie-o-uspehe",
+      "modified": "2025-08-29",
+      "chars": 17014,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса на примере Make.com и Power Automate: неожиданные результа"
+    },
+    {
+      "id": 7665,
+      "slug": "avtomatizacziya-na-avito-kak-make-com-pomozhet-vam-ne-upustit-ni-odnogo-klienta-i-navesti-poryadok-v-biznese",
+      "modified": "2025-08-26",
+      "chars": 20954,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация на Авито: Как Make.com поможет вам не упустить ни одного клиента и"
+    },
+    {
+      "id": 7663,
+      "slug": "avtomatizacziya-otzyvov-s-make-com-uvelichte-potok-klientov-vsego-za-20-minut",
+      "modified": "2025-08-26",
+      "chars": 19293,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация отзывов с Make.com: Увеличьте поток клиентов всего за 20 минут!"
+    },
+    {
+      "id": 7661,
+      "slug": "avtomatizacziya-vozvratov-s-make-com-spasite-svoj-biznes-ot-kraha-i-naslazhdajtes-proczessom",
+      "modified": "2025-08-26",
+      "chars": 17719,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация возвратов с Make.com: Спасите свой бизнес от краха и наслаждайтесь"
+    },
+    {
+      "id": 7643,
+      "slug": "avtomatizacziya-prodazh-v-whatsapp-kak-uvelichit-vyruchku-i-sokratit-vremya-na-50-s-umnymi-instrumentami",
+      "modified": "2025-08-24",
+      "chars": 20280,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация продаж в WhatsApp: как увеличить выручку и сократить время на 50% "
+    },
+    {
+      "id": 7637,
+      "slug": "avtomatizacziya-sobytij-s-make-com-izbavtes-ot-rutiny-i-stressa-v-upravlenii-meropriyatiyami",
+      "modified": "2025-08-24",
+      "chars": 17974,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация событий с Make.com: избавьтесь от рутины и стресса в управлении ме"
+    },
+    {
+      "id": 7625,
+      "slug": "kak-bystro-uvelichit-zakazy-cherez-telegram-s-make-com-avtomatizacziya-kotoraya-ne-propustit-ni-odnogo-klienta",
+      "modified": "2025-08-23",
+      "chars": 17921,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как быстро увеличить заказы через Telegram с Make.com: автоматизация, которая не"
+    },
+    {
+      "id": 7621,
+      "slug": "avtomatizacziya-obucheniya-s-make-com-ustranite-rutinu-i-sekonomte-vremya-na-obuchenii-effektivno",
+      "modified": "2025-08-23",
+      "chars": 16744,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация обучения с Make.com: Устраните рутину и сэкономьте время на обучен"
+    },
+    {
+      "id": 7619,
+      "slug": "sozdajte-virusnyj-kontent-za-15-minut-s-pomoshhyu-make-com-vash-gid-po-avtomatizaczii",
+      "modified": "2025-08-23",
+      "chars": 18927,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создайте вирусный контент за 15 минут с помощью Make.com: ваш гид по автоматизац"
+    },
+    {
+      "id": 7617,
+      "slug": "avtomatizacziya-smm-s-make-com-kak-kotiki-delayut-vash-biznes-proshhe-i-effektivnee",
+      "modified": "2025-08-22",
+      "chars": 16688,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация SMM с Make.com: как котики делают ваш бизнес проще и эффективнее"
+    },
+    {
+      "id": 7556,
+      "slug": "kak-sozdat-yarkij-kontent-kotoryj-privlechet-chitatelej-i-zastavit-ih-delitsya-tvoej-mudrostyu",
+      "modified": "2025-08-14",
+      "chars": 21043,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table"
+      ],
+      "tldr": false,
+      "title": "Как создать яркий контент, который привлечет читателей и заставит их делиться тв"
+    },
+    {
+      "id": 7540,
+      "slug": "kak-avtomatizacziya-telegram-reels-i-vk-stories-pomozhet-vam-prokachat-smm-i-izbavitsya-ot-stressa",
+      "modified": "2025-08-13",
+      "chars": 21140,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация Telegram-Reels и VK Stories поможет вам прокачать SMM и избави"
+    },
+    {
+      "id": 7513,
+      "slug": "integracziya-podpischikov-vk-i-telegram-sekrety-izbezhaniya-dublej-i-privlechenie-realnyh-klientov",
+      "modified": "2025-08-12",
+      "chars": 18328,
+      "h2": 2,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Интеграция подписчиков VK и Telegram: секреты избежания дублей и привлечение реа"
+    },
+    {
+      "id": 7489,
+      "slug": "avtomatizacziya-proverki-podpiski-v-telegram-5-prostyh-shagov-dlya-legkoj-raboty-s-kotikami-i-zaboty-o-podpischikah",
+      "modified": "2025-08-10",
+      "chars": 20006,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация проверки подписки в Telegram: 5 простых шагов для легкой работы с "
+    },
+    {
+      "id": 7487,
+      "slug": "restriming-vk-v-telegram-sekrety-obedineniya-auditorij-bez-zatrat-na-reklamu-i-prevrashhenie-v-czifrovogo-maga-efirov",
+      "modified": "2025-08-10",
+      "chars": 21301,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Рестриминг VK в Telegram: секреты объединения аудиторий без затрат на рекламу и "
+    },
+    {
+      "id": 7443,
+      "slug": "sekrety-avtoperevoda-vk-sozdavajte-mezhdunarodnye-posty-za-20-minut-i-bez-rashodov-na-reklamu",
+      "modified": "2025-08-06",
+      "chars": 18317,
+      "h2": 3,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты автоперевода VK: создавайте международные посты за 20 минут и без расход"
+    },
+    {
+      "id": 7437,
+      "slug": "treking-ssylok-kak-avtomatizacziya-spaset-vash-biznes-i-prineset-uspeshnye-primery-iz-bezdny",
+      "modified": "2025-08-06",
+      "chars": 19384,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Трекинг ссылок: как автоматизация спасет ваш бизнес и принесет успешные примеры "
+    },
+    {
+      "id": 7415,
+      "slug": "kak-avtomatizacziya-s-pomoshhyu-vk-mini-apps-i-make-izbavlyaet-vash-biznes-ot-rutinnyh-zadach",
+      "modified": "2025-08-04",
+      "chars": 18489,
+      "h2": 4,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация с помощью VK Mini Apps и Make избавляет ваш бизнес от рутинных"
+    },
+    {
+      "id": 7389,
+      "slug": "kak-iskusstvennyj-intellekt-openai-prevrashhaet-skuchnye-zametki-v-blestyashhie-idei-ot-generativnyh-tehnologij-do-kreativnogo-myshleniya",
+      "modified": "2025-08-02",
+      "chars": 18244,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как искусственный интеллект OpenAI превращает скучные заметки в блестящие идеи: "
+    },
+    {
+      "id": 7369,
+      "slug": "sinhronizacziya-vk-s-crm-5-prostyh-shagov-chtoby-za-polchasa-prevratit-soobshheniya-v-klientov-i-uvelichit-prodazhi",
+      "modified": "2025-07-31",
+      "chars": 18852,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Синхронизация ВК с CRM: 5 простых шагов, чтобы за полчаса превратить сообщения в"
+    },
+    {
+      "id": 7311,
+      "slug": "avtomatizacziya-biznesa-v-2025-izbavtes-ot-rutiny-i-uvelichte-pribyl-s-pomoshhyu-effektivnyh-reshenij",
+      "modified": "2025-07-27",
+      "chars": 21099,
+      "h2": 21,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса в 2025: избавьтесь от рутины и увеличьте прибыль с помощью"
+    },
+    {
+      "id": 7293,
+      "slug": "avtomatizacziya-podpisok-7-shagov-k-legkomu-i-veselomu-upravleniyu-bez-programmistov",
+      "modified": "2025-07-26",
+      "chars": 23875,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация подписок: 7 шагов к легкому и веселому управлению без программисто"
+    },
+    {
+      "id": 7244,
+      "slug": "avtomatizacziya-hr-s-make-com-kak-izbavitsya-ot-rutinnoj-raboty-i-sosredotochitsya-na-interesnyh-proektah",
+      "modified": "2025-07-23",
+      "chars": 21412,
+      "h2": 27,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация HR с Make.com: как избавиться от рутинной работы и сосредоточиться"
+    },
+    {
+      "id": 7178,
+      "slug": "avtomatizacziya-s-pomoshhyu-map-reduce-i-aggregate-kak-zolotye-strategii-koda-uvelichivayut-pribyl-vashego-biznesa",
+      "modified": "2025-07-17",
+      "chars": 19520,
+      "h2": 2,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация с помощью map, reduce и aggregate: как золотые стратегии кода увел"
+    },
+    {
+      "id": 7160,
+      "slug": "moshhnye-biznes-instrumenty-kastomnyj-http-response-dlya-transformaczii-vebhukov-v-uspeshnye-resheniya",
+      "modified": "2025-07-16",
+      "chars": 25391,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Мощные бизнес-инструменты: кастомный HTTP Response для трансформации вебхуков в "
+    },
+    {
+      "id": 7129,
+      "slug": "spasite-svoj-biznes-kak-vstroennye-funkczii-preobrazovaniya-dannyh-reshayut-problemu-haosa-i-uproshhayut-rutinnye-zadachi",
+      "modified": "2025-07-15",
+      "chars": 15754,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Спасите свой бизнес: как встроенные функции преобразования данных решают проблем"
+    },
+    {
+      "id": 7114,
+      "slug": "kak-dva-routera-i-umnyj-dom-reshayut-vse-problemy-s-wi-fi-avtomatizacziya-interneta-na-vashem-gorizonte",
+      "modified": "2025-07-13",
+      "chars": 22347,
+      "h2": 2,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как два роутера и умный дом решают все проблемы с Wi-Fi: автоматизация интернета"
+    },
+    {
+      "id": 7057,
+      "slug": "uprostite-rabotu-s-slack-kastomnye-komandy-dlya-avtomatizaczii-zadach-bez-programmistov-i-russkij-kolorit",
+      "modified": "2025-07-10",
+      "chars": 19797,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Упростите работу с Slack: кастомные команды для автоматизации задач без программ"
+    },
+    {
+      "id": 7031,
+      "slug": "avtomatizacziya-proczessov-s-salesforce-i-bigquery-cherez-make-5-shagov-k-sistemnomu-uspehu-bez-lishnih-usilij",
+      "modified": "2025-07-09",
+      "chars": 23646,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация процессов с Salesforce и BigQuery через Make: 5 шагов к системному"
+    },
+    {
+      "id": 6954,
+      "slug": "avtomatizacziya-komandnoj-raboty-s-make-5-shagov-k-idealnomu-ritmu-i-dostizheniyu-czelej",
+      "modified": "2025-07-04",
+      "chars": 18732,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация командной работы с Make: 5 шагов к идеальному ритму и достижению ц"
+    },
+    {
+      "id": 6940,
+      "slug": "optimizacziya-obrabotki-dannyh-avtomatizacziya-filtraczii-json-na-make-com-dlya-povysheniya-effektivnosti-biznes-proczessov",
+      "modified": "2025-07-03",
+      "chars": 18467,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Оптимизация обработки данных: Автоматизация фильтрации JSON на make.com для повы"
+    },
+    {
+      "id": 6912,
+      "slug": "glubinnaya-adaptacziya-make-sczenariev-pod-gdpr-effektivnye-pravila-i-hitrosti-dlya-uspeshnogo-biznesa",
+      "modified": "2025-07-01",
+      "chars": 21954,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Глубинная адаптация Make-сценариев под GDPR: эффективные правила и хитрости для "
+    },
+    {
+      "id": 6884,
+      "slug": "avtomatizacziya-2025-polnoe-rukovodstvo-po-integraczii-make-i-hubspot-dlya-vashego-biznesa",
+      "modified": "2025-06-29",
+      "chars": 19810,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table"
+      ],
+      "tldr": false,
+      "title": "Автоматизация 2025: Полное руководство по интеграции Make и HubSpot для вашего б"
+    },
+    {
+      "id": 6876,
+      "slug": "5-prostyh-shagov-k-avtomatizaczii-uvedomlenij-o-prosrochennyh-zadachah-v-clickup-kak-ne-upustit-dedlajny-i-sohranit-spokojstvie",
+      "modified": "2025-06-28",
+      "chars": 21540,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "5 простых шагов к автоматизации уведомлений о просроченных задачах в ClickUp: ка"
+    },
+    {
+      "id": 6870,
+      "slug": "10-luchshih-shablonov-make-dlya-avtomatizaczii-marketinga-i-dostizheniya-uspeha",
+      "modified": "2025-06-28",
+      "chars": 22145,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "10 лучших шаблонов Make для автоматизации маркетинга и достижения успеха"
+    },
+    {
+      "id": 6774,
+      "slug": "avtomatizacziya-videourokov-s-make-com-kak-uvelichit-trafik-i-uprostit-sozdanie-kontenta-do-maksimuma",
+      "modified": "2025-06-19",
+      "chars": 16061,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация видеоуроков с Make.com: как увеличить трафик и упростить создание "
+    },
+    {
+      "id": 6646,
+      "slug": "pokorite-ad-obrabotki-oshibok-10-neotrazimyh-sovetov-dlya-idealnogo-koda",
+      "modified": "2025-06-12",
+      "chars": 20492,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Покорите ад обработки ошибок: 10 неотразимых советов для идеального кода"
+    },
+    {
+      "id": 6644,
+      "slug": "stan-magom-avtomatizaczii-shagi-k-masterstvu-raboty-s-peremennymi-i-funkcziyami-na-make-com",
+      "modified": "2025-06-12",
+      "chars": 19546,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Стань магом автоматизации: шаги к мастерству работы с переменными и функциями на"
+    },
+    {
+      "id": 6622,
+      "slug": "sozdanie-ar-magii-na-meropriyatii-polnoe-rukovodstvo-po-event-based-linzam-i-avtomatizaczii-s-make-com-dlya-vpechatlyayushhih-sobytij",
+      "modified": "2025-06-10",
+      "chars": 23254,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создание AR-магии на мероприятии: полное руководство по event-based линзам и авт"
+    },
+    {
+      "id": 6532,
+      "slug": "kak-avtomatizacziya-ugc-mozhet-spasti-vash-biznes-sekrety-effektivnogo-upravleniya-kontentom-i-ego-vliyanie-na-pribyl",
+      "modified": "2025-06-05",
+      "chars": 22577,
+      "h2": 2,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация UGC может спасти ваш бизнес: секреты эффективного управления к"
+    },
+    {
+      "id": 6496,
+      "slug": "kross-kanalnaya-segmentacziya-kak-edinyj-id-preobrazuet-marketing-i-uvelichivaet-prodazhi",
+      "modified": "2025-06-04",
+      "chars": 24421,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Кросс-канальная сегментация: как единый ID преобразует маркетинг и увеличивает п"
+    },
+    {
+      "id": 6489,
+      "slug": "asr-v-kontente-revolyucziya-avtomatizaczii-i-novye-gorizonty-obshheniya-dlya-biznesa",
+      "modified": "2025-06-03",
+      "chars": 17647,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "ASR в контенте: революция автоматизации и новые горизонты общения для бизнеса"
+    },
+    {
+      "id": 6478,
+      "slug": "zapusk-restriminga-dlya-blogerov-i-biznesov-podrobnoe-poshagovoe-rukovodstvo-dlya-uspeshnyh-onlajn-translyaczij",
+      "modified": "2025-06-03",
+      "chars": 19364,
+      "h2": 2,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Запуск рестриминга для блогеров и бизнесов: подробное пошаговое руководство для "
+    },
+    {
+      "id": 6469,
+      "slug": "avtomatizacziya-marketinga-kak-ispolzovat-webhooks-i-api-triggery-dlya-lyogkoj-i-effektivnoj-raboty",
+      "modified": "2025-06-02",
+      "chars": 23007,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация маркетинга: как использовать webhooks и API-триггеры для лёгкой и "
+    },
+    {
+      "id": 6464,
+      "slug": "nejroseti-i-a-b-testirovanie-revolyucziya-v-czifrovom-marketinge-dlya-uvelicheniya-konversij",
+      "modified": "2025-06-02",
+      "chars": 24206,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Нейросети и A/B-тестирование: революция в цифровом маркетинге для увеличения кон"
+    },
+    {
+      "id": 6462,
+      "slug": "iskusstvennyj-intellekt-v-czifrovom-marketinge-kak-generacziya-heshtegov-i-seo-opisanij-izmenyaet-vash-uspeh-onlajn",
+      "modified": "2025-06-02",
+      "chars": 15798,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Искусственный интеллект в цифровом маркетинге: как генерация хэштегов и SEO-опис"
+    },
+    {
+      "id": 6434,
+      "slug": "kak-avtomatizacziya-politiki-konfidenczialnosti-pomogaet-vashemu-biznesu-vydelitsya-v-epohu-gdpr",
+      "modified": "2025-05-30",
+      "chars": 18068,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация политики конфиденциальности помогает вашему бизнесу выделиться"
+    },
+    {
+      "id": 6432,
+      "slug": "gejmifikacziya-v-biznese-prevrashhaem-rutinu-v-azartnoe-priklyuchenie-i-dobivaemsya-uspeha-bez-oshibok",
+      "modified": "2025-05-30",
+      "chars": 16085,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Геймификация в бизнесе: превращаем рутину в азартное приключение и добиваемся ус"
+    },
+    {
+      "id": 6354,
+      "slug": "kak-avtomatizacziya-s-make-com-i-nejrosetyami-revolyuczioniziruet-vash-biznes-i-uvelichivaet-pribyl",
+      "modified": "2025-05-24",
+      "chars": 13362,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация с Make.com и нейросетями революционизирует ваш бизнес и увелич"
+    },
+    {
+      "id": 6298,
+      "slug": "avtomatizacziya-rabochego-vremeni-s-make-com-sposoby-sokratit-rashody-i-povysit-effektivnost-biznesa",
+      "modified": "2025-05-21",
+      "chars": 13180,
+      "h2": 15,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация рабочего времени с Make.com: способы сократить расходы и повысить "
+    },
+    {
+      "id": 6284,
+      "slug": "avtomatizacziya-zhizni-i-biznesa-s-make-com-sekrety-sovety-i-absurdnye-idei-s-kotikami-dlya-vashego-uspeha",
+      "modified": "2025-05-21",
+      "chars": 14403,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация жизни и бизнеса с Make.com: секреты, советы и абсурдные идеи с кот"
+    },
+    {
+      "id": 6280,
+      "slug": "ustranite-rutinu-i-oshibki-7-sposobov-kak-make-com-avtomatiziruet-vash-rabochij-proczess-i-spaset-biznes",
+      "modified": "2025-05-21",
+      "chars": 11022,
+      "h2": 2,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Устраните рутину и ошибки: 7 способов, как Make.com автоматизирует ваш рабочий п"
+    },
+    {
+      "id": 6214,
+      "slug": "uznajte-kak-avtomatizacziya-i-nejroseti-s-make-com-mogut-sdelat-vash-biznes-maksimalno-effektivnym-i-pribylnym",
+      "modified": "2025-05-19",
+      "chars": 13351,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Узнайте, как автоматизация и нейросети с Make.com могут сделать ваш бизнес макси"
+    },
+    {
+      "id": 6196,
+      "slug": "effektivnaya-avtomatizacziya-rabochih-proczessov-s-make-com-prostoe-rukovodstvo-k-uspehu-bez-stressa",
+      "modified": "2025-05-18",
+      "chars": 14350,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Эффективная автоматизация рабочих процессов с Make.com: простое руководство к ус"
+    },
+    {
+      "id": 6149,
+      "slug": "kak-avtomatizirovat-biznes-proczessy-na-make-com-ot-novichka-do-eksperta-s-nejrosetyami-i-yandeks-servisami",
+      "modified": "2025-05-16",
+      "chars": 13904,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизировать бизнес-процессы на Make.com: от новичка до эксперта с нейро"
+    },
+    {
+      "id": 6125,
+      "slug": "evolyucziya-storitellinga-kak-iskusstvennyj-intellekt-i-avtomatizacziya-transformiruyut-kontent-dlya-sovremennogo-potrebitelya",
+      "modified": "2025-05-16",
+      "chars": 15612,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Эволюция сторителлинга: как искусственный интеллект и автоматизация трансформиру"
+    },
+    {
+      "id": 6083,
+      "slug": "preimushhestva-ugc-kontenta-kak-ai-instrumenty-i-make-com-revolyuczioniziruyut-vash-marketing",
+      "modified": "2025-05-14",
+      "chars": 12901,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Преимущества UGC-контента: как AI-инструменты и Make.com революционизируют ваш м"
+    },
+    {
+      "id": 6052,
+      "slug": "avtomatizacziya-instagram-stories-sekrety-ekonomii-vremeni-i-povysheniya-vovlechennosti-s-make-com-i-ai-shablonami",
+      "modified": "2025-05-12",
+      "chars": 16261,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация Instagram Stories: Секреты экономии времени и повышения вовлеченно"
+    },
+    {
+      "id": 6045,
+      "slug": "uvelichte-prodazhi-bez-usilij-avtomatizacziya-soczialnyh-setej-s-pomoshhyu-make-com-dlya-vashego-biznesa",
+      "modified": "2025-05-12",
+      "chars": 9806,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Увеличьте продажи без усилий: Автоматизация социальных сетей с помощью Make.com "
+    },
+    {
+      "id": 6034,
+      "slug": "kak-avtomatizacziya-s-make-com-izmenit-vash-smm-5-prostyh-shagov-k-uspehu",
+      "modified": "2025-05-12",
+      "chars": 11402,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация с Make.com изменит ваш SMM: 5 простых шагов к успеху!"
+    },
+    {
+      "id": 6028,
+      "slug": "uznajte-kak-avtomatizirovat-soczseti-s-make-com-polnoe-rukovodstvo-dlya-professionalov-i-ekonomiya-vremeni",
+      "modified": "2025-05-12",
+      "chars": 9342,
+      "h2": 2,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Узнайте, как автоматизировать соцсети с Make.com: полное руководство для професс"
+    },
+    {
+      "id": 6015,
+      "slug": "ekonomte-vremya-i-povyshajte-kachestvo-kommunikaczii-kak-avtomatizacziya-pozdravitelnyh-otkrytok-cherez-make-com-transformiruet-vash-biznes",
+      "modified": "2025-05-11",
+      "chars": 14241,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Экономьте время и повышайте качество коммуникации: как автоматизация поздравител"
+    },
+    {
+      "id": 5967,
+      "slug": "sozdajte-unikalnye-brendirovannye-izobrazheniya-vsego-za-5-minut-kak-make-com-izbavit-vash-biznes-ot-kreativnogo-krizisa-i-povysit-prodazhi",
+      "modified": "2025-05-10",
+      "chars": 12312,
+      "h2": 6,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создайте уникальные брендированные изображения всего за 5 минут: как Make.com из"
+    },
+    {
+      "id": 5950,
+      "slug": "avtomatizacziya-oblozhek-s-make-com-kak-izdateli-skryvayut-sekrety-uspeha-i-povyshayut-prodazhi",
+      "modified": "2025-05-10",
+      "chars": 12216,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация обложек с Make.com: как издатели скрывают секреты успеха и повышаю"
+    },
+    {
+      "id": 5915,
+      "slug": "avtomatizacziya-uvedomlenij-o-zaderzhkah-dostavki-kak-make-com-pomozhet-uderzhat-klientov-i-povysit-doverie-k-vashemu-biznesu",
+      "modified": "2025-05-09",
+      "chars": 8988,
+      "h2": 2,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация уведомлений о задержках доставки: как Make.com поможет удержать кл"
+    },
+    {
+      "id": 5893,
+      "slug": "avtomatizacziya-reklamy-na-ozon-raskryvaem-sekrety-uspeha-s-make-com-i-izbegaem-oshibok-novichkov",
+      "modified": "2025-05-08",
+      "chars": 11095,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация рекламы на Ozon: раскрываем секреты успеха с Make.com и избегаем о"
+    },
+    {
+      "id": 5852,
+      "slug": "kak-avtomatizirovat-uvedomleniya-cherez-telegram-bota-s-make-com-poshagovoe-rukovodstvo-dlya-vashego-biznesa",
+      "modified": "2025-05-07",
+      "chars": 11373,
+      "h2": 2,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизировать уведомления через Telegram-бота с Make.com: пошаговое руков"
+    },
+    {
+      "id": 5850,
+      "slug": "avtomatizacziya-otchetov-o-prodazhah-s-make-com-i-power-bi-izbavtes-ot-rutinnyh-zadach-i-uvelichte-pribyl-legko",
+      "modified": "2025-05-07",
+      "chars": 15502,
+      "h2": 2,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация отчетов о продажах с Make.com и Power BI: избавьтесь от рутинных з"
+    },
+    {
+      "id": 5797,
+      "slug": "sekrety-avtomatizaczii-vstrech-kak-calendly-i-make-com-pomogut-vam-sekonomit-vremya-i-uvelichit-biznes-produktivnost",
+      "modified": "2025-05-05",
+      "chars": 11291,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты автоматизации встреч: как Calendly и Make.com помогут вам сэкономить вре"
+    },
+    {
+      "id": 5795,
+      "slug": "kak-avtomatizacziya-s-pomoshhyu-docusign-api-i-make-com-preobrazit-vash-biznes-navsegda-poshagovoe-rukovodstvo-dlya-uspeha",
+      "modified": "2025-05-05",
+      "chars": 13557,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация с помощью DocuSign API и Make.com преобразит ваш бизнес навсег"
+    },
+    {
+      "id": 5765,
+      "slug": "sozdanie-chat-bota-dlya-whatsapp-poshagovoe-rukovodstvo-s-twilio-api-i-make-com-dlya-avtomatizaczii-biznesa",
+      "modified": "2025-05-05",
+      "chars": 15693,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создание чат-бота для WhatsApp: пошаговое руководство с Twilio API и Make.com дл"
+    },
+    {
+      "id": 5677,
+      "slug": "sozdajte-chat-bota-dlya-telegram-bez-programmirovaniya-avtomatizacziya-s-chatgpt-na-make-com-shag-za-shagom",
+      "modified": "2025-05-02",
+      "chars": 10437,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создайте чат-бота для Telegram без программирования: автоматизация с ChatGPT на "
+    },
+    {
+      "id": 5665,
+      "slug": "avtomatizacziya-metadannyh-video-kontenta-bystryj-sposob-s-sora-i-make-com-dlya-povysheniya-effektivnosti-vashego-biznesa",
+      "modified": "2025-05-02",
+      "chars": 11346,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация метаданных видео-контента: быстрый способ с Sora и Make.com для по"
+    },
+    {
+      "id": 5622,
+      "slug": "avtomatizacziya-biznesa-na-make-com-5-klyuchevyh-shagov-k-rostu-pribyli-bez-riskov-i-lishnih-vlozhenij",
+      "modified": "2025-05-01",
+      "chars": 8274,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса на Make.com: 5 ключевых шагов к росту прибыли без рисков и"
+    },
+    {
+      "id": 5570,
+      "slug": "avtoposting-v-soczsetyah-kak-make-com-osvobozhdaet-vash-marketing-ot-stressa-i-prinosit-radost",
+      "modified": "2025-04-30",
+      "chars": 14400,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг в соцсетях: как Make.com освобождает ваш маркетинг от стресса и прин"
+    },
+    {
+      "id": 5563,
+      "slug": "avtoposting-v-soczsetyah-polnoe-rukovodstvo-po-make-com-s-sekretami-uspeha-i-prakticheskimi-sovetami",
+      "modified": "2025-04-30",
+      "chars": 15145,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг в соцсетях: полное руководство по Make.com с секретами успеха и прак"
+    },
+    {
+      "id": 5561,
+      "slug": "avtomatizacziya-biznesa-s-make-com-kak-uprostit-rutinu-i-povysit-produktivnost-v-google-workspace",
+      "modified": "2025-04-30",
+      "chars": 8753,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса с Make.com: как упростить рутину и повысить продуктивность"
+    },
+    {
+      "id": 5528,
+      "slug": "oshibki-v-make-com-uznajte-sekrety-ih-poiska-i-ispravleniya-dlya-uspeshnoj-avtomatizaczii-proczessov",
+      "modified": "2025-04-29",
+      "chars": 9391,
+      "h2": 17,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Ошибки в Make.com: Узнайте секреты их поиска и исправления для успешной автомати"
+    },
+    {
+      "id": 5517,
+      "slug": "avtomatizacziya-biznesa-s-make-com-ekonomte-vremya-i-uvelichivajte-effektivnost-na-avtopilote",
+      "modified": "2025-04-29",
+      "chars": 15556,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса с Make.com: экономьте время и увеличивайте эффективность н"
+    },
+    {
+      "id": 5464,
+      "slug": "uvelichte-dohod-na-300-avtomatizacziya-partnerskih-programm-s-make-com-bez-programmistov",
+      "modified": "2025-04-28",
+      "chars": 14833,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Увеличьте доход на 300%: автоматизация партнерских программ с Make.com без прогр"
+    },
+    {
+      "id": 5450,
+      "slug": "avtomatizacziya-video-kontenta-kak-make-com-sokrashhaet-10-chasov-raboty-do-10-minut-i-uvelichivaet-vashu-produktivnost",
+      "modified": "2025-04-27",
+      "chars": 10753,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация видео-контента: Как Make.com сокращает 10 часов работы до 10 минут"
+    },
+    {
+      "id": 5401,
+      "slug": "avtoposting-reels-na-instagram-s-make-com-revolyucziya-v-vashem-kontent-marketinge-dlya-rosta-podpischikov-i-prodazh",
+      "modified": "2025-04-26",
+      "chars": 12877,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг Reels на Instagram с Make.com: Революция в вашем контент-маркетинге "
+    },
+    {
+      "id": 5380,
+      "slug": "avtomatizacziya-videomarketinga-7-sekretov-uspeha-dlya-instagram-i-youtube-s-make-com-kotorye-izmenyat-vash-biznes",
+      "modified": "2025-04-26",
+      "chars": 11108,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация видеомаркетинга: 7 секретов успеха для Instagram и YouTube с Make."
+    },
+    {
+      "id": 5374,
+      "slug": "sozdajte-professionalnye-video-za-schitannye-minuty-s-kling-ai-i-make-com-udivitelnye-vozmozhnosti-dlya-kazhdogo",
+      "modified": "2025-04-26",
+      "chars": 11709,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создайте профессиональные видео за считанные минуты с Kling AI и Make.com: удиви"
+    },
+    {
+      "id": 5357,
+      "slug": "preobrazite-svoi-instagram-reels-s-pomoshhyu-ai-avtomatizacziya-muzykalnogo-soprovozhdeniya-za-schitannye-minuty",
+      "modified": "2025-04-25",
+      "chars": 12567,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Преобразите свои Instagram Reels с помощью AI: автоматизация музыкального сопров"
+    },
+    {
+      "id": 5355,
+      "slug": "sekrety-sozdaniya-virusnyh-rolikov-za-15-minut-avtomatizacziya-s-make-com-dlya-moshhnogo-kontenta-kotoryj-pokorit-internet",
+      "modified": "2025-04-25",
+      "chars": 9492,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты создания вирусных роликов за 15 минут: автоматизация с Make.com для мощн"
+    },
+    {
+      "id": 5305,
+      "slug": "avtomatizacziya-rabochih-proczessov-s-make-com-10-bezoshibochnyh-lajfhakov-dlya-vashego-biznesa-ot-ekspertov-kovcheg",
+      "modified": "2025-04-24",
+      "chars": 11406,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация рабочих процессов с Make.com: 10 безошибочных лайфхаков для вашего"
+    },
+    {
+      "id": 5289,
+      "slug": "preobrazite-svoyu-mechtu-v-realnost-obuchenie-v-soobshhestve-kovcheg-dlya-avtomatizaczii-s-make-com",
+      "modified": "2025-04-24",
+      "chars": 8188,
+      "h2": 3,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Преобразите свою мечту в реальность: обучение в сообществе &#171;Ковчег&#187; дл"
+    },
+    {
+      "id": 5286,
+      "slug": "avtomatizacziya-biznesa-s-make-com-7-kejsov-kotorye-izmenyat-vashu-rutinu-navsegda",
+      "modified": "2025-04-24",
+      "chars": 11277,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса с Make.com: 7 кейсов, которые изменят вашу рутину навсегда"
+    },
+    {
+      "id": 5257,
+      "slug": "idealnye-avtomatizaczii-v-make-com-kak-izbezhat-oshibok-i-otkryt-sekrety-soobshhestva-kovcheg",
+      "modified": "2025-04-23",
+      "chars": 15970,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Идеальные автоматизации в Make.com: как избежать ошибок и открыть секреты сообще"
+    },
+    {
+      "id": 5148,
+      "slug": "krossposting-iz-yandeks-dzen-v-telegram-kak-avtomatizirovat-i-uvelichit-svoj-uspeh-s-make-com",
+      "modified": "2025-04-18",
+      "chars": 9004,
+      "h2": 2,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Кросспостинг из Яндекс.Дзен в Telegram: как автоматизировать и увеличить свой ус"
+    },
+    {
+      "id": 5093,
+      "slug": "avtoposting-v-instagram-telegram-i-threads-kak-ispolzovat-sekrety-dlya-revolyuczii-v-vashem-marketinge",
+      "modified": "2025-04-16",
+      "chars": 15528,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг в Instagram, Telegram и Threads: как использовать секреты для револю"
+    },
+    {
+      "id": 5091,
+      "slug": "osvobodite-vremya-i-uvelichte-vovlechennost-avtomatizacziya-vkontakte-i-odnoklassnikov-s-make-com-i-nejrosetyami",
+      "modified": "2025-04-16",
+      "chars": 10897,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Освободите время и увеличьте вовлеченность: Автоматизация ВКонтакте и Одноклассн"
+    },
+    {
+      "id": 5085,
+      "slug": "kak-avtomatizacziya-publikaczij-v-yandeks-dzen-cherez-telegram-kanal-i-make-com-preobrazuet-vash-kontent-marketing",
+      "modified": "2025-04-16",
+      "chars": 9418,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация публикаций в Яндекс.Дзен через Telegram-канал и Make.com преоб"
+    },
+    {
+      "id": 5069,
+      "slug": "sozdajte-kontent-v-threads-s-pomoshhyu-ii-10-sekretov-avtomatizaczii-dlya-maksimalnoj-ekonomii-vremeni-i-usilij",
+      "modified": "2025-04-16",
+      "chars": 8192,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создайте контент в Threads с помощью ИИ: 10 секретов автоматизации для максималь"
+    },
+    {
+      "id": 5063,
+      "slug": "kak-avtomatizirovat-kontent-s-pomoshhyu-nejrosetej-i-sdelat-blog-virusnym-za-odin-den",
+      "modified": "2025-04-15",
+      "chars": 9077,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизировать контент с помощью нейросетей и сделать блог вирусным за оди"
+    },
+    {
+      "id": 5041,
+      "slug": "avtoposting-v-odnoklassnikah-s-livedune-osvobodite-desyatki-chasov-v-nedelyu-i-izmenite-svoyu-zhizn",
+      "modified": "2025-04-15",
+      "chars": 9562,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг в Одноклассниках с LiveDune: Освободите десятки часов в неделю и изм"
+    },
+    {
+      "id": 4991,
+      "slug": "avtoposting-v-yandeks-dzen-kak-sdelat-ego-s-pomoshhyu-make-com-i-sohranit-psihicheskoe-zdorove",
+      "modified": "2025-04-14",
+      "chars": 9468,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг в Яндекс.Дзен: Как сделать его с помощью Make.com и сохранить психич"
+    },
+    {
+      "id": 4963,
+      "slug": "avtoposting-na-maksimalkah-kak-nejroseti-i-make-com-povysyat-engagement-i-osvobodyat-vashe-vremya-ot-rutiny",
+      "modified": "2025-04-13",
+      "chars": 5713,
+      "h2": 3,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг на максималках: как нейросети и make.com повысят engagement и освобо"
+    },
+    {
+      "id": 4947,
+      "slug": "kak-algoritmy-soczsetej-prevrashhayut-vashu-zhizn-v-produkt-7-shokiruyushhih-faktov-i-sovety-po-spaseniyu-ot-chyornogo-zerkala",
+      "modified": "2025-04-12",
+      "chars": 11985,
+      "h2": 8,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как алгоритмы соцсетей превращают вашу жизнь в продукт: 7 шокирующих фактов и со"
+    },
+    {
+      "id": 4928,
+      "slug": "avtomatizacziya-analitiki-7-proverennyh-shagov-chtoby-iz-dannyh-sdelat-zolotuyu-zhilu-i-obojti-konkurentov",
+      "modified": "2025-04-12",
+      "chars": 11102,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация аналитики: 7 проверенных шагов, чтобы из данных сделать золотую жи"
+    },
+    {
+      "id": 4926,
+      "slug": "avtomatizacziya-v-smm-kak-roboty-osvobozhdayut-kreativnyh-speczialistov-ot-rutinnyh-zadach",
+      "modified": "2025-04-12",
+      "chars": 11150,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Автоматизация в SMM: Как роботы освобождают креативных специалистов от рутинных "
+    },
+    {
+      "id": 4920,
+      "slug": "iskusstvennyj-intellekt-v-soczsetyah-avtomatizacziya-uspeha-bez-usilij-kak-vash-lichnyj-haker",
+      "modified": "2025-04-12",
+      "chars": 11796,
+      "h2": 12,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Искусственный интеллект в соцсетях: автоматизация успеха без усилий, как ваш лич"
+    },
+    {
+      "id": 4916,
+      "slug": "avtoposting-v-soczsetyah-osvobodite-vremya-dlya-zhizni-i-uderzhite-svoyu-auditoriyu-bez-usilij",
+      "modified": "2025-04-12",
+      "chars": 8489,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг в соцсетях: освободите время для жизни и удержите свою аудиторию без"
+    },
+    {
+      "id": 4902,
+      "slug": "novyj-uroven-postinga-avtomatizacziya-na-make-com-kotoraya-izmenit-vashu-strategiyu-i-prineset-rezultaty",
+      "modified": "2025-04-11",
+      "chars": 8176,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Новый уровень постинга: автоматизация на Make.com, которая изменит вашу стратеги"
+    },
+    {
+      "id": 4898,
+      "slug": "kak-sozdat-chat-bota-dlya-obshheniya-s-klientami-vash-czifrovoj-drug-navsegda",
+      "modified": "2025-04-11",
+      "chars": 14675,
+      "h2": 8,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создать чат-бота для общения с клиентами: ваш цифровой друг навсегда"
+    },
+    {
+      "id": 4882,
+      "slug": "kak-iskusstvennyj-intellekt-menyaet-mir-kontenta-ot-avtomatizaczii-do-kreativnyh-reshenij-dlya-vashego-biznesa",
+      "modified": "2025-04-10",
+      "chars": 10930,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как искусственный интеллект меняет мир контента: от автоматизации до креативных "
+    },
+    {
+      "id": 4876,
+      "slug": "kak-sohranit-unikalnost-kontenta-i-dushu-v-epohu-nejrosetej-i-avtomatizaczii",
+      "modified": "2025-04-10",
+      "chars": 4755,
+      "h2": 3,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как сохранить уникальность контента и душу в эпоху нейросетей и автоматизации"
+    },
+    {
+      "id": 4874,
+      "slug": "umnaya-avtomatizacziya-kak-nejroseti-mogut-preobrazovat-rutinnyj-marketing-v-kreativnoe-oblako-idej",
+      "modified": "2025-04-10",
+      "chars": 10340,
+      "h2": 9,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Умная автоматизация: как нейросети могут преобразовать рутинный маркетинг в креа"
+    },
+    {
+      "id": 4870,
+      "slug": "kak-avtomatizacziya-biznesa-izbavlyaet-ot-rutiny-i-otkryvaet-novye-gorizonty-uspeha",
+      "modified": "2025-04-10",
+      "chars": 5910,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация бизнеса избавляет от рутины и открывает новые горизонты успеха"
+    },
+    {
+      "id": 4862,
+      "slug": "trendy-v-prognozirovanii-5-shagov-chtoby-ne-popast-v-lovushku-algoritmov-i-dobitsya-uspeha",
+      "modified": "2025-04-10",
+      "chars": 13824,
+      "h2": 1,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Тренды в прогнозировании: 5 шагов, чтобы не попасть в ловушку алгоритмов и добит"
+    },
+    {
+      "id": 4850,
+      "slug": "iskrennost-protiv-avtomatizaczii-kak-sohranit-chelovechnost-v-czifrovuyu-epohu",
+      "modified": "2025-04-10",
+      "chars": 9912,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Искренность против автоматизации: как сохранить человечность в цифровую эпоху"
+    },
+    {
+      "id": 4826,
+      "slug": "10-sekretov-sozdaniya-zagolovkov-kotorye-vzorvut-vash-kontent-s-pomoshhyu-ii-i-magii-slov",
+      "modified": "2025-04-09",
+      "chars": 8537,
+      "h2": 5,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "10 секретов создания заголовков, которые взорвут ваш контент с помощью ИИ и маги"
+    },
+    {
+      "id": 4795,
+      "slug": "sekrety-avtomatizaczii-publikaczij-v-soczsetyah-stante-masterom-kontenta-bez-lishnih-usilij",
+      "modified": "2025-04-08",
+      "chars": 12168,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты автоматизации публикаций в соцсетях: станьте мастером контента без лишни"
+    },
+    {
+      "id": 4793,
+      "slug": "avtoposting-kontent-plana-kak-nejroseti-i-make-com-delayut-rutinu-nezametnoj-magiej",
+      "modified": "2025-04-08",
+      "chars": 12152,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг контент-плана: как нейросети и Make.com делают рутину незаметной маг"
+    },
+    {
+      "id": 4785,
+      "slug": "kak-iskusstvennyj-intellekt-v-avtomatizaczii-soczsetej-spasaet-vash-biznes-ot-stressa-i-prevrashhaet-rutinu-v-magiyu",
+      "modified": "2025-04-07",
+      "chars": 16176,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как искусственный интеллект в автоматизации соцсетей спасает ваш бизнес от стрес"
+    },
+    {
+      "id": 4781,
+      "slug": "avtomatizacziya-upravleniya-kachestvom-7-shagov-k-svobode-ot-rutiny-i-prevrashheniyu-kontrolya-v-vashu-supersilu",
+      "modified": "2025-04-07",
+      "chars": 13662,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация управления качеством: 7 шагов к свободе от рутины и превращению ко"
+    },
+    {
+      "id": 4779,
+      "slug": "avtomatizacziya-idej-s-make-com-kak-izbavitsya-ot-rutiny-i-raskryt-innovaczii-bez-granicz",
+      "modified": "2025-04-07",
+      "chars": 9141,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Автоматизация идей с Make.com: Как избавиться от рутины и раскрыть инновации без"
+    },
+    {
+      "id": 4771,
+      "slug": "avtomatizacziya-obucheniya-personala-kak-prevratit-sotrudnikov-v-superzvezd-bez-utomitelnyh-treningov",
+      "modified": "2025-04-07",
+      "chars": 11427,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация обучения персонала: как превратить сотрудников в суперзвезд без ут"
+    },
+    {
+      "id": 4761,
+      "slug": "avtomatizacziya-sluzhby-podderzhki-top-10-volshebnyh-zaklinanij-kotorye-spasut-vas-ot-byurokratii",
+      "modified": "2025-04-07",
+      "chars": 12232,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация службы поддержки: топ-10 волшебных заклинаний, которые спасут вас "
+    },
+    {
+      "id": 4734,
+      "slug": "probuzhdaj-svoyu-magiyu-avtomatizacziya-vebinarov-s-make-com-dlya-stabilnogo-dohoda",
+      "modified": "2025-04-06",
+      "chars": 13361,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Пробуждай свою магию: автоматизация вебинаров с Make.com для стабильного дохода"
+    },
+    {
+      "id": 4722,
+      "slug": "avtomatizacziya-inventarizaczii-kak-izbezhat-poter-i-nachat-zarabatyvat-a-ne-schitat-oshibki",
+      "modified": "2025-04-06",
+      "chars": 7699,
+      "h2": 6,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация инвентаризации: как избежать потерь и начать зарабатывать, а не сч"
+    },
+    {
+      "id": 4720,
+      "slug": "kak-ispolzovat-personalizirovannye-push-uvedomleniya-dlya-uvelicheniya-prodazh-na-300-i-privlecheniya-klientov",
+      "modified": "2025-04-06",
+      "chars": 13341,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как использовать персонализированные push-уведомления для увеличения продаж на 3"
+    },
+    {
+      "id": 4702,
+      "slug": "avtoposting-bez-usilij-prevrashhaem-rutinnye-zadachi-v-avtomaticheskuyu-magiyu-s-make-com-i-messendzherami",
+      "modified": "2025-04-05",
+      "chars": 10853,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг без усилий: превращаем рутинные задачи в автоматическую магию с Make"
+    },
+    {
+      "id": 4686,
+      "slug": "avtomatizacziya-hr-otkrovennye-istorii-smeshnye-momenty-s-kotikami-i-sekrety-uspeha-dlya-vashej-kompanii",
+      "modified": "2025-04-04",
+      "chars": 7835,
+      "h2": 4,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация HR: откровенные истории, смешные моменты с котиками и секреты успе"
+    },
+    {
+      "id": 4678,
+      "slug": "avtomatizacziya-s-make-com-legko-bystro-i-bez-stressa-vash-put-k-uspehu",
+      "modified": "2025-04-03",
+      "chars": 12901,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация с Make.com: легко, быстро и без стресса — ваш путь к успеху!"
+    },
+    {
+      "id": 4658,
+      "slug": "bezopasnost-api-7-prostyh-strategij-dlya-zashhity-vashih-dannyh-ot-shpionov",
+      "modified": "2025-04-03",
+      "chars": 5309,
+      "h2": 3,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Безопасность API: 7 простых стратегий для защиты ваших данных от шпионов"
+    },
+    {
+      "id": 4646,
+      "slug": "sozdajte-unikalnye-izobrazheniya-s-sora-i-make-com-poshagovoe-rukovodstvo-dlya-kreativnyh-avtomatizatorov",
+      "modified": "2025-04-02",
+      "chars": 8619,
+      "h2": 3,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создайте уникальные изображения с SORA и Make.com: пошаговое руководство для кре"
+    },
+    {
+      "id": 4642,
+      "slug": "kak-rabotat-s-sora-i-make-com-prostye-shagi-k-virusnym-ideyam-v-kreative",
+      "modified": "2025-04-02",
+      "chars": 10947,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "h2",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как Работать с Sora и Make.com: Простые Шаги к Вирусным Идеям в Креативе"
+    },
+    {
+      "id": 4620,
+      "slug": "preobrazite-svoj-biznes-avtomatizacziya-s-b2b-platformami-i-api-dlya-maksimalnoj-effektivnosti",
+      "modified": "2025-04-01",
+      "chars": 15252,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Преобразите свой бизнес: автоматизация с B2B-платформами и API для максимальной "
+    },
+    {
+      "id": 4596,
+      "slug": "preimushhestva-i-nedostatki-rfid-kak-metki-dlya-avtomatizaczii-sklada-mogut-optimizirovat-vashi-proczessy",
+      "modified": "2025-03-31",
+      "chars": 12498,
+      "h2": 13,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Преимущества и недостатки RFID: как метки для автоматизации склада могут оптимиз"
+    },
+    {
+      "id": 4592,
+      "slug": "supergeroi-v-hr-kak-avtomatizacziya-i-tehnologii-prevrashhayut-sotrudnikov-v-zvezd-kompanii",
+      "modified": "2025-03-30",
+      "chars": 12241,
+      "h2": 9,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Супергерои в HR: как автоматизация и технологии превращают сотрудников в звезд к"
+    },
+    {
+      "id": 4588,
+      "slug": "transportnyj-biznes-na-grani-kraha-kak-iot-i-prediktivnaya-analitika-spasayut-ot-ubytkov-s-pomoshhyu-avtomatizaczii",
+      "modified": "2025-03-30",
+      "chars": 11457,
+      "h2": 0,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Транспортный бизнес на грани краха? Как IoT и предиктивная аналитика спасают от "
+    },
+    {
+      "id": 4586,
+      "slug": "uznajte-kak-virtualnye-trenazhery-i-ar-obespechivayut-bezopasnoe-obuchenie-sotrudnikov-bez-riska-dlya-zhizni",
+      "modified": "2025-03-30",
+      "chars": 10565,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Узнайте, как виртуальные тренажеры и AR обеспечивают безопасное обучение сотрудн"
+    },
+    {
+      "id": 4584,
+      "slug": "kak-avtomatizacziya-logistiki-s-ii-i-gps-trekingom-prevratit-vashi-gruzy-v-czifrovye-dragoczennosti",
+      "modified": "2025-03-30",
+      "chars": 10763,
+      "h2": 10,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация логистики с ИИ и GPS-трекингом превратит ваши грузы в цифровые"
+    },
+    {
+      "id": 4576,
+      "slug": "kak-avtomatizirovat-kommunikacziyu-i-prevratit-klientov-v-predannyh-poklonnikov-s-pomoshhyu-email-i-chat-botov",
+      "modified": "2025-03-30",
+      "chars": 13835,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизировать коммуникацию и превратить клиентов в преданных поклонников "
+    },
+    {
+      "id": 4570,
+      "slug": "avtomatizacziya-biznesa-s-iot-7-shagov-k-uspehu-bez-stressa",
+      "modified": "2025-03-30",
+      "chars": 12061,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса с IoT: 7 шагов к успеху без стресса"
+    },
+    {
+      "id": 4568,
+      "slug": "kak-ii-v-sistemah-upravleniya-riskami-predskazyvaet-ugrozy-i-spasaet-biznes-ot-kraha",
+      "modified": "2025-03-29",
+      "chars": 10118,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как ИИ в системах управления рисками предсказывает угрозы и спасает бизнес от кр"
+    },
+    {
+      "id": 4556,
+      "slug": "iskusstvennyj-intellekt-v-marketinge-ot-magii-do-realnosti-kak-avtomatizacziya-proczessov-menyaet-biznes",
+      "modified": "2025-03-29",
+      "chars": 15518,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Искусственный интеллект в маркетинге: от магии до реальности — как автоматизация"
+    },
+    {
+      "id": 4524,
+      "slug": "elektronnyj-dokumentooborot-7-shagov-k-osvobozhdeniyu-ot-bumazhnoj-rutiny-i-dostizheniyu-uspeha",
+      "modified": "2025-03-27",
+      "chars": 10934,
+      "h2": 14,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Электронный документооборот: 7 шагов к освобождению от бумажной рутины и достиже"
+    },
+    {
+      "id": 4518,
+      "slug": "umnye-seti-kak-sovremennye-tehnologii-delayut-zavtraki-ekologichnee-i-udobnee-dlya-vas",
+      "modified": "2025-03-27",
+      "chars": 10003,
+      "h2": 1,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Умные сети: как современные технологии делают завтраки экологичнее и удобнее для"
+    },
+    {
+      "id": 4510,
+      "slug": "kak-ii-menyaet-yuridicheskuyu-rutinu-i-prevrashhaet-rabotu-yuristov-v-zahvatyvayushhee-shou-na-vyzhivanie",
+      "modified": "2025-03-27",
+      "chars": 8831,
+      "h2": 7,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как ИИ меняет юридическую рутину и превращает работу юристов в захватывающее шоу"
+    },
+    {
+      "id": 4502,
+      "slug": "umnye-sistemy-upravleniya-dannymi-kak-prevratit-czifry-v-predskazaniya-dlya-uspeshnogo-budushhego",
+      "modified": "2025-03-26",
+      "chars": 13051,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Умные системы управления данными: как превратить цифры в предсказания для успешн"
+    },
+    {
+      "id": 4480,
+      "slug": "avtomatizacziya-marketinga-kak-izbavitsya-ot-rutiny-i-dobavit-magii-s-pomoshhyu-personalizaczii-kotikov-i-shutok",
+      "modified": "2025-03-25",
+      "chars": 15402,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация маркетинга: как избавиться от рутины и добавить магии с помощью пе"
+    },
+    {
+      "id": 4462,
+      "slug": "avtomatizacziya-dokumentooborota-7-shagov-k-izbavleniyu-ot-bumazhnogo-ada-i-uproshheniyu-raboty-vashej-kompanii",
+      "modified": "2025-03-25",
+      "chars": 15063,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация документооборота: 7 шагов к избавлению от бумажного ада и упрощени"
+    },
+    {
+      "id": 4449,
+      "slug": "preobrazujte-propushhennye-vebinary-v-uspeshnyj-kontent-s-make-com-uznajte-sekrety-avtomatizaczii-s-milymi-kotikami",
+      "modified": "2025-03-24",
+      "chars": 10227,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Преобразуйте пропущенные вебинары в успешный контент с Make.com: узнайте секреты"
+    },
+    {
+      "id": 4397,
+      "slug": "avtomatizacziya-rutiny-kak-make-com-i-nejroseti-sdelayut-vashu-rabotu-legche-i-priyatnee",
+      "modified": "2025-03-18",
+      "chars": 8230,
+      "h2": 13,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация рутины: как Make.com и нейросети сделают вашу работу легче и прият"
+    },
+    {
+      "id": 4341,
+      "slug": "sistema-kontrolya-kachestva-zvonkov-v-koll-czentre-poshagovyj-gajd-s-russkimi-primerami-dlya-uspeshnogo-biznesa",
+      "modified": "2025-03-15",
+      "chars": 13530,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Система контроля качества звонков в колл-центре: пошаговый гайд с русскими приме"
+    },
+    {
+      "id": 4337,
+      "slug": "kak-spasti-svoj-biznes-ot-poter-shokiruyushhie-istorii-i-effektivnye-resheniya-dlya-rezervnogo-kopirovaniya-dannyh",
+      "modified": "2025-03-15",
+      "chars": 11780,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как спасти свой бизнес от потерь: шокирующие истории и эффективные решения для р"
+    },
+    {
+      "id": 4287,
+      "slug": "nastrojka-dostavki-v-internet-magazine-poshagovaya-integracziya-s-sdek-i-boxberry-bez-oshibok",
+      "modified": "2025-03-13",
+      "chars": 9186,
+      "h2": 1,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Настройка доставки в интернет-магазине: пошаговая интеграция с СДЭК и Boxberry б"
+    },
+    {
+      "id": 4205,
+      "slug": "avtomatizacziya-biznesa-za-30-minut-sekrety-sinhronizaczii-1s-i-crm-s-make-com-dlya-maksimalnoj-effektivnosti",
+      "modified": "2025-03-10",
+      "chars": 10844,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса за 30 минут: секреты синхронизации 1С и CRM с Make.com для"
+    },
+    {
+      "id": 4203,
+      "slug": "maksimalno-effektivnaya-avtomatizacziya-sms-uvedomlenij-dlya-biznesa-s-twilio-i-make-com-polnyj-gajd-po-vnedreniyu-i-uluchsheniyu-kommunikaczii",
+      "modified": "2025-03-09",
+      "chars": 10805,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Максимально эффективная автоматизация SMS-уведомлений для бизнеса с Twilio и Mak"
+    },
+    {
+      "id": 4187,
+      "slug": "avtomatizacziya-s-make-com-kak-tehnologii-izmenyat-vashu-zhizn-i-sdelayut-eyo-proshhe",
+      "modified": "2025-03-08",
+      "chars": 13586,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация с make.com: как технологии изменят вашу жизнь и сделают её проще!"
+    },
+    {
+      "id": 4147,
+      "slug": "kak-sdelat-rabochie-proczessy-effektivnee-s-make-com-i-nejrosetyami-sekrety-uspeha-i-prostye-shagi-dlya-starta-uzhe-segodnya",
+      "modified": "2025-03-06",
+      "chars": 405,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Как сделать рабочие процессы эффективнее с make.com и нейросетями: секреты успех"
+    },
+    {
+      "id": 4143,
+      "slug": "sekrety-avtomatizaczii-kross-postinga-s-make-com-uvelichte-ohvat-na-threads-instagram-i-dzen-i-sekonomte-vremya",
+      "modified": "2025-03-06",
+      "chars": 10698,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты автоматизации кросс-постинга с Make.com: Увеличьте охват на Threads, Ins"
+    },
+    {
+      "id": 4121,
+      "slug": "maksimizirujte-dohody-kak-ai-i-make-com-menyayut-triggernye-rassylki-dlya-avtomatizaczii-prodazh",
+      "modified": "2025-03-05",
+      "chars": 11252,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "faq",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Максимизируйте доходы: как AI и make.com меняют триггерные рассылки для автомати"
+    },
+    {
+      "id": 4069,
+      "slug": "bezopasnost-na-sovmestnyh-proizvodstvah-kak-avtomatizacziya-s-make-com-snizhaet-riski-i-uvelichivaet-pribyl",
+      "modified": "2025-03-02",
+      "chars": 11059,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Безопасность на совместных производствах: как автоматизация с make.com снижает р"
+    },
+    {
+      "id": 4047,
+      "slug": "koboty-i-avtomatizacziya-uznaj-kak-make-com-transformiruet-promyshlennost-i-biznes-navsegda",
+      "modified": "2025-03-01",
+      "chars": 9788,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Коботы и автоматизация: Узнай, как Make.com трансформирует промышленность и бизн"
+    },
+    {
+      "id": 4027,
+      "slug": "budushhee-navigaczii-kak-nvidia-i-make-com-delayut-robotov-umnee-cherez-innovaczionnye-simulyaczii",
+      "modified": "2025-02-28",
+      "chars": 9771,
+      "h2": 7,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Будущее навигации: как NVIDIA и make.com делают роботов умнее через инновационны"
+    },
+    {
+      "id": 4013,
+      "slug": "avtomatizacziya-biznesa-s-omron-kak-czifrovye-dvojniki-i-make-com-reshayut-problemy-obratnoj-svyazi-i-povyshayut-effektivnost-proczessov",
+      "modified": "2025-02-27",
+      "chars": 7649,
+      "h2": 0,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса с OMRON: Как цифровые двойники и make.com решают проблемы "
+    },
+    {
+      "id": 3963,
+      "slug": "kak-sdelat-prazdnichnye-rassylki-bezuprechnymi-ispolzujte-ai-i-emodzi-dlya-uvelicheniya-vovlecheniya-klientov-s-make-com",
+      "modified": "2025-02-25",
+      "chars": 10504,
+      "h2": 1,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как сделать праздничные рассылки безупречными: используйте AI и эмодзи для увели"
+    },
+    {
+      "id": 3939,
+      "slug": "uskorte-biznes-avtomatizacziya-statusov-posylok-i-integracziya-s-gosuslugami-cherez-make-com",
+      "modified": "2025-02-24",
+      "chars": 9733,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Ускорьте бизнес: автоматизация статусов посылок и интеграция с Госуслугами через"
+    },
+    {
+      "id": 3853,
+      "slug": "dinamicheskie-shablony-postov-kak-s-pomoshhyu-make-com-avtomatizirovat-kontent-i-uvelichit-vovlechennost-na-300",
+      "modified": "2025-02-18",
+      "chars": 10589,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Динамические шаблоны постов: как с помощью make.com автоматизировать контент и у"
+    },
+    {
+      "id": 3821,
+      "slug": "avtomatizacziya-gosuslug-kak-integracziya-s-mfcz-cherez-make-com-uproshhaet-vzaimodejstvie-s-gosudarstvom-dlya-grazhdan",
+      "modified": "2025-02-17",
+      "chars": 11274,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация госуслуг: Как интеграция с МФЦ через make.com упрощает взаимодейст"
+    },
+    {
+      "id": 3749,
+      "slug": "avtomatizacziya-rabochih-proczessov-dlya-novichkov-poshagovoe-rukovodstvo-s-make-com-i-nejrosetyami",
+      "modified": "2025-02-13",
+      "chars": 429,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Автоматизация рабочих процессов для новичков: пошаговое руководство с make.com и"
+    },
+    {
+      "id": 3741,
+      "slug": "optimizacziya-tovarnyh-baz-mezhdu-1s-i-soczsetyami-sdelajte-biznes-avtomatizirovannym-s-pomoshhyu-make-com",
+      "modified": "2025-02-13",
+      "chars": 8230,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Оптимизация товарных баз между 1С и соцсетями: сделайте бизнес автоматизированны"
+    },
+    {
+      "id": 3735,
+      "slug": "kak-avtomatizirovat-rabochie-proczessy-s-make-com-i-nejrosetyami-dlya-maksimalnoj-produktivnosti-i-rosta-biznesa",
+      "modified": "2025-02-12",
+      "chars": 423,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Как автоматизировать рабочие процессы с make.com и нейросетями для максимальной "
+    },
+    {
+      "id": 3719,
+      "slug": "avtoposting-i-avtomatizacziya-lidogeneraczii-s-make-com-sekrety-uvelicheniya-dohoda-bez-lishnih-usilij",
+      "modified": "2025-02-12",
+      "chars": 9753,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автопостинг и автоматизация лидогенерации с Make.com: секреты увеличения дохода "
+    },
+    {
+      "id": 3715,
+      "slug": "sekrety-avtopostinga-otzyvov-iz-wildberries-v-soczseti-uznajte-kak-uvelichit-prodazhi-s-pomoshhyu-make-com",
+      "modified": "2025-02-11",
+      "chars": 10502,
+      "h2": 12,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты автопостинга отзывов из Wildberries в соцсети: Узнайте, как увеличить пр"
+    },
+    {
+      "id": 3657,
+      "slug": "kak-avtomatizacziya-s-make-com-uvelichit-vash-marketingovyj-ohvat-na-150-i-preobrazit-biznes",
+      "modified": "2025-02-07",
+      "chars": 10902,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как автоматизация с Make.com увеличит ваш маркетинговый охват на 150% и преобраз"
+    },
+    {
+      "id": 3454,
+      "slug": "osvobodite-vremya-i-uvelichte-produktivnost-kak-sdelat-avtoposting-s-make-com-legko-i-effektivno",
+      "modified": "2025-01-29",
+      "chars": 429,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Освободите время и увеличьте продуктивность: как сделать автопостинг с make.com "
+    },
+    {
+      "id": 3422,
+      "slug": "avtomatizacziya-rabochih-proczessov-effektivnye-sovety-po-ispolzovaniyu-make-com-i-nejrosetej-dlya-povysheniya-produktivnosti",
+      "modified": "2025-01-28",
+      "chars": 429,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Автоматизация рабочих процессов: эффективные советы по использованию make.com и "
+    },
+    {
+      "id": 3378,
+      "slug": "avtomatizacziya-biznes-proczessov-10-shagov-k-integraczii-make-com-i-bipium-dlya-snizheniya-zatrat-i-uvelicheniya-produktivnosti",
+      "modified": "2025-01-24",
+      "chars": 11371,
+      "h2": 11,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнес-процессов: 10 шагов к интеграции Make.com и Бипиум для сниж"
+    },
+    {
+      "id": 3313,
+      "slug": "avtomatizacziya-biznesa-s-make-com-integracziya-analitiki-dlya-dostizheniya-novyh-vysot-uspeha",
+      "modified": "2025-01-21",
+      "chars": 11672,
+      "h2": 9,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса с Make.com: интеграция аналитики для достижения новых высо"
+    },
+    {
+      "id": 3247,
+      "slug": "maksimalno-avtomatizirujte-biznes-s-pomoshhyu-json-na-make-com-poshagovye-sovety-dlya-sozdaniya-effektivnyh-sczenariev",
+      "modified": "2025-01-19",
+      "chars": 9316,
+      "h2": 11,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Максимально автоматизируйте бизнес с помощью JSON на Make.com: пошаговые советы "
+    },
+    {
+      "id": 3171,
+      "slug": "avtomatizacziya-biznes-proczessov-s-make-com-i-nejrosetyami-otkrojte-novye-gorizonty-dlya-uspeha-vashej-kompanii",
+      "modified": "2025-01-15",
+      "chars": 423,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнес-процессов с make.com и нейросетями: откройте новые горизонт"
+    },
+    {
+      "id": 3158,
+      "slug": "avtomatizacziya-bronirovanij-s-make-com-kak-uluchshit-klientskij-opyt-i-dostich-uspeha-v-biznese",
+      "modified": "2025-01-15",
+      "chars": 10761,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бронирований с Make.com: как улучшить клиентский опыт и достичь ус"
+    },
+    {
+      "id": 3144,
+      "slug": "uznajte-sekrety-uspeshnoj-avtomatizaczii-lidogeneraczii-s-make-com-poshagovoe-rukovodstvo-k-effektivnoj-voronke-prodazh",
+      "modified": "2025-01-14",
+      "chars": 12895,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Узнайте секреты успешной автоматизации лидогенерации с Make.com: пошаговое руков"
+    },
+    {
+      "id": 3018,
+      "slug": "10-sposobov-avtomatizaczii-biznes-proczessov-s-pomoshhyu-sql-zaprosov-na-make-com-dlya-maksimalnoj-produktivnosti",
+      "modified": "2025-01-08",
+      "chars": 12110,
+      "h2": 8,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "10 способов автоматизации бизнес-процессов с помощью SQL-запросов на Make.com дл"
+    },
+    {
+      "id": 2918,
+      "slug": "avtomatizacziya-biznesa-kak-make-com-i-nejroseti-pomogut-vam-dostich-maksimalnoj-effektivnosti",
+      "modified": "2024-12-27",
+      "chars": 423,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнеса: как make.com и нейросети помогут вам достичь максимальной"
+    },
+    {
+      "id": 2768,
+      "slug": "povyste-produktivnost-biznesa-kak-avtomatizacziya-s-make-com-i-nejrosetyami-izmenit-vashi-proczessy-navsegda",
+      "modified": "2024-12-20",
+      "chars": 10969,
+      "h2": 7,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Повысьте продуктивность бизнеса: Как автоматизация с Make.com и нейросетями изме"
+    },
+    {
+      "id": 2764,
+      "slug": "kak-yuristam-uprostit-dokumentooborot-effektivnye-resheniya-s-make-com-dlya-maksimalnoj-produktivnosti",
+      "modified": "2024-12-20",
+      "chars": 9739,
+      "h2": 11,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как юристам упростить документооборот: эффективные решения с Make.com для максим"
+    },
+    {
+      "id": 2746,
+      "slug": "avtomatizacziya-biznes-proczessov-s-make-com-i-nejrosetyami-7-shagov-k-povysheniyu-effektivnosti-raboty-vashego-predpriyatiya",
+      "modified": "2024-12-19",
+      "chars": 426,
+      "h2": 0,
+      "score": -1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Автоматизация бизнес-процессов с make.com и нейросетями: 7 шагов к повышению эфф"
+    },
+    {
+      "id": 2575,
+      "slug": "kak-stat-uspeshnym-speczialistom-po-infobiznesu-s-make-com-sekrety-upravleniya-kontentom-i-uvelicheniya-dohodov",
+      "modified": "2024-12-10",
+      "chars": 7624,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как стать успешным специалистом по инфобизнесу с Make.com: секреты управления ко"
+    },
+    {
+      "id": 2561,
+      "slug": "uznajte-kak-meditacziya-i-make-com-pomogut-vam-uvelichit-dohod-i-upravlyat-kontentom-effektivno",
+      "modified": "2024-12-09",
+      "chars": 6499,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Узнайте, как медитация и Make.com помогут вам увеличить доход и управлять контен"
+    },
+    {
+      "id": 2525,
+      "slug": "kak-uvelichit-dohody-v-infobiznese-s-pomoshhyu-avtomatizaczii-kontenta-i-seo-na-make-com",
+      "modified": "2024-12-07",
+      "chars": 5955,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как увеличить доходы в инфобизнесе с помощью автоматизации контента и SEO на Mak"
+    },
+    {
+      "id": 2505,
+      "slug": "avtomatizacziya-seo-dlya-astrologov-kak-make-com-pomozhet-privlech-platezhesposobnyh-klientov-i-uvelichit-dohod",
+      "modified": "2024-12-06",
+      "chars": 6481,
+      "h2": 0,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table"
+      ],
+      "tldr": false,
+      "title": "Автоматизация SEO для астрологов: Как Make.com поможет привлечь платежеспособных"
+    },
+    {
+      "id": 2493,
+      "slug": "avtomatizacziya-kontenta-dlya-nutricziologov-kak-make-com-uvelichivaet-vashi-dohody-i-uluchshaet-seo",
+      "modified": "2024-12-06",
+      "chars": 6272,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация контента для нутрициологов: Как Make.com увеличивает ваши доходы и"
+    },
+    {
+      "id": 2376,
+      "slug": "avtomatizacziya-upravleniya-reputacziej-kak-ispolzovat-make-com-dlya-raboty-s-otzyvami-na-yandeks-kartah",
+      "modified": "2024-12-01",
+      "chars": 6121,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация управления репутацией: Как использовать Make.com для работы с отзы"
+    },
+    {
+      "id": 2332,
+      "slug": "effektivnye-mnogokanalnye-triggernye-czepochki-s-make-com-i-sendsay-poshagovoe-rukovodstvo-dlya-vashego-biznesa",
+      "modified": "2024-11-29",
+      "chars": 5458,
+      "h2": 8,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Эффективные многоканальные триггерные цепочки с Make.com и Sendsay: пошаговое ру"
+    },
+    {
+      "id": 2310,
+      "slug": "effektivnaya-avtomatizacziya-zakupok-v-programmatic-reklame-s-make-com-optimizirujte-svoi-reklamnye-kampanii-segodnya",
+      "modified": "2024-11-28",
+      "chars": 5081,
+      "h2": 7,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Эффективная автоматизация закупок в programmatic-рекламе с Make.com: оптимизируй"
+    },
+    {
+      "id": 2234,
+      "slug": "sekrety-avtomatizaczii-platezhej-cherez-yumani-luchshij-kurs-po-make-com-dlya-nachinayushhih",
+      "modified": "2024-11-24",
+      "chars": 5469,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Секреты автоматизации платежей через Юмани: лучший курс по Make.com для начинающ"
+    },
+    {
+      "id": 2113,
+      "slug": "integracziya-sbis-i-make-com-optimizacziya-buhga",
+      "modified": "2024-11-20",
+      "chars": 6482,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Интеграция СБИС и Make.com: оптимизация бухгалтерии для малого бизнеса"
+    },
+    {
+      "id": 2049,
+      "slug": "kurs-po-integraczii-vkontakte-i-make-com-avto",
+      "modified": "2026-01-24",
+      "chars": 1627,
+      "h2": 1,
+      "score": 1,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Domina el SEO en la Era de la IA: 7 Secretos para Posicionar tus Contenidos en G"
+    },
+    {
+      "id": 2047,
+      "slug": "master-klass-podklyuchenie-tinkoff-api-k-make",
+      "modified": "2024-11-18",
+      "chars": 5754,
+      "h2": 7,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Мастер-класс: подключение Тинькофф API к Make.com для автоматизации платежей"
+    },
+    {
+      "id": 1995,
+      "slug": "razrabotka-kastomnyh-modulej-v-make-com-prod",
+      "modified": "2024-11-16",
+      "chars": 5387,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Разработка кастомных модулей в Make.com: продвинутый уровень"
+    },
+    {
+      "id": 1828,
+      "slug": "avtomatizacziya-raboty-s-otchetnostyu-p-2",
+      "modified": "2024-11-09",
+      "chars": 5585,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация работы с отчетностью по продажам через возможности Make.com"
+    },
+    {
+      "id": 1802,
+      "slug": "avtomatizacziya-proczessov-registraczi-3",
+      "modified": "2024-11-08",
+      "chars": 4280,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация процессов регистрации и обработки данных участников через Make.com"
+    },
+    {
+      "id": 1746,
+      "slug": "kak-sozdat-sistemu-monitoringa-effe",
+      "modified": "2024-11-06",
+      "chars": 5062,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создать систему мониторинга эффективности рекламы через Make.com"
+    },
+    {
+      "id": 1543,
+      "slug": "uluchshenie-seo-s-pomoshhyu-make-com-sovety-i-rekome",
+      "modified": "2024-10-28",
+      "chars": 6321,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Улучшение SEO с помощью Make.com: Советы и рекомендации"
+    },
+    {
+      "id": 1489,
+      "slug": "kak-nastroit-avtomatizacziyu-obrabot",
+      "modified": "2024-10-23",
+      "chars": 4585,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как настроить автоматизацию обработки отзывов клиентов через Google Forms и Make"
+    },
+    {
+      "id": 1475,
+      "slug": "ispolzovanie-make-com-dlya-avtomatizaczii-ob",
+      "modified": "2024-10-23",
+      "chars": 6661,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Использование Make.com для автоматизации обработки заявок из формы на сайте"
+    },
+    {
+      "id": 1421,
+      "slug": "kak-sozdat-sistemu-upravleniya-zadach-2",
+      "modified": "2024-10-21",
+      "chars": 5015,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создать систему управления задачами в Asana с помощью интеграции с Google Ca"
+    },
+    {
+      "id": 1417,
+      "slug": "ispolzovanie-vozmozhnostej-api-yandeks-o",
+      "modified": "2024-10-21",
+      "chars": 5554,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Использование возможностей API Яндекс.Облака для создания резервных копий данных"
+    },
+    {
+      "id": 1403,
+      "slug": "kak-ispolzovat-api-megafona-dlya-nastro",
+      "modified": "2024-10-20",
+      "chars": 4158,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как использовать API МегаФона для настройки уведомлений о новых тарифах через Ma"
+    },
+    {
+      "id": 1397,
+      "slug": "kak-nastroit-sistemu-uvedomlenij-o-n",
+      "modified": "2024-10-20",
+      "chars": 4662,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как настроить систему уведомлений о новых подписчиках в Instagram через Make.com"
+    },
+    {
+      "id": 1158,
+      "slug": "ispolzovanie-nejroseti-yandeks-dzen",
+      "modified": "2024-10-08",
+      "chars": 4248,
+      "h2": 1,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Использование нейросети &#171;Яндекс Дзен&#187; для создания контента"
+    },
+    {
+      "id": 1155,
+      "slug": "kak-sozdavat-personalizirovannye-r-8",
+      "modified": "2024-10-08",
+      "chars": 3844,
+      "h2": 0,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создавать персонализированные рекомендации фильмов с помощью Okko"
+    },
+    {
+      "id": 1153,
+      "slug": "rukovodstvo-po-rabote-s-platformoj-yandex-speechki",
+      "modified": "2024-10-08",
+      "chars": 4452,
+      "h2": 0,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Руководство по работе с платформой Yandex SpeechKit для синтеза речи"
+    },
+    {
+      "id": 1151,
+      "slug": "kak-ispolzovat-nejroset-sber-anal",
+      "modified": "2024-10-08",
+      "chars": 5190,
+      "h2": 0,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как использовать нейросеть &#171;Сбер Аналитика&#187; для бизнес-анализа"
+    },
+    {
+      "id": 1122,
+      "slug": "kak-sozdavat-personalizirovannye-r-7",
+      "modified": "2024-10-07",
+      "chars": 4536,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создавать персонализированные рекомендации с помощью МТС AI"
+    },
+    {
+      "id": 1097,
+      "slug": "optimizacziya-i-uskorenie-rabochih-procz",
+      "modified": "2024-10-05",
+      "chars": 5316,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Оптимизация и ускорение рабочих процессов в Make.com: советы по повышению произв"
+    },
+    {
+      "id": 1089,
+      "slug": "make-com-academy-polnoe-rukovodstvo-po-obucheniyu-i-s",
+      "modified": "2024-10-04",
+      "chars": 3447,
+      "h2": 5,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Make.com Academy: полное руководство по обучению и сертификации для профессионал"
+    },
+    {
+      "id": 1053,
+      "slug": "nastrojka-sistemy-opoveshhenij-i-uvedo",
+      "modified": "2024-10-03",
+      "chars": 5300,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Настройка системы оповещений и уведомлений в Make.com для эффективного мониторин"
+    },
+    {
+      "id": 1035,
+      "slug": "integracziya-platezhnyh-sistem-s-make-com-avtom",
+      "modified": "2024-10-02",
+      "chars": 4972,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Интеграция платежных систем с Make.com: автоматизация финансовых процессов и тра"
+    },
+    {
+      "id": 959,
+      "slug": "ispolzovanie-make-com-dlya-raboty-s-api-yandeks-o",
+      "modified": "2024-09-28",
+      "chars": 5893,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Использование Make.com для работы с API Яндекс.Облака: возможности для бизнеса"
+    },
+    {
+      "id": 933,
+      "slug": "kak-optimizirovat-proizvodstvo-s-po-4",
+      "modified": "2024-09-27",
+      "chars": 5679,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как оптимизировать производство с помощью ЦИФРА Производство"
+    },
+    {
+      "id": 903,
+      "slug": "rukovodstvo-po-rabote-s-platformoj-vist-mining",
+      "modified": "2024-09-26",
+      "chars": 5459,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Руководство по работе с платформой VIST Mining для цифровизации горнодобывающей "
+    },
+    {
+      "id": 899,
+      "slug": "sozdanie-virtualnyh-assistentov-s-p-6",
+      "modified": "2024-09-26",
+      "chars": 5195,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Создание виртуальных ассистентов с помощью платформы Naumen"
+    },
+    {
+      "id": 885,
+      "slug": "kak-sozdavat-virtualnye-primerochn-2",
+      "modified": "2024-09-25",
+      "chars": 5176,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создавать виртуальные примерочные с помощью Tardis"
+    },
+    {
+      "id": 818,
+      "slug": "rukovodstvo-po-rabote-s-platformoj-ntechlab-2",
+      "modified": "2024-09-23",
+      "chars": 4157,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Руководство по работе с платформой NtechLab для видеоаналитики"
+    },
+    {
+      "id": 796,
+      "slug": "kak-sozdavat-personalizirovannye-o-3",
+      "modified": "2024-09-22",
+      "chars": 4264,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated"
+      ],
+      "tldr": false,
+      "title": "Как создавать персонализированные обучающие программы с помощью Нетология AI"
+    },
+    {
+      "id": 740,
+      "slug": "kak-sozdavat-personalizirovannye-o-2",
+      "modified": "2024-09-19",
+      "chars": 4215,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создавать персонализированные обучающие курсы с помощью Skillbox AI"
+    },
+    {
+      "id": 683,
+      "slug": "kak-sozdavat-personalizirovannye-r-2",
+      "modified": "2024-09-17",
+      "chars": 4787,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как создавать персонализированные рекомендации с помощью Segmento"
+    },
+    {
+      "id": 674,
+      "slug": "kak-optimizirovat-proizvodstvo-s-po",
+      "modified": "2024-09-17",
+      "chars": 4367,
+      "h2": 4,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как оптимизировать производство с помощью Цифра"
+    },
+    {
+      "id": 654,
+      "slug": "sozdanie-audioknig-s-pomoshhyu-silero-tts-gajd-d",
+      "modified": "2024-09-16",
+      "chars": 4514,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создание аудиокниг с помощью Silero TTS: гайд для авторов"
+    },
+    {
+      "id": 650,
+      "slug": "ispolzovanie-detector-media-dlya-proverki-fejkov",
+      "modified": "2024-09-16",
+      "chars": 4157,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Использование Detector.Media для проверки фейковых новостей"
+    },
+    {
+      "id": 638,
+      "slug": "ispolzovanie-tinkoff-voicekit-dlya-golosovoj-biome",
+      "modified": "2024-09-16",
+      "chars": 3328,
+      "h2": 5,
+      "score": 4,
+      "gaps": [
+        "insight_box",
+        "faq",
+        "table",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Использование Tinkoff VoiceKit для голосовой биометрии"
+    },
+    {
+      "id": 627,
+      "slug": "sozdanie-subtitrov-k-video-s-pomoshhyu-yandex-s",
+      "modified": "2024-09-15",
+      "chars": 3102,
+      "h2": 5,
+      "score": 3,
+      "gaps": [
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Создание субтитров к видео с помощью Yandex SpeechKit"
+    },
+    {
+      "id": 557,
+      "slug": "kak-analizirovat-finansovye-dannye",
+      "modified": "2024-09-12",
+      "chars": 3449,
+      "h2": 5,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Как анализировать финансовые данные с помощью Kensho: руководство для аналитиков"
+    },
+    {
+      "id": 539,
+      "slug": "rukovodstvo-po-sozdaniyu-logotipov-v-looka",
+      "modified": "2024-09-12",
+      "chars": 3486,
+      "h2": 6,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author",
+        "thin"
+      ],
+      "tldr": false,
+      "title": "Руководство по созданию логотипов в Looka: от идеи до готового дизайна"
+    },
+    {
+      "id": 486,
+      "slug": "nejroseti-na-strazhe-ekologii-monitor",
+      "modified": "2024-09-08",
+      "chars": 9721,
+      "h2": 4,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Нейросети на страже экологии: мониторинг окружающей среды в России"
+    },
+    {
+      "id": 430,
+      "slug": "nejroseti-v-gejmdeve-kak-ii-menyaet-ros",
+      "modified": "2024-09-07",
+      "chars": 8453,
+      "h2": 4,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Нейросети в геймдеве: как ИИ меняет российскую игровую индустрию"
+    },
+    {
+      "id": 349,
+      "slug": "napisanie-bestsellera-s-pomoshhyu-ii-mi",
+      "modified": "2024-09-04",
+      "chars": 9425,
+      "h2": 2,
+      "score": 2,
+      "gaps": [
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Написание бестселлера с помощью ИИ: миф или реальность?"
+    },
+    {
+      "id": 274,
+      "slug": "kak-chatgpt-mozhet-pomoch-v-razrabotke-obuchayu",
+      "modified": "2024-09-02",
+      "chars": 6253,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как ChatGPT может помочь в разработке обучающих программ"
+    },
+    {
+      "id": 272,
+      "slug": "ispolzovanie-nejrosetej-dlya-povyshe-4",
+      "modified": "2024-09-02",
+      "chars": 6036,
+      "h2": 1,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Использование нейросетей для повышения эффективности маркетинга"
+    },
+    {
+      "id": 270,
+      "slug": "sozdanie-avtomatizirovannyh-sistem-2",
+      "modified": "2024-09-02",
+      "chars": 5481,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создание автоматизированных систем управления с Make.com"
+    },
+    {
+      "id": 264,
+      "slug": "obzor-novyh-vozmozhnostej-avtomatiza",
+      "modified": "2024-09-02",
+      "chars": 4553,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Обзор новых возможностей автоматизации с Make.com"
+    },
+    {
+      "id": 260,
+      "slug": "avtomatizacziya-proczessov-upravleniya-2",
+      "modified": "2024-09-02",
+      "chars": 5983,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Автоматизация процессов управления данными с Make.com"
+    },
+    {
+      "id": 250,
+      "slug": "claude-kak-nejroseti-pomogayut-v-upravlenii-3",
+      "modified": "2024-09-02",
+      "chars": 6023,
+      "h2": 5,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Claude: как нейросети помогают в управлении цепочками поставок"
+    },
+    {
+      "id": 210,
+      "slug": "obzor-luchshih-praktik-ispolzovaniya-make-com",
+      "modified": "2024-09-01",
+      "chars": 3911,
+      "h2": 5,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Обзор лучших практик использования Make.com"
+    },
+    {
+      "id": 208,
+      "slug": "nejroseti-v-reklame-kak-tehnologii-me",
+      "modified": "2024-09-01",
+      "chars": 4448,
+      "h2": 5,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Нейросети в рекламе: как технологии меняют подход"
+    },
+    {
+      "id": 164,
+      "slug": "obzor-uspeshnyh-kejsov-ispolzovaniya-make",
+      "modified": "2024-08-31",
+      "chars": 4882,
+      "h2": 6,
+      "score": 2,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Обзор успешных кейсов использования Make.com"
+    },
+    {
+      "id": 152,
+      "slug": "sozdanie-avtomatizirovannyh-otchetov",
+      "modified": "2024-08-31",
+      "chars": 5221,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Создание автоматизированных отчетов с Make.com"
+    },
+    {
+      "id": 146,
+      "slug": "obzor-novyh-funkczij-make-com",
+      "modified": "2024-08-31",
+      "chars": 4306,
+      "h2": 0,
+      "score": 1,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Обзор новых функций Make.com"
+    },
+    {
+      "id": 111,
+      "slug": "make-com-sozdanie-avtomatizirovannyh-raboch",
+      "modified": "2024-08-31",
+      "chars": 4120,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Make.com: создание автоматизированных рабочих процессов"
+    },
+    {
+      "id": 106,
+      "slug": "kak-ispolzovat-chatgpt-dlya-avtomatizaczii",
+      "modified": "2024-08-31",
+      "chars": 4426,
+      "h2": 0,
+      "score": 0,
+      "gaps": [
+        "lead",
+        "insight_box",
+        "h2",
+        "steps",
+        "faq",
+        "table",
+        "updated",
+        "author"
+      ],
+      "tldr": false,
+      "title": "Как использовать ChatGPT для автоматизации бизнес-процессов"
+    }
+  ],
+  "pages_sample": [
+    {
+      "id": 14627,
+      "slug": "copilot-studio-ii-agent-gayd-2026"
+    },
+    {
+      "id": 14614,
+      "slug": "opencode-mcp-skills-agents-gayd-2026"
+    },
+    {
+      "id": 14607,
+      "slug": "notion-mcp-kontent-zavod-ii-agenty-gayd-2026"
+    },
+    {
+      "id": 14600,
+      "slug": "claude-code-skills-mcp-kontent-zavod-gayd-2026"
+    },
+    {
+      "id": 14557,
+      "slug": "openrouter-ii-agenty-kontent-zavod-gayd-2026"
+    },
+    {
+      "id": 14532,
+      "slug": "openclaw-ii-agent-telegram-kontent-gayd-2026"
+    },
+    {
+      "id": 14519,
+      "slug": "n8n-ii-agent-kontent-telegram-wordpress-gayd-2026"
+    },
+    {
+      "id": 14506,
+      "slug": "wordpress-mcp-adapter-ii-agenty-gayd-2026"
+    },
+    {
+      "id": 14487,
+      "slug": "llms-txt-wordpress-geo-gayd-2026"
+    },
+    {
+      "id": 14468,
+      "slug": "langflow-ii-agent-mcp-gayd-2026"
+    },
+    {
+      "id": 14454,
+      "slug": "ai-sekretar-telegram-zayavki-crm-gayd-2026"
+    },
+    {
+      "id": 14441,
+      "slug": "wordpress-waterfall-avtopublikaciya-seo-gayd-2026"
+    },
+    {
+      "id": 14428,
+      "slug": "agent-qa-loop-avtor-kritik-hitl-gayd-2026"
+    },
+    {
+      "id": 14414,
+      "slug": "perplexity-comet-kontent-research-gayd-2026"
+    },
+    {
+      "id": 14395,
+      "slug": "gemini-notebook-kontent-zavod-gayd-2026"
+    },
+    {
+      "id": 14382,
+      "slug": "make-ai-agents-voronka-prodazh-gayd-2026"
+    },
+    {
+      "id": 14357,
+      "slug": "claude-skills-seo-kontent-zavod-gayd-2026"
+    },
+    {
+      "id": 14344,
+      "slug": "hermes-agent-telegram-cron-pamyat-gayd-2026"
+    },
+    {
+      "id": 14331,
+      "slug": "zapier-agents-marketing-gayd-2026"
+    },
+    {
+      "id": 14324,
+      "slug": "n8n-brief-kp-ai-agent-gayd-2026"
+    },
+    {
+      "id": 14311,
+      "slug": "mcp-marketing-stack-wordstat-telegram-gayd-2026"
+    },
+    {
+      "id": 14291,
+      "slug": "yandex-ai-studio-agent-gayd-2026"
+    },
+    {
+      "id": 14277,
+      "slug": "ai-agent-analiz-konkurentov-gayd-2026"
+    },
+    {
+      "id": 14250,
+      "slug": "wordpress-mcp-adapter-abilities-agenty-gayd-2026"
+    },
+    {
+      "id": 14237,
+      "slug": "youtube-video-v-statyu-multiagent-pipeline-gayd-2026"
+    },
+    {
+      "id": 14224,
+      "slug": "llms-txt-gayd-sayt-neyroseti-2026"
+    },
+    {
+      "id": 14211,
+      "slug": "gamma-neyroset-prezentacii-gayd-api-make-2026"
+    },
+    {
+      "id": 14198,
+      "slug": "agent-handoff-shina-roli-doska-zadach-gayd-2026"
+    },
+    {
+      "id": 14185,
+      "slug": "brand-analytics-mcp-gayd-monitoring-llm"
+    },
+    {
+      "id": 14172,
+      "slug": "chatgpt-work-gayd-marketing-kontent-avtomatizaciya-2026"
+    }
+  ]
+}

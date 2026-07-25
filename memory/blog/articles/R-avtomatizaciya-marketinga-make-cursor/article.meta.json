@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-avtomark",
+  "slug": "avtomatizaciya-marketinga-make-cursor",
+  "title": "Автоматизация маркетинга: один сценарий Make — заявки не копируете руками",
+  "wp_post_id": 14448,
+  "primary_query": "автоматизация маркетинга",
+  "secondary_queries": [
+    "make маркетинг",
+    "сценарий заявок",
+    "автоматизация лидов"
+  ],
+  "char_count": 9342,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/avtomatizaciya-marketinga-make-cursor/",
+  "datePublished": "2026-07-19",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "один сценарий Make",
+    "заявки не копировать",
+    "лид в Sheets",
+    "критерий готово"
+  ],
+  "meta_ab": {
+    "title_seo": "Автоматизация маркетинга: один сценарий Make",
+    "title_ctr": "Заявки копируете руками? Один сценарий за вечер",
+    "title_aeo": "Как начать автоматизацию маркетинга в Make?",
+    "description_seo": "Один поток: лид → Sheets → уведомление. Без десяти сценариев сразу.",
+    "description_ctr": "Сначала рабочий процесс руками, потом Make.",
+    "description_aeo": "Автоматизация маркетинга: с чего начать, ошибки, критерий готово."
+  }
+}

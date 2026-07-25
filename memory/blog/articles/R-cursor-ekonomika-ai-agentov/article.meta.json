@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-ekonomika",
+  "slug": "cursor-ekonomika-ai-agentov",
+  "title": "Бесплатные AI агенты: Cursor Composer вместо дорогого стека",
+  "wp_post_id": 14238,
+  "primary_query": "бесплатные ai агенты",
+  "secondary_queries": [
+    "cursor composer бюджет",
+    "экономика ai агентов",
+    "max mode cursor"
+  ],
+  "char_count": 9302,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/cursor-ekonomika-ai-agentov/",
+  "datePublished": "2026-07-13",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "экономика AI-агентов в Cursor",
+    "Composer вместо дорогого стека",
+    "не сжечь бюджет на агентах",
+    "критерий готово и стоп-кран"
+  ],
+  "meta_ab": {
+    "title_seo": "Бесплатные AI агенты: Cursor Composer вместо дорогого стека",
+    "title_ctr": "Счёт вырос, поста нет? Сначала Composer и критерий готово",
+    "title_aeo": "Как не сжечь бюджет на AI-агентах в Cursor?",
+    "description_seo": "Сравните стеки, выберите Composer, напишите критерий готово и стоп-кран. Без Max Mode «на всякий» в первый вечер.",
+    "description_ctr": "Купили зоопарк агентов – файла нет? Один Composer, один артефакт, один стоп-кран.",
+    "description_aeo": "Экономика AI-агентов: Composer vs флагман, Cloud Agent, лимиты и чеклист месяца."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/#webpage",
+      "url": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/",
+      "name": "Семантическое ядро в Cursor через Wordstat MCP",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Подключите Wordstat MCP, снимите parent-запрос, соберите кластеры, URL-карту и 3 брифа. Без выдуманных частотностей и без Windows-парсера."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/#webpage"
+      },
+      "headline": "Семантическое ядро в Cursor через Wordstat MCP",
+      "description": "Подключите Wordstat MCP, снимите parent-запрос, соберите кластеры, URL-карту и 3 брифа. Без выдуманных частотностей и без Windows-парсера.",
+      "datePublished": "2026-07-11T11:16:21",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как собрать семантическое ядро новичку без Key Collector?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте связку Cursor + Wordstat MCP (MCP-KV) + чистка мусора + кластеры по интенту. Проверьте один parent-запрос, затем соберите CSV и три брифа. Ядрышко ускоряет пакет файлов, но логика та же вручную."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Key Collector, если есть Wordstat MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для первого ядра сайта – нет. KC полезен тяжёлым SEO-командам с парсерами и большими базами. Новичку быстрее зелёный статус MCP и живая цифра, чем неделя установки Windows-софта."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько запросов достаточно на старт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир: один сильный parent, хвост топа Wordstat и 15–40 очищенных фраз в 5–10 кластерах. Не гонитесь за тысячами строк в первый вечер – важнее url-map и три брифа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем кластер отличается от списка ключей?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Список – плоская куча. Кластер – фразы с одним намерением под один URL. \"Что такое X\" и \"купить X\" не живут на одной странице. Используйте правило \"один кластер = один интент\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как из ядра сделать контент-план?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте url-map, возьмите P0 со статусом create/refresh, выпишите 3 брифа (H1, блоки, FAQ). Добавьте даты на 7 дней. Так ядро превращается в план, а не в архив Excel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если MCP отвечает 401 или 403?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте API Key, Folder ID, роль search-api.webSearch.user и биллинг Cloud. Избегайте повторных массовых вызовов при 429 – сначала почините доступ по гайду Wordstat MCP setup."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где скачать Ядрышко и документацию Wordstat MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Репозиторий: Horosheff/yadryshko-semantic-core-subagent . Сервис и гайд: mcp-kv.ru и docs/wordstat-mcp-setup . Анонс субагента – в посте #1315 ."
+          }
+        }
+      ]
+    }
+  ]
+}

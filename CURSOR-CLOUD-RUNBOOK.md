@@ -94,7 +94,7 @@ python3 scripts/excalibur_blog_doctor.py --publish
 python3 scripts/excalibur_blog_wp_publish.py --env-check
 ```
 
-Если `--publish` падает из-за секретов, это нормально для dry-run окружения и блокер для боевой публикации.
+Если `--publish` / `--env-check` падает из-за секретов — это **`❌ PUBLISH BLOCKER`** для боевой публикации (не silent skip и не «успех» без publish). Нужны Cloud Secrets: `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`, `PUBLIC_SITE_URL`, `SSH_HOST`, `SSH_USER`, `SSH_PASS`/`SSH_PASSWORD`, обычно `SSH_ROOT` (часто `.`).
 Если SSH upload пишет warning про fallback на `.`, обновите Cursor Secret `SSH_ROOT` на `.` или уберите несуществующий panel/root path. Секретные значения не записывать в repo.
 
 ## Optional GitHub Actions preflight

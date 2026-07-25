@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/#webpage",
+      "url": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/",
+      "name": "Контекстное окно нейросети: меньше рутины повторных брифов",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Папка memory/, правило «следующий читает файл», Researcher→facts и Writer без пересказа темы. Без иллюзии вечной памяти чата."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/#webpage"
+      },
+      "headline": "Контекстное окно нейросети: меньше рутины повторных брифов",
+      "description": "Папка memory/, правило «следующий читает файл», Researcher→facts и Writer без пересказа темы. Без иллюзии вечной памяти чата.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем контекстное окно отличается от \"нейросети с памятью\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Окно – лимит одной сессии: что модель видит сейчас. \"Память\" продукта обычно значит сохранённые факты между сессиями. В Cursor устойчивый слой – Rules и файлы проекта; встроенные Memories community описывает как убранные. Для субагентов рабочая общая память на старте – папка memory/."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это баг Cursor или норма работы модели?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще норма: окно ограничено, старое вытесняется, субагент не наследует чат родителя. Баг UI бывает, но диагностику лучше начать с файла фактов и нового короткого чата."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли MCP для первого прогона?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Markdown-файлы между Researcher и Writer закрывают боль повторного брифа без подключений. MCP имеет смысл позже, когда уже есть стабильная передача через memory/."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему Writer снова спрашивает тему?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще всего: пустой или несохранённый facts.md, правило не указало путь к файлу, или вы продолжаете раздутый чат вместо короткого. Проверьте файл глазами и повторите промпт с явным \"открой memory/…\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда класть файл фактов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В memory/ внутри проекта: короткий brief и facts. Следующий субагент читает файл, а не ваш пересказ в чате. Так вы сохраняете контекст между чистыми стартами ролей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли обойтись одним бесконечным чатом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "До первого переполнения окна – да, потом боль копипаста. Файл дешевле нервов: новый чат + чтение memory/ быстрее, чем час восстанавливать тему."
+          }
+        }
+      ]
+    }
+  ]
+}

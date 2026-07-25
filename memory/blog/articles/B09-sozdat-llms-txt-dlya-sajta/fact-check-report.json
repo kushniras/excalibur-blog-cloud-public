@@ -9,7 +9,7 @@
     {
       "fact": "2026",
       "kind": "date_or_year",
-      "context": "роблема. Факт от Ahrefs охлаждает ожидания: в мае 2026 они изучили 137 210 доменов и увидели, что 97% вал",
+      "context": "ции, API и большим базам знаний. Обновлено: 25.07.2026 Явно и коротко: Google Search не использует llms.t",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
@@ -23,7 +23,7 @@
     {
       "fact": "60 минут",
       "kind": "metric_or_duration",
-      "context": "о порядку в данных, которую можно выполнить за 30-60 минут. Решение для старта: перед созданием файла запиши",
+      "context": "нет. На практике это low-cost housekeeping на 30-60 минут, а не GEO-хак. Решение для старта: перед создание",
       "verified": true,
       "reason": "Numerical value '60' matched in fact-bank context"
     },

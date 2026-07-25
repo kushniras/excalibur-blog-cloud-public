@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-karta",
+  "slug": "yandeks-karta-sait-cursor-ai",
+  "title": "Яндекс карта на сайт в Cursor без кода",
+  "wp_post_id": 14160,
+  "primary_query": "яндекс карта на сайт",
+  "secondary_queries": [
+    "вставить карту cursor",
+    "виджет карты html",
+    "карта без кода"
+  ],
+  "char_count": 9127,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/yandeks-karta-sait-cursor-ai/",
+  "datePublished": "2026-07-10",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Яндекс карта на сайт",
+    "адрес текстом",
+    "проверка на мобиле",
+    "без тяжёлого виджета"
+  ],
+  "meta_ab": {
+    "title_seo": "Яндекс карта на сайт в Cursor без кода",
+    "title_ctr": "Адрес есть, карты нет? Вставьте виджет за вечер",
+    "title_aeo": "Как добавить Яндекс карту на сайт в Cursor?",
+    "description_seo": "Одна карта, адрес текстом и проверка на телефоне. Без лишнего JS.",
+    "description_ctr": "Клиент не находит офис. Добавьте карту и текст адреса.",
+    "description_aeo": "Яндекс карта: когда нужна, вставка, типичные ошибки."
+  }
+}

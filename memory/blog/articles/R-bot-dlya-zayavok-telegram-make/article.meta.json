@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-bot-zayavok",
+  "slug": "bot-dlya-zayavok-telegram-make",
+  "title": "Бот для заявок в Telegram через Make и Google Sheets",
+  "wp_post_id": 14358,
+  "primary_query": "бот для заявок в телеграм",
+  "secondary_queries": [
+    "заявки telegram make",
+    "бот sheets",
+    "watch updates"
+  ],
+  "char_count": 9358,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/bot-dlya-zayavok-telegram-make/",
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "бот заявок Make",
+    "Sheets и пуш",
+    "Run once",
+    "BotFather"
+  ],
+  "meta_ab": {
+    "title_seo": "Бот для заявок в Telegram через Make и Sheets",
+    "title_ctr": "Заявки в личке теряются? Бот и строка в таблице",
+    "title_aeo": "Как сделать бота для заявок в Telegram через Make?",
+    "description_seo": "BotFather, Watch Updates, Sheets и пуш менеджеру. Без схемы без прогона.",
+    "description_ctr": "Соберите бота и проверьте тестовую заявку сегодня.",
+    "description_aeo": "Бот заявок: модули Make, ошибки Watch Updates, критерий готово."
+  }
+}

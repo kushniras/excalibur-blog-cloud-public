@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/#webpage",
+      "url": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/",
+      "name": "Как писать промты для нейросети: сэкономьте время на правки воды",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Роль, факты, запреты, критерий готово и папка prompts/ с пятью шаблонами. Без формул для картинок в текстовом чате."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/#webpage"
+      },
+      "headline": "Как писать промты для нейросети: сэкономьте время на правки воды",
+      "description": "Роль, факты, запреты, критерий готово и папка prompts/ с пятью шаблонами. Без формул для картинок в текстовом чате.",
+      "datePublished": "2026-07-19",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли такой ритуал маркетологу без опыта кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Первый вечер – пять текстовых файлов и один прогон поста. Код сайта не трогаете. Если интерфейс пугает – вернитесь к карте новичка в блоке прогона выше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем разовый шаблон отличается от постоянных правил и рецептов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Разовый шаблон – в prompts/ под задачу. Rule – постоянный тон и запреты. Skill – многошаговый рецепт позже, когда копируете одно и то же каждый день. Не смешивайте три слоя в первый вечер."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли готовые \"50 промтов\" из статей?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Как справочник – можно глянуть. Как основа рутины – нет: чужой тон и чужие факты. Соберите свои пять карточек с вашим оффером – так сэкономите время на правках воды."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать с промтами для фото и Midjourney?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это другой навык. Здесь только текст в Cursor: посты, письма, FAQ, правки. Формулы для картинок не закрывают боль \"вирусный пост → вода\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как не слить токены и пароли в чат?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В шаблон добавьте запрет: \"секреты только в env, в чат – публичные факты\". Проверьте черновик перед отправкой: нет ключей API, паролей, ссылок с токенами."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сразу писать целую SEO-статью?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно позже. Сначала бриф-шаблон и один пост. Полный маршрут статьи – в отдельном гайде; сегодня критерий – файл в prompts/ и чистый черновик поста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С чего начать, если Cursor ещё не установлен?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Поставьте Cursor, откройте папку проекта, создайте prompts/ и один файл поста. Короткие разборы новичка – в каналах из блока \"что дальше\" выше (Telegram и MAX)."
+          }
+        }
+      ]
+    }
+  ]
+}

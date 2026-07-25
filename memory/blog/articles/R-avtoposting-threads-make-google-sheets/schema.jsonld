@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/avtoposting-threads-make-google-sheets/#webpage",
+      "url": "https://mayai.ru/avtoposting-threads-make-google-sheets/",
+      "name": "Автопостинг в тредс через Make и Google Sheets",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Очередь в Sheets, тестовый пост и дневной лимит. После прогрева аккаунта."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/avtoposting-threads-make-google-sheets/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/avtoposting-threads-make-google-sheets/#webpage"
+      },
+      "headline": "Автопостинг в тредс через Make и Google Sheets",
+      "description": "Очередь в Sheets, тестовый пост и дневной лимит. После прогрева аккаунта.",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/avtoposting-threads-make-google-sheets/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/avtoposting-threads-make-google-sheets/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/avtoposting-threads-make-google-sheets/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Есть ли готовый модуль Threads в Make или нужен HTTP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для новичка канон – HTTP через apps.make.com/http : так видно create → Sleep → publish. Когда two-step освоен, можно подключить кастомные Threads-модули из папки блюпринтов и постов канала (#1177)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как получить токен Threads без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зайдите в Meta Developers, создайте app с Threads API, выдайте threads_basic и threads_content_publish , сгенерируйте user token и обменяйте на long-lived (около 60 дней). Сохраните токен только в connection Make."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем автопостинг в тредс отличается от Instagram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Паттерн таблицы тот же: статус \"готово\" → сценарий → \"опубликовано\". Отличие – endpoints на graph.threads.net и обязательные два HTTP плюс пауза ~30 с. Instagram-гайд: автопостинг Instagram через Sheets ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли прогрев перед автопостом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, особенно перед ссылками. Сначала живой аккаунт и ручные ответы, потом один тестовый TEXT без URL, затем регулярный график. Подробный порядок – в материале про прогрев перед автопостингом ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли брать текст из той же таблицы, что для VK и Telegram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: отдельные колонки статуса или отдельные листы. Не мешайте publish-эндпоинты разных сетей в одном HTTP. Для связки TG+VK смотрите автопостинг Telegram и VK ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему картинка не уходит в пост?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Часто media_url закрыт или не HTTPS. Сделайте стабильный TEXT, затем IMAGE только с публичным URL, который Meta может скачать сама. Drive \"для себя\" – типичная ошибка."
+          }
+        }
+      ]
+    }
+  ]
+}

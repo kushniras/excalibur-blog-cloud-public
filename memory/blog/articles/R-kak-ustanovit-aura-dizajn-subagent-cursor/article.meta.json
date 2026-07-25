@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-aura",
+  "slug": "kak-ustanovit-aura-dizajn-subagent-cursor",
+  "title": "Своя страница по референсу без чужого шаблона: нейросеть для создания дизайна экономит время",
+  "wp_post_id": 14513,
+  "primary_query": "нейросеть для создания дизайна",
+  "secondary_queries": [
+    "aura cursor",
+    "дизайн по референсу",
+    "субагент дизайн cursor"
+  ],
+  "char_count": 9056,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/",
+  "datePublished": "2026-07-21",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "установка AURA в Cursor",
+    "дизайн страницы по референсу",
+    "субагент AURA",
+    "нейросеть для дизайна лендинга"
+  ],
+  "meta_ab": {
+    "title_seo": "AURA в Cursor: страница по референсу без чужого шаблона",
+    "title_ctr": "Снова фиолетовый лендинг? Один референс и AURA за вечер",
+    "title_aeo": "Как установить AURA дизайн-субагент в Cursor?",
+    "description_seo": "Тестовая папка, install.py или файлы агентов, карта возможностей, один референс и Reviewer по чеклисту. Без зоопарка MCP в первый вечер.",
+    "description_ctr": "Кидаете скрин – получаете шаблон? Поставьте AURA, дайте один референс и откройте страницу в браузере.",
+    "description_aeo": "AURA: субагенты дизайна в Cursor, референс, Reviewer и ограничения первого вечера."
+  }
+}

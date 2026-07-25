@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/cookie-banner-sait-cursor-ai/#webpage",
+      "url": "https://mayai.ru/cookie-banner-sait-cursor-ai/",
+      "name": "Cookie баннер на сайт в Cursor без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Короткий баннер, ссылка на политику и проверка, что CTA не перекрыт."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/cookie-banner-sait-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cookie-banner-sait-cursor-ai/#webpage"
+      },
+      "headline": "Cookie баннер на сайт в Cursor без кода",
+      "description": "Короткий баннер, ссылка на политику и проверка, что CTA не перекрыт.",
+      "datePublished": "2026-07-10",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/cookie-banner-sait-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/cookie-banner-sait-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cookie-banner-sait-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли cookie-баннер, если уже есть политика конфиденциальности?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Политику оставьте как текст-объяснение, а баннер добавьте отдельно: две кнопки и блокировка аналитики до клика. Сегодня откройте сайт в инкогнито и проверьте, грузится ли Метрика до согласия."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли оставить только кнопку \"Принять\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нельзя как рабочую схему согласия. Добавьте равнозначную \"Отклонить\" и при отказе не запускайте tag.js. Перегенерируйте плашку промптом с явным требованием двух кнопок одного размера."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда грузить Яндекс.Метрику?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только после \"Принять\" или если в localStorage уже сохранён accepted. Вырежьте код из head и noscript, перенесите init в обработчик кнопки, затем проверьте Network на mc.yandex."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем cookie-баннер отличается от галочки в форме заявки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Галочка закрывает согласие на персональные данные в конкретной форме. Баннер – cookies и аналитику на всём сайте. Не заменяйте одно другим: оставьте оба механизма на своих местах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как проверить баннер в инкогнито без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Инкогнито → F12 → Network → фильтр mc.yandex. До клика пусто, после \"Принять\" есть запросы, после \"Отклонить\" тишина. Если до клика уже есть строки – Метрика всё ещё в head."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если Cursor снова предлагает React или CMP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Остановите генерацию, усильте cookie-banner.mdc с alwaysApply: true и повторите промпт: \"только static HTML/JS, без npm и React\". Не принимайте package.json \"на всякий случай\"."
+          }
+        }
+      ]
+    }
+  ]
+}

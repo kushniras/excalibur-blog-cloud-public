@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-roli",
+  "slug": "roli-subagentov-cursor-orchestrator",
+  "title": "Агент Cursor без хаоса: роли экономят время на правках",
+  "wp_post_id": 14488,
+  "primary_query": "роли субагентов cursor",
+  "secondary_queries": [
+    "оркестратор cursor",
+    "субагенты cursor",
+    "handoff агенты"
+  ],
+  "char_count": 9535,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/roli-subagentov-cursor-orchestrator/",
+  "datePublished": "2026-07-20",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "роли субагентов Cursor",
+    "оркестратор без хаоса",
+    "handoff из четырёх строк",
+    "один владелец brief.md"
+  ],
+  "meta_ab": {
+    "title_seo": "Роли субагентов Cursor: оркестратор без хаоса в diff",
+    "title_ctr": "Трое правят brief.md? Роли и handoff за вечер",
+    "title_aeo": "Как настроить роли субагентов и оркестратор в Cursor?",
+    "description_seo": "Один владелец файла, оркестратор только делит задачу, handoff из четырёх строк. Без зоопарка из 19 агентов.",
+    "description_ctr": "Агенты спорят за один файл? Закрепите владельца и короткий handoff – меньше правок и токенов.",
+    "description_aeo": "Субагенты Cursor: матрица владеет/не трогает, research→draft и когда не нужен рой."
+  }
+}

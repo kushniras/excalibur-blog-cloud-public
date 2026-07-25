@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-about",
+  "slug": "stranica-o-kompanii-cursor-ai",
+  "title": "О компании на сайте: about.html в Cursor без кода",
+  "wp_post_id": 14138,
+  "primary_query": "о компании на сайте",
+  "secondary_queries": [
+    "about.html",
+    "страница о нас",
+    "about без кода"
+  ],
+  "char_count": 9236,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/stranica-o-kompanii-cursor-ai/",
+  "datePublished": "2026-07-09",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "about.html",
+    "кто и для кого",
+    "без чужих миссий",
+    "контакты на about"
+  ],
+  "meta_ab": {
+    "title_seo": "О компании на сайте: about.html в Cursor без кода",
+    "title_ctr": "Миссия из шаблона не работает. 4 честных блока",
+    "title_aeo": "Как сделать страницу О компании в Cursor AI?",
+    "description_seo": "Кто, для кого, как работаем, контакты. Без выдуманных наград.",
+    "description_ctr": "Заказчик хочет понять, кто вы. Соберите about.html.",
+    "description_aeo": "Страница О компании: структура, ошибки воды, проверка."
+  }
+}

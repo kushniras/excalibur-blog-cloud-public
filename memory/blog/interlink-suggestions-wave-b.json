@@ -1,0 +1,63 @@
+{
+  "site_base": "https://mayai.ru",
+  "total_articles": 24,
+  "opportunities_found": 8,
+  "suggestions": [
+    {
+      "source": "R-kak-podklyuchit-mcp-subagentam-cursor",
+      "target": "R-semanticheskoe-yadro-cursor-wordstat",
+      "keyword": "wordstat mcp",
+      "context": "бочие ветки day-1. Researcher тянет живые частотности через Wordstat MCP (как в пакете <a target=\"_blank\" href=\"https://github.com/H",
+      "link_replacement": "<a href=\"/blog/semanticheskoe-yadro-cursor-wordstat/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-seo-audit-sajta-cursor-geo-skill",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "keyword": "json-ld",
+      "context": "5: проверьте FAQ/HowTo через Rich Results Test, если меняли JSON-LD (это \"машинный паспорт\" страницы простым языком).</li> <li>",
+      "link_replacement": "<a href=\"/blog/mikrorazmetka-sajta-json-ld/\">JSON-LD</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "keyword": "json-ld",
+      "context": "ля AI-ботов, прямой ответ в первых абзацах, FAQ до 80 слов, JSON-LD FAQPage и Article, аудит 20–30 промптов с перефразами. Prin",
+      "link_replacement": "<a href=\"/blog/mikrorazmetka-sajta-json-ld/\">JSON-LD</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "keyword": "faqpage schema",
+      "context": "Sitemap, CWV</td>       <td>robots.txt, HTML</td>       <td>FAQPage Schema</td>     </tr>     <tr>       <td><b>Срок</b></td>       <t",
+      "link_replacement": "<a href=\"/blog/mikrorazmetka-sajta-json-ld/\">FAQPage Schema</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "keyword": "json-ld",
+      "context": "<td>Мета, alt, Wordstat, перелинковка</td>       <td>Schema JSON-LD, FAQ в HTML; llms.txt опционально</td>     </tr>   </tbody>",
+      "link_replacement": "<a href=\"/blog/mikrorazmetka-sajta-json-ld/\">JSON-LD</a>"
+    },
+    {
+      "source": "B01-primer-seo-stati",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "keyword": "blogposting",
+      "context": "и для AI и расширенных сниппетов. Для блога базовый набор - BlogPosting (или Article) плюс FAQPage в JSON-LD; разметка живёт в meta",
+      "link_replacement": "<a href=\"/blog/mikrorazmetka-sajta-json-ld/\">BlogPosting</a>"
+    },
+    {
+      "source": "R-prodvizhenie-v-nejrosetyah-alisa-checklist",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "keyword": "faqpage schema",
+      "context": "енна</td> </tr> <tr> <td><b>Важно</b></td> <td>Автор, дата, FAQPage schema по docs Google</td> <td>Помогает машинам читать Q&A; не \"кн",
+      "link_replacement": "<a href=\"/blog/mikrorazmetka-sajta-json-ld/\">FAQPage schema</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "настройка cursor",
+      "context": ": не откроет сайт, не подтянет документацию, не тронет CMS. Настройка cursor mcp занимает 15–30 минут. Ниже – подключение через Tools &a",
+      "link_replacement": "<a href=\"/blog/kak-nastroit-ruleset-i-skill-cursor/\">Настройка cursor</a>"
+    }
+  ]
+}

@@ -36,7 +36,7 @@
       "headline": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей",
       "description": "Пошаговый чек-лист llms.txt: какие страницы выбрать, как оформить Markdown, где выложить файл и как проверить без обещаний AI-трафика.",
       "datePublished": "2026-06-16",
-      "dateModified": "2026-06-16",
+      "dateModified": "2026-07-25",
       "inLanguage": "ru",
       "url": "[REDACTED]/blog/sozdat-llms-txt-dlya-sajta/",
       "mainEntityOfPage": {
@@ -56,7 +56,7 @@
         "@id": "[REDACTED]/#organization"
       },
       "keywords": "llms txt, файл llms txt, llms txt пример, генератор llms txt, создать llms txt, llms txt в robots txt",
-      "wordCount": 1336,
+      "wordCount": 9221,
       "articleSection": "SEO / GEO / AIO",
       "isPartOf": {
         "@type": "Blog",
@@ -89,7 +89,7 @@
           "name": "Поможет ли файл llms txt попасть в ответы нейросетей?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Гарантии нет. Google Search говорит, что специальные AI-файлы не нужны для AI Overviews и не дают бонуса ранжирования. Делайте llms.txt как карту сайта для AI-агентов, а не как обещание трафика."
+            "text": "Гарантии нет. Google Search не использует llms.txt как специальный сигнал и не даёт за него бонус ранжирования. Делайте файл как карту для части агентов и внутренней навигации, а не как GEO-хак или обещание трафика."
           }
         },
         {

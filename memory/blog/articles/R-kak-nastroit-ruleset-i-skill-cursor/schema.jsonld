@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/#webpage",
+      "url": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/",
+      "name": "Настройка Cursor: меньше рутины — правило + skill",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Одна договорённость 5–10 строк, проверка новым чатом и Skill на бриф поста. Без зоопарка Always Apply и без путаницы с MCP."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/#webpage"
+      },
+      "headline": "Настройка Cursor: меньше рутины — правило + skill",
+      "description": "Одна договорённость 5–10 строк, проверка новым чатом и Skill на бриф поста. Без зоопарка Always Apply и без путаницы с MCP.",
+      "datePublished": "2026-07-21T11:48:03",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем правило отличается от Skill?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Правило – короткая договорённость и ограничения. Skill – пошаговый сценарий, который подключаете по задаче через / или по description."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли вешать alwaysApply на каждый файл инструкции?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Always Apply только на то, что должно быть в каждом чате. Длинные процедуры держите в Skill, иначе раздуете контекст."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С чего начать настройку Cursor, если уже открыт Agent-чат?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С одной короткой alwaysApply-договорённости и проверки в новом чате. Затем один Skill на ваш частый сценарий – например бриф поста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли совместить правило и Skill в одном проекте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, так и задумано: постоянный тон в .mdc, повторяемый чек-лист в SKILL.md. Главное – не копировать шаги навыка в alwaysApply."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему New Rule создал SKILL.md не туда?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "У части аккаунтов так бывает по отчётам форума Cursor. Проверьте путь: правило – .cursor/rules/*.mdc, skill – .cursor/skills/…/SKILL.md. При путанице пересоздайте через /create-rule и /create-skill."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если уже насоздавали много Always Apply?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Оставьте одно короткое (язык, тон, запрет секретов), остальное снимите с Always Apply или перенесите процедуры в Skill. Не добавляйте ещё одно \"на всякий случай\"."
+          }
+        }
+      ]
+    }
+  ]
+}

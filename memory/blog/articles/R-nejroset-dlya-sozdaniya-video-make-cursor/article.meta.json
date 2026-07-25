@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-video",
+  "slug": "nejroset-dlya-sozdaniya-video-make-cursor",
+  "title": "Нейросеть для создания видео: один MP4 9:16 ради охвата, не топ-15",
+  "wp_post_id": 14469,
+  "primary_query": "нейросеть для создания видео",
+  "secondary_queries": [
+    "видео 9:16 make",
+    "ai video cursor",
+    "mp4 для reels"
+  ],
+  "char_count": 9247,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/",
+  "datePublished": "2026-07-20",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "один MP4 9:16",
+    "видео через Make и Cursor",
+    "не топ-15 нейросетей",
+    "проверка звука"
+  ],
+  "meta_ab": {
+    "title_seo": "Нейросеть для создания видео: один MP4 9:16",
+    "title_ctr": "Топ-15 нейросетей, а файла нет? Один ролик 9:16",
+    "title_aeo": "Как сделать видео нейросетью через Make и Cursor?",
+    "description_seo": "Сценарий → один вертикальный MP4 → проверка звука и субтитров. Без зоопарка сервисов.",
+    "description_ctr": "Нужен охват, не список инструментов. Соберите один файл за вечер.",
+    "description_aeo": "AI-видео: формат 9:16, цепочка Make/Cursor и типичные ошибки."
+  }
+}

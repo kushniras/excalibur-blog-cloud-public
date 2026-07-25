@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-otlozh",
+  "slug": "otlozhennyj-posting-make-google-sheets",
+  "title": "Отложенный постинг в нужный час: очередь в Sheets + Make без SaaS",
+  "wp_post_id": 14416,
+  "primary_query": "отложенный постинг",
+  "secondary_queries": [
+    "очередь posts sheets",
+    "отложка make",
+    "постинг по времени"
+  ],
+  "char_count": 9633,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/",
+  "datePublished": "2026-07-18",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "очередь в Sheets",
+    "отложка без SaaS",
+    "часовой пояс",
+    "тестовый слот"
+  ],
+  "meta_ab": {
+    "title_seo": "Отложенный постинг: очередь Sheets + Make без SaaS",
+    "title_ctr": "SaaS за отложку надоел? Очередь в таблице",
+    "title_aeo": "Как сделать отложенный постинг через Make и Sheets?",
+    "description_seo": "Очередь, часовой пояс и тестовый слот. Без сложного сценария при 3 постах в неделю.",
+    "description_ctr": "Нужный час публикации без чужого кабинета.",
+    "description_aeo": "Отложенный постинг: Sheets, Make, ошибки timezone."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/cursor-ai-lending-bez-koda/#webpage",
+      "url": "https://mayai.ru/cursor-ai-lending-bez-koda/",
+      "name": "Cursor AI сайт: лендинг без кода за один вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Правило landing.mdc, один index.html, Formspree и Vercel Drop. Без npm и чёрного терминала."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/cursor-ai-lending-bez-koda/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-ai-lending-bez-koda/#webpage"
+      },
+      "headline": "Cursor AI сайт: лендинг без кода за один вечер",
+      "description": "Правило landing.mdc, один index.html, Formspree и Vercel Drop. Без npm и чёрного терминала.",
+      "datePublished": "2026-06-28",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/cursor-ai-lending-bez-koda/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/cursor-ai-lending-bez-koda/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-ai-lending-bez-koda/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как пользоваться Cursor AI для создания сайта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Установите Cursor, откройте папку проекта, создайте правило landing.mdc и в Agent (Ctrl+I) опишите лендинг словами. Агент соберёт index.html, вы проверите страницу в браузере и при необходимости попросите правки в чате."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли npm для лендинга в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, если вы зафиксировали один статический index.html и Tailwind CDN в правиле проекта. npm и React нужны для сложных приложений, а не для одностраничника с формой заявки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cursor AI бесплатно – хватит ли на лендинг?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Hobby-план бесплатен, Agent и Chat с Auto работают с лимитом. Одного вечера и нескольких десятков запросов к агенту обычно достаточно для первой версии страницы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как опубликовать лендинг без GitHub?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Перетащите папку с index.html на vercel.com/drop и нажмите Deploy. Git, терминал и аккаунт разработчика не обязательны – нужен только браузер и файл в корне папки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему страница открывается без стилей?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Скорее всего не подключён Tailwind CDN в head или агент создал отдельные CSS-файлы вместо CDN. Попросите Agent: \"Добавь Tailwind Play CDN в head, все стили через классы Tailwind\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда попадают заявки с формы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только если в теге form указан рабочий action на Formspree или аналог. Зарегистрируйтесь на formspree.io, вставьте endpoint в форму и отправьте тест – письмо должно прийти на почту в течение минуты."
+          }
+        }
+      ]
+    }
+  ]
+}

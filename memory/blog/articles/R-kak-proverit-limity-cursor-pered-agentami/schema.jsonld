@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/#webpage",
+      "url": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/",
+      "name": "Cursor лимиты: как не сжечь бюджет одним Agent",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Spending по двум пулам, дата сброса, Disabled/Fixed Monthly Limit и один прогон на Composer. Без Ultra и без обхода."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/#webpage"
+      },
+      "headline": "Cursor лимиты: как не сжечь бюджет одним Agent",
+      "description": "Spending по двум пулам, дата сброса, Disabled/Fixed Monthly Limit и один прогон на Composer. Без Ultra и без обхода.",
+      "datePublished": "2026-07-25T11:40:29",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Где смотреть cursor лимиты прямо сейчас?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вкладка Spending: cursor.com/dashboard/spending. Там оба пула, остаток и дата сброса. Usage смотрите как оценку, квоту держите по Spending %."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем cursor pro лимиты отличаются от бесплатной версии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На paid individual планах больше extended Agent limits, generous Grok и Composer, Cloud agents. Hobby подходит для старта, но перед серьёзным Agent всё равно откройте Spending и посмотрите свой остаток – цифры на экране важнее чужой сравнительной таблицы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если cursor лимит запросов кончился mid-task?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Остановить дорогой прогон. Дальше: ждать сброс цикла, поставить Fixed spend limit и коротко добить задачу, апгрейднуть план или перейти на Composer из Cursor Models. Не искать обход и чужие аккаунты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Ultra в первый вечер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно нет. Сначала потолок и короткий прогон на Composer. Ultra имеет смысл, когда уже понятен расход и нужен запас usage, а не \"на пробу без тормоза\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему Usage показывает доллары, а Spending – проценты?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это разные шкалы. Spending отражает квоту плана, Usage $ – оценку стоимости токенов. Для решения \"можно ли запускать Agent\" ориентир – Spending и Monthly Limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли включать Unlimited на первый тест?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не стоит. Unlimited снимает тормоз доплаты. Для первого вечера берите Disabled или маленький Fixed, иначе легко поймать сюрприз после длинного прогона."
+          }
+        }
+      ]
+    }
+  ]
+}

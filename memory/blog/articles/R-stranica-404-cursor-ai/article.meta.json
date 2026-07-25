@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-404",
+  "slug": "stranica-404-cursor-ai",
+  "title": "Страница 404 в Cursor: 404.html без кода и сервера",
+  "wp_post_id": 14132,
+  "primary_query": "страница 404",
+  "secondary_queries": [
+    "404.html cursor",
+    "кастомная 404",
+    "ошибка 404 сайт"
+  ],
+  "char_count": 9451,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/stranica-404-cursor-ai/",
+  "datePublished": "2026-07-09",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "404.html без кода",
+    "CTA на 404",
+    "проверка несуществующего URL",
+    "страница ошибки"
+  ],
+  "meta_ab": {
+    "title_seo": "Страница 404 в Cursor: 404.html без кода",
+    "title_ctr": "Битая ссылка = тупик? Сделайте 404 с путём назад",
+    "title_aeo": "Как сделать страницу 404 в Cursor AI?",
+    "description_seo": "Один 404.html с понятным текстом и ссылкой на главную. Проверка несуществующего URL.",
+    "description_ctr": "Не оставляйте серый 404 хостинга. Верните человека на сайт.",
+    "description_aeo": "Страница 404: зачем, что написать и как проверить."
+  }
+}

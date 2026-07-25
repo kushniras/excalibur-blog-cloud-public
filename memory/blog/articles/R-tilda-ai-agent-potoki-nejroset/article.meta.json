@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-tilda",
+  "slug": "tilda-ai-agent-potoki-nejroset",
+  "title": "Потоки Тильда: Tilda AI Agent и статья нейросетью за вечер",
+  "wp_post_id": 14279,
+  "primary_query": "потоки тильда",
+  "secondary_queries": [
+    "tilda ai agent",
+    "статья нейросетью tilda",
+    "поток тильда"
+  ],
+  "char_count": 8934,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/",
+  "datePublished": "2026-07-14",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Tilda AI Agent",
+    "Поток за вечер",
+    "черновик с правкой цифр",
+    "не полный SEO-пайплайн"
+  ],
+  "meta_ab": {
+    "title_seo": "Потоки Тильда: Tilda AI Agent и статья за вечер",
+    "title_ctr": "Черновик в Tilda, не магия. Бриф и правка цифр",
+    "title_aeo": "Как использовать Tilda AI Agent и Потоки?",
+    "description_seo": "Один поток, черновик статьи и ручная правка фактов. Без выдуманных метрик.",
+    "description_ctr": "Tilda есть – нужен текст. Запустите Поток с брифом.",
+    "description_aeo": "Потоки Тильда: когда хватает, ограничения, критерий готово."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-opisanie",
+  "slug": "opisanie-tovara-nejroset-cursor",
+  "title": "Описание товара нейросеть: карточка в поиске WB, не вода из чата",
+  "wp_post_id": 14429,
+  "primary_query": "описание товара нейросеть",
+  "secondary_queries": [
+    "карточка wb ai",
+    "описание для маркетплейса",
+    "cursor карточка"
+  ],
+  "char_count": 9629,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/opisanie-tovara-nejroset-cursor/",
+  "datePublished": "2026-07-18",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "описание товара в Cursor",
+    "карточка под поиск WB",
+    "факты вместо воды",
+    "без чужих гарантий"
+  ],
+  "meta_ab": {
+    "title_seo": "Описание товара нейросеть: карточка в поиске WB",
+    "title_ctr": "Чат написал воду? Карточка из фактов за вечер",
+    "title_aeo": "Как написать описание товара нейросетью в Cursor?",
+    "description_seo": "Характеристики из брифа, структура карточки и проверка на маркетплейсе. Без выдуманных %.",
+    "description_ctr": "Нужна карточка в поиске, не абзац из воздуха. Соберите факты и ключи.",
+    "description_aeo": "Описание товара: бриф, структура, ошибки копирования чужих гарантий."
+  }
+}

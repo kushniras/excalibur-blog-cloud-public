@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-context",
+  "slug": "kak-sohranit-kontekst-subagentov-cursor",
+  "title": "Контекстное окно нейросети: меньше рутины повторных брифов",
+  "wp_post_id": 14526,
+  "primary_query": "контекст субагентов cursor",
+  "secondary_queries": [
+    "memory cursor",
+    "handoff субагенты",
+    "контекстное окно"
+  ],
+  "char_count": 8977,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/",
+  "datePublished": "2026-07-22",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "сохранить контекст субагентов",
+    "memory/ вместо длинного чата",
+    "Researcher пишет в файл",
+    "Writer читает только файл"
+  ],
+  "meta_ab": {
+    "title_seo": "Как сохранить контекст субагентов Cursor в memory/",
+    "title_ctr": "Новый чат забыл бриф? Файл фактов вместо копипаста",
+    "title_aeo": "Как сохранить контекст субагентов в Cursor?",
+    "description_seo": "Папка memory/, правило «следующий читает файл», Researcher→facts и Writer без пересказа темы. Без иллюзии вечной памяти чата.",
+    "description_ctr": "Окно переполнилось? Короткий новый чат и файл фактов быстрее часа копипаста.",
+    "description_aeo": "Контекст субагентов: чем не «память нейросети», шаблоны memory/ и типичные ошибки."
+  }
+}

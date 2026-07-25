@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/effekt-parallaksa-hero-cursor/#webpage",
+      "url": "https://mayai.ru/effekt-parallaksa-hero-cursor/",
+      "name": "Как сделать эффект параллакса в Cursor: Hero за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Бриф первого экрана, установка PARALAXIMUS, атлас 2×2 и чеклист reduce-motion. Без слепой вставки на прод."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/effekt-parallaksa-hero-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/effekt-parallaksa-hero-cursor/#webpage"
+      },
+      "headline": "Как сделать эффект параллакса в Cursor: Hero за вечер",
+      "description": "Бриф первого экрана, установка PARALAXIMUS, атлас 2×2 и чеклист reduce-motion. Без слепой вставки на прод.",
+      "datePublished": "2026-07-15",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/effekt-parallaksa-hero-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/effekt-parallaksa-hero-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/effekt-parallaksa-hero-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как сделать эффект параллакса без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Поставьте PARALAXIMUS в Cursor, подключите MCP для атласа и снятия фона, вызовите /paralaximus с брифом оффера. Агент соберёт слои и локальный index.html – вам останется открыть preview и пройти чеклист читаемости."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли MCP для параллакса в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: gpt-image-2 делает один 2K-атлас, recraft_remove_background чистит альфу при косяке. Без MCP агент не из чего собрать согласованные слои."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем PARALAXIMUS отличается от обычной генерации картинок?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычная генерация даёт один баннер. PARALAXIMUS требует атлас 2×2, режет слои, собирает Hero со scroll/mouse и учитывает prefers-reduced-motion. Это сцена, а не \"ещё один JPG\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли вставить параллакс Hero в WordPress или Tilda?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, как HTML/CSS/JS-блок после локальной проверки на 127.0.0.1:8123. Затем перенесите слои и разметку в тему или Zero Block. Не копируйте код до теста Reduce Motion и телефона."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько слоёв достаточно новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Четыре из атласа 2×2 – рабочий минимум: фон, far, near-рамка, главный объект. Не добавляйте пятый \"для красоты\" в первый вечер."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему от параллакса может тошнить и что делать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WCAG 2.3.3 относит parallax scrolling к анимациям с вестибулярным риском. Сделайте сдвиг subtle, проверьте \"уменьшить движение\" и не гоните эффект на всю страницу – достаточно Hero."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/stranica-portfolio-cursor-ai/#webpage",
+      "url": "https://mayai.ru/stranica-portfolio-cursor-ai/",
+      "name": "Портфолио на сайт: portfolio.html в Cursor без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "3 кейса: задача, действие, результат. Без сетки из 20 пустых карточек."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/stranica-portfolio-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/stranica-portfolio-cursor-ai/#webpage"
+      },
+      "headline": "Портфолио на сайт: portfolio.html в Cursor без кода",
+      "description": "3 кейса: задача, действие, результат. Без сетки из 20 пустых карточек.",
+      "datePublished": "2026-07-09",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/stranica-portfolio-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/stranica-portfolio-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/stranica-portfolio-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как создать портфолио на сайте без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Соберите 4–6 реальных работ, откройте папку лендинга в Cursor, задайте правило portfolio.mdc (один HTML, без npm), попросите Agent собрать portfolio.html и выложите папку через Vercel Drop. Свой домен не обязателен на старте – хватит ссылки vercel.app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько работ достаточно на старте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Оптимально 4–6 сильных карточек. Три честных кейса лучше сорока шаблонных. Добавляйте новые работы по мере закрытых заказов, не раздувая сетку ради объёма."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли фото клиентов или хватит скринов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Хватит скринов экрана, макетов и кадров \"до/после\". Фото человека публикуйте только с явного разрешения. Главное – понятная задача и измеримый или конкретный результат в тексте карточки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем портфолио отличается от страницы отзывов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Портфолио показывает работы (что сделали). Отзывы показывают цитаты (что сказали). Держите их разными файлами и ссылками в меню, чтобы лид видел и доказательства, и живые голоса."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли npm или React для страницы портфолио?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. При правиле portfolio.mdc и Tailwind CDN страница – обычный HTML-файл. Если Agent предложил package.json, остановите генерацию и повторите промпт со словами \"single static HTML, no frameworks\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли опубликовать портфолио без своего домена?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Vercel Drop выдаёт публичный адрес на vercel.app. Позже можно привязать домен в кабинете Vercel; для первого показа клиенту достаточно пути /portfolio.html."
+          }
+        }
+      ]
+    }
+  ]
+}

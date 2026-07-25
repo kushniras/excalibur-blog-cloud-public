@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-avtopost-tg",
+  "slug": "kak-nastroit-avtoposting-telegram-cloud-agents",
+  "title": "Автопостинг телеграм: поток новостей без ручного копипаста",
+  "wp_post_id": 14594,
+  "primary_query": "автопостинг телеграм",
+  "secondary_queries": [
+    "cloud agents telegram",
+    "rss ai telegram",
+    "автопостинг новостей telegram"
+  ],
+  "char_count": 9461,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-nastroit-avtoposting-telegram-cloud-agents/",
+  "datePublished": "2026-07-23",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "автопостинг в Telegram через Cloud Agents",
+    "RSS в Telegram без ручного копипаста",
+    "форк rss-ai-telegram",
+    "Cloud Agent для новостей в канал"
+  ],
+  "meta_ab": {
+    "title_seo": "Автопостинг Telegram: Cloud Agents и RSS без копипаста",
+    "title_ctr": "RSS сам в Telegram? Cloud Agent без Make в первый вечер",
+    "title_aeo": "Как настроить автопостинг в Telegram через Cloud Agents?",
+    "description_seo": "Форк rss-ai-telegram, Secrets, dry-run и один живой пост в тестовый чат. Без LLM-ключей и без смешения с Make в первый вечер.",
+    "description_ctr": "Надоел копипаст новостей в канал? Один Cloud Agent, один RSS, один пост – и state без дублей.",
+    "description_aeo": "Автопостинг через Cloud Agents Cursor: бот, chat_id, dry-run, posted_news.tsv и только потом cron."
+  }
+}

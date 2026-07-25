@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-progrev",
+  "slug": "progrev-akkauntov-pered-avtopostingom",
+  "title": "Прогрев аккаунта перед автопостингом: чеклист для Make",
+  "wp_post_id": 14225,
+  "primary_query": "прогрев аккаунта перед автопостингом",
+  "secondary_queries": [
+    "прогрев threads telegram",
+    "автопостинг риски",
+    "чеклист прогрева"
+  ],
+  "char_count": 9725,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/",
+  "datePublished": "2026-07-12",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "прогрев перед Make",
+    "чеклист ручных действий",
+    "не лить пачкой",
+    "первый ручной пост"
+  ],
+  "meta_ab": {
+    "title_seo": "Прогрев аккаунта перед автопостингом: чеклист для Make",
+    "title_ctr": "Автопост с нуля = бан? Сначала прогрев",
+    "title_aeo": "Как прогреть аккаунт перед автопостингом?",
+    "description_seo": "Ручные действия, первый живой пост и только потом очередь Make. Без пачки одинаковых текстов.",
+    "description_ctr": "Новый аккаунт и автопостинг – плохая пара. Пройдите чеклист.",
+    "description_aeo": "Прогрев: зачем, сколько ручных шагов и когда включать Make."
+  }
+}

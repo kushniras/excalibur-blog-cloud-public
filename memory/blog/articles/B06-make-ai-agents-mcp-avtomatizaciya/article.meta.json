@@ -11,7 +11,7 @@
     "make сценарии",
     "make com как пользоваться"
   ],
-  "char_count": 9348,
+  "char_count": 9344,
   "article_mode": "B",
   "search_intent": "workflow",
   "author_id": "artur-horoshev",
@@ -32,5 +32,6 @@
     "/avtomatizaciya-n8n-ai-agents/",
     "/podklyuchenie-mcp-cursor/"
   ],
-  "cover_family": "brand_collage"
+  "cover_family": "brand_collage",
+  "dateModified": "2026-07-25"
 }

@@ -15,18 +15,20 @@
     },
     {
       "@type": "Person",
-      "@id": "https://mayai.ru/#author-elena-kovaleva",
-      "name": "Елена Ковалева",
-      "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
-      "image": "https://kv-ai.ru/assets/team/elena-kovaleva.jpg",
+      "@id": "https://mayai.ru/#author-artur-horoshev",
+      "name": "Артур Хорошев",
+      "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "image": "https://kv-ai.ru/artur-horosheff",
       "worksFor": {
         "@id": "https://mayai.ru/#organization"
       },
       "sameAs": [
-        "https://habr.com/ru/users/elena_kovaleva_seo/",
-        "https://github.com/elena-kov-seo",
-        "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
-      ]
+        "https://kv-ai.ru/artur-horosheff",
+        "https://mayai.ru/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
+      ],
+      "description": "Эксперт по автоматизации бизнес-процессов на Make.com, вайбкодингу и AI-агентам."
     },
     {
       "@type": "BlogPosting",
@@ -34,7 +36,7 @@
       "headline": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей",
       "description": "Чек-лист geo оптимизации сайта: robots.txt для AI-ботов, answer-first, FAQ, Schema.org и мониторинг Share of Voice. 32 пункта с приоритетами за 60–90 минут.",
       "datePublished": "2026-06-11",
-      "dateModified": "2026-06-11",
+      "dateModified": "2026-07-25",
       "inLanguage": "ru",
       "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/",
       "mainEntityOfPage": {
@@ -48,13 +50,13 @@
         "height": 675
       },
       "author": {
-        "@id": "https://mayai.ru/#author-elena-kovaleva"
+        "@id": "https://mayai.ru/#author-artur-horoshev"
       },
       "publisher": {
         "@id": "https://mayai.ru/#organization"
       },
       "keywords": "geo оптимизация, geo оптимизация сайта, geo seo оптимизация, с чего начать geo оптимизацию, geo оптимизация контента",
-      "wordCount": 8921,
+      "wordCount": 9479,
       "articleSection": "SEO / GEO",
       "isPartOf": {
         "@type": "Blog",
@@ -79,7 +81,7 @@
           "name": "Чем GEO отличается от SEO?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "SEO гонится за позицией и кликом в классической выдаче. GEO – за цитированием в синтезированном ответе нейросети. SEO остаётся фундаментом: без топ-30 органики сложнее попасть в 5 источников Яндекс Нейро. GEO добавляет answer-first, FAQ и Schema."
+            "text": "SEO – позиция и клик. GEO – discoverability и корректное использование в синтезированном ответе. SEO остаётся фундаментом; GEO добавляет answer-first, FAQ и Schema."
           }
         },
         {
@@ -87,7 +89,7 @@
           "name": "Нужна ли Schema для GEO?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Да: FAQPage, Article, Organization – минимум 2026. Проверяйте JSON-LD в Rich Results Test."
+            "text": "Да как слой понимания сущности: FAQPage, Article, Organization. Schema не гарантирует цитату. Проверяйте JSON-LD в Rich Results Test."
           }
         },
         {
@@ -103,7 +105,7 @@
           "name": "Обязателен ли llms.txt?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Нет. Сначала robots.txt, HTML и Schema. llms.txt – опциональная подсказка для LLM-краулеров."
+            "text": "Нет. Сначала robots.txt, HTML и Schema. llms.txt – опциональная карта для части агентов. Google Search не использует llms.txt как специальный сигнал ранжирования."
           }
         },
         {
@@ -119,7 +121,7 @@
           "name": "GEO заменяет SEO?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Нет. Позиции в Google коррелируют с упоминаниями в ChatGPT. Оптимизируйте оба канала."
+            "text": "Нет. Позиции в Google коррелируют с упоминаниями в ChatGPT, но не равны им. Не размножайте thin pages."
           }
         }
       ]
@@ -181,7 +183,7 @@
           "@type": "HowToStep",
           "position": 4,
           "name": "Перестройте priority-страницы",
-          "text": "После каждого H2 — 1–2 абзаца прямого ответа; добавьте TL;DR в начало; блок FAQ 5–7 вопросов с ответами до 80 слов.",
+          "text": "После каждого H2 — 1–2 абзаца прямого ответа; добавьте короткую выжимку в начало; блок FAQ 5–7 вопросов с ответами до 80 слов.",
           "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#content-structure"
         },
         {
@@ -216,7 +218,7 @@
           "@type": "HowToStep",
           "position": 9,
           "name": "Опционально: llms.txt и внешние упоминания",
-          "text": "После закрытия критичных пунктов добавьте llms.txt в корень и одну экспертную публикацию для entity signals.",
+          "text": "После закрытия критичных пунктов добавьте llms.txt как карту страниц для части агентов – не как ranking-хак Google Search.",
           "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#checklist-geo"
         }
       ]

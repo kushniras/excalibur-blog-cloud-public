@@ -1,0 +1,87 @@
+<p>Вы уже собрали оркестратор и роли после гайда про субагентов. В Cursor MCP (это подключенный сервер инструментов для агента) в Tools зелёный. Просите Researcher «собери спрос по нише» — а в brief.md снова «примерно 10 тысяч показов». Цифры копируете из вкладки Wordstat, картинки — из другой: рутина не исчезла. Параллельно Designer не опишет картинку словами вместо файла, пока у роли нет живого image-tool.</p>
+<p>Ниже спокойный маршрут «делай вместе со мной». Цель не «подключить ещё сервер», а назначить уже зелёный MCP одной роли: один tool, один успешный вызов и живые данные в handoff (это короткий файл-передача между ролями). Так вы сэкономите время на ручном копировании частотностей и ассетов.</p>
+<blockquote>
+<p>За один прогон одной роли — Researcher к Wordstat или Designer к image MCP — в чате виден успешный tool call, в handoff лежит число показов или URL картинки, секреты не в тексте роли, day-1 активен только один сервер.</p>
+</blockquote>
+<p>Путь по порядку: выбрать роль → оставить один MCP → проверить секреты → прописать tool в agent.md → прогнать оркестратор→роль→файл. Если сервер ещё красный или mcp.json пустой, сначала <a href="/podklyuchenie-mcp-cursor/">подключение MCP в Cursor</a>. Если ролей ещё нет — <a href="/roli-subagentov-cursor-orchestrator/">офис с оркестратором и handoff</a>. Эта статья — слой поверх: розетка уже есть, нужно воткнуть прибор в одну роль.</p>
+<h2>Выберите одну роль на сегодня: Researcher или Designer</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-podklyuchit-mcp-subagentam-cursor-inline-01.jpg" alt="Схема сравнения Researcher и Designer: какой MCP и какой артефакт на сегодня" loading="lazy"><br />
+</figure>
+<p>Две рабочие ветки day-1. Researcher тянет живые частотности через Wordstat MCP (как в пакете <a rel="noopener noreferrer" target="_blank" href="https://github.com/Horosheff/yadryshko-semantic-core-subagent">Ядрышко</a>). Designer тянет картинку через image MCP (как в <a rel="noopener noreferrer" target="_blank" href="https://github.com/Horosheff/aura-designer">AURA</a>). Сегодня нужна одна ветка, не обе.</p>
+<ol>
+<li>Откройте заметку на вечер и напишите одну фразу: «сегодня только Researcher» или «сегодня только Designer».</li>
+<li>Рядом укажите артефакт: «число показов в brief.md» или «URL/путь картинки в handoff».</li>
+<li>Откройте файл роли в проекте: .cursor/agents/ — research.md или designer.md.</li>
+<li>Вторую роль не трогайте и не давайте ей tool «на всякий случай»; задание одно — спрос по нише или один визуал, не «весь контент-план».</li>
+</ol>
+<p>Проверка: в заметке одна роль и один критерий файла. Второе имя роли отсутствует.</p>
+<p>Ошибка и восстановление: если снова хочется «и цифры, и обложку» — оставьте Researcher→Wordstat. Designer перенесите на следующий спокойный прогон. Две ветки в один вечер раздувают список tools и возвращают к копипасту. Если файла роли ещё нет, сначала закройте слой ролей в гайде про оркестратор — иначе некуда прописать имя tool.</p>
+<h2>Оставьте включённым один MCP, остальное выключите</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-podklyuchit-mcp-subagentam-cursor-inline-02.jpg" alt="Схема workflow: один MCP включён, остальные выключены, контекст не раздут" loading="lazy"><br />
+</figure>
+<p>По <a rel="noopener noreferrer" target="_blank" href="https://cursor.com/docs/subagents">документации Cursor</a> субагенты наследуют все MCP-инструменты родителя. Отдельного whitelist «только Wordstat для Researcher» в frontmatter (это шапка файла роли) пока нет — так пишут docs и staff на форуме Cursor. Назначить tool роли на практике значит: сузить список серверов и явно написать вызов в инструкции.</p>
+<ol>
+<li>Откройте Cursor → Settings → Tools &amp; MCP.</li>
+<li>Найдите MCP-KV (или ваш image-сервер) — он должен быть зелёным.</li>
+<li>Остальные серверы выключите toggle (это переключатель On/Off без удаления конфига) — без «ещё четырёх полезных MCP» в тот же вечер.</li>
+<li>Вернитесь в чат Agent и убедитесь, что в списке tools виден один нужный набор.</li>
+</ol>
+<p>Проверка: в Tools активен один сервер под выбранную роль; соседние Off.</p>
+<p>Ошибка и восстановление: типичная ошибка day-1 — зоопарк из пяти серверов. Если субагент падает с resource_exhausted (это отказ из‑за перегруза контекста tools) — сначала выключите лишние серверы, не пересоздавайте роли. Community на форуме Cursor как раз ловит этот сбой.</p>
+<h2>Проверьте зелёный статус и спрячьте секреты</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-podklyuchit-mcp-subagentam-cursor-inline-03.jpg" alt="Чеклист: зелёный статус MCP, секреты в env, tool прописан в agent.md" loading="lazy"><br />
+</figure>
+<p>Для Researcher откройте <a rel="noopener noreferrer" target="_blank" href="https://mcp-kv.ru/docs/wordstat-mcp-setup">документацию Wordstat MCP-KV</a>: API Key (это ключ доступа к сервису), Folder ID и роль search-api.webSearch.user. Для Designer — один image-tool по инструкции вашего сервера. Секреты живут в dashboard MCP-KV или в переменных окружения через запись вида env в mcp.json — не в тексте agent.md и не в чате.</p>
+<ol>
+<li>В dashboard MCP-KV нажмите «Проверить и сохранить» после ключа и Folder ID.</li>
+<li>Дождитесь зелёного статуса сервера в Cursor → Tools &amp; MCP.</li>
+<li>Откройте agent.md выбранной роли и поищите по файлу слова key, token, secret.</li>
+<li>Если ключ лежит в промпте — вырежьте, перенесите в dashboard или env и сохраните файл роли без секретов.</li>
+</ol>
+<p>Проверка: сервер зелёный; в agent.md нет ключей; в чате вы не вставляли токен «для скорости».</p>
+<p>Ошибка и восстановление: ответ 401 или 403 — перепроверьте ключ и роль search-api.webSearch.user. Ответ 429 — пауза и повтор, не новый сервер. Красный статус при «правильном» ключе — вернитесь к гайду <a href="/podklyuchenie-mcp-cursor/">про подключение MCP</a>, не правьте ownership ролей вслепую.</p>
+<h2>Пропишите имя tool и критерий артефакта в agent.md</h2>
+<p>Пока в инструкции роли нет имени tool и правила «не угадывать», зелёный сервер в Settings не помогает: роль ходит мимо него. Без живого Wordstat частотности не подтверждены; без image-tool картинка снова «в голове» у модели.</p>
+<ol>
+<li>Откройте .cursor/agents/research.md (или designer.md).</li>
+<li>Добавьте строку действия: например «вызови wordstat_get_top_requests» или имя вашего image-tool.</li>
+<li>Добавьте критерий: «в handoff/brief только живое число показов» или «только URL/путь файла картинки».</li>
+<li>Запретите угадывание: «не пиши «примерно N», если tool не вызывался».</li>
+<li>Сохраните файл. Оркестратору в его agent.md можно коротко напомнить: «Researcher без успешного Wordstat-вызова не считается готовым».</li>
+</ol>
+<p>Проверка: в тексте роли есть имя tool и критерий артефакта; запрет «примерно» на месте.</p>
+<p>Ошибка и восстановление: роль снова выдаёт оценки без вызова — не подключайте второй MCP. Допишите имя tool и критерий файла. Ожидание официального per-tool whitelist в frontmatter сегодня не сработает: staff Cursor подтвердил, что такого scope пока нет; флаг readonly режет MCP целиком.</p>
+<h2>Прогоните оркестратор → роль → файл в handoff</h2>
+<p>Теперь один чистый цикл в IDE. Cloud Agents (это облачный прогон на cursor.com/agents) берут MCP из team-конфига на dashboard, не из вашего локального mcp.json — day-1 остаёмся в локальном Agent.</p>
+<ol>
+<li>Откройте Agent в Cursor в корне проекта.</li>
+<li>Попросите оркестратора делегировать задачу выбранной роли одной фразой: «собери спрос по [ниша] через Wordstat» или «сделай один визуал через image MCP».</li>
+<li>Дождитесь, пока роль реально вызовет tool — в чате должен появиться успешный MCP tool call, не абзац «примерно».</li>
+<li>Проверьте handoff: файл с числом показов или с URL/путём картинки.</li>
+<li>Если есть Reviewer — пусть сверит: в файле есть цифра/URL, совпадающие с ответом tool.</li>
+<li>Не запускайте параллельно вторую роль на тот же brief.</li>
+</ol>
+<p>Проверка: в чате роли виден успешный вызов; в handoff лежит живой артефакт; копипаст из вкладки Wordstat или Midjourney не понадобился. Сверьте: число в файле совпадает с ответом tool, а не с «оценкой модели».</p>
+<p>Ошибка и восстановление: tool не вызвался — вернитесь к toggle (один сервер) и к формулировке в agent.md. Если правите Cloud Agent и «не видит» локальный mcp.json — это ожидаемо; сначала закройте локальный прогон. Пустой handoff при «успешном» тексте в чате — роль не выполнила критерий артефакта: повторите шаг с явным «положи число/URL в файл handoff». Если роль описала картинку словами вместо файла — снова Designer + image-tool, не новый текстовый промпт «нарисуй в голове».</p>
+<h2>Вечером: живые данные вместо «примерно»</h2>
+<p>Утром MCP был зелёный, а brief снова врал «примерно». Результат маршрута: у одной роли видимый успешный tool call и файл с живыми данными — рутина вкладок на этом задании снята. Зоопарк из пяти серверов и Team MCP для Cloud — не сегодняшний слой.</p>
+<p>Когда первый вызов стабилен, можно вырастить тот же паттерн: <a href="/semanticheskoe-yadro-cursor-wordstat/">семантическое ядро через Wordstat</a>, <a href="/generaciya-kartinok-mcp-cursor-marketing/">картинки через MCP</a>, <a href="/podbor-klyuchevyh-slov-cursor-wordstat/">подбор ключей</a>. Базовый офис без tool — в <a href="/ai-agent-marketing-cursor-subagents/">гайде про субагентов</a>; плагины и skills — в <a href="/plaginy-cursor-ai-marketing/">плагинах</a> и <a href="/cursor-skills-dlya-marketinga/">skills</a>.</p>
+<p>Разборы офиса с подключениями — в канале <a rel="noopener noreferrer" target="_blank" href="https://t.me/maya_pro">Telegram @maya_pro</a> и в <a rel="noopener noreferrer" target="_blank" href="https://max.ru/maya_pro">MAX</a>.</p>
+<blockquote>
+<p><b>Материал проверен:</b> <a rel="noopener noreferrer" target="_blank" href="https://kv-ai.ru/artur-horosheff">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).</p>
+<p><b>Опора на источники:</b> cursor.com/docs/subagents (inherit MCP tools, нет per-tool scope); cursor.com/docs/mcp (toggle без удаления); forum.cursor.com/t/159786 (whitelist в frontmatter не поддержан; readonly режет MCP); forum.cursor.com/t/150916 (resource_exhausted при зоопарке MCP); mcp-kv.ru/docs/wordstat-mcp-setup (API Key, Folder ID, 401/403/429); github.com/Horosheff/yadryshko-semantic-core-subagent; github.com/Horosheff/aura-designer; Яндекс Вордстат «как подключить mcp сервер» = 107 на 2026-07-21; t.me/maya_pro #1315, #1319, #1320.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Что такое MCP сервер простыми словами?</h3>
+<p>Это отдельная программа-розетка: агент через неё дергает внешний сервис (Wordstat, генерацию картинок и т. п.), а не выдумывает ответ. «Настройка mcp сервера» для новичка чаще всего = зелёный статус в Tools + ключ вне промпта, без своего Nginx.</p>
+<h3>Нужна ли отдельная настройка MCP на каждую роль?</h3>
+<p>Отдельного официального whitelist на роль нет: роли видят tools родителя. Практический обход — один активный сервер day-1 и явная инструкция tool в agent.md нужной роли.</p>
+<h3>Хватит ли бесплатных MCP серверов?</h3>
+<p>Для первого успеха достаточно одного рабочего (MCP-KV Wordstat или один image). Каталог «список mcp серверов» и «бесплатные mcp сервера» не ускоряют вечер, если роль всё ещё пишет «примерно».</p>
+<h3>Зачем MCP, если роли уже есть?</h3>
+<p>Роли делят работу и файлы. Без живого tool офис снова копирует цифры и картинки из вкладок.</p>
+<h3>Почему не настраивать сразу Cloud Agents?</h3>
+<p>Локальный mcp.json не подхватывается Cloud Agents автоматически — нужен Team MCP. Сначала закройте локальный прогон с артефактом в handoff, потом переносите конфиг в облако команды.</p>

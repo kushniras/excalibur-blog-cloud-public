@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/cursor-ekonomika-ai-agentov/#webpage",
+      "url": "https://mayai.ru/cursor-ekonomika-ai-agentov/",
+      "name": "Бесплатные AI агенты: Cursor Composer вместо дорогого стека",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Сравните стеки, выберите Composer, напишите критерий готово и стоп-кран. Без Max Mode «на всякий» в первый вечер."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/cursor-ekonomika-ai-agentov/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-ekonomika-ai-agentov/#webpage"
+      },
+      "headline": "Бесплатные AI агенты: Cursor Composer вместо дорогого стека",
+      "description": "Сравните стеки, выберите Composer, напишите критерий готово и стоп-кран. Без Max Mode «на всякий» в первый вечер.",
+      "datePublished": "2026-07-13",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/cursor-ekonomika-ai-agentov/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/cursor-ekonomika-ai-agentov/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-ekonomika-ai-agentov/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "С какого тарифа Cursor начать новичку, чтобы не слить бюджет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hobby – чтобы понять интерфейс; для Agent и реальной задачи обычно Individual Pro от $20. Сразу Composer/Auto, проверьте usage, Cloud – только со spend limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Composer дешевле Claude Opus на одной задаче?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По прайсу Cursor Composer 2.5 – $0.50/$2.50 за 1M input/output, Opus 4.8 – $5/$25. Composer в first-party пуле, Opus ест API-пул. Для рутины сначала Composer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли OpenClaw, если уже есть Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не делайте OpenClaw \"на всякий случай\". Сначала артефакт в Cursor Composer с критерием готово. OpenClaw-класс – позже, когда есть стоп-кран и понятный ROI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда Make выгоднее \"агента для бизнеса\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда сценарий линейный: форма → таблица → уведомление. Make Free – 1 000 credits/мес, Core от ~$9. Агента берите, когда нужно \"подумать и править файлы\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как понять, что агент зациклился и пора стоп?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После 2–3 циклов нет файла по критерию \"готово\", текст крутится вокруг одного – стоп. Перепишите ТЗ, уберите лишнее, не жмите \"ещё раз\" на том же промпте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Хватит ли \"бесплатных AI агентов\" для первой задачи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для первой бизнес-задачи лучше Cursor Pro + Composer, чем пять бесплатных вкладок без usage и стопа. Hobby – только проба."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Стоит ли сразу брать Ultra или Cloud Agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала локальный прогон и таблица сравнения. Cloud – после spend limit и дешёвой модели; Ultra – когда automation реально ест $200+."
+          }
+        }
+      ]
+    }
+  ]
+}

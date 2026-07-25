@@ -22,7 +22,7 @@
     "локальные нейросети",
     "как локально развернуть нейросеть"
   ],
-  "char_count": 8855,
+  "char_count": 9243,
   "article_mode": "B",
   "author_id": "artur-horoshev",
   "anchor_variants": [
@@ -38,5 +38,6 @@
     "description_ctr": "Локальная нейросеть не бесплатна, если GPU молчит, а порт 11434 открыт в LAN. Гайд: сценарий, pull, API, n8n и чек-лист из 20 тест-кейсов.",
     "description_aeo": "Ollama для бизнеса – установка, выбор модели под железо, OpenAI-совместимый API и подключение к n8n. Когда оставить облачный fallback для критичных ответов."
   },
-  "cover_family": "brand_collage"
+  "cover_family": "brand_collage",
+  "dateModified": "2026-07-25"
 }

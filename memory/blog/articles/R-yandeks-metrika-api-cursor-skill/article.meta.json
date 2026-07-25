@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-metrika",
+  "slug": "yandeks-metrika-api-cursor-skill",
+  "title": "Яндекс Метрика API в Cursor: skill и отчёт за вечер",
+  "wp_post_id": 14285,
+  "primary_query": "яндекс метрика api",
+  "secondary_queries": [
+    "metrika skill cursor",
+    "отчёт метрика cursor",
+    "api метрики"
+  ],
+  "char_count": 8942,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/yandeks-metrika-api-cursor-skill/",
+  "datePublished": "2026-07-14",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Метрика API в Cursor",
+    "skill и Secret",
+    "один отчёт",
+    "токен не в чат"
+  ],
+  "meta_ab": {
+    "title_seo": "Яндекс Метрика API в Cursor: skill и отчёт за вечер",
+    "title_ctr": "Токен в чат – плохая идея. Secret и один отчёт",
+    "title_aeo": "Как подключить Яндекс Метрику API в Cursor?",
+    "description_seo": "Счётчик на сайте, Secret, skill и один отчёт. Без паролей в промпте.",
+    "description_ctr": "Нужен отчёт, не утечка токена. Соберите skill правильно.",
+    "description_aeo": "Метрика API: skill Cursor, Secrets, ошибки новичков."
+  }
+}

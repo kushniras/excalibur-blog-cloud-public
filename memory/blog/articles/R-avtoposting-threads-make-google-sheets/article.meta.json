@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-threads",
+  "slug": "avtoposting-threads-make-google-sheets",
+  "title": "Автопостинг в тредс через Make и Google Sheets",
+  "wp_post_id": 14364,
+  "primary_query": "автопостинг в тредс",
+  "secondary_queries": [
+    "threads make",
+    "очередь posts sheets",
+    "автопост threads"
+  ],
+  "char_count": 9730,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/avtoposting-threads-make-google-sheets/",
+  "datePublished": "2026-07-17",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "автопостинг Threads",
+    "Sheets очередь",
+    "тестовый пост",
+    "лимит в день"
+  ],
+  "meta_ab": {
+    "title_seo": "Автопостинг в Threads через Make и Google Sheets",
+    "title_ctr": "Ручной постинг выматывает? Очередь Sheets + Make",
+    "title_aeo": "Как настроить автопостинг в Threads через Make?",
+    "description_seo": "Очередь в Sheets, тестовый пост и дневной лимит. После прогрева аккаунта.",
+    "description_ctr": "Не лейте пачку одинаковых постов. Один тест – потом очередь.",
+    "description_aeo": "Автопостинг Threads: сравнение с ручным, риски бана, шаги Make."
+  }
+}

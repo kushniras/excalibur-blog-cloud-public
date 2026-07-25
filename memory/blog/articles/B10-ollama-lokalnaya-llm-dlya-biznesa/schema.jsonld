@@ -35,7 +35,7 @@
       "headline": "Как развернуть локальную LLM через Ollama для бизнеса: пошаговый workflow от установки до API",
       "description": "Пошаговый workflow Ollama для бизнеса: выбор модели под VRAM, ollama pull, проверка GPU, OpenAI-совместимый API, n8n и безопасный контур без открытого порта 11434.",
       "datePublished": "2026-06-17",
-      "dateModified": "2026-06-17",
+      "dateModified": "2026-07-25",
       "inLanguage": "ru",
       "url": "[REDACTED]/blog/ollama-lokalnaya-llm-dlya-biznesa/",
       "mainEntityOfPage": {
@@ -55,7 +55,7 @@
         "@id": "[REDACTED]/#organization"
       },
       "keywords": "ollama, ollama модели, ollama api, локальные нейросети, как установить ollama, ollama скачать, qwen ollama",
-      "wordCount": 8855,
+      "wordCount": 9243,
       "articleSection": "AI-агенты",
       "isPartOf": {
         "@type": "Blog",

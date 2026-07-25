@@ -20,17 +20,17 @@ description: Excalibur BLOG Publish — WP post, featured image, inline images, 
 | Links | `link-verify.json` → pass |
 | Cover | `cover/cover.png` + alt в `cover-registry.json` |
 | Schema | `schema.jsonld` |
-| Credentials | Cloud Secrets/env или `memory/site.env.local`: `SSH_*`, `SSH_ROOT`, `PUBLIC_SITE_URL` |
+| Credentials | Cloud Secrets/env или `memory/site.env.local`: `SSH_HOST`, `SSH_USER`, `SSH_PASS`/`SSH_PASSWORD`, `SSH_ROOT`, `PUBLIC_SITE_URL` |
 | Allow flag | `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` |
 
-Если allow flag ≠ yes → **`❌ PUBLISH BLOCKER`** (не silent skip).
+Если allow flag ≠ yes **или** нет credentials → **`❌ PUBLISH BLOCKER`** (не silent skip, не пропускать шаг как OK).
 
 ## Алгоритм
 
 ### 1. Preflight publish
 
 ```bash
-python scripts/excalibur_blog_link_verify.py \
+python3 scripts/excalibur_blog_link_verify.py \
   memory/blog/articles/<topic_id>-<slug>/article.html \
   -o memory/blog/articles/<topic_id>-<slug>/link-verify.json \
   --site-base https://mayai.ru
@@ -44,7 +44,7 @@ Gate: `link-verify.json` → pass. Иначе FIX (writer/QA) или BLOCKER.
 python3 scripts/excalibur_blog_wp_publish.py --env-check
 ```
 
-Проверяет allow flag, public URL и SSH-переменные без вывода секретов. Для ad-hoc Python-проверок не импортируй `excalibur_blog_wp_publish.py` из корня без `scripts/` в `sys.path`; безопаснее использовать этот CLI.
+Проверяет allow flag, public URL и SSH-переменные без вывода секретов. Exit 1 / `allow_publish=false` / `missing` непусто → **`❌ PUBLISH BLOCKER`** в handoff + incident в `memory/pipeline-fix-queue.md`; **не** угадывать секреты, **не** идти в dry-run/SSH publish, **не** обновлять ledger. Для ad-hoc Python-проверок не импортируй `excalibur_blog_wp_publish.py` из корня без `scripts/` в `sys.path`; безопаснее использовать этот CLI.
 
 ### 3. Dry-run
 
@@ -120,7 +120,8 @@ blockers:
 
 ## Blockers
 
-- `❌ PUBLISH BLOCKER` — QA не PASS, link-verify fail, нет cover/schema, credentials, allow flag
+- `❌ PUBLISH BLOCKER` — QA не PASS, link-verify fail, нет cover/schema, нет Cloud Secrets/credentials, allow flag ≠ yes, `--env-check` exit 1
+- Missing secrets ≠ skip: всегда явный blocker (Director → needs-human / Cloud Secrets), не silent skip
 - `❌ PUBLISH FAIL` — скрипт вернул fail (смотри `raw_output` в wp-publish-result.json)
 
 ## Запрещено

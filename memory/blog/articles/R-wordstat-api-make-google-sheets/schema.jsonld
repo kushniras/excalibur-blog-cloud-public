@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/wordstat-api-make-google-sheets/#webpage",
+      "url": "https://mayai.ru/wordstat-api-make-google-sheets/",
+      "name": "Вордстат API в Make: частотности в Google Sheets за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Make → Sheets → приоритетные фразы. Без выгрузки тысяч строк без кластера."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/wordstat-api-make-google-sheets/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/wordstat-api-make-google-sheets/#webpage"
+      },
+      "headline": "Вордстат API в Make: частотности в Google Sheets за вечер",
+      "description": "Make → Sheets → приоритетные фразы. Без выгрузки тысяч строк без кластера.",
+      "datePublished": "2026-07-15",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/wordstat-api-make-google-sheets/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/wordstat-api-make-google-sheets/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/wordstat-api-make-google-sheets/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем Wordstat API отличается от сайта wordstat.yandex.ru?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сайт – ручной интерфейс для глаз. API отдаёт JSON, который Make раскладывает по строкам Sheets. Операторы вроде ! + [] из веба в API не гарантируют ту же \"точную\" частотность – ориентируйтесь на results и count как на рабочий топ для плана."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Cursor, если уже есть Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для выгрузки частотностей за вечер – нет. Cursor и Ядрышко нужны, когда из сырого топа собираете кластеры и брифы. Сначала зелёная History и таблица, потом агенты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где взять ключ API Вордстата?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В AI Studio / Yandex Cloud: Api-Key + Folder ID и роль search-api.webSearch.user. Не смешивайте с legacy Bearer на api.wordstat.yandex.net. Пошаговый чеклист доступа – на mcp-kv.ru/docs/wordstat-mcp-setup ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько фраз хватит новичку на старт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "10–20 на одно семя (numPhrases около 20). Не гоните тысячу фраз в первый вечер: сначала один прогон, потом серия с Sleep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сразу собрать семантическое ядро без Ядрышко?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сырой топ в Sheets – да, это и есть день-1. Чистое ядро с кластерами – next-step по гайду семантическое ядро Cursor + Wordstat ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это не путаница с API Яндекс Метрики?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Другой продукт и другие ключи. Здесь только Wordstat topRequests → Sheets. Метрику к этому сценарию не подключайте в тот же вечер."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему INVALID_ARGUMENT или пустой ответ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще всего нет folderId, неверная роль или смешан Authorization. Проверьте тело запроса и чеклист выше; после правки снова Run once и смотрите History."
+          }
+        }
+      ]
+    }
+  ]
+}

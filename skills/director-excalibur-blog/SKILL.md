@@ -65,11 +65,14 @@ python3 scripts/excalibur_blog_research_start.py --topic-id <id>
 
 **Utility-only:** тема без how-to/checklist/comparison → **не стартуем** (`UTILITY TOPIC BLOCKER`).
 
-Прочитай `shared/editorial-utility-only.md`, `shared/agent-pipeline-pitfalls.md`, **`shared/pipeline-task-map.md`**.
+Прочитай `shared/editorial-utility-only.md`, `shared/agent-pipeline-pitfalls.md`, `shared/forbidden-target-sites.md`, **`shared/pipeline-task-map.md`**.
+
+**Target site gate:** перед live audit / remaster / publish проверь, что целевой домен **не** `mayai.ru`. Целевой URL — только клиентский `PUBLIC_SITE_URL` / явный `site_url` клиента. Иначе `❌ TARGET SITE BLOCKER` (см. `shared/forbidden-target-sites.md`).
 
 ## Вход перед стартом
 
 ```text
+shared/forbidden-target-sites.md
 memory/brief/site-brief.md
 memory/brief/fact-bank.md
 memory/brief/conversion-map.md

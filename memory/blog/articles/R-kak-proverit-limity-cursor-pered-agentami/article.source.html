@@ -1,0 +1,66 @@
+<p>Чтобы проверить cursor лимиты перед агентом, откройте вкладку Spending — там остаток по плану — зафиксируйте цифры по двум пулам и дату сброса, поставьте потолок доплаты Monthly Limit (Disabled или Fixed) и только потом запустите один короткий Agent на Composer.</p>
+<p>За один вечер вы увидите, сколько ещё входит в план, какой потолок доплаты стоит, и спокойно прогоните узкую задачу без сюрприза в счёте. Обход лимитов, Ultra «на пробу» и Automations в тот же вечер сюда не входят.</p>
+<h2>Сначала Spending, не кнопка Agent</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-proverit-limity-cursor-pered-agentami-inline-01.jpg" alt="Схема вкладки Spending: план, дата сброса и остаток по двум пулам моделей" loading="lazy"><br />
+</figure>
+<p>В поиске по «cursor лимиты» часто всплывают советы про сброс и обход. Я бы их не трогал: Cursor прямо пишет, что подписки только с cursor.com, а сторонние «аккаунты» — риск бана. Нужна не хитрость, а остаток на экране.</p>
+<p>Откройте в браузере cursor.com/dashboard/spending — вкладку Spending. Там смотрите:</p>
+<ul>
+<li>какой у вас план (Hobby, Pro и дальше);</li>
+<li>дату сброса цикла;</li>
+<li>остаток или процент по двум пулам: Cursor Models и Other Models.</li>
+</ul>
+<p>Официально у плана два месячных usage pool — это две квоты на модели. Cursor Models — first-party модели вроде Grok 4.5 и Composer 2.5. Other Models — сторонние модели по API-цене. Неиспользованное за цикл не переносится; дата сброса видна на той же вкладке. Документация: <a href="https://cursor.com/help/models-and-usage/usage-limits" target="_blank" rel="noopener">Usage and limits</a>.</p>
+<p>Запишите цифры на бумагу или в заметку. Пока оба пула и дата сброса не видны — Agent лучше не трогать.</p>
+<h2>Почему доллар Usage пугает сильнее, чем нужно</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-proverit-limity-cursor-pered-agentami-inline-02.jpg" alt="Сравнение: Spending % как квота против Usage $ как оценка, не инвойс" loading="lazy"><br />
+</figure>
+<p>Рядом со Spending часто видят Usage с долларовой оценкой. Многие читают её как «уже списали сверх подписки» и закрывают Agent. В community на форуме Cursor как раз разбирают эту путаницу: для квоты смотрите Spending %, а не доллар Usage. Usage $ чаще оценка «розничной» стоимости токенов, а не автоматический инвойс.</p>
+<p>Практическое правило: ориентир остатка — проценты и остаток по пулам на Spending. Если on-demand (оплата сверх included) выключен — режим Disabled — сверх included вас не должны биллить за доплату. Паника от долларовой шкалы — плохой повод включать Unlimited «на всякий».</p>
+<h2>Поставьте тормоз: Monthly Limit</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-proverit-limity-cursor-pered-agentami-inline-03.jpg" alt="Чеклист Monthly Limit: Disabled или Fixed до Agent, Unlimited не сегодня" loading="lazy"><br />
+</figure>
+<p>Spend limit — потолок доплаты сверх того, что входит в план. Путь тот же: личный кабинет → Spending. Официально: при достижении лимита ИИ для пользователя останавливается до следующего цикла. Справка: <a href="https://cursor.com/help/account-and-billing/spend-limits" target="_blank" rel="noopener">Spend limits</a> и <a href="https://cursor.com/help/account-and-billing/overages" target="_blank" rel="noopener">Usage-based charges</a>.</p>
+<p>On-demand нужно явно включать. Cursor советует три честных варианта без сюрприза: Disable on-demand, Set spend limit или Upgrade.</p>
+<p>На Monthly Limit обычно есть режимы Fixed, Unlimited и Disabled. Для первого вечера я бы выбрал так:</p>
+<ul>
+<li><b>Disabled</b> — если хотите стоп без доплат: агент упрётся в included и не поедет дальше за ваши деньги;</li>
+<li><b>Fixed</b> с маленькой понятной суммой — если нужен короткий запас, но не открытый счёт;</li>
+<li><b>Unlimited</b> и забытый дефолт — не сегодня.</li>
+</ul>
+<p>Важный нюанс с форума Cursor: при первом включении on-demand дефолтный Monthly Limit может быть $200. Без явной проверки потолок сюрприза огромный. Откройте настройку и убедитесь, что там Disabled или ваш Fixed, а не «где-то когда-то включили и забыли».</p>
+<blockquote>
+<p>Тормоз ставят до газа. Сначала Monthly Limit, потом любой длинный Agent или Cloud.</p>
+</blockquote>
+<h2>Один короткий прогон на Composer</h2>
+<p>Когда остаток виден и потолок задан, выберите в редакторе модель Composer 2.5 из пула Cursor Models. Не берите Ultra или дорогой frontier mid-task «просто проверить». По официальным ценам Composer 2.5: $0.5 / $2.5 за 1M токенов (вход/выход), без Cursor Token Rate на first-party модели. Для первого круга этого достаточно. Источник: <a href="https://cursor.com/docs/models-and-pricing" target="_blank" rel="noopener">Models &amp; Pricing</a>.</p>
+<p>Сформулируйте одну узкую задачу: один файл, один маленький фикс, один понятный критерий «готово». Не ставьте в тот же вечер Automations по расписанию или <a href="/webhook-make-pervyj-scenarij/">webhook</a>, не ставьте рой плагинов и не гоняйте несколько агентов параллельно. Нужен пробный круг, не автозавод.</p>
+<p>Запустите Agent → дождитесь завершения → вернитесь на Spending. Если прогон закончился и on-demand не ушёл в неожиданный счёт — вечер удался.</p>
+<p>Масштаб тарифов для ориентира: Pro $20/мес с $20 included на Other Models; Pro+ $60 → $70; Ultra $200 → $400. В пуле Cursor Models запас included обычно щедрее. Hobby ограниченнее платных планов — смотрите свой Spending, а не чужую таблицу из статьи 2024 года про «N fast requests».</p>
+<h2>Что получилось и чего не делать</h2>
+<p>Критерий «готово» простой:</p>
+<ul>
+<li>в Spending видны оба пула (Cursor Models и Other Models) с % или остатком и датой сброса;</li>
+<li>On-Demand Monthly Limit = Disabled или Fixed с понятной суммой;</li>
+<li>в редакторе выбран Composer из пула Cursor Models;</li>
+<li>один короткий Agent-прогон завершён без неожиданного on-demand счёта.</li>
+</ul>
+<p>Если mid-task упёрлись в лимит: не ищите «сброс». Легальные варианты — подождать цикл, включить on-demand только с Fixed-потолком, апгрейднуть план или продолжить на Composer из Cursor Models. Подписки — только с <a href="https://cursor.com/pricing" target="_blank" rel="noopener">cursor.com/pricing</a>.</p>
+<p>Когда контроль уже есть, можно углубиться: <a href="/cursor-ekonomika-ai-agentov/">экономика ИИ-агентов</a>, <a href="/kak-ustanovit-cursor-junior-nastavnik/">Cursor Junior как наставник</a>, позже — <a href="/kak-nastroit-cursor-automations-po-raspisaniyu/">Automations по расписанию</a> или <a href="/kak-nastroit-cursor-automations-po-webhook/">по webhook</a>. Это следующий слой, не условие сегодняшнего результата.</p>
+<p>Если нужен разбор автоматизаций и вайбкодинга системно — курс <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank" rel="noopener">kv-ai.ru/obuchenie-po-make</a>. Короткие разборы Composer и бюджета агентов — в канале <a href="https://t.me/maya_pro" target="_blank" rel="noopener">t.me/maya_pro</a> и в MAX: <a href="https://max.ru/maya_pro" target="_blank" rel="noopener">max.ru/maya_pro</a>.</p>
+<blockquote>
+<p><b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank" rel="noopener">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).</p>
+<p><b>Опора на источники:</b> официальные страницы Cursor Usage and limits, Spend limits, Usage-based charges, Models &amp; Pricing и Pricing (доступ 2026-07-25); разборы на forum.cursor.com про Spending % vs Usage $ и дефолтный Monthly Limit $200 при первом enable on-demand. Частотность «cursor лимиты» — по Яндекс Вордстат на 2026-07-25.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Где смотреть cursor лимиты прямо сейчас?</h3>
+<p>Вкладка Spending: cursor.com/dashboard/spending. Там оба пула, остаток и дата сброса. Usage смотрите как оценку, квоту держите по Spending %.</p>
+<h3>Чем cursor pro лимиты отличаются от бесплатной версии?</h3>
+<p>На paid individual планах больше extended Agent limits, generous Grok и Composer, Cloud agents. Hobby подходит для старта, но перед серьёзным Agent всё равно откройте Spending и посмотрите свой остаток — цифры на экране важнее чужой сравнительной таблицы.</p>
+<h3>Что делать, если cursor лимит запросов кончился mid-task?</h3>
+<p>Остановить дорогой прогон. Дальше: ждать сброс цикла, поставить Fixed spend limit и коротко добить задачу, апгрейднуть план или перейти на Composer из Cursor Models. Не искать обход и чужие аккаунты.</p>
+<h3>Нужен ли Ultra в первый вечер?</h3>
+<p>Обычно нет. Сначала потолок и короткий прогон на Composer. Ultra имеет смысл, когда уже понятен расход и нужен запас usage, а не «на пробу без тормоза».</p>

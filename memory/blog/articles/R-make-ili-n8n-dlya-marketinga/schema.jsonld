@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/make-ili-n8n-dlya-marketinga/#webpage",
+      "url": "https://mayai.ru/make-ili-n8n-dlya-marketinga/",
+      "name": "N8n или make: чеклист выбора для маркетолога",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Критерии: self-host, привычка команды, сложность сценария. Один стек на квартал."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/make-ili-n8n-dlya-marketinga/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/make-ili-n8n-dlya-marketinga/#webpage"
+      },
+      "headline": "N8n или make: чеклист выбора для маркетолога",
+      "description": "Критерии: self-host, привычка команды, сложность сценария. Один стек на квартал.",
+      "datePublished": "2026-07-16",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/make-ili-n8n-dlya-marketinga/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/make-ili-n8n-dlya-marketinga/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/make-ili-n8n-dlya-marketinga/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Новичку что лучше – n8n или Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для заявок в Telegram и простого автопоста без сервера чаще Make Free. n8n берите, если нужен Cloud trial под длинный граф или есть админ под self-host. Сделайте выбор по задаче дня-1, не по рейтингу \"что круче\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли начать с бесплатного тарифа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Make Free даёт до 1 000 credits в месяц. У n8n \"бесплатно\" без карты – это Community self-host; без админа используйте Cloud trial, затем Starter по pricing. Проверьте лимит до рекламного трафика."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли сервер для n8n в первый вечер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Не делайте Docker day-1, если нет админа. Официальные docs советуют Cloud тем, кто без техники. Self-host оставьте на потом, когда уже есть зелёный сценарий в облаке."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Make отличается от n8n для автопостинга?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Логика похожа: триггер → текст/медиа → канал. На Make проще готовые приложения и быстрый старт; на n8n удобнее длинные графы и свой сервер. Ориентир: сначала один канал и один ручной прогон."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда переходить с Make или n8n на агентов в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда нужна не доставка \"если A, то B\", а долгое рассуждение, правка сайта или несколько ролей агента. Избегайте подмены: агент не отменяет простой workflow заявок. Сначала зелёный сценарий, потом агентский контур."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Стоит ли ставить оба инструмента \"на всякий\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Два пустых аккаунта не дают результата. Выберите один путь, доведите тестовый прогон до History \"успех\", и только потом сравнивайте второй стек на той же задаче."
+          }
+        }
+      ]
+    }
+  ]
+}

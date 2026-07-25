@@ -1,0 +1,38 @@
+{
+  "article": "memory/blog/articles/R-prodvizhenie-v-nejrosetyah-alisa-checklist/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 4,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "-вопрос, ответ 40–80 слов и FAQ. Обновлено: 25.07.2026 Сюрприз от Яндекса: быстрые ответы Алисы AI ежемес",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "→ Вебмастер SoV → запись в таблицу → повтор через 7 дней. Чеклист приоритетов: критично, важно, бонус Чтоб",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "784",
+      "kind": "large_number",
+      "context": "at по фразе \"продвижение в нейросетях\" даёт около 784 показов в месяц по России, а хвост \"агентство по п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "аем выбрать платформу\" напишите: \"Для вебинара до 100 человек обычно хватает X; смотрите лимит записи, ц",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

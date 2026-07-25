@@ -1,0 +1,141 @@
+<p>Марина скинула клиенту в Telegram ссылку на лендинг с Vercel Drop – и вместо обложки с оффером мессенджер показал серую строку и кусок текста из футера. Знакомая боль: сайт уже есть, а ссылка выглядит как стыдный голый URL. За один вечер настройте Open Graph в head через Cursor AI – и получите нормальную "визитку" ссылки без npm, React и SEO-специалиста.</p>
+<h2 id="constraints-og">Когда Open Graph не спасает</h2>
+<p>Если страница ещё не задеплоена и нет живого https – мессенджер не увидит теги. Сначала публикация папки, потом финальные абсолютные URL в og:image и og:url. Если нужна Schema.org или FAQPage – это другая задача, не смешивайте с og:* в одном промпте. На практике типичная ошибка: править только title и ждать карточку в Telegram.</p>
+<blockquote><p>
+Open Graph – короткая "визитка" страницы для Telegram и VK: заголовок, описание и картинка берутся из meta в head, а не из вкладки браузера. Спецификация ogp.me почти не менялась годами: чаще ломают превью относительный путь в og:image и кэш Telegram. Сделайте картинку 1200×630, попросите Cursor Agent вписать og:title, og:description, og:image (полный https), og:url и og:type – затем проверьте ссылку в "Избранном" или обновите кэш через @WebpageBot.
+</p></blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<h2>Чем Open Graph отличается от title и description</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/open-graph-sait-cursor-ai-inline-01.jpg" alt="Сравнение title/description и Open Graph-тегов для превью в мессенджерах" loading="lazy"><br>
+</figure>
+<table>
+<thead>
+<tr>
+<th>Слой</th>
+<th>Где читают</th>
+<th>Что задаёт</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>title / description</b></td>
+<td>Вкладка браузера, сниппет поиска</td>
+<td>Название вкладки и SEO-текст</td>
+</tr>
+<tr>
+<td><b>Open Graph (og:*)</b></td>
+<td>Telegram, VK, Facebook</td>
+<td>Карточка ссылки: заголовок, текст, картинка</td>
+</tr>
+<tr>
+<td><b>twitter:card</b></td>
+<td>Часть клиентов + запас для крупного превью</td>
+<td>Тип карточки (summary_large_image)</td>
+</tr>
+<tr>
+<td><b>Schema.org</b></td>
+<td>Поисковики / rich results</td>
+<td>Сущности статьи – не замена og:*</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p><b>Итоговый вердикт:</b> для шаринга в мессенджере нужны og:* с абсолютным https в og:image. Одного title недостаточно.</p></blockquote>
+
+<p>Типичная ошибка новичка: поправить title во вкладке и ждать красивую карточку в мессенджере. На практике мессенджер смотрит на другие теги. По протоколу <a href="https://ogp.me/" target="_blank">ogp.me</a> обязательны четыре свойства: og:title, og:type, og:image и og:url. Описание (og:description) – полезное дополнение, но без картинки и абсолютного адреса превью часто пустое.</p>
+<p>Например, без Open Graph краулер угадывает текст и картинку эвристиками – отсюда случайный логотип или абзац из подвала. Не делайте ставку только на SEO-meta: для шаринга нужна отдельная визитка. Если title ещё не настроены, сначала загляните в гайд <a href="/meta-tegi-seo-stranicy-cursor-ai/">мета-теги SEO-страницы в Cursor AI</a>, а сюда вернитесь за og:*.</p>
+<p>Ориентир простой: вкладка браузера ≠ карточка в Telegram. Закройте эту путаницу до правок – так Agent не смешает два набора тегов.</p>
+<h2>Подготовьте картинку превью 1200×630</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/open-graph-sait-cursor-ai-inline-02.jpg" alt="Схема подготовки og-cover.jpg 1200×630 для Open Graph" loading="lazy"><br>
+</figure>
+<p>Боль "не знаю размер" решается одним файлом. Meta рекомендует около 1200×630 (примерно 1.91:1), минимум для крупного превью 600×315, абсолютный минимум 200×200, файл не тяжелее 8 MB. В гайдах 2026 этот размер закрывает Facebook, LinkedIn, Discord, Slack, WhatsApp и Telegram.</p>
+<ol>
+<li>Сделайте обложку с крупным оффером и читаемым заголовком по центру.</li>
+<li>Уберите мелкий текст у самых краёв – его часто обрезают превью.</li>
+<li>Сохраните файл как og-cover.jpg или PNG рядом с index.html в корне папки сайта.</li>
+<li>Избегайте крошечного логотипа на белом фоне: карточка должна читаться как анонс.</li>
+<li>Проверьте вес файла: сожмите JPG до разумных сотен килобайт.</li>
+<li>Добавьте запасной og-cover-v2.jpg на случай смены обложки – новый URL помогает обойти кэш.</li>
+</ol>
+<p>Позже в og:image понадобится полный адрес https://ваш-домен/og-cover.jpg. Относительный путь /og-cover.jpg Telegram часто не подхватывает. В реальном проекте на GitHub (PicImpact, март 2026) без абсолютного URL thumbnail просто не появлялся.</p>
+<h2>Задайте правило Cursor для Open Graph</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/open-graph-sait-cursor-ai-inline-03.jpg" alt="Чеклист правила Cursor open-graph.mdc для og-тегов в head" loading="lazy"><br>
+</figure>
+<p>Страх "сломаю сайт кодом" снимается правилом для агента. Откройте папку лендинга в Cursor (как в гайде <a href="/cursor-ai-lending-bez-koda/">лендинг без кода</a>) и создайте файл .cursor/rules/open-graph.mdc.</p>
+<p>В правиле зафиксируйте: только статический HTML; Tailwind через CDN допустим; без npm и React; все og:* и twitter:* только в head; og:image и og:url – только абсолютные https после публикации; body не трогать без запроса. Используйте правило как ограничитель: Agent не уйдёт в лишнюю архитектуру.</p>
+<p>Чеклист перед промптом Agent:</p>
+<ul>
+<li>папка сайта открыта в Cursor;</li>
+<li>файл og-cover.jpg лежит в корне рядом с index.html;</li>
+<li>правило open-graph.mdc сохранено;</li>
+<li>вы знаете временный или постоянный URL после деплоя;</li>
+<li>не ставите Yoast – у вас статика, не WordPress;</li>
+<li>favicon уже ок или отложен (см. <a href="/favicon-sait-cursor-ai/">favicon сайта в Cursor AI</a>);</li>
+<li>готовы сначала задеплоить, потом подставить финальные https;</li>
+</ul>
+<h2>Соберите разметку в Agent: пошагово</h2>
+<p>Попросите Agent добавить визитку. Каждый шаг можно вставить в промпт целиком.</p>
+<ol>
+<li>Шаг 1: откройте index.html и найдите head – правки только там.</li>
+<li>Шаг 2: добавьте og:title с вашим оффером (коротко, без канцелярита).</li>
+<li>Шаг 3: добавьте og:description – одно-два предложения, что получит человек по ссылке.</li>
+<li>Шаг 4: добавьте og:image с полным https на og-cover.jpg плюс width 1200, height 630 и alt.</li>
+<li>Шаг 5: добавьте og:url на канонический адрес и og:type со значением website.</li>
+<li>Шаг 6: добавьте og:locale=ru_RU; по желанию twitter:card=summary_large_image.</li>
+<li>Шаг 7: после первого деплоя обновите временные URL на финальные https.</li>
+</ol>
+<p>Шаблон на выходе (без фреймворков) выглядит так:</p>
+<blockquote>
+<p>
+meta property="og:title" content="Ваш оффер"<br>
+meta property="og:description" content="Коротко, что получит человек"<br>
+meta property="og:image" content="https://ваш-домен/og-cover.jpg"<br>
+meta property="og:image:width" content="1200&#8243;<br>
+meta property="og:image:height" content="630&#8243;<br>
+meta property="og:url" content="https://ваш-домен/"<br>
+meta property="og:type" content="website"<br>
+meta property="og:locale" content="ru_RU"
+</p>
+</blockquote>
+<p>Не делайте og:image относительным. Community-гайды и багфиксы 2026 сходятся: без https://… превью в Telegram часто пустое. Ширина и высота помогают краулеру отрисовать картинку уже при первом шаринге.</p>
+<h2>Опубликуйте и пройдите чеклист превью в Telegram</h2>
+<p>Опубликуйте папку через Vercel Drop или ваш хостинг. Откройте живую страницу, нажмите Ctrl+U и найдите property="og:…". Если тегов нет в исходнике – мессенджер их не увидит.</p>
+<ol>
+<li>Вставьте ссылку в "Избранное" Telegram и посмотрите карточку.</li>
+<li>Проверьте, что заголовок и описание ваши, а не кусок футера.</li>
+<li>Проверьте, что картинка крупная и узнаваемая.</li>
+<li>Если превью старое или пустое – отправьте URL боту <a href="https://t.me/webpagebot" target="_blank">@WebpageBot</a> и обновите preview.</li>
+<li>Для Facebook при необходимости используйте Sharing Debugger.</li>
+<li>Во VK откройте ссылку в новом сообщении; при залипании кэша смените URL картинки (v2).</li>
+</ol>
+<p>Часто ломается не "не та разметка", а две бытовые ловушки: относительный og:image и кэш. После правки тегов старая карточка может жить, пока бот не перескачает страницу. Гайды спорят, хватит ли одних og:* для крупной карточки в Telegram или нужен ещё twitter:card – новичку безопаснее добавить оба блока и сверить глазами в чате.</p>
+<p>Результат на сегодня: в "Избранном" у ссылки видны ваш заголовок, описание и картинка 1200×630; в исходнике в head есть og:title, og:description, og:image с https://…, og:url и og:type=website. Когда домен станет постоянным, подставьте его в og:url/og:image – поможет гайд <a href="/podklyuchit-domen-sait-cursor-ai-vercel/">подключить домен сайта на Vercel</a>.</p>
+<p>Если хотите быстрее освоить связку Cursor и автоматизацию без кода, мягкий следующий шаг – <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курс Make.com и вайбкодинга на kv-ai.ru</a>.</p>
+<h2>Что дальше после первой карточки</h2>
+<p>Для каждой важной страницы сделайте свой набор og:* – не копируйте один title на все HTML. При смене обложки используйте новый URL файла или снова @WebpageBot. Избегайте правок без деплоя: мессенджер читает живой URL.</p>
+<ul>
+<li>выровняйте og:description на второстепенных страницах;</li>
+<li>сохраните правило open-graph.mdc в шаблон новых лендингов;</li>
+<li>запишите workflow: картинка → Agent → Drop → WebpageBot;</li>
+<li>после смены домена снова проверьте превью в чате.</li>
+</ul>
+<blockquote><p>
+<b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>
+<b>Источники сверки:</b> обязательные свойства OG – ogp.me и репозиторий facebook/open-graph-protocol; размеры картинок – Meta Sharing Images; кэш Telegram – @WebpageBot и GitHub PicImpact PR #417; частотность "open graph" – Яндекс Вордстат, регион Россия, съём 2026-07-10.
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Как проверить Open Graph на сайте?</h3>
+<p>Откройте страницу → Ctrl+U и найдите meta property="og:…". Затем вставьте URL в Telegram "Избранное". Если карточка старая, отправьте ссылку @WebpageBot и обновите preview. Для Facebook используйте Sharing Debugger.</p>
+<h3>Какой размер Open Graph image нужен в 2026?</h3>
+<p>Ориентир – 1200×630 пикселей, файл до 8 MB. Минимум для крупного превью у Meta – 600×315. Сделайте один JPG/PNG в корне и укажите полный https в og:image.</p>
+<h3>Почему превью в Telegram не обновилось после правок?</h3>
+<p>Чаще виноват кэш или относительный путь в og:image. Проверьте, что в исходнике уже https://…, задеплойте страницу и попросите @WebpageBot обновить preview. При смене картинки по тому же URL иногда помогает файл с новым именем.</p>
+<h3>Чем Open Graph отличается от обычных title и description?</h3>
+<p>Title и description влияют на вкладку и сниппеты поиска. Open Graph – визитка для шаринга: мессенджеры читают og:title, og:description, og:image и og:url. Не делайте вид, что одного title достаточно.</p>
+<h3>Нужен ли отдельный Open Graph на каждую страницу?</h3>
+<p>Для важных URL лучше свой набор. Иначе у тарифов и главной будет одна карточка. Добавьте уникальные og:title и og:description; картинку можно переиспользовать.</p>
+<h3>Можно ли настроить Open Graph без WordPress и Yoast?</h3>
+<p>Да. На статическом HTML из Cursor достаточно тегов в head и публикации папки. Используйте правило open-graph.mdc и Agent, затем проверьте живой URL в Telegram.</p>

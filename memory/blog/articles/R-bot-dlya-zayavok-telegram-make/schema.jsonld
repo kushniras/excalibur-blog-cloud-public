@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/bot-dlya-zayavok-telegram-make/#webpage",
+      "url": "https://mayai.ru/bot-dlya-zayavok-telegram-make/",
+      "name": "Бот для заявок в Telegram через Make и Google Sheets",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "BotFather, Watch Updates, Sheets и пуш менеджеру. Без схемы без прогона."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/bot-dlya-zayavok-telegram-make/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/bot-dlya-zayavok-telegram-make/#webpage"
+      },
+      "headline": "Бот для заявок в Telegram через Make и Google Sheets",
+      "description": "BotFather, Watch Updates, Sheets и пуш менеджеру. Без схемы без прогона.",
+      "datePublished": "2026-07-16",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/bot-dlya-zayavok-telegram-make/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/bot-dlya-zayavok-telegram-make/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/bot-dlya-zayavok-telegram-make/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем бот для заявок отличается от квиза и Mini App?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бот для заявок принимает короткое сообщение или контакт и пишет строку в таблицу. Квиз ведёт по вопросам и веткам – см. квиз лидов в Make . Mini App – отдельный интерфейс внутри Telegram; для первого вечера он не нужен. Сделайте сначала простой приём, потом усложняйте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему бот молчит после настройки в Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще всего не нажали Run once до Listening или тестировали с того же аккаунта без нового сообщения. Проверьте ON, пробелы в токене и что Watch Updates один. Затем повторите тест со второго аккаунта и смотрите историю bundle в Make."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли код, Python или webhook вручную?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. BotFather даёт токен, Make ставит webhook через модуль Watch Updates. Сделайте три модуля по схеме выше – этого достаточно для MVP приёма заявок в Google Sheets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда девать токен BotFather?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только в менеджер паролей и в connection Make. Не делайте публикацию токена в чатах, сторис и репозиториях. При утечке сразу выпустите новый через /token в BotFather."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Хватит ли Google Sheets вместо CRM на старте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, пока заявок немного: колонки дата, контакт, текст, статус. Используйте фильтр по статусу \"новая\". Когда поток вырастет, перенесите строки в amoCRM или аналог по внутреннему гайду выше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли потом подключить amoCRM или ИИ-ответы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Сначала стабилизируйте приём в Sheets. Потом добавьте CRM-модуль или ИИ-ветку отдельным сценарием, не ломая единственный Watch Updates. Избегайте копипасты триггера \"на всякий случай\"."
+          }
+        }
+      ]
+    }
+  ]
+}

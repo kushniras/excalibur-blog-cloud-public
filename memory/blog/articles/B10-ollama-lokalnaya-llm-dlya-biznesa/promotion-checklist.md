@@ -46,4 +46,6 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Interlinker (2026-06-17): 0 новых контекстных ссылок — не найдено безопасных внутренних linking opportunities. llms.txt обновлён (10 статей). Существующие internal links в article.html: n8n AI agents, MCP Cursor, RAG векторная база.

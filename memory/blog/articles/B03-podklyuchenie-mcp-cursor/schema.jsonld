@@ -35,7 +35,7 @@
       "headline": "Как подключить MCP-серверы в Cursor: пошаговая инструкция для автоматизации",
       "description": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов и автоматизаторов без кода.",
       "datePublished": "2026-06-11",
-      "dateModified": "2026-06-11",
+      "dateModified": "2026-07-25",
       "inLanguage": "ru",
       "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/",
       "mainEntityOfPage": {
@@ -55,7 +55,7 @@
         "@id": "https://mayai.ru/#organization"
       },
       "keywords": "cursor mcp, mcp сервер для cursor, как подключить mcp к cursor, настройка mcp сервера, cursor ai mcp",
-      "wordCount": 9018,
+      "wordCount": 9167,
       "articleSection": "AI-агенты",
       "isPartOf": {
         "@type": "Blog",

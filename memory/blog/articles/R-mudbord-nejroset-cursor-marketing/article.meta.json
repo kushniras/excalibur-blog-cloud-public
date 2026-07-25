@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-mudbord",
+  "slug": "mudbord-nejroset-cursor-marketing",
+  "title": "Создать мудборд нейросетью в Cursor: палитра и референсы за вечер",
+  "wp_post_id": 14264,
+  "primary_query": "мудборд нейросеть",
+  "secondary_queries": [
+    "moodboard cursor",
+    "палитра для бренда",
+    "референсы ai"
+  ],
+  "char_count": 9346,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/mudbord-nejroset-cursor-marketing/",
+  "datePublished": "2026-07-14",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "мудборд в Cursor",
+    "палитра и референсы",
+    "правило стиля для агента",
+    "5 референсов за вечер"
+  ],
+  "meta_ab": {
+    "title_seo": "Мудборд нейросетью в Cursor: палитра и референсы за вечер",
+    "title_ctr": "Дизайн плывёт от промпта к промпту? Соберите мудборд",
+    "title_aeo": "Как создать мудборд нейросетью в Cursor?",
+    "description_seo": "Палитра, 5 референсов и короткое правило стиля для агента. Без доски на 40 картинок.",
+    "description_ctr": "Каждый баннер в новом стиле? Зафиксируйте мудборд до генерации.",
+    "description_aeo": "Мудборд: зачем палитра, как дать референсы агенту и проверить единство."
+  }
+}

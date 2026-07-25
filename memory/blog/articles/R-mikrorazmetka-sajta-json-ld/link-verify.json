@@ -1,0 +1,188 @@
+{
+  "source": "/workspace/memory/blog/articles/R-mikrorazmetka-sajta-json-ld/article.html",
+  "total_links": 19,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://mayai.ru/sozdat-llms-txt-dlya-sajta/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/sozdat-llms-txt-dlya-sajta/"
+    },
+    {
+      "url": "https://mayai.ru/open-graph-sait-cursor-ai/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/open-graph-sait-cursor-ai/"
+    },
+    {
+      "url": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/"
+    },
+    {
+      "url": "https://mayai.ru/stranica-faq-cursor-ai/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/stranica-faq-cursor-ai/"
+    },
+    {
+      "url": "https://github.com/TryGeoSuite/schema-templates",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://github.com/JayHoltslander/Structured-Data-JSON-LD",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://yandex.ru/support/webmaster/ru/yandex-indexing/validator",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://validator.schema.org/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://search.google.com/test/rich-results",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://mayai.ru/indexnow-yandex-make/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/indexnow-yandex-make/"
+    },
+    {
+      "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/geo-optimizaciya-sajta-2026/"
+    },
+    {
+      "url": "https://github.com/Horosheff/google-yandex-seo-skill",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/"
+    },
+    {
+      "url": "https://github.com/Horosheff/EXCALIBUR",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/"
+    },
+    {
+      "url": "https://mayai.ru/vajbkoding-marketing-cursor-ai/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/vajbkoding-marketing-cursor-ai/"
+    },
+    {
+      "url": "https://kv-ai.ru/obuchenie-po-make",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/maya_pro",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://kv-ai.ru/artur-horosheff",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

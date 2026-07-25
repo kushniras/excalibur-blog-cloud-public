@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/#webpage",
+      "url": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/",
+      "name": "Как подключить MCP сервер к роли Cursor: меньше рутины с вкладками",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Одна роль, один зелёный MCP, имя tool в agent.md и прогон оркестратор → роль → handoff. Секреты не в репозитории."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/#webpage"
+      },
+      "headline": "Как подключить MCP сервер к роли Cursor: меньше рутины с вкладками",
+      "description": "Одна роль, один зелёный MCP, имя tool в agent.md и прогон оркестратор → роль → handoff. Секреты не в репозитории.",
+      "datePublished": "2026-07-21T04:39:31",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое MCP сервер простыми словами?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это отдельная программа-розетка: агент через неё дергает внешний сервис (Wordstat, генерацию картинок и т. п.), а не выдумывает ответ. \"Настройка mcp сервера\" для новичка чаще всего = зелёный статус в Tools + ключ вне промпта, без своего Nginx."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли отдельная настройка MCP на каждую роль?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Отдельного официального whitelist на роль нет: роли видят tools родителя. Практический обход – один активный сервер day-1 и явная инструкция tool в agent.md нужной роли."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Хватит ли бесплатных MCP серверов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для первого успеха достаточно одного рабочего (MCP-KV Wordstat или один image). Каталог \"список mcp серверов\" и \"бесплатные mcp сервера\" не ускоряют вечер, если роль всё ещё пишет \"примерно\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Зачем MCP, если роли уже есть?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Роли делят работу и файлы. Без живого tool офис снова копирует цифры и картинки из вкладок."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему не настраивать сразу Cloud Agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Локальный mcp.json не подхватывается Cloud Agents автоматически – нужен Team MCP. Сначала закройте локальный прогон с артефактом в handoff, потом переносите конфиг в облако команды."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что писать в agent.md про MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Имя tool, зачем роль его вызывает и какой файл должен появиться в handoff. Без критерия артефакта роль снова ответит \"примерно\" в чате."
+          }
+        }
+      ]
+    }
+  ]
+}

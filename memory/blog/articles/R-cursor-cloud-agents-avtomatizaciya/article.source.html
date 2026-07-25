@@ -1,0 +1,115 @@
+<p>Марина каждое утро руками собирает бриф по конкурентам: открывает Cursor, копирует ссылки, ждёт ответ, переносит текст в Notion. Уехала на встречу – бриф не готов, реклама ушла без тезисов. Боль знакома многим: кажется, что AI-агенты для бизнеса 24/7 – только для программистов, Make уже &#171;не тянет&#187; длинное рассуждение, а в Cursor страшно сжечь бюджет. Ответ проще: одна утренняя Automation с cron, секреты в Dashboard и один артефакт без ручного пинания IDE.</p>
+<blockquote><p>Make умеет кнопки. Агент умеет думать ночью. Cloud Agent – разовый прогон в облачной виртуальной машине (не на вашем ноутбуке). Automation – тот же агент по расписанию или webhook. Automations всегда в Max Mode, выключить нельзя; раньше Cloud Agents звались Background Agents. Ориентир на вечер: одна задача → Composer → Test run → файл/пост утром. Workflow: задача → trigger → prompt → secrets → артефакт.</p></blockquote>
+<p>По Яндекс Вордстат на 12 июля 2026 parent &#171;ai агенты&#187; – около 9211 показов в месяц, &#171;ai агенты для бизнеса&#187; – около 159. Ищут также создание ai агентов и как создать ai агента, но в выдаче часто тренды без кнопок. Мы даём маркетинговый сценарий в Cursor Cloud без DevOps.</p>
+<p>На практике люди жгут бюджет на Opus high-thinking в ежедневных сканерах, хотя для рутины дешевле Composer. Automations анонсировали 5 марта 2026. Готовый шаблон: <a rel="noopener noreferrer" href="https://github.com/Horosheff/rss-ai-telegram" target="_blank">RSS → Telegram под Cloud Agents</a> и разбор <a rel="noopener noreferrer" href="https://t.me/maya_pro/1314" target="_blank">@maya_pro #1314</a>.</p>
+<h2>Сравните роли: чат в IDE, Cloud Agent, Automation и Make</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/cursor-cloud-agents-avtomatizaciya-inline-01.jpg" alt="Таблица сравнения: чат в IDE, Cloud Agent, Automation и Make" loading="lazy"><br />
+</figure>
+<p>Боль &#171;не понимаю, чем чат отличается от облака&#187; снимается таблицей. Чат в Cursor – вы у ноутбука и пинаете диалог. Cloud Agent – сотрудник в облаке: виртуальная машина крутится без вас. Automation – будильник или звонок: cron (расписание) или webhook (сигнал из Make/CRM). Make/n8n – линейные кнопки if→then: хорошо для &#171;письмо ушло&#187;, плохо для &#171;сравни три сайта и напиши бриф&#187;.</p>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>На пальцах</th>
+<th>Когда брать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Чат в IDE</b></td>
+<td>Диалог, пока открыт ноутбук</td>
+<td>Разовый вопрос, правка глазами</td>
+</tr>
+<tr>
+<td><b>Cloud Agent</b></td>
+<td>Разовый прогон в облаке</td>
+<td>Нужен артефакт, вас нет у экрана</td>
+</tr>
+<tr>
+<td><b>Automation</b></td>
+<td>Триггер 24/7 + Max Mode</td>
+<td>Одна и та же задача каждое утро</td>
+</tr>
+<tr>
+<td><b>Make / n8n</b></td>
+<td>Линейные шаги и кнопки</td>
+<td>Фильтры, таблицы, уведомления без &#171;длинного мышления&#187;</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>
+<b>Вердикт:</b> не делайте из первого дня &#171;цифрового сотрудника на всё&#187;. Используйте Automation с cron для утренней задачи; Make оставьте glue-слоем. Канон – в <a rel="noopener noreferrer" href="https://cursor.com/docs/cloud-agent" target="_blank">Cursor Docs: Cloud Agents</a> и <a rel="noopener noreferrer" href="https://cursor.com/docs/cloud-agent/automations" target="_blank">Automations</a>.
+</p></blockquote>
+<p>Связка Make + MCP уже разобрана отдельно – <a href="/make-ai-agents-mcp-avtomatizaciya/">Make AI Agents и MCP</a>. Офис субагентов в IDE (research + draft) – другая история: <a href="/ai-agent-marketing-cursor-subagents/">AI-агент для маркетинга в Cursor</a>. Здесь фокус на расписании в облаке.</p>
+<h2>Выберите одну повторяющуюся задачу и критерий &#171;готово&#187;</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/cursor-cloud-agents-avtomatizaciya-inline-02.jpg" alt="Схема выбора одной повторяющейся задачи и критерия готово" loading="lazy"><br />
+</figure>
+<p>Типичная ошибка Марины – отдать агенту &#171;весь маркетинг&#187;. На практике берите одну боль недели. Например: утренний бриф по трём конкурентам, черновик поста или RSS-дайджест в Telegram. Критерий готово – не &#171;ИИ подумал&#187;, а файл md, сообщение в тестовом канале или черновик в Notion.</p>
+<ol>
+<li>Шаг 1. Запишите одной фразой задачу недели (бриф / пост / дайджест).</li>
+<li>Шаг 2. Назовите артефакт: какой файл или сообщение появится утром.</li>
+<li>Шаг 3. Опишите &#171;готово&#187; в двух предложениях: длина, структура, без воды.</li>
+<li>Шаг 4. Уберите из ТЗ всё, что не относится к этой одной задаче.</li>
+<li>Шаг 5. Решите: хватит Make (линейные шаги) или нужен агент, который &#171;подумает&#187;.</li>
+<li>Шаг 6. Добавьте запрет: токены и пароли не писать в промпт и не класть в git.</li>
+</ol>
+<p>В реальном проекте этот список спасает от &#171;ещё одного универсального помощника&#187;. Избегайте формулировок вроде &#171;будь полезным маркетологом 24/7&#187; – промпт Automation должен быть коротким: вход, формат выхода, куда положить результат.</p>
+<h2>Соберите первую Automation: trigger, prompt и безопасный запуск</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/cursor-cloud-agents-avtomatizaciya-inline-03.jpg" alt="Чеклист первой Automation: trigger, prompt, secrets и безопасный запуск" loading="lazy"><br />
+</figure>
+<p>Боль &#171;сломаю репозиторий и солью токены&#187; закрывается безопасным первым циклом. Для Cloud Agents нужен платный план Cursor и подключённый GitHub (или GitLab/Bitbucket). Секреты – только в Dashboard → Cloud Agents → Secrets, не в коде. MCP на пальцах – &#171;розетка&#187; к внешним сервисам: Telegram, таблицы, поиск; подключайте только то, что нужно задаче.</p>
+<ol>
+<li>Шаг 1. Подключите репозиторий к Cursor и убедитесь в paid plan.</li>
+<li>Шаг 2. Выставьте spend limit в dashboard – ориентир: запас около $2 под hard limit.</li>
+<li>Шаг 3. Сделайте запись секретов (TELEGRAM_BOT_TOKEN и аналоги) только в Dashboard Secrets.</li>
+<li>Шаг 4. Создайте Automation на cursor.com/automations или через /automate.</li>
+<li>Шаг 5. Выберите trigger: cron &#171;каждое утро&#187; или webhook из Make.</li>
+<li>Шаг 6. Напишите короткий prompt с форматом выхода; модель – Composer, не Opus.</li>
+<li>Шаг 7. Для маркетинга без правок кода используйте no-repo + MCP; для пайплайна вроде RSS→TG укажите repo.</li>
+</ol>
+<p>Webhook на пальцах – ссылка-звонок: Make дергает URL, агент просыпается. URL и ключ появляются после Save automation. Beginner-сценарий: <a rel="noopener noreferrer" href="https://github.com/Horosheff/rss-ai-telegram" target="_blank">rss-ai-telegram</a> (один запуск = один пост). Cloud-пайплайн блога – <a rel="noopener noreferrer" href="https://github.com/Horosheff/excalibur-blog-cloud-public" target="_blank">excalibur-blog-cloud-public</a>; офис страниц – <a rel="noopener noreferrer" href="https://github.com/Horosheff/nero-network-office-page" target="_blank">nero-network-office-page</a>.</p>
+<blockquote><p>
+<b>Схема первого вечера:</b><br />
+Одна задача → paid plan + spend limit → Secrets → Automation (cron/webhook) → Composer → Test run → артефакт
+</p></blockquote>
+<p>Если MCP ещё не настроен – <a href="/podklyuchenie-mcp-cursor/">подключение MCP в Cursor</a>. Не делайте сразу контент-завод на десяток агентов: сначала стабильный утренний цикл, потом <a href="/avtonomnyj-kontent-zavod-nejroseti/">автономный контент-завод</a>.</p>
+<h2>Прогоните один цикл и проверьте стоимость</h2>
+<p>Боль &#171;солю бюджет на первом агенте&#187; лечится одним тест-прогоном. Сделайте Test run или ручной Cloud Agent цикл. Проверьте, что артефакт появился в безопасном месте (тестовый канал, отдельная ветка, папка drafts). Затем откройте usage dashboard: Cloud Agents сначала едят included API usage (на Pro от $20/мес), потом on-demand.</p>
+<ul>
+<li>Проверьте, что Automation в статусе Active.</li>
+<li>Проверьте, что секреты читаются и токена нет в git.</li>
+<li>Используйте Composer для рутины; Opus high-thinking оставьте редким сложным разборам.</li>
+<li>Добавьте в заметку фактический расход первого прогона – это ваш ориентир на завтра.</li>
+</ul>
+<p>Честно: Automations всегда в Max Mode, бесплатно &#171;навсегда&#187; не будет. Типичная ошибка – hourly cron на тяжёлой модели. Для брифа хватит утреннего запуска. Паттерн &#171;Make как glue + Cursor думает&#187; уже у Mattermost: n8n дергает событие, агент пишет разбор.</p>
+<h2>Чеклист на завтра: что должно работать без вас</h2>
+<p>До FAQ зафиксируем success criteria. Вы поймёте, что всё сработало, если утром есть готовый артефакт без открытия IDE, секреты только в Dashboard, Automation Active и лимит не упёрся в ноль.</p>
+<ol>
+<li>Шаг 1. Откройте dashboard и убедитесь, что Automation Active.</li>
+<li>Шаг 2. Проверьте, что критерий &#171;готово&#187; выполнен (файл / TG / черновик).</li>
+<li>Шаг 3. Убедитесь, что в репозитории нет токенов – уберите их, если всплыли.</li>
+<li>Шаг 4. Сверьте расход с ориентиром первого Test run.</li>
+<li>Шаг 5. Повторите цикл на следующий день без ручных правок промпта.</li>
+<li>Шаг 6. Только после двух стабильных утр добавьте второй MCP или webhook из CRM.</li>
+</ol>
+<p>Этот чеклист – фильтр от хаоса. Избегайте усложнения &#171;на всякий случай&#187;: сначала один артефакт в день. Make + <a href="/blog/vajbkoding-marketing-cursor-ai/">вайбкодинг</a> рядом с агентами – в <a rel="noopener noreferrer" href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курсе на kv-ai.ru</a> и в <a rel="noopener noreferrer" href="https://t.me/maya_pro" target="_blank">канале Ковчег</a>.</p>
+<blockquote><p>
+<b>Материал проверен:</b> <a rel="noopener noreferrer" href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br />
+<b>Достоверность данных:</b> определение Cloud Agents/Automations, Max Mode, secrets и триггеры сверены с cursor.com/docs/cloud-agent и docs Automations; биллинг – models-and-pricing и треды forum.cursor.com; шаблоны – GitHub Horosheff/rss-ai-telegram и excalibur-blog-cloud-public; частотность &#171;ai агенты&#187; / &#171;ai агенты для бизнеса&#187; – Яндекс Вордстат на 12 июля 2026.
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Чем Cloud Agents отличаются от Make?</h3>
+<p>Make и n8n гоняют линейные шаги: фильтр, запись, уведомление. Cloud Agent думает длиннее: сравнивает источники, пишет бриф, правит файлы в репозитории. Сделайте правило: кнопки – в Make, рассуждение по расписанию – в Cursor Automation. Связку через webhook используйте, когда событие в Make должно разбудить агента.</p>
+<h3>Нужны ли Automations новичку-маркетологу?</h3>
+<p>Да, если одна и та же задача повторяется каждое утро и вы устали сидеть у чата IDE. Не делайте десять автоматизаций сразу: хватит одного cron на бриф или RSS→TG. Если задача разовая – достаточно ручного Cloud Agent run.</p>
+<h3>Сколько стоит первый агент?</h3>
+<p>Нужен paid plan (индивидуальный Pro от $20/мес с API usage). Расход Cloud Agents идёт по API-цене модели; Automations всегда в Max Mode. Проверьте spend limit до первого запуска и начните с Composer. Точную цифру &#171;за бриф&#187; заранее не обещают – смотрите usage после Test run.</p>
+<h3>Когда лучше оставить задачу в Make?</h3>
+<p>Оставляйте в Make, если шаги предсказуемые: &#171;если новая строка → отправить сообщение&#187;. Переносите в Automation, когда нужно сравнить, сформулировать и собрать текст. Избегайте дублирования: не гоняйте один и тот же бриф и в Make AI, и в Cursor без критерия &#171;готово&#187;.</p>
+<h3>С какой задачи начать создание ai агентов?</h3>
+<p>С узкой: утренний бриф, черновик поста или дайджест RSS. Добавьте критерий файла/сообщения и один Test run. Готовый шаблон – репозиторий rss-ai-telegram; для обучения работе с ai агентами смотрите разборы #1314 в канале и docs Cursor, а не абстрактные &#171;платформы ai агентов&#187; без кнопки запуска.</p>
+<h3>Есть ли бесплатные ai агенты в Cursor Cloud?</h3>
+<p>Бесплатного always-on Cloud/Automations навсегда нет: нужен платный план и API usage. Бесплатные ai агенты в рекламе обычно про демо или локальные чаты. Для бизнеса честный путь – маленький лимит, дешёвая модель и один стабильный цикл, а не обещание &#171;бесплатно 24/7&#187;.</p>

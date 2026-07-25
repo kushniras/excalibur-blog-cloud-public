@@ -1,7 +1,8 @@
 # Promotion checklist — B09 sozdat-llms-txt-dlya-sajta
 
 Дата публикации: 2026-06-16
-Live URL: [REDACTED]/sozdat-llms-txt-dlya-sajta/
+Live URL: https://mayai.ru/sozdat-llms-txt-dlya-sajta/
+Статус: live exists; remaster pending republish
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после WP publish).
 
@@ -9,8 +10,9 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 - [ ] Открыть live URL — title, excerpt, featured image, FAQ
 - [ ] View source — JSON-LD BlogPosting + FAQPage (theme или plugin)
-- [ ] Проверить internal links из статьи (200)
+- [ ] Проверить internal links из статьи (200, канон `/sozdat-llms-txt-dlya-sajta/` без `/blog/`)
 - [ ] Яндекс.Вебмастер / GSC — URL отправлен (если настроено)
+- [ ] Сверить live с remaster `article.html` (нет TL;DR; есть «Обновлено: 25.07.2026»)
 
 ## Соцсети / каналы (из conversion-tracking-map)
 
@@ -22,22 +24,21 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Snippet для Telegram (черновик)
 
-```text
-llms.txt — не волшебная кнопка для Google, ChatGPT или Perplexity, а короткая карта важных страниц сайта для AI-агентов.
+```
+llms.txt — карта важных URL для AI-агентов, не сигнал ранжирования Google.
 
-Что сделать без паники:
-• Отобрать 10-30 URL вместо копии sitemap.xml.
-• Собрать Markdown: H1, описание, 2-5 разделов, ссылки с пояснениями и Optional.
-• Выложить /llms.txt в корень сайта и проверить HTTP 200, формат текста и ссылки.
+• 10–30 URL вместо копии sitemap
+• Markdown в корне + HTTP 200
+• Проверка ссылок без обещаний AI-трафика
 
-Чек-лист без SEO-мифов и обещаний AI-трафика:
-Читать: [REDACTED]/sozdat-llms-txt-dlya-sajta/
+Читать: https://mayai.ru/sozdat-llms-txt-dlya-sajta/
 ```
 
 ## Перелинковка
 
 - [ ] Добавить ссылку на новый пост с главной blog section (если Aurora не auto)
 - [ ] Обновить 1–2 старых поста → link to new (если есть)
+- [ ] Канонические internal href: `/sozdat-llms-txt-dlya-sajta/` (не `/blog/sozdat-llms-txt-dlya-sajta/`)
 
 ## Метрики (7 дней)
 
@@ -46,4 +47,6 @@ llms.txt — не волшебная кнопка для Google, ChatGPT или 
 
 ## Notes
 
-Interlinker (2026-06-16): 0 новых контекстных ссылок — не найдено безопасных внутренних linking opportunities. llms.txt обновлён (9 статей).
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
+Indexer Wave B 2026-07-25: interlinker opportunities=0 (якоря B09 уже покрыты/нет безопасных вставок). Включён в memory/blog/llms.txt (24 URL). Publish не запускался.

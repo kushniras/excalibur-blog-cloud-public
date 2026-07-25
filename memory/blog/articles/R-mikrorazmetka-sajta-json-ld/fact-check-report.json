@@ -1,0 +1,24 @@
+{
+  "article": "memory/blog/articles/R-mikrorazmetka-sajta-json-ld/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 2,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 1,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "распознанные типы без критических ошибок. С 7 мая 2026 Google больше не показывает FAQ-аккордеон в выдаче",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "8601",
+      "kind": "large_number",
+      "context": "пишите datePublished и dateModified в формате ISO 8601, например 2026-07-17. Шаг 5. Укажите автора как P",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

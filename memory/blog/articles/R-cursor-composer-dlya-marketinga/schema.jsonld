@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/cursor-composer-dlya-marketinga/#webpage",
+      "url": "https://mayai.ru/cursor-composer-dlya-marketinga/",
+      "name": "Cursor Composer для маркетинга: первый артефакт за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Ctrl+I, Composer 2.5, одна узкая задача и точечное принятие правок. Без слепого Accept All."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/cursor-composer-dlya-marketinga/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-composer-dlya-marketinga/#webpage"
+      },
+      "headline": "Cursor Composer для маркетинга: первый артефакт за вечер",
+      "description": "Ctrl+I, Composer 2.5, одна узкая задача и точечное принятие правок. Без слепого Accept All.",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/cursor-composer-dlya-marketinga/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/cursor-composer-dlya-marketinga/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-composer-dlya-marketinga/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Composer и Composer 2.5 – это одно и то же?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Composer в разговорах часто значит панель Agent (Ctrl/Cmd+I). Composer 2.5 – конкретная модель в picker. Сделайте привычку: сначала открыть панель, потом явно выбрать 2.5."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое \"Composer 3\" в поиске?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Часто путают релиз Cursor 3 и линейку моделей Composer 2.x. Проверьте picker: ориентир для новичка – Composer 2.5, а не отдельный мифический продукт \"Composer 3\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Хватит ли бесплатного или Hobby-тарифа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для короткого first-win часто хватает пробного лимита, но стабильная работа маркетолога обычно упирается в Pro и first-party pool. Смотрите актуальные лимиты в кабинете Cursor, не в слухах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему лимиты кончаются быстро?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Типичная ошибка – оставить Fast по умолчанию или гонять дорогую модель на рутину. Переключите Standard, сузьте задачу, избегайте Accept All с длинными циклами переделок."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли Composer маркетологу без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Маркетологу достаточно одного файла: блок лендинга, UTM-минимум или черновик статьи. Используйте Agent на узкой задаче – код \"с нуля\" учить не обязательно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Работает ли Cursor в России?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Доступ зависит от региона, способа оплаты и аккаунта. Смотрите официальную документацию Cursor; обходы и \"серые\" схемы в этой статье не разбираем."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать после первого файла?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Закрепите чеклист выше, затем подключайте Skills, Rules и MCP по мере повторяемых задач. Не раздувайте workflow в первый же вечер."
+          }
+        }
+      ]
+    }
+  ]
+}

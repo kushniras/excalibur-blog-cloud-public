@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/ai-agent-marketing-cursor-subagents/#webpage",
+      "url": "https://mayai.ru/ai-agent-marketing-cursor-subagents/",
+      "name": "Как создать AI-агента для маркетинга в Cursor без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Чат vs агент vs субагент, один критерий готово и цикл research→draft до файла. Без зоопарка ролей."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/ai-agent-marketing-cursor-subagents/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/ai-agent-marketing-cursor-subagents/#webpage"
+      },
+      "headline": "Как создать AI-агента для маркетинга в Cursor без кода",
+      "description": "Чат vs агент vs субагент, один критерий готово и цикл research→draft до файла. Без зоопарка ролей.",
+      "datePublished": "2026-07-11",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/ai-agent-marketing-cursor-subagents/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/ai-agent-marketing-cursor-subagents/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/ai-agent-marketing-cursor-subagents/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как создать ai агента новичку в Cursor без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте папку .cursor/agents/, два markdown-файла с YAML (research readonly + draft) и правило \"когда кого звать\". Прогоните цикл до файла в marketing-out/. Код руками писать не нужно – агент следует инструкции в файле."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем субагент отличается от одного длинного чата?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В длинном чате research и текст смешиваются, контекст плывёт. Субагент получает узкий description и отдельный контекст: сначала brief, потом draft. Используйте субагента, когда нужен повторяемый артефакт, а не бесконечная переписка."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С скольких агентов начинать и почему не с десяти?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Официальный ориентир Cursor – 2–3 focused роли. Десятки размытых субагентов раздувают старт чата: на форуме зафиксировали скачок с ~1,4K до ~11,4K токенов при 60 агентах. Не делайте зоопарк в первую неделю."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли Cloud Agents сразу или хватит локальных .cursor/agents/?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На день 1 хватит локальных файлов в проекте. Cloud Agents – когда нужна работа по расписанию или вне ноутбука. Сначала добейтесь одного стабильного цикла research → draft на диске."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Cursor-агенты отличаются от Make AI Agent и n8n?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Make и n8n сильны в линейных сценариях. Cursor-субагенты – в исследовании и черновиках с изоляцией ролей и файлами. Проверьте задачу: \"отправить уведомление\" – Make; \"собрать бриф и пост\" – Cursor-офис."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда класть API-ключи, если подключаю MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только в env или настройки MCP-сервера, никогда в промпт и не в git. Добавьте в правило проекта запрет на секреты в чате. Розетка инструментов – по гайду MCP; Wordstat и сервисы – на mcp-kv.ru ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Бесплатные ai агенты – можно ли стартовать без платных подписок?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Локальные markdown-субагенты в .cursor/agents/ не требуют \"магазина агентов\": вы пишете роли сами. Лимиты зависят от тарифа Cursor и внешних MCP. Ориентир – два узких файла и один прогон, а не поиск \"бесплатной платформы\" вместо практики."
+          }
+        }
+      ]
+    }
+  ]
+}

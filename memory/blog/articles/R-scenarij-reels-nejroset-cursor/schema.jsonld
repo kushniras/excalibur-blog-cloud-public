@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/scenarij-reels-nejroset-cursor/#webpage",
+      "url": "https://mayai.ru/scenarij-reels-nejroset-cursor/",
+      "name": "Сценарий для рилс нейросетью: раскадровка, чтобы ролик досматривали",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Одна мысль, хук, раскадровка и CTA. Без длинного сценария, который не снимете."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/scenarij-reels-nejroset-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/scenarij-reels-nejroset-cursor/#webpage"
+      },
+      "headline": "Сценарий для рилс нейросетью: раскадровка, чтобы ролик досматривали",
+      "description": "Одна мысль, хук, раскадровка и CTA. Без длинного сценария, который не снимете.",
+      "datePublished": "2026-07-19",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/scenarij-reels-nejroset-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/scenarij-reels-nejroset-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/scenarij-reels-nejroset-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли сценарий в Cursor маркетологу без опыта съёмки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Нужны бриф, таблица и телефон. Не нужен курс драматургии. Если IDE пугает – начните с Cursor Junior ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем раскадровка отличается от монтажа Reels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Раскадровка – лист до камеры. Монтаж – нарезка уже снятого или long-видео. Для монтажа смотрите соседний гайд и Гиперион; здесь первый результат – файл сценария с таблицей."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Зачем три хука, если сниму один ролик?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чтобы выбрать сильный вход до съёмки и не гадать после публикации. Meta смотрит окно 0–3 сек – лучше иметь три варианта, чем один слабый."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли получить готовое видео нейросетью без съёмки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Полная автогенерация ещё не заменяет раскадровку и съёмку для большинства ниш. Честный путь: таблица → телефон → при необходимости монтаж."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько секунд брать новичку в первый раз?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Выберите 15 секунд. Структура проще: хук 0–3, ценность, один CTA. На 30 сек вернитесь, когда 15 уже стабильно снимаете."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где взять шаблон на следующие недели?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После удачного файла оформите Skill в проекте или повторите промпт вручную. Разбор Skills – в гайде для маркетинга ."
+          }
+        }
+      ]
+    }
+  ]
+}

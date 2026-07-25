@@ -1,11 +1,16 @@
-# Site brief — Excalibur BLOG (Maya AI / Ковчег)
+# Site brief — Excalibur BLOG (demo автора плагина)
 
 Excalibur BLOG читает этот файл для получения ключевых метаданных сайта и контент-стратегии.
 
+> **⚠ НЕ ЦЕЛЕВОЙ САЙТ КЛИЕНТА.**  
+> `mayai.ru` / Maya AI / «Ковчег» — демо-brief **автора плагина**.  
+> Для аудита, remaster и publish чужого/клиентского сайта этот `site_url` **запрещён**.  
+> См. `shared/forbidden-target-sites.md`. Клиент обязан заменить brief на свой домен + задать `PUBLIC_SITE_URL`.
+
 ## Сайт
 
-- **site_name:** Maya AI — блог «Ковчег»
-- **site_url:** https://mayai.ru
+- **site_name:** Maya AI — блог «Ковчег» *(demo автора плагина — не клиент)*
+- **site_url:** https://mayai.ru *(FORBIDDEN as customer target)*
 - **blog_path:** /blog/
 - **language:** ru
 - **niche:** автоматизация бизнеса на Make.com, вайбкодинг (Cursor AI, OpenClaw), AI-агенты и MCP, контент-заводы, промпт-инжиниринг, GEO/AEO SEO, маркетинговые автоворонки, Telegram/MAX-боты

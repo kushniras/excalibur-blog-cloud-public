@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-mcp-sub",
+  "slug": "kak-podklyuchit-mcp-subagentam-cursor",
+  "title": "Как подключить MCP сервер к роли Cursor: меньше рутины с вкладками",
+  "wp_post_id": 14494,
+  "primary_query": "mcp сервер cursor",
+  "secondary_queries": [
+    "подключить mcp субагентам",
+    "mcp researcher cursor",
+    "tools mcp cursor"
+  ],
+  "char_count": 9064,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/",
+  "datePublished": "2026-07-21",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "MCP для субагентов Cursor",
+    "подключить MCP к роли",
+    "зелёный MCP в Tools",
+    "роль Researcher с MCP"
+  ],
+  "meta_ab": {
+    "title_seo": "MCP для ролей Cursor: один tool и файл в handoff",
+    "title_ctr": "Роли есть, а данные \"примерно\"? Один MCP на вечер",
+    "title_aeo": "Как подключить MCP сервер субагентам Cursor?",
+    "description_seo": "Одна роль, один зелёный MCP, имя tool в agent.md и прогон оркестратор → роль → handoff. Секреты не в репозитории.",
+    "description_ctr": "Researcher отвечает без цифр? Включите один MCP и пропишите критерий артефакта в agent.md.",
+    "description_aeo": "MCP сервер простыми словами: розетка tools для роли, не ещё один чат. Чеклист на один вечер."
+  }
+}

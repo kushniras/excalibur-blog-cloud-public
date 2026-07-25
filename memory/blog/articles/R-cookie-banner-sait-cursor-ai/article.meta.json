@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-cookie",
+  "slug": "cookie-banner-sait-cursor-ai",
+  "title": "Cookie баннер на сайт в Cursor без кода",
+  "wp_post_id": 14152,
+  "primary_query": "cookie баннер",
+  "secondary_queries": [
+    "cookie banner сайт",
+    "уведомление cookie",
+    "баннер без кода"
+  ],
+  "char_count": 9464,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/cookie-banner-sait-cursor-ai/",
+  "datePublished": "2026-07-10",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "cookie-баннер в Cursor",
+    "ссылка на политику",
+    "не перекрыть CTA",
+    "минимум без CMP"
+  ],
+  "meta_ab": {
+    "title_seo": "Cookie баннер на сайт в Cursor без кода",
+    "title_ctr": "Метрика есть, баннера нет? Короткий текст и политика",
+    "title_aeo": "Как сделать cookie-баннер на сайт в Cursor?",
+    "description_seo": "Короткий баннер, ссылка на политику и проверка, что CTA не перекрыт.",
+    "description_ctr": "Не тащите тяжёлый CMP до появления аналитики.",
+    "description_aeo": "Cookie-баннер: когда нужен, текст, ошибки вёрстки."
+  }
+}

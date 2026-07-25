@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-statya",
+  "slug": "napisat-statyu-nejrosetyu-cursor",
+  "title": "Написать статью с помощью нейросети в Cursor за вечер",
+  "wp_post_id": 14293,
+  "primary_query": "написать статью нейросетью",
+  "secondary_queries": [
+    "статья cursor",
+    "гайд нейросеть",
+    "черновик seo"
+  ],
+  "char_count": 9054,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/",
+  "datePublished": "2026-07-14",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "статья в Cursor за вечер",
+    "бриф и каркас H2",
+    "факт-чек без выдумок",
+    "черновик на диске"
+  ],
+  "meta_ab": {
+    "title_seo": "Написать статью нейросетью в Cursor за вечер",
+    "title_ctr": "Чат дал воду? Бриф, H2 и факт-чек в Cursor",
+    "title_aeo": "Как написать статью с помощью нейросети в Cursor?",
+    "description_seo": "Бриф → каркас → черновик → проверка цифр. Без одного промпта на 9000 знаков воды.",
+    "description_ctr": "Нужен гайд, а не абзац из воздуха. Соберите структуру и факты.",
+    "description_aeo": "Статья нейросетью: структура, запрет выдуманных %, критерий готово."
+  }
+}

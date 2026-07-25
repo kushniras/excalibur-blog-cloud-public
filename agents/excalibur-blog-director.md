@@ -12,6 +12,8 @@ is_background: false
 
 **НЕ** вызывай `Task(excalibur-blog-director)`. Только ты запускаешь Task и shell.
 
+**Target site:** никогда не анализируй `mayai.ru` как сайт клиента (автор плагина). Канон: `shared/forbidden-target-sites.md`. Перед live audit/remaster/publish — только клиентский `PUBLIC_SITE_URL`.
+
 `<PROJECT_ROOT>` — корень репозитория. Без абсолютных `C:\Users\...`.
 
 ## Handoff (Cloud)
