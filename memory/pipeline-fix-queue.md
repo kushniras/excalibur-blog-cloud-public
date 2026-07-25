@@ -6,8 +6,66 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 ## Open incidents
 
+## INC-20260725-1418-geo-qa-b04-human-voice-remaster
+status: fixed
+run_date: 2026-07-25
+role: excalibur-blog-geo-qa
+topic_id: B04
+article_dir: memory/blog/articles/B04-geo-optimizaciya-sajta-2026
+severity: medium
+category: qa
+
+### What went wrong
+- После GEO remaster `excalibur_blog_human_voice_gate.py` вернул BLOCK на B04: `concrete_markers=[]` и слабые pain markers (скрипт видит только фрагмент `ошиб`).
+- Remaster-hard checks при этом PASS (linter, нет TL;DR, есть `Обновлено: 25.07.2026`).
+- Lead редакторски называет боль (SEO без клика из ChatGPT/Алисы), но без whitelist-лексики gate падает.
+
+### How the agent recovered this run
+- Зафиксировал remaster-hard PASS и полный GEO QA verdict=FIX в `article-qa.md`.
+- `research-notes-gate` BLOCK по legacy notes / stale `research_date=2026-06-11` отмечен как warning для remaster (не hard-fail всего батча).
+- Cover/schema для B04 не разблокированы до writer FIX human-voice.
+
+### Durable fix needed before next run
+- GEO remaster writer checklist: при снятии ярлыка TL;DR сохранять ≥2 concrete markers (`например`, `на практике`, `типичная ошибка`, …) и явную pain-лексику в lead.
+- В `shared/geo-collider-remediation-rules.md` / writer skill добавить строку: remaster не должен обнулять human-voice markers.
+- Опционально: remaster-mode flag в human-voice gate с мягким порогом — только после явного решения редактора.
+
+### Suggested files to inspect/change
+- `skills/writer-excalibur-blog/SKILL.md`
+- `.cursor/skills/writer-excalibur-blog/SKILL.md`
+- `shared/geo-collider-remediation-rules.md`
+- `shared/agent-pipeline-pitfalls.md`
+- `scripts/excalibur_blog_human_voice_gate.py` (docs/comment; detection корректна)
+
+### Secrets
+- none recorded
+
+### Fixer resolution
+status: fixed
+fixed_at: 2026-07-25
+fix_summary:
+- Добавлен блок «Human-voice markers при remaster» в `shared/geo-collider-remediation-rules.md` (whitelist concrete/pain, запрет обнуления при снятии TL;DR; мягкий порог только после решения редактора).
+- Writer skill/agent: секция `GEO remaster checklist` + pitfalls/GEO QA note: remaster-hard PASS ≠ human-voice PASS.
+- В `excalibur_blog_human_voice_gate.py` — docstring/comment про обязательные ≥2 concrete markers после remaster (detection не ослаблялась).
+files_changed:
+- `shared/geo-collider-remediation-rules.md`
+- `shared/agent-pipeline-pitfalls.md`
+- `skills/writer-excalibur-blog/SKILL.md`
+- `.cursor/skills/writer-excalibur-blog/SKILL.md`
+- `agents/excalibur-blog-writer.md`
+- `.cursor/agents/excalibur-blog-writer.md`
+- `skills/excalibur/references/geo-writing-checklist.md`
+- `.cursor/skills/excalibur/references/geo-writing-checklist.md`
+- `skills/excalibur-geo-qa/SKILL.md`
+- `.cursor/skills/excalibur-geo-qa/SKILL.md`
+- `scripts/excalibur_blog_human_voice_gate.py`
+checks_run:
+- `python3 -m py_compile scripts/excalibur_blog_human_voice_gate.py`
+- `rg` на секцию Human-voice markers / GEO remaster checklist
+commit: 59e5c78
+
 ## INC-20260725-1415-writer-b01-duplicate-faq-h2
-status: open
+status: fixed
 run_date: 2026-07-25
 role: excalibur-blog-writer
 topic_id: B01
@@ -40,7 +98,28 @@ category: qa
 - none recorded
 
 ### Fixer resolution
-- pending
+status: fixed
+fixed_at: 2026-07-25
+fix_summary:
+- Writing contract / writer skill+agent / geo checklist / pitfalls явно запрещают `FAQ` и FAQ-like RU-фразы в любом H2 кроме канона `Частые вопросы`; schema/Q&A секции — action-title без FAQ-лексики.
+- Docstring в `detect_duplicate_faq_sections` документирует, что instructional «FAQ и schema…» тоже считается FAQ-like (detection не менялась).
+files_changed:
+- `shared/excalibur-article-writing-contract.md`
+- `shared/agent-pipeline-pitfalls.md`
+- `skills/writer-excalibur-blog/SKILL.md`
+- `.cursor/skills/writer-excalibur-blog/SKILL.md`
+- `agents/excalibur-blog-writer.md`
+- `.cursor/agents/excalibur-blog-writer.md`
+- `skills/excalibur/references/geo-writing-checklist.md`
+- `.cursor/skills/excalibur/references/geo-writing-checklist.md`
+- `skills/excalibur-geo-qa/SKILL.md`
+- `.cursor/skills/excalibur-geo-qa/SKILL.md`
+- `scripts/excalibur_blog_html_linter.py`
+checks_run:
+- `python3 -m py_compile scripts/excalibur_blog_html_linter.py`
+- smoke: duplicate FAQ detect on «FAQ и schema…» + «Частые вопросы»
+- `python3 scripts/excalibur_blog_html_linter.py memory/blog/articles/B01-primer-seo-stati/article.html` → PASS
+commit: 59e5c78
 
 ## INC-20260616-2015-geo-qa-html-cli-mismatch
 status: fixed
@@ -92,7 +171,7 @@ checks_run:
 - `python3 scripts/excalibur_blog_cannibalization_guard.py --help`
 - `rg` check for old Writer `<pre><code>` instruction strings
 - `rg` check for old cannibalization `--article-dir` command in source docs
-commit: pending-parent-commit
+commit: 59e5c78
 
 ## INC-20260616-2018-cover-toxic-sticker
 status: fixed
@@ -143,7 +222,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_cover_quad_prompt.py`
 - JSON parse for `memory/cover/quad-style-digital-meme-collage-ru.json`
 - JSON parse for `memory/cover/cover-design-code.json`
-commit: pending-parent-commit
+commit: 59e5c78
 
 ## INC-20260616-1950-scout-wordstat-format
 status: fixed
@@ -184,7 +263,7 @@ files_changed:
 - `shared/agent-pipeline-pitfalls.md`
 checks_run:
 - `rg` check for Wordstat cluster-first/totalCount guidance in Scout source docs
-commit: pending-parent-commit
+commit: 59e5c78
 
 ## INC-20260616-2031-indexer-python-missing
 status: fixed
@@ -231,7 +310,7 @@ files_changed:
 - `shared/agent-pipeline-pitfalls.md`
 checks_run:
 - `rg` check for old `python scripts/excalibur_blog_interlinker.py` and `python scripts/excalibur_blog_llms_generator.py` in source docs
-commit: pending-parent-commit
+commit: 59e5c78
 
 
 ## INC-20260616-2042-publish-ssh-root-dot
@@ -285,7 +364,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_wp_publish.py`
 - `python3 scripts/excalibur_blog_wp_publish.py --env-check` (JSON output validated; non-publish env may return exit 1)
 - `python3 -m json.tool /tmp/excalibur_publish_env_check.json`
-commit: pending-parent-commit
+commit: 59e5c78
 
 ## Fixed incidents
 

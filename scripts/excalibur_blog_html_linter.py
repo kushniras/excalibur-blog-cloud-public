@@ -36,7 +36,12 @@ def detect_anchor_toc(html: str) -> list[str]:
 
 
 def detect_duplicate_faq_sections(html: str) -> list[str]:
-    """Fail if article has more than one FAQ heading block."""
+    """Fail if article has more than one FAQ heading block.
+
+    Any H2 matching faq|частые вопрос|задаваемые вопрос counts — including
+    instructional titles like «FAQ и schema…». Keep exactly one canonical
+    «Частые вопросы»; rename thematic schema/Q&A H2s to action titles without FAQ.
+    """
     errors: list[str] = []
     faq_headings = re.findall(
         r"<h2[^>]*>\s*(.*?)\s*</h2>",

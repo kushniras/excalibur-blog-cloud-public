@@ -27,6 +27,8 @@
 
 - Fact Check Box **не копирует** пример из `shared/excalibur-article-writing-contract.md`. Автор — только из `shared/authors-registry.json` по `author_id` в `article.meta.json`.
 - Запрещены legacy-имена вне реестра (в т.ч. «Елена Ковалева»). Human voice gate блокирует несовпадение автора и generic-шаблон «все статистические показатели…».
+- Ровно один FAQ H2: канон `<h2>Частые вопросы</h2>`. Слово `FAQ` / «частые вопрос*» / «задаваемые вопрос*» в любом другом H2 → `Forbidden duplicate FAQ sections`. Тематические секции про schema/Q&A — action-title без FAQ-лексики.
+- GEO remaster: убирая `TL;DR` / `Быстрый инсайт`, сохрани ≥2 concrete markers (`например`, `на практике`, `типичная ошибка`, …) и явную pain-лексику в lead; иначе human-voice gate BLOCK при PASS remaster-hard checks.
 
 ## QA
 
@@ -34,6 +36,7 @@
 - MCP URLs в production article.html → fix перед publish.
 - `article.html` должен проходить whitelist HTML-линтера: `<pre>`/`<code>` запрещены, пока не добавлены в whitelist; код/шаблоны оформляй через blockquote/table/list.
 - Cannibalization guard CLI: `--blog-dir memory/blog/articles -o <article_dir>/cannibalization-report.json`, не `--article-dir`.
+- Remaster-hard PASS (нет TL;DR, есть `Обновлено`) ≠ human-voice PASS: cover/schema не стартуют, пока `human-voice-report.json` не PASS.
 
 ## Cover
 
