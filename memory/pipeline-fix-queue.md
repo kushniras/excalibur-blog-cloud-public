@@ -59,7 +59,7 @@ files_changed:
 - `memory/blog/geo-site-audit-2026-07-25.json`
 checks_run:
 - rg mayai.ru forbid references in AGENTS + pitfalls + forbidden-target-sites
-commit: pending
+commit: 23a363e
 
 ## INC-20260725-1434-indexer-weak-anchor-filter
 status: fixed
