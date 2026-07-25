@@ -1,12 +1,13 @@
 ﻿# Excalibur — GEO writing checklist
 
-Адаптация практик из [aaron-he-zhu/seo-geo-claude-skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills) (`geo-content-optimizer`, `seo-content-writer`) под Excalibur BLOG HTML.
+Адаптация практик из [aaron-he-zhu/seo-geo-claude-skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills) + white-hat правил из Collider GEO KB (`shared/geo-collider-remediation-rules.md`) под Excalibur BLOG HTML.
 
 ## Answer-first (первые 60–100 слов)
 
 - Первый `<p>` 350–500 символов: боль → прямой ответ → обещание пользы
 - Primary query естественно в первых 100 словах (не stuffing)
-- Можно вырезать первый абзац как самостоятельный ответ для AI Overview / Нейро
+- Можно вырезать первый абзац как самостоятельный ответ для AI Overview / Нейро / Алисы
+- Яндекс/Алиса: утверждение → доказательство → ограничение → дата (не наоборот)
 
 ## Chunkable blocks (на цитирование)
 
@@ -14,12 +15,14 @@
 - Один тезис на абзац; абзацы 3–6 предложений
 - H2/H3 читаются как outline без body
 - Списки `<ul>/<ol>` для шагов и сравнений
+- В каждой крупной секции — constraints / when-not-to-use, если уместно
 
 ## Quotable statements
 
 - 2–4 предложения с конкретикой (цифра+источник, named entity, дата)
 - Формулировки standalone — без «как сказано выше»
 - Источники в `research-notes.md`, в тексте — осторожные маркеры («по данным …», «на момент публикации»)
+- Citation ≠ influence: не обещать «попадёте в ChatGPT», если нет измерения; разделять discoverability / citation / absorption
 
 ## FAQ (GEO + schema)
 
@@ -39,12 +42,15 @@
 | Visual Media | Внедрено 1–3 `<img>` с подробным `alt` и курсивной подписью `<i>` снизу            |
 
 
-## Яндекс / Google AI
+## Яндекс / Google AI / multi-engine
 
 - Title 50–65 символов, Description 120–160 (в `article.meta.json`)
 - Internal links 2–3 из карточки темы
 - Нет hidden schema-only FAQ — всё видно в HTML
-- Свежесть: дата в meta + актуальные версии/цены только из research
+- Свежесть: видимая строка `Обновлено: ДД.ММ.ГГГГ` в теле + `dateModified` в schema; актуальные версии/цены только из research
+- `llms.txt` — навигация для части агентов; **не** позиционировать как сигнал Google AI
+- Structured data — для понимания сущности / eligibility Search experiences, не как «GEO-хак»
+- Не плодить thin URL под каждую fan-out формулировку (scaled content abuse)
 
 ## E-E-A-T & Author Attribution (Авторитетность и Авторы)
 
@@ -63,3 +69,6 @@
 - Нет «в этой статье вы узнаете»
 - Нет стены текста без H2 > 400 слов
 - Нет generic AI conclusion («подводя итог», «в заключение»)
+- Нет служебных ярлыков `TL;DR` / `Быстрый инсайт` в insight-блоке
+- Нет date-only bump без содержательного обновления
+- Нет гарантий цитирования AI и путаницы citation с трафиком

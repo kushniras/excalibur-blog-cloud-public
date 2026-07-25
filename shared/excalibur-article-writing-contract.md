@@ -11,6 +11,8 @@ Excalibur BLOG следует этому контракту для каждой 
 - `memory/brief/fact-bank.md` — проверенные факты
 - `memory/brief/conversion-map.md` — CTA, лимиты упоминаний
 - `shared/excalibur-article-writing-contract.md` (этот файл)
+- `shared/geo-collider-remediation-rules.md` — white-hat GEO template при написании и remaster
+- `skills/excalibur/references/geo-writing-checklist.md`
 
 Перед текстом — research → `memory/blog/articles/<topic_id>-<slug>/research-notes.md` и обязательный gate `research-notes-gate.json` со `status: PASS`.
 
@@ -107,6 +109,8 @@ Writer обязан использовать поля из `research-notes.md`:
 Обязательный блок `<blockquote>` сразу после первого `<p>` (Lead). Он содержит концентрированные выводы по статье в 3-4 предложениях для голосового и нейропоиска. 
 Не начинай этот блок со служебного ярлыка `TL;DR` или фразы `Быстрый инсайт`. Блок должен звучать как живой короткий вывод, без шаблонного заголовка.
 Пример: `<blockquote>Суть проблемы простыми словами: ...</blockquote>`
+
+Сразу после инсайт-блока или в конце lead-контекста добавь видимую свежесть: `<p><i>Обновлено: ДД.ММ.ГГГГ</i></p>` (дата прогона). В schema — согласованный `dateModified`.
 
 ### Блок 3: Оглавление (Table of Contents) — **ЗАПРЕЩЕНО**
 
