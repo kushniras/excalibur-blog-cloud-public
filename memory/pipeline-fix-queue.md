@@ -62,7 +62,7 @@ files_changed:
 checks_run:
 - `rg` blocker/silent-skip guidance in publish docs
 - `python3 scripts/excalibur_blog_wp_publish.py --env-check` (ожидаемо exit 1 без secrets)
-commit: f14e938
+commit: f14e938 (hash cleanup 3dd5e97)
 
 ## INC-20260725-1425-indexer-interlink-blog-prefix
 status: fixed
