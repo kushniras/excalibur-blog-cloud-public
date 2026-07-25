@@ -1,0 +1,116 @@
+<p>Поставьте Ядрышко в Cursor с живым Wordstat (это цифры показов Яндекса) и получите папку с кластерами запросов, картой страниц и брифами – не список ключей "примерно по 5–10 тысяч" из чата. Так меньше пустых URL и больше шанс на трафик и заявки с нужных страниц.</p>
+<h2 id="constraints-yadryshko">Когда Ядрышко ставить не сейчас</h2>
+<p>Если Wordstat в Tools & MCP ещё красный – сначала один зелёный тест цифры, не /core. Если нужна "просто идея для поста" без карты URL – хватит короткого research в чате. Типичная ошибка: просить чат "ключи под услуги" без проверки показов и через месяц ловить пустые статьи.</p><p>Не путайте Ядрышко с генератором готовых текстов "под ключ". Результат пакета: кластеры, url-map и брифы с живыми цифрами Wordstat – не фантазия из чата.</p>
+<blockquote>
+<p>Критерий "получилось": в проекте есть .cursor/agents/core.md (или виден /core после Reload Window); в Settings → Tools &amp; MCP сервер Wordstat зелёный и тестовый wordstat_get_top_requests вернул цифру; в research/semantic-core-runs/&lt;сайт&gt;-&lt;дата&gt;/ лежат 05-clusters.csv, 06-url-map.csv, 07-content-briefs.md (не меньше трёх брифов) и index.html; частотности живые либо честно "не подтверждены".</p>
+</blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<p>Типичная ошибка: просите чат "собери ключи под услуги" – красивая табличка без проверки показов, через месяц статьи в поиске молчат. Проблема не в "плохом ИИ", а в отсутствии живых цифр спроса. Я бы не уговаривал общий чат ещё раз и не начинал с Key Collector: сначала живые цифры, потом пакет файлов. Отдельного SEO-агентства для первого прогона не нужно.</p><p>Критерий "получилось": в проекте есть .cursor/agents/core.md (или виден /core после Reload Window); в Settings → Tools &amp; MCP сервер Wordstat зелёный и тестовый wordstat_get_top_requests вернул цифру; в research/semantic-core-runs/&lt;сайт&gt;-&lt;дата&gt;/ лежат 05-clusters.csv, 06-url-map.csv, 07-content-briefs.md (не меньше трёх брифов) и index.html; частотности живые либо честно "не подтверждены".</p><h2>Что нужно до первой команды</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-ustanovit-yadryshko-seo-subagent-cursor-inline-01-1.jpg" alt="Чеклист доступов до первой команды: Cursor, Яндекс API, GitHub" loading="lazy"><br>
+</figure>
+<p>Нужны Cursor, аккаунт Яндекса с API Key и Folder ID, роль search-api.webSearch.user и доступ к GitHub, чтобы скачать install. Если папки .cursor в проекте ещё нет – она появится после установки. Секреты держите в dashboard или env, не вставляйте в чат агента.</p>
+<h2>Подключить Wordstat в MCP-KV</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-ustanovit-yadryshko-seo-subagent-cursor-inline-02-1.jpg" alt="Схема подключения Wordstat в MCP-KV: ключ, Folder ID, тест" loading="lazy"><br>
+</figure>
+<p>Линейный маршрут до первого пакета – чтобы не застрять между MCP и плагином:</p>
+<ol>
+<li>Подключите Wordstat в MCP-KV по гайду проекта; сохраните секреты вне чата.</li>
+<li>В Settings → Tools & MCP дождитесь зелёного статуса и запросите одну тестовую цифру показов.</li>
+<li>Установите Ядрышко (плагин/роль core) и сделайте Reload Window при необходимости.</li>
+<li>Вызовите /core с URL сайта и регионом; дождитесь файлов пакета в проекте.</li>
+<li>Откройте кластеры, url-map и брифы: сверьте, что цифры Wordstat не "примерно", а из MCP.</li>
+<li>Не пишите сразу 20 статей – выберите 1–2 URL из карты на завтра.</li>
+</ol>
+<p>На практике часто ломается порядок: ставят Ядрышко до зелёного Wordstat и решают, что "ИИ для SEO не работает". Сначала цифра в MCP, потом /core.</p>
+
+<p>MCP – это способ дать Cursor доступ к внешнему инструменту. Откройте гайд <a target="_blank" href="https://mcp-kv.ru/docs/wordstat-mcp-setup">mcp-kv.ru/docs/wordstat-mcp-setup</a>. В кабинете MCP-KV укажите API Key из AI Studio Яндекса, Folder ID из раздела folders (не ID всего облака) и роль search-api.webSearch.user.</p>
+<p>Нажмите "Проверить и сохранить". Если сервис отвечает 401 – битый ключ. 403 – чаще биллинг, карта или нет нужной роли. 429 – упёрлись в квоту Search API. Пока тест не проходит, ставить Ядрышко рано: без живых цифр снова получите "примерно".</p>
+<h2>Проверить зелёный Tools &amp; MCP и одну цифру</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-ustanovit-yadryshko-seo-subagent-cursor-inline-03-1.jpg" alt="Схема проверки зелёного Wordstat MCP и одной цифры показов" loading="lazy"><br>
+</figure>
+<p>В Cursor откройте Settings → Tools &amp; MCP. Сервер MCP-KV / Wordstat должен быть зелёным. Сделайте один тестовый вызов wordstat_get_top_requests по parent-фразе вашей ниши – например по "семантическое ядро" или по услуге сайта. Нужна любая реальная цифра показов, не "модель прикинула".</p>
+<p>Для ориентира на дату 2026-07-22 по России (регион 225): "ии для seo" – 168 показов в месяц, "нейросети для seo" – 74, parent "семантическое ядро" – 4107. Эти числа из Wordstat MCP, не из головы. Если тест вернул цифру – можно ставить Core. Если нет – чините доступы, не подключайте "ещё пять инструментов на всякий случай".</p>
+<h2>Установить Ядрышко одной командой</h2>
+<p>Субагент здесь – готовая роль в Cursor: файл инструкции, которую вызывают по слешу. Ядрышко ставится в корень проекта одной командой и появляется как /core. Репозиторий публичный: <a target="_blank" href="https://github.com/Horosheff/yadryshko-semantic-core-subagent">Horosheff/yadryshko-semantic-core-subagent</a>.</p>
+<p>На macOS/Linux:</p>
+<blockquote>
+<p>curl -fsSL https://raw.githubusercontent.com/Horosheff/yadryshko-semantic-core-subagent/main/install.sh | bash</p>
+</blockquote>
+<p>На Windows (PowerShell):</p>
+<blockquote>
+<p>irm https://raw.githubusercontent.com/Horosheff/yadryshko-semantic-core-subagent/main/install.ps1 | iex</p>
+</blockquote>
+<p>После команды проверьте файл .cursor/agents/core.md. Рядом могут лечь docs, scripts и templates – это нормально. Затем Reload Window в Cursor, чтобы роль /core стала видна. По документации Cursor субагенты наследуют инструменты родителя: зелёный Wordstat у вас в проекте означает, что /core сможет дергать те же tools.</p>
+<p>Не ставьте сейчас AURA, SEO-skill и пачку соседних подключений. Цель – один SEO-агент и один прогон.</p>
+<h2>Вызвать /core с URL и регионом</h2>
+<p>В чате Cursor вызовите /core и передайте адрес сайта (или нишу), регион – например Россия / 225 – и цель: заявки или трафик. Формат из README: /core, URL вроде https://example.ru, регион. Дождитесь окончания прогона.</p>
+<p>Результат лежит в research/semantic-core-runs/&lt;сайт&gt;-&lt;дата&gt;/. Имена папки и файлов смотрите в проводнике проекта, не в пересказе чата.</p>
+<h2>Открыть пакет файлов – критерий "готово"</h2>
+<p>Минимум пакета файлов за вечер, без которого прогон не закрыт:</p>
+<ul>
+<li>05-clusters.csv – группы запросов;</li>
+<li>06-url-map.csv – какие страницы писать под спрос;</li>
+<li>07-content-briefs.md – не меньше трёх брифов под конкретные URL;</li>
+<li>index.html – сводный отчёт.</li>
+</ul>
+<p>Частотности в отчёте либо живые (из Wordstat), либо явно "не подтверждены". Выдуманные показы "примерно" – провал, даже если CSV красивый. Google в AI-optimization guide прямо пишет: для генеративных фич поиска по-прежнему нужно обычное SEO, а не отдельный "GEO-хак". Карта спроса и нормальные страницы важнее рейтинга "лучших ИИ для SEO".</p>
+<p>Получилось = четыре пункта выше на диске. Не получилось = нет core.md, MCP красный, тест Wordstat без цифры или в папке нет CSV/HTML.</p>
+<h2>Типичные сбои на линейном маршруте</h2>
+<table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Что проверить</th>
+<th>Что сделать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/core не виден</td>
+<td>Есть ли .cursor/agents/core.md</td>
+<td>Переустановить install, Reload Window</td>
+</tr>
+<tr>
+<td>MCP зелёный, цифры "примерно"</td>
+<td>Тест wordstat_get_top_requests, роль, Folder ID</td>
+<td>Починить доступ; не гонять /core "наугад"</td>
+</tr>
+<tr>
+<td>401 / 403 / 429</td>
+<td>Ключ, биллинг/роль, квота Search API</td>
+<td>По docs MCP-KV; Folder ID только из /folders/</td>
+</tr>
+<tr>
+<td>Папка пустая или без брифов</td>
+<td>Путь research/semantic-core-runs/</td>
+<td>Дождаться конца прогона; перечитать URL и регион</td>
+</tr>
+</tbody>
+</table>
+<p>Отдельно: рейтинг Surfer/Jasper/ChatGPT из выдачи "лучшие ИИ для SEO" не заменяет этот маршрут. Генератор текста пишет абзацы. Ядрышко отвечает на вопрос, о каких страницах писать под живой спрос.</p>
+<h2>Что делать после пакета – и чего не делать сегодня</h2>
+<p>На практике возьмите один бриф из 07-content-briefs.md и одну строку из 06-url-map.csv – напишите или запланируйте эту страницу. Так вы не тратите время на пустые темы: пишете то, что уже привязано к спросу.</p>
+<p>TEYA, офис страниц и установка дизайн-субагента AURA – только после пакета файлов, не вместо него. Углубления по желанию, не обязательны для сегодняшнего результата: <a href="/semanticheskoe-yadro-cursor-wordstat/">семантическое ядро в Cursor</a>, <a href="/kak-ustanovit-aura-dizajn-subagent-cursor/">установка AURA</a>, <a href="/mnogostranichnyj-sait-cursor-teya/">многостраничный сайт с TEYA</a>.</p>
+<p>Разборы агентов и MCP – в Telegram <a target="_blank" href="https://t.me/maya_pro">t.me/maya_pro</a> и в MAX <a target="_blank" href="https://max.ru/maya_pro">max.ru/maya_pro</a>. Если понадобится системная практика автоматизаций отдельно от этого маршрута – <a target="_blank" href="https://kv-ai.ru/obuchenie-po-make">курс на kv-ai.ru</a>.</p>
+<p>Разберем ситуацию новичка: табличка ключей из обычного чата выглядит убедительно, но без url-map вы не знаете, какая страница закроет какой кластер. Ядрышко как раз связывает запросы с картой URL.</p><p>Живой пример успеха: в проекте есть .cursor/agents/core.md (или виден /core), Wordstat зелёный, в папке – кластеры и брифы с датой прогона. Так вы получите план на контент, а не список желаний.</p><p>Из практики: после пакета сразу не запускайте контент-завод на 50 URL. Возьмите один бриф, напишите одну страницу, замерьте. Иначе хаос масштабирования съест выигрыш от живого Wordstat.</p>
+<blockquote>
+<p><b>Материал проверен:</b> <a target="_blank" href="https://kv-ai.ru/artur-horosheff">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).<br>
+<b>Опора на источники:</b> README и install Ядрышко (github.com/Horosheff/yadryshko-semantic-core-subagent, обновление репозитория 2026-07-20); docs Wordstat MCP на mcp-kv.ru; Cursor Subagents (наследование MCP); Google AI optimization guide; частотности Wordstat MCP, регион 225, прогон 2026-07-22.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Можно ли поставить Ядрышко без Wordstat?</h3>
+<p>Можно установить файл агента и получить структуру отчёта. Но без зелёного Wordstat MCP частотности обязаны быть помечены неподтверждёнными. Для решения "какие страницы писать" я бы не считал такой прогон закрытым.</p>
+<h3>Чем это отличается от "попроси Cursor ключи"?</h3>
+<p>Чат выдаёт список фраз. /core после живого Wordstat кладёт на диск кластеры, карту страниц, брифы и HTML. Проверка – файлы в research/semantic-core-runs, а не красивый абзац в диалоге.</p>
+<h3>Нужен ли Key Collector в первый прогон?</h3>
+<p>Нет. Для первого пакета достаточно Cursor, MCP-KV Wordstat и install Ядрышко. Парсер Windows и ручная сборка ядра – другой маршрут, его можно отложить.</p>
+<h3>Нужно ли сразу ставить TEYA или офис страниц?</h3>
+<p>Нет. Сначала папка clusters / карта страниц / briefs. Сетку страниц и другие роли имеет смысл после того, как понятно, какие URL писать.</p>
+<h3>Где лежат файлы после /core?</h3>
+<p>Обычно в research/semantic-core-runs/ (кластеры, url-map, брифы, HTML). Если папка пустая – дождитесь конца прогона и проверьте URL с регионом, не перезапускайте "наугад".</p>
+<h3>Что делать, если Wordstat красный в Tools & MCP?</h3>
+<p>Не вызывайте /core. Сначала почините ключ и роль в MCP-KV, дождитесь зелёного статуса и одной тестовой цифры показов. Иначе пакет уедет с неподтверждёнными частотностями.</p>

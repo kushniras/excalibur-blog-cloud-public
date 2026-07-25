@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-composer",
+  "slug": "cursor-composer-dlya-marketinga",
+  "title": "Cursor Composer для маркетинга: первый артефакт за вечер",
+  "wp_post_id": 14389,
+  "primary_query": "cursor composer",
+  "secondary_queries": [
+    "composer 2.5 маркетинг",
+    "cursor правки файлов",
+    "accept all cursor"
+  ],
+  "char_count": 9743,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/cursor-composer-dlya-marketinga/",
+  "datePublished": "2026-07-17",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Cursor Composer для маркетинга",
+    "Composer 2.5",
+    "точечный Accept",
+    "первый артефакт за вечер"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor Composer для маркетинга: первый артефакт за вечер",
+    "title_ctr": "Час копируете ответы в Notion? Composer правит файлы сам",
+    "title_aeo": "Как пользоваться Cursor Composer для маркетинга?",
+    "description_seo": "Ctrl+I, Composer 2.5, одна узкая задача и точечное принятие правок. Без слепого Accept All.",
+    "description_ctr": "Чат не меняет сайт? Откройте Composer и получите файл, а не простыню в Notion.",
+    "description_aeo": "Composer vs чат: модель 2.5, Standard/Fast и безопасные правки."
+  }
+}

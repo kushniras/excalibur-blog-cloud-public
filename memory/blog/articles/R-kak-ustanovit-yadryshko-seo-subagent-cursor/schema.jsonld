@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/#webpage",
+      "url": "https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/",
+      "name": "ИИ для SEO без фантазии: трафик с url-map и живым Wordstat",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Зелёный Wordstat MCP, /core с URL и регионом, пакет: кластеры, url-map, брифы. Без фантазии из чата."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/#webpage"
+      },
+      "headline": "ИИ для SEO без фантазии: трафик с url-map и живым Wordstat",
+      "description": "Зелёный Wordstat MCP, /core с URL и регионом, пакет: кластеры, url-map, брифы. Без фантазии из чата.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли поставить Ядрышко без Wordstat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно установить файл агента и получить структуру отчёта. Но без зелёного Wordstat MCP частотности обязаны быть помечены неподтверждёнными. Для решения \"какие страницы писать\" я бы не считал такой прогон закрытым."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это отличается от \"попроси Cursor ключи\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чат выдаёт список фраз. /core после живого Wordstat кладёт на диск кластеры, карту страниц, брифы и HTML. Проверка – файлы в research/semantic-core-runs, а не красивый абзац в диалоге."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Key Collector в первый прогон?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Для первого пакета достаточно Cursor, MCP-KV Wordstat и install Ядрышко. Парсер Windows и ручная сборка ядра – другой маршрут, его можно отложить."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли сразу ставить TEYA или офис страниц?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала папка clusters / карта страниц / briefs. Сетку страниц и другие роли имеет смысл после того, как понятно, какие URL писать."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где лежат файлы после /core?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обычно в research/semantic-core-runs/ (кластеры, url-map, брифы, HTML). Если папка пустая – дождитесь конца прогона и проверьте URL с регионом, не перезапускайте \"наугад\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если Wordstat красный в Tools & MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не вызывайте /core. Сначала почините ключ и роль в MCP-KV, дождитесь зелёного статуса и одной тестовой цифры показов. Иначе пакет уедет с неподтверждёнными частотностями."
+          }
+        }
+      ]
+    }
+  ]
+}

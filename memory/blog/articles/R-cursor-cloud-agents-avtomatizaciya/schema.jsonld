@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/#webpage",
+      "url": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/",
+      "name": "AI агенты для бизнеса: Cloud Agents и Automations в Cursor",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Сравнение чат / Cloud Agent / Automation / Make, один критерий готово и безопасный первый прогон."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/#webpage"
+      },
+      "headline": "AI агенты для бизнеса: Cloud Agents и Automations в Cursor",
+      "description": "Сравнение чат / Cloud Agent / Automation / Make, один критерий готово и безопасный первый прогон.",
+      "datePublished": "2026-07-12",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем Cloud Agents отличаются от Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Make и n8n гоняют линейные шаги: фильтр, запись, уведомление. Cloud Agent думает длиннее: сравнивает источники, пишет бриф, правит файлы в репозитории. Сделайте правило: кнопки – в Make, рассуждение по расписанию – в Cursor Automation. Связку через webhook используйте, когда событие в Make должно разбудить агента."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли Automations новичку-маркетологу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если одна и та же задача повторяется каждое утро и вы устали сидеть у чата IDE. Не делайте десять автоматизаций сразу: хватит одного cron на бриф или RSS→TG. Если задача разовая – достаточно ручного Cloud Agent run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит первый агент?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нужен paid plan (индивидуальный Pro от $20/мес с API usage). Расход Cloud Agents идёт по API-цене модели; Automations всегда в Max Mode. Проверьте spend limit до первого запуска и начните с Composer. Точную цифру \"за бриф\" заранее не обещают – смотрите usage после Test run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда лучше оставить задачу в Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Оставляйте в Make, если шаги предсказуемые: \"если новая строка → отправить сообщение\". Переносите в Automation, когда нужно сравнить, сформулировать и собрать текст. Избегайте дублирования: не гоняйте один и тот же бриф и в Make AI, и в Cursor без критерия \"готово\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С какой задачи начать создание ai агентов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С узкой: утренний бриф, черновик поста или дайджест RSS. Добавьте критерий файла/сообщения и один Test run. Готовый шаблон – репозиторий rss-ai-telegram; для обучения работе с ai агентами смотрите разборы #1314 в канале и docs Cursor, а не абстрактные \"платформы ai агентов\" без кнопки запуска."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Есть ли бесплатные ai агенты в Cursor Cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бесплатного always-on Cloud/Automations навсегда нет: нужен платный план и API usage. Бесплатные ai агенты в рекламе обычно про демо или локальные чаты. Для бизнеса честный путь – маленький лимит, дешёвая модель и один стабильный цикл, а не обещание \"бесплатно 24/7\"."
+          }
+        }
+      ]
+    }
+  ]
+}

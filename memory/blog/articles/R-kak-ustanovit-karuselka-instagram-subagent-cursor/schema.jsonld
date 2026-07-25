@@ -1,0 +1,107 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/#webpage",
+      "url": "https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/",
+      "name": "Карусели для инстаграм ии: 9 слайдов 3×3 и охват без Canva-ночи",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Локальный плагин: clone → plugins/local → Reload → ключ Kie → 9 слайдов единого стиля. Без ночи в Canva."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/#webpage"
+      },
+      "headline": "Карусели для инстаграм ии: 9 слайдов 3×3 и охват без Canva-ночи",
+      "description": "Локальный плагин: clone → plugins/local → Reload → ключ Kie → 9 слайдов единого стиля. Без ночи в Canva.",
+      "datePublished": "2026-07-22",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли установка маркетологу без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Нужны установка Cursor, копирование папки, Reload и вставка ключа в .env. Код ролей уже в репозитории."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это лучше чата \"сделай карусель\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чат часто отдаёт девять картинок разного стиля без видео на первом слайде. Каруселька режет один master 3×3 и может дать MP4-хук на слайде 1 – пакет цельный и лежит локально."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обязателен ли Git, или хватит ZIP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Хватит ZIP с GitHub: распаковали, положили в ~/.cursor/plugins/local, Reload. Git удобнее для обновлений, но для первого пакета слайдов не обязателен."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли сразу публиковать в Instagram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Критерий прогона – Customize + файлы в carusel-memory/. Публикация – отдельный шаг, когда пакет уже устраивает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему анимируется только первый слайд?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так устроен пайплайн: хук на входе ленты – короткое видео, остальные кадры статичные PNG. Тянуть motion на все девять в первый прогон не нужно и дольше по стоимости API."
+          }
+        }
+      ]
+    }
+  ]
+}

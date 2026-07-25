@@ -1,0 +1,107 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/roli-subagentov-cursor-orchestrator/#webpage",
+      "url": "https://mayai.ru/roli-subagentov-cursor-orchestrator/",
+      "name": "Агент Cursor без хаоса: роли экономят время на правках",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Один владелец файла, оркестратор только делит задачу, handoff из четырёх строк. Без зоопарка из 19 агентов."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/roli-subagentov-cursor-orchestrator/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/roli-subagentov-cursor-orchestrator/#webpage"
+      },
+      "headline": "Агент Cursor без хаоса: роли экономят время на правках",
+      "description": "Один владелец файла, оркестратор только делит задачу, handoff из четырёх строк. Без зоопарка из 19 агентов.",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/roli-subagentov-cursor-orchestrator/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/roli-subagentov-cursor-orchestrator/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/roli-subagentov-cursor-orchestrator/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем это отличается от \"первого офиса из двух субагентов\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Там – как завести две роли. Здесь – слой оркестратор + владелец файла + handoff: кто делит, кто не трогает чужие пути, как передать статус дальше. Если двух ролей ещё нет, начните с того гайда , затем соберите матрицу из этой статьи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли /worktree в первый вечер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, если роли не пересекаются по файлам и идут очередью. Worktree нужен, когда два агента реально правят пересекающиеся пути и вы сознательно хотите изоляцию checkout (отдельную копию ветки). Сначала пропишите владельца файла в роли."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему не поставить сразу 19 агентов как в TEYA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Docs Cursor советуют старт с 2–3 focused. Большой плагин – следующий шаг после рабочего handoff. Иначе снова получите generic-зоопарк и те же конфликты файлов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cloud Agents сами раздадут субагентов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не рассчитывайте на day-1. Community фиксирует: в Cloud делегирование субагентов работает иначе, чем Task в локальном IDE. Сначала стабильный локальный handoff, потом облачный сценарий."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что писать в handoff, если research \"почти готов\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Статус \"частично\", путь к текущему brief, список дыр (чего не хватает) и запрет draft дописывать факты \"от себя\". Draft тогда либо ждёт, либо пишет только каркас под отмеченные дыры – без тихого перехвата brief."
+          }
+        }
+      ]
+    }
+  ]
+}

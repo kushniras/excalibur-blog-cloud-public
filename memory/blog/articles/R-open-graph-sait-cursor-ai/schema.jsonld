@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/open-graph-sait-cursor-ai/#webpage",
+      "url": "https://mayai.ru/open-graph-sait-cursor-ai/",
+      "name": "Как добавить Open Graph на сайт в Cursor AI без кода?",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Картинка 1200×630, og:* в head через Cursor Agent, проверка в Telegram и @WebpageBot. Без npm и Yoast."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/open-graph-sait-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/open-graph-sait-cursor-ai/#webpage"
+      },
+      "headline": "Как добавить Open Graph на сайт в Cursor AI без кода?",
+      "description": "Картинка 1200×630, og:* в head через Cursor Agent, проверка в Telegram и @WebpageBot. Без npm и Yoast.",
+      "datePublished": "2026-07-10",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/open-graph-sait-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/open-graph-sait-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/open-graph-sait-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как проверить Open Graph на сайте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте страницу → Ctrl+U и найдите meta property=\"og:…\". Затем вставьте URL в Telegram \"Избранное\". Если карточка старая, отправьте ссылку @WebpageBot и обновите preview. Для Facebook используйте Sharing Debugger."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой размер Open Graph image нужен в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир – 1200×630 пикселей, файл до 8 MB. Минимум для крупного превью у Meta – 600×315. Сделайте один JPG/PNG в корне и укажите полный https в og:image."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему превью в Telegram не обновилось после правок?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Чаще виноват кэш или относительный путь в og:image. Проверьте, что в исходнике уже https://…, задеплойте страницу и попросите @WebpageBot обновить preview. При смене картинки по тому же URL иногда помогает файл с новым именем."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Open Graph отличается от обычных title и description?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Title и description влияют на вкладку и сниппеты поиска. Open Graph – визитка для шаринга: мессенджеры читают og:title, og:description, og:image и og:url. Не делайте вид, что одного title достаточно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли отдельный Open Graph на каждую страницу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для важных URL лучше свой набор. Иначе у тарифов и главной будет одна карточка. Добавьте уникальные og:title и og:description; картинку можно переиспользовать."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли настроить Open Graph без WordPress и Yoast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. На статическом HTML из Cursor достаточно тегов в head и публикации папки. Используйте правило open-graph.mdc и Agent, затем проверьте живой URL в Telegram."
+          }
+        }
+      ]
+    }
+  ]
+}

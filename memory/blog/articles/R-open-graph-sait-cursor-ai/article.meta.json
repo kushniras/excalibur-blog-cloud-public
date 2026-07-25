@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-og",
+  "slug": "open-graph-sait-cursor-ai",
+  "title": "Как добавить Open Graph на сайт в Cursor AI без кода?",
+  "wp_post_id": 14173,
+  "primary_query": "open graph",
+  "secondary_queries": [
+    "og:image telegram",
+    "open graph cursor",
+    "превью ссылки telegram"
+  ],
+  "char_count": 9311,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/open-graph-sait-cursor-ai/",
+  "datePublished": "2026-07-10",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Open Graph в Cursor",
+    "превью ссылки Telegram",
+    "og:image 1200×630",
+    "карточка без Yoast"
+  ],
+  "meta_ab": {
+    "title_seo": "Open Graph в Cursor AI: превью ссылки без кода",
+    "title_ctr": "Ссылка в Telegram без обложки? Open Graph за вечер",
+    "title_aeo": "Как добавить Open Graph на сайт в Cursor AI?",
+    "description_seo": "Картинка 1200×630, og:* в head через Cursor Agent, проверка в Telegram и @WebpageBot. Без npm и Yoast.",
+    "description_ctr": "Мессенджер показал футер вместо оффера? Соберите визитку ссылки в head за один вечер.",
+    "description_aeo": "Open Graph vs title: размер og:image, абсолютный URL и сброс кэша Telegram."
+  }
+}

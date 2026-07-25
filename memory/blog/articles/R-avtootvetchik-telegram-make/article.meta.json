@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-avtootvet",
+  "slug": "avtootvetchik-telegram-make",
+  "title": "Автоответчик в Telegram через Make — заявки не висят без ответа",
+  "wp_post_id": 14422,
+  "primary_query": "автоответчик telegram make",
+  "secondary_queries": [
+    "бот автоответ make",
+    "telegram botfather make",
+    "автоответ заявкам telegram"
+  ],
+  "char_count": 9524,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/avtootvetchik-telegram-make/",
+  "datePublished": "2026-07-18",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "автоответчик Telegram Make",
+    "бот BotFather",
+    "антипетля webhook",
+    "ответ на заявку"
+  ],
+  "meta_ab": {
+    "title_seo": "Автоответчик в Telegram через Make: заявки не висят",
+    "title_ctr": "Лид пишет вечером – тишина? Автоответ за три кубика Make",
+    "title_aeo": "Как сделать автоответчик в Telegram через Make?",
+    "description_seo": "BotFather, три модуля Make и антипетля. Один шаблонный ответ со второго аккаунта – без Premium Away.",
+    "description_ctr": "Боитесь сломать чат кодом? Соберите MVP автоответа в Make за вечер.",
+    "description_aeo": "Автоответчик Telegram: Away vs бот vs таблица, антипетля и проверка."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-cloud-ag",
+  "slug": "cursor-cloud-agents-avtomatizaciya",
+  "title": "AI агенты для бизнеса: Cloud Agents и Automations в Cursor",
+  "wp_post_id": 14205,
+  "primary_query": "ai агенты для бизнеса",
+  "secondary_queries": [
+    "cloud agents cursor",
+    "cursor automations",
+    "автоматизация агентов cursor"
+  ],
+  "char_count": 9364,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/cursor-cloud-agents-avtomatizaciya/",
+  "datePublished": "2026-07-12",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Cloud Agents Cursor",
+    "Automations для бизнеса",
+    "агент по расписанию",
+    "бриф без ручной сборки"
+  ],
+  "meta_ab": {
+    "title_seo": "AI агенты для бизнеса: Cloud Agents и Automations в Cursor",
+    "title_ctr": "Бриф каждое утро руками? Automation в Cursor за вечер",
+    "title_aeo": "Чем Cloud Agents отличаются от Automations в Cursor?",
+    "description_seo": "Сравнение чат / Cloud Agent / Automation / Make, один критерий готово и безопасный первый прогон.",
+    "description_ctr": "Уехали на встречу – бриф не готов? Соберите одну Automation с понятным артефактом.",
+    "description_aeo": "Cloud Agents vs Automations vs Make: когда какой контур для маркетинга."
+  }
+}

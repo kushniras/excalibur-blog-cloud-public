@@ -27,32 +27,32 @@
 | 5 | 45 | 8 | B02 | 2026-07-25 | `avtomatizaciya-n8n-ai-agents` | updated, tldr_antipattern | remastered_local |
 | 6 | 45 | 8 | B08 | 2026-07-25 | `ii-chat-bot-dlya-biznesa-workflow` | updated, tldr_antipattern | remastered_local |
 | 7 | 45 | 8 | B03 | 2026-07-25 | `podklyuchenie-mcp-cursor` | updated, tldr_antipattern | remastered_local |
-| 8 | 43 | 8 | — | 2026-07-17 | `mikrorazmetka-sajta-json-ld` | table, updated | pending |
-| 9 | 35 | 9 | — | 2026-07-12 | `indexnow-yandex-make` | updated | pending |
+| 8 | 43 | 8 | R-mikro | 2026-07-25 | `mikrorazmetka-sajta-json-ld` | table, updated | remastered_local |
+| 9 | 35 | 9 | R-indexnow | 2026-07-25 | `indexnow-yandex-make` | updated | remastered_local |
 | 10 | 35 | 9 | B10 | 2026-07-25 | `ollama-lokalnaya-llm-dlya-biznesa` | tldr_antipattern | remastered_local |
 | 11 | 35 | 9 | B07 | 2026-07-25 | `postroenie-rag-sistemy-vektornaya-baza` | tldr_antipattern | remastered_local |
-| 12 | 35 | 9 | — | 2026-07-11 | `semanticheskoe-yadro-cursor-wordstat` | updated | pending |
-| 13 | 35 | 9 | — | 2026-07-14 | `seo-audit-sajta-cursor-geo-skill` | updated | pending |
-| 14 | 35 | 9 | — | 2026-07-16 | `vnutrennyaya-perelinkovka-statej-kontent-zavod` | updated | pending |
-| 15 | 30 | 7 | — | 2026-07-23 | `kak-nastroit-avtoposting-telegram-cloud-agents` | steps, table, updated | pending |
-| 16 | 30 | 7 | — | 2026-07-25 | `kak-proverit-limity-cursor-pered-agentami` | steps, table, updated | pending |
-| 17 | 30 | 7 | — | 2026-07-21 | `kak-ustanovit-aura-dizajn-subagent-cursor` | steps, table, updated | pending |
-| 18 | 25 | 10 | — | 2026-07-15 | `prodvizhenie-v-nejrosetyah-alisa-checklist` | ok | pending |
-| 19 | 18 | 8 | — | 2026-07-24 | `kak-nastroit-cursor-automations-po-webhook` | table, updated | pending |
-| 20 | 18 | 8 | — | 2026-07-21 | `kak-nastroit-ruleset-i-skill-cursor` | table, updated | pending |
-| 21 | 18 | 8 | — | 2026-07-21 | `kak-podklyuchit-mcp-subagentam-cursor` | table, updated | pending |
-| 22 | 18 | 8 | — | 2026-07-25 | `kak-udalit-fon-nejrosetyu-mcp-cursor` | table, updated | pending |
-| 23 | 18 | 8 | — | 2026-07-21 | `kak-zapustit-lokalnyy-ai-agent-cursor-sdk` | table, updated | pending |
-| 24 | 18 | 8 | — | 2026-07-10 | `open-graph-sait-cursor-ai` | table, updated | pending |
-| 25 | 18 | 8 | — | 2026-07-20 | `roli-subagentov-cursor-orchestrator` | table, updated | pending |
-| 26 | 18 | 8 | — | 2026-07-18 | `yandeks-disk-api-make-kontent-zavod` | table, updated | pending |
-| 27 | 12 | 9 | — | 2026-07-22 | `kak-ustanovit-karuselka-instagram-subagent-cursor` | steps | pending |
-| 28 | 12 | 9 | — | 2026-07-22 | `kak-ustanovit-yadryshko-seo-subagent-cursor` | steps | pending |
-| 29 | 10 | 9 | — | 2026-07-11 | `ai-agent-marketing-cursor-subagents` | updated | pending |
-| 30 | 10 | 9 | — | 2026-07-18 | `avtootvetchik-telegram-make` | updated | pending |
-| 31 | 10 | 9 | — | 2026-07-05 | `cursor-ai-lending-bez-koda` | updated | pending |
-| 32 | 10 | 9 | — | 2026-07-12 | `cursor-cloud-agents-avtomatizaciya` | updated | pending |
-| 33 | 10 | 9 | — | 2026-07-17 | `cursor-composer-dlya-marketinga` | updated | pending |
+| 12 | 35 | 9 | R-semyadro | 2026-07-25 | `semanticheskoe-yadro-cursor-wordstat` | updated | remastered_local |
+| 13 | 35 | 9 | R-seoaudit | 2026-07-25 | `seo-audit-sajta-cursor-geo-skill` | updated | remastered_local |
+| 14 | 35 | 9 | R-perelink | 2026-07-25 | `vnutrennyaya-perelinkovka-statej-kontent-zavod` | updated | remastered_local |
+| 15 | 30 | 7 | R-avtopost-tg | 2026-07-25 | `kak-nastroit-avtoposting-telegram-cloud-agents` | steps, table, updated | remastered_local |
+| 16 | 30 | 7 | R-limity | 2026-07-25 | `kak-proverit-limity-cursor-pered-agentami` | steps, table, updated | remastered_local |
+| 17 | 30 | 7 | R-aura | 2026-07-25 | `kak-ustanovit-aura-dizajn-subagent-cursor` | steps, table, updated | remastered_local |
+| 18 | 25 | 10 | R-alisa | 2026-07-25 | `prodvizhenie-v-nejrosetyah-alisa-checklist` | ok | remastered_local |
+| 19 | 18 | 8 | R-webhook | 2026-07-25 | `kak-nastroit-cursor-automations-po-webhook` | table, updated | remastered_local |
+| 20 | 18 | 8 | R-ruleset | 2026-07-25 | `kak-nastroit-ruleset-i-skill-cursor` | table, updated | remastered_local |
+| 21 | 18 | 8 | R-mcp-sub | 2026-07-25 | `kak-podklyuchit-mcp-subagentam-cursor` | table, updated | remastered_local |
+| 22 | 18 | 8 | R-bg-remove | 2026-07-25 | `kak-udalit-fon-nejrosetyu-mcp-cursor` | table, updated | remastered_local |
+| 23 | 18 | 8 | R-sdk | 2026-07-25 | `kak-zapustit-lokalnyy-ai-agent-cursor-sdk` | table, updated | remastered_local |
+| 24 | 18 | 8 | R-og | 2026-07-25 | `open-graph-sait-cursor-ai` | table, updated | remastered_local |
+| 25 | 18 | 8 | R-roli | 2026-07-25 | `roli-subagentov-cursor-orchestrator` | table, updated | remastered_local |
+| 26 | 18 | 8 | R-yadisk | 2026-07-25 | `yandeks-disk-api-make-kontent-zavod` | table, updated | remastered_local |
+| 27 | 12 | 9 | R-karuselka | 2026-07-25 | `kak-ustanovit-karuselka-instagram-subagent-cursor` | steps | remastered_local |
+| 28 | 12 | 9 | R-yadryshko | 2026-07-25 | `kak-ustanovit-yadryshko-seo-subagent-cursor` | steps | remastered_local |
+| 29 | 10 | 9 | R-ai-mkt | 2026-07-25 | `ai-agent-marketing-cursor-subagents` | updated | remastered_local |
+| 30 | 10 | 9 | R-avtootvet | 2026-07-25 | `avtootvetchik-telegram-make` | updated | remastered_local |
+| 31 | 10 | 9 | R-lending | 2026-07-25 | `cursor-ai-lending-bez-koda` | updated | remastered_local |
+| 32 | 10 | 9 | R-cloud-ag | 2026-07-25 | `cursor-cloud-agents-avtomatizaciya` | updated | remastered_local |
+| 33 | 10 | 9 | R-composer | 2026-07-25 | `cursor-composer-dlya-marketinga` | updated | remastered_local |
 | 34 | 10 | 9 | — | 2026-07-13 | `cursor-ekonomika-ai-agentov` | updated | pending |
 | 35 | 10 | 9 | — | 2026-07-16 | `cursor-skills-dlya-marketinga` | updated | pending |
 | 36 | 10 | 9 | — | 2026-07-12 | `design-md-cursor-ai` | updated | pending |
