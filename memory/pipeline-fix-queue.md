@@ -24,6 +24,7 @@ category: qa
 - Зафиксировал remaster-hard PASS и полный GEO QA verdict=FIX в `article-qa.md`.
 - `research-notes-gate` BLOCK по legacy notes / stale `research_date=2026-06-11` отмечен как warning для remaster (не hard-fail всего батча).
 - Cover/schema для B04 не разблокированы до writer FIX human-voice.
+- **Writer hotfix 2026-07-25:** в lead/H2.1–H2.2 добавлены whitelist-маркеры (`например`, `на практике`, `типичная ошибка` + `проблема`/`не работает`/`боль`); KB-правки сохранены; `human_voice_gate` + `html_linter` → PASS; `article-qa.md` verdict=PASS; publish не запускался.
 
 ### Durable fix needed before next run
 - GEO remaster writer checklist: при снятии ярлыка TL;DR сохранять ≥2 concrete markers (`например`, `на практике`, `типичная ошибка`, …) и явную pain-лексику в lead.
@@ -62,7 +63,7 @@ files_changed:
 checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_human_voice_gate.py`
 - `rg` на секцию Human-voice markers / GEO remaster checklist
-commit: 59e5c78
+commit: 74596ed
 
 ## INC-20260725-1415-writer-b01-duplicate-faq-h2
 status: fixed
@@ -119,7 +120,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_html_linter.py`
 - smoke: duplicate FAQ detect on «FAQ и schema…» + «Частые вопросы»
 - `python3 scripts/excalibur_blog_html_linter.py memory/blog/articles/B01-primer-seo-stati/article.html` → PASS
-commit: 59e5c78
+commit: 74596ed
 
 ## INC-20260616-2015-geo-qa-html-cli-mismatch
 status: fixed
@@ -171,7 +172,7 @@ checks_run:
 - `python3 scripts/excalibur_blog_cannibalization_guard.py --help`
 - `rg` check for old Writer `<pre><code>` instruction strings
 - `rg` check for old cannibalization `--article-dir` command in source docs
-commit: 59e5c78
+commit: pending-parent-commit
 
 ## INC-20260616-2018-cover-toxic-sticker
 status: fixed
@@ -222,7 +223,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_cover_quad_prompt.py`
 - JSON parse for `memory/cover/quad-style-digital-meme-collage-ru.json`
 - JSON parse for `memory/cover/cover-design-code.json`
-commit: 59e5c78
+commit: pending-parent-commit
 
 ## INC-20260616-1950-scout-wordstat-format
 status: fixed
@@ -263,7 +264,7 @@ files_changed:
 - `shared/agent-pipeline-pitfalls.md`
 checks_run:
 - `rg` check for Wordstat cluster-first/totalCount guidance in Scout source docs
-commit: 59e5c78
+commit: pending-parent-commit
 
 ## INC-20260616-2031-indexer-python-missing
 status: fixed
@@ -310,7 +311,7 @@ files_changed:
 - `shared/agent-pipeline-pitfalls.md`
 checks_run:
 - `rg` check for old `python scripts/excalibur_blog_interlinker.py` and `python scripts/excalibur_blog_llms_generator.py` in source docs
-commit: 59e5c78
+commit: pending-parent-commit
 
 
 ## INC-20260616-2042-publish-ssh-root-dot
@@ -364,7 +365,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_wp_publish.py`
 - `python3 scripts/excalibur_blog_wp_publish.py --env-check` (JSON output validated; non-publish env may return exit 1)
 - `python3 -m json.tool /tmp/excalibur_publish_env_check.json`
-commit: 59e5c78
+commit: pending-parent-commit
 
 ## Fixed incidents
 
