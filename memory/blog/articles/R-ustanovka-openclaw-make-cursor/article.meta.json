@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-openclaw",
+  "slug": "ustanovka-openclaw-make-cursor",
+  "title": "Установка OpenClaw: gateway, skill и связка с Make за вечер",
+  "wp_post_id": 14271,
+  "primary_query": "установка openclaw",
+  "secondary_queries": [
+    "openclaw make",
+    "openclaw skill",
+    "gateway openclaw"
+  ],
+  "char_count": 9060,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/ustanovka-openclaw-make-cursor/",
+  "datePublished": "2026-07-14",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "OpenClaw за вечер",
+    "gateway и skill",
+    "связка с Make",
+    "один прогон"
+  ],
+  "meta_ab": {
+    "title_seo": "Установка OpenClaw: gateway, skill и Make за вечер",
+    "title_ctr": "Поставили и тишина? Gateway, skill и Run once",
+    "title_aeo": "Как установить OpenClaw и связать с Make?",
+    "description_seo": "Gateway, один skill и связка с Make. Без зоопарка без проверки.",
+    "description_ctr": "Нужен рабочий прогон, не установка ради установки.",
+    "description_aeo": "OpenClaw: шаги установки, skill, ошибки и критерий готово."
+  }
+}

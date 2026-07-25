@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-excalibur",
+  "slug": "kak-ustanovit-excalibur-avtoblog-cursor",
+  "title": "ИИ для блога: трафик из research, не вода из чата",
+  "wp_post_id": 14570,
+  "primary_query": "ии для блога",
+  "secondary_queries": [
+    "excalibur cursor",
+    "автоблог",
+    "research gate"
+  ],
+  "char_count": 8682,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/",
+  "datePublished": "2026-07-23",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Excalibur автоблог",
+    "research PASS",
+    "не вода из чата",
+    "article_dir"
+  ],
+  "meta_ab": {
+    "title_seo": "ИИ для блога: Excalibur с research, не вода из чата",
+    "title_ctr": "Чат пишет воду? Поставьте пайплайн с research gate",
+    "title_aeo": "Как установить Excalibur автоблог в Cursor?",
+    "description_seo": "Установка, preflight и research PASS до writer. Без skip gate и публикации наугад.",
+    "description_ctr": "Нужен трафик из фактов, не абзац из воздуха.",
+    "description_aeo": "Excalibur: установка, gates, что не публиковать без QA."
+  }
+}

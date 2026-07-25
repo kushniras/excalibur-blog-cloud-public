@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/#webpage",
+      "url": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/",
+      "name": "Написать статью с помощью нейросети в Cursor за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Бриф → каркас → черновик → проверка цифр. Без одного промпта на 9000 знаков воды."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/#webpage"
+      },
+      "headline": "Написать статью с помощью нейросети в Cursor за вечер",
+      "description": "Бриф → каркас → черновик → проверка цифр. Без одного промпта на 9000 знаков воды.",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/napisat-statyu-nejrosetyu-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какая нейросеть лучше, чтобы написать статью новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не рейтинг сервисов, а связка: любая сильная модель внутри Cursor + brief.md + файл на диске. Сделайте один черновик в проекте – так вы сравните качество спокойнее, чем в десяти вкладках."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Cursor отличается от ChatGPT для текста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В ChatGPT текст живёт в истории чата. В Cursor используйте @-файлы: бриф и draft рядом, правки по разделам, воспроизводимый путь. Проверьте завтра утром: файл drafts/ всё ещё на месте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли семантическое ядро до черновика?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Желательно, но не блокер. Добавьте 3–5 ключей вручную или кусок брифа из Ядрышко. Полный разбор – в гайде по семантическому ядру; сегодня хватит primary и двух LSI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сразу заливать в Tilda Потоки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, но после human-in-the-loop. Не делайте автозаливку сырого чата: сначала файл с H2 и проверенными фактами, потом агент Потоков."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько правок делать руками?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир на вечер: убрать воду в каждом H2, добавить один живой пример, вычистить фейковые цифры. Избегайте \"идеальной\" полировки до утра – лучше один готовый файл, чем три недоделанных."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли этот гайд для научной статьи?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Здесь SEO и маркетинг-черновик. Научный текст требует цитирования и метода; не подставляйте этот workflow под ВАК-формат."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать с хвостом \"бесплатно / онлайн\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Честно: бесплатный tier или веб-чат даёт черновик, но Agent с длинными правками файлов часто на платном плане. Используйте бесплатный режим для плана H2; полный draft в проекте – когда доступ к Agent есть."
+          }
+        }
+      ]
+    }
+  ]
+}

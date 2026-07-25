@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-kviz",
+  "slug": "kviz-lidov-make-telegram",
+  "title": "Создать квиз для лидов в Telegram через Make за вечер",
+  "wp_post_id": 14305,
+  "primary_query": "создать квиз для лидов",
+  "secondary_queries": [
+    "квиз telegram make",
+    "марквиз альтернатива",
+    "лид квиз бот"
+  ],
+  "char_count": 9500,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kviz-lidov-make-telegram/",
+  "datePublished": "2026-07-15",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "квиз для лидов в Telegram",
+    "квиз на Make без Marquiz",
+    "3–5 вопросов и Sheets",
+    "Run once перед /start"
+  ],
+  "meta_ab": {
+    "title_seo": "Создать квиз для лидов в Telegram через Make за вечер",
+    "title_ctr": "Marquiz упёрся в 10 заявок? Квиз-бот на Make",
+    "title_aeo": "Как создать квиз для лидов в Telegram через Make?",
+    "description_seo": "Лид-квиз 3–5 вопросов в Telegram на Make: BotFather, Router, Sheets и пуш. Без лимита 10 заявок Marquiz Free.",
+    "description_ctr": "Страшно платить за заявки в конструкторе? Соберите бота и проверьте Run once.",
+    "description_aeo": "Квиз для лидов: отличие от викторины, модули Make и типичные ошибки Watch Updates."
+  }
+}

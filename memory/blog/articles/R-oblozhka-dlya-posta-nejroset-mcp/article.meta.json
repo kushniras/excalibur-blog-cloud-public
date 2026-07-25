@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-oblozhka",
+  "slug": "oblozhka-dlya-posta-nejroset-mcp",
+  "title": "Обложка для поста: 3 размера за вечер без дизайнера",
+  "wp_post_id": 14396,
+  "primary_query": "обложка для поста",
+  "secondary_queries": [
+    "обложка mcp cursor",
+    "три размера поста",
+    "нейросеть обложка"
+  ],
+  "char_count": 9124,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/",
+  "datePublished": "2026-07-17",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "обложка 3 размера",
+    "MCP вместо Canva часа",
+    "кириллица на кадре",
+    "файл в проекте"
+  ],
+  "meta_ab": {
+    "title_seo": "Обложка для поста: 3 размера за вечер без дизайнера",
+    "title_ctr": "Canva съела час? Три размера обложки через MCP",
+    "title_aeo": "Как сделать обложку для поста нейросетью в Cursor?",
+    "description_seo": "MCP, три размера и проверка читаемости заголовка. Файл сразу в папке проекта.",
+    "description_ctr": "Текст готов, картинки нет? Соберите обложку без дизайнера.",
+    "description_aeo": "Обложка поста: размеры, MCP, кириллица и типичные ошибки."
+  }
+}

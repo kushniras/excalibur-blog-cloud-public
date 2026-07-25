@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/mudbord-nejroset-cursor-marketing/#webpage",
+      "url": "https://mayai.ru/mudbord-nejroset-cursor-marketing/",
+      "name": "Создать мудборд нейросетью в Cursor: палитра и референсы за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Палитра, 5 референсов и короткое правило стиля для агента. Без доски на 40 картинок."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/mudbord-nejroset-cursor-marketing/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/mudbord-nejroset-cursor-marketing/#webpage"
+      },
+      "headline": "Создать мудборд нейросетью в Cursor: палитра и референсы за вечер",
+      "description": "Палитра, 5 референсов и короткое правило стиля для агента. Без доски на 40 картинок.",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/mudbord-nejroset-cursor-marketing/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/mudbord-nejroset-cursor-marketing/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/mudbord-nejroset-cursor-marketing/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем мудборд отличается от DESIGN.md?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Мудборд фиксирует настроение, референсы, палитру и запреты. DESIGN.md описывает системные токены и компоненты. Сделайте сначала мудборд, затем передайте его агенту как вход для DESIGN.md – так стиль не \"плывёт\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли Figma, если есть Cursor и MCP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для первого мудборда лендинга – нет. Соберите коллаж и правила в проекте через MCP. Figma полезна позже, если команда уже в ней работает; новичок может стартовать без неё."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько референсов достаточно новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир – 6–9 кадров после curation. Сорок пинов без HEX почти всегда вредят: агент выбирает случайные три. Уберите лишнее до одной страницы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сразу генерировать hero после мудборда?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, но только после палитры и do/don’t. Сначала проверьте, что правила лежат в файле. Потом – один hero-atlas (например через PARALAXIMUS), не серия \"на удачу\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как создать мудборд ИИ без стоковых фото?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Подключите MCP, приложите бриф и сгенерируйте кадры под оффер в Cursor. Сохраните refs/ + moodboard.md в репозитории. Не оставляйте результат только на чужой доске \"мудборд онлайн\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что писать агенту после мудборда?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Короткий промпт: прочитай файл мудборда, не меняй HEX и запреты, подготовь черновик DESIGN.md. Используйте ту же папку проекта – так workflow остаётся цельным."
+          }
+        }
+      ]
+    }
+  ]
+}

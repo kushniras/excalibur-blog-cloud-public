@@ -1,0 +1,127 @@
+<p>Заголовок на сайте уже новый, а в Яндексе всё ещё старый – знакомо? Боль в том, что после каждой правки вы снова открываете Вебмастер и копируете URL руками, боясь пропустить страницу и &#171;сжечь&#187; квоту. Ответ проще страха: таблица URL в Google Sheets и один сценарий Make с HTTP POST в очередь переобхода. За вечер вы получите task_id, остаток квоты и статус &#171;В очереди&#187; – без кода и без копипаста в кабинете.</p>
+<blockquote><p>
+Переобход страниц – это не &#171;магия индексации&#187;, а просьба роботу Яндекса раньше заглянуть на ваши URL. IndexNow только стучит об изменении; Sitemap и обход по Метрике работают фоном. За один вечер: OAuth Вебмастера → user-id и host-id → Sheets со списком URL → Make HTTP POST в recrawl/queue → task_id и quota_remainder в таблице. Ориентир успеха: HTTP 202 в History и URL со статусом &#171;В очереди&#187; в кабинете.
+</p></blockquote>
+<p>Лена ведёт контент-завод: пост → сайт → Telegram. После правки заголовка она каждый раз лезет в Вебмастер и вставляет ссылки руками. Друг сказал &#171;сделай через API в Make&#187; – она увидела OAuth и JSON и испугалась, что &#171;сломает аккаунт&#187;. На практике это тот же HTTP-кубик, что для любого API: токен лежит в Connection, а не в чате.</p>
+<p>Сюрприз из справки Яндекса: статус &#171;Заявка обработана&#187; значит лишь, что робот посетил страницу – это не гарантия попадания в индекс. А официальная справка IndexNow прямо советует маленьким сайтам вместо IndexNow пользоваться инструментом &#171;Переобход страниц&#187;. Ниже – рабочий workflow без программиста.</p>
+<h2>Выберите инструмент: переобход, IndexNow или ожидание робота</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/pereobhod-stranic-yandeks-vebmaster-make-inline-01.jpg" alt="Сравнение: переобход, IndexNow и Sitemap/Метрика — когда что жать после правки" loading="lazy"><br />
+</figure>
+<p>Какую боль закрываем: путаницу &#171;что жать после публикации&#187;. Переобход страниц яндекса – это приоритетная очередь обхода в Вебмастере. IndexNow – короткое уведомление поисковикам об изменении. Sitemap и обход по Метрике – постоянный фон, не &#171;кнопка после правки&#187;.</p>
+<table>
+<thead>
+<tr>
+<th>Задача</th>
+<th>Инструмент</th>
+<th>Что получите</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Срочно попросить робота прийти на URL</td>
+<td>Переобход (UI или API)</td>
+<td>URL в очереди, task_id, квота</td>
+</tr>
+<tr>
+<td>Быстро стукнуть об изменении</td>
+<td><a href="/indexnow-yandex-make/">IndexNow через Make</a></td>
+<td>Пинг без гарантии индексации</td>
+</tr>
+<tr>
+<td>Долгосрочный обход сайта</td>
+<td>Sitemap + Метрика</td>
+<td>Фоновый обход, не ручная очередь</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>
+<b>Вердикт для новичка:</b> после срочной правки заголовка, редиректа или фикса ошибки используйте переобход. Для массовых мелких правок часто хватает IndexNow. Не делайте оба действия &#171;на всякий случай&#187; без понимания квоты.
+</p></blockquote>
+<p>Перед массовой отправкой имеет смысл пройтись по диагностике: закрыта ли страница от индексации, отдают ли URL код 200. В этом помогает <a href="/seo-audit-sajta-cursor-geo-skill/">SEO+GEO skill для Cursor</a> и соседний гайд по <a href="/robots-txt-sitemap-cursor-ai/">robots.txt и sitemap</a>.</p>
+<h2>Получите OAuth Вебмастера: токен, user-id и host-id</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/pereobhod-stranic-yandeks-vebmaster-make-inline-02.jpg" alt="Схема OAuth Вебмастера: токен, user-id и host-id без страха API" loading="lazy"><br />
+</figure>
+<p>Боль: &#171;API только для программистов&#187;. Сделайте приложение на oauth.yandex.ru как &#171;логин для робота&#187;, а не как код на сервере.</p>
+<ol>
+<li>Шаг 1. Создайте приложение типа &#171;Веб-сервисы&#187; на oauth.yandex.ru.</li>
+<li>Шаг 2. Укажите Redirect URI <i>https://oauth.yandex.ru/verification_code</i>.</li>
+<li>Шаг 3. Выдайте доступы webmaster:hostinfo и webmaster:verify.</li>
+<li>Шаг 4. Скопируйте OAuth-токен (действует около 6 месяцев) только в Connection Make.</li>
+<li>Шаг 5. Через HTTP GET получите user-id: запрос к /v4/user.</li>
+<li>Шаг 6. Через GET /v4/user/{user-id}/hosts найдите host-id подтверждённого сайта.</li>
+<li>Шаг 7. Проверьте квоту GET …/recrawl/quota – запишите daily_quota и quota_remainder в Sheets.</li>
+</ol>
+<p>Типичная ошибка: кинуть токен в Telegram &#171;на память&#187;. Уберите его из чатов и из публичных документов. Без токена API отвечает 401 – это не &#171;сломали сайт&#187;, а просто нет авторизации. Как повесить OAuth/Bearer на HTTP-модуль, смотрите в <a rel="noopener noreferrer" href="https://help.make.com/connect-to-any-web-service-using-oauth-20" target="_blank">справке Make по OAuth 2.0</a>.</p>
+<h2>Соберите workflow Make: Sheets → Iterator → HTTP POST</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/pereobhod-stranic-yandeks-vebmaster-make-inline-03.jpg" alt="Мокап Make: Sheets → Iterator → HTTP POST в очередь переобхода" loading="lazy"><br />
+</figure>
+<p><!-- cover:inline_0 after this H2 --></p>
+<p>Боль: час копипаста URL после каждой публикации. Workflow на пальцах: таблица со списком ссылок → кубик, который берёт строки по одной → HTTP-запрос &#171;поставь URL в очередь&#187; → запись ответа обратно в строку.</p>
+<ol>
+<li>Откройте <a rel="noopener noreferrer" href="https://apps.make.com/http" target="_blank">приложение HTTP в Make</a> и создайте сценарий.</li>
+<li>Добавьте Google Sheets: колонка URL (и пустые колонки task_id, quota_remainder, status).</li>
+<li>Поставьте Iterator по строкам таблицы.</li>
+<li>Сделайте HTTP Make a request: POST на https://api.webmaster.yandex.net/v4/user/{user-id}/hosts/{host-id}/recrawl/queue</li>
+<li>В теле JSON укажите {&#171;url&#187;:&#187;{{url}}&#187;}. В заголовке – Authorization с OAuth-токеном.</li>
+<li>Запишите в Sheets поля task_id и quota_remainder из ответа 202.</li>
+</ol>
+<blockquote><p>
+<b>Схема дня 1:</b><br />
+Sheets (URL) → Iterator → HTTP POST recrawl/queue → Update row (task_id + quota_remainder) → сверка в Вебмастере
+</p></blockquote>
+<p>Например, для контент-завода достаточно 1–3 URL новой статьи, а не всей карты сайта. Если сценарии Make ещё в новинку, разберите базу в гайде <a href="/make-ai-agents-mcp-avtomatizaciya/">автоматизация Make с AI Agents</a> или возьмите готовый каркас из <a rel="noopener noreferrer" href="https://kv-ai.ru/blyuprinty-make-com-podpiska" target="_blank">папки блюпринтов</a>.</p>
+<h2>Проверьте первый прогон: History, task_id и очередь</h2>
+<p><!-- cover:inline_1 after this H2 --></p>
+<p>Боль: &#171;запустил и не понимаю, сработало ли&#187;. Критерий простой и видимый.</p>
+<p>Сделайте Run once на одном тестовом URL, который уже отдаёт 200 и не закрыт от индексации. В History Make должен быть HTTP 202 с task_id и числом quota_remainder. Затем откройте Вебмастер: Индексирование → Переобход страниц – тестовый URL со статусом &#171;В очереди&#187; или позже &#171;Заявка обработана&#187;.</p>
+<p>Проверьте три вещи до FAQ-уровня спокойствия:</p>
+<ul>
+<li>в Sheets записаны task_id и остаток квоты;</li>
+<li>в кабинете URL виден в очереди переобхода;</li>
+<li>страница открывается без noindex и без блокировки в robots.</li>
+</ul>
+<p>Индексирование после отправки может занять от 3 до 7 дней – ориентир из справки Яндекса, не &#171;мгновенный ТОП&#187;. Если нужно усилить саму SEO-страницу до переобхода, смотрите <a href="/seo-stranica-cursor-ai-bez-koda/">как собрать SEO-страницу в Cursor</a>. Для аудита перед очередью пригодится <a rel="noopener noreferrer" href="https://github.com/Horosheff/google-yandex-seo-skill" target="_blank">SEO+GEO skill на GitHub</a>.</p>
+<h2>Чеклист квоты и ошибок: 409, 429 и что не слать</h2>
+<p><!-- cover:inline_2 after this H2 --></p>
+<p>Боль: сжечь суточную квоту или слать один URL дважды. Используйте этот чеклист перед каждым массовым прогоном.</p>
+<ol>
+<li>Сначала GET recrawl/quota – не гадайте &#171;сколько можно сегодня&#187;.</li>
+<li>Шлите только HTML/контент-URL: статьи, лендинги, карточки.</li>
+<li>Не делайте переобход для robots.txt, favicon.ico и Sitemap – у них другие разделы Вебмастера.</li>
+<li>Добавьте Sleep между запросами, чтобы не долбить API пачкой.</li>
+<li>При 409 URL_ALREADY_ADDED – URL уже в очереди: не ретрайте сегодня.</li>
+<li>При 429 QUOTA_EXCEEDED – остановите сценарий и дождитесь сброса квоты.</li>
+<li>Раз в ~6 месяцев обновите OAuth-токен, иначе History уйдёт в 401.</li>
+<li>Избегайте отправки URL, которые ещё отдают 404 или закрыты meta robots.</li>
+</ol>
+<p>В реальном проекте сообщество уже собирает обёртки и MCP вокруг тех же endpoint queue/quota – сигнал, что боль автоматизации живая. Вам на день 1 достаточно Make HTTP, без Python-клиента.</p>
+<p>Когда хватит IndexNow, а когда нужен именно переобход: срочная правка title/редирект/фикс после ошибки → переобход; регулярные мелкие апдейты большого объёма → чаще IndexNow (см. <a href="/indexnow-yandex-make/">соседний гайд</a>). Для конвейера публикаций держите в уме <a href="/avtonomnyj-kontent-zavod-nejroseti/">контент-завод на нейросетях</a>: переобход – финальный кубик после выкладки, не замена качеству текста.</p>
+<h2>Что сделать сегодня и куда расти</h2>
+<p>Результат, который вы можете получить сегодня без команды разработчиков:</p>
+<ul>
+<li>OAuth-токен Вебмастера в Connection Make;</li>
+<li>одна строка в Sheets с URL статьи;</li>
+<li>успешный HTTP 202 с task_id и quota_remainder;</li>
+<li>URL в статусе &#171;В очереди&#187; в Вебмастере.</li>
+</ul>
+<p>Дальше: привязать сценарий к автопубликации, добавить уведомление в Telegram через <a rel="noopener noreferrer" href="https://apps.make.com/telegram" target="_blank">приложение Telegram в Make</a>, расширить таблицу статусами. Если хотите системно освоить кубики и HTTP без страха API – начните с бесплатных уроков <a rel="noopener noreferrer" href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курса по Make.com</a>. Свежие разборы РФ-стека и SEO-модулей – в канале <a rel="noopener noreferrer" href="https://t.me/maya_pro" target="_blank">@maya_pro</a>.</p>
+<blockquote><p>
+  <b>Материал проверен:</b> <a rel="noopener noreferrer" href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).<br />
+  <b>Опора на источники:</b> справка Яндекса &#171;Переобход страниц&#187; и &#171;Новые и изменённые страницы&#187;, API POST recrawl/queue и GET recrawl/quota, OAuth Вебмастера (токен ~6 месяцев); Make HTTP (apps.make.com/http) и help.make.com OAuth; Wordstat RU на 2026-07-15 – &#171;переобход страниц&#187; 371, parent &#171;яндекс вебмастер&#187; 20159.
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Чем переобход страниц отличается от IndexNow?</h3>
+<p>IndexNow уведомляет поисковики об изменении URL. Переобход ставит адрес в приоритетную очередь обхода Яндекс Вебмастера. Можно совмещать, но сначала выберите задачу: &#171;стукнуть&#187; или &#171;попросить робота прийти раньше&#187;.</p>
+<h3>Сколько URL в сутки можно отправить на переобход?</h3>
+<p>Смотрите свою квоту через GET recrawl/quota (daily_quota и quota_remainder). В кабинете лимит тоже суточный и обновляется ежедневно. Не копируйте чужие цифры &#171;20 или 10000&#187; без проверки своего host-id.</p>
+<h3>Нужен ли OAuth или хватит кабинета Вебмастера?</h3>
+<p>Для пары URL вручную хватит раздела &#171;Переобход страниц&#187;. Для Make и автопубликации нужен OAuth-токен и API. Токен кладите только в Connection, не в чат.</p>
+<h3>Можно ли слать URL сразу после публикации в Make?</h3>
+<p>Да, сразу после того как страница отдаёт 200 и не закрыта от индексации. Иначе в кабинете увидите статус &#171;Ошибка&#187;, а квота уже потрачена.</p>
+<h3>Что делать при QUOTA_EXCEEDED или URL_ALREADY_ADDED?</h3>
+<p>При 429 остановите сценарий и дождитесь сброса квоты. При 409 URL уже в очереди – не отправляйте повторно сегодня. Запишите код ошибки в колонку status, чтобы не гадать по History.</p>
+<h3>Почему &#171;Заявка обработана&#187; не значит, что страница в индексе?</h3>
+<p>Это значит, что робот посетил URL. Данные могут обновляться до двух недель, а индексация всё равно зависит от robots, meta и качества страницы. Переобход ускоряет визит, но не покупает место в выдаче.</p>

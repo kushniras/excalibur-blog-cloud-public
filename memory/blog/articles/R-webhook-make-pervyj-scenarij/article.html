@@ -1,0 +1,127 @@
+<p>Вы вставили Webhook (вебхук) – это ссылка-розетка: сайт сам шлёт заявку на ваш URL. Вставили адрес в приёмник формы, отправили тест – и в Make пусто, в таблице тишина. Чаще всего сценарий не слушает (забыли Run once – "запустить один раз"), структура полей ещё не определена, или в ссылке затесался пробел. Пока заявки копируете руками, лиды теряются. За вечер соберём розетку: один URL принимает событие с сайта, пишет строку в Google Sheets и шлёт "новая заявка" в Telegram – без кода.</p>
+<h2 id="constraints-webhook-make">Когда webhook не нужен</h2>
+<p>Если событие редкое и вы у экрана – хватит ручного запуска. Если нет источника сигнала – не создавайте пустой хук. Типичная ошибка: сценарий без Test и без записи в Sheets. На практике Custom Webhook → один модуль → проверка payload.</p>
+
+<blockquote>
+<p>Webhook (вебхук) – это ссылка-розетка: сайт сам присылает заявку, а не вы ходите за ней. В Make модуль Custom Webhook даёт уникальный URL → строка в таблице → пинг в Telegram. Это не бот заявок и не квиз: универсальный вход для формы, Tilda или тестового POST. Заявки сразу в таблице и мессенджере – меньше потерянных лидов.</p>
+</blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<p>В поиске по слову "webhook" часто попадаешь в Discord или Bitrix. Для заявок с сайта нужна другая картина: один Custom Webhook в Make, свой URL на сценарий (тот же адрес нельзя повесить на два сценария). Ниже – по шагам, почему тест молчит и как довести до строки плюс уведомления.</p>
+<h2>Зачем webhook маркетологу – и чем он не является</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/webhook-make-pervyj-scenarij-inline-01.jpg" alt="Сравнение: webhook не бот и не квиз – вход для заявок в Make" loading="lazy"><br>
+</figure>
+<p>Смысл простой: заявка с лендинга сразу попадает в таблицу и мессенджер. Меньше ручного копирования, быстрее ответ человеку. Webhook url – адрес, куда форма шлёт данные; api webhook означает "сайт дернул вашу ссылку событием" (API – это запрос данных по команде, вебхук ждёт событие сам). Без такой розетки вы вечером снова открываете почту формы и вручную переносите контакты.</p>
+<p>Граница с соседними сценариями помогает не уйти в чужой гайд:</p>
+<ul>
+<li>Бот заявок в Telegram – человек пишет боту; здесь сайт сам шлёт POST. См. <a href="/bot-dlya-zayavok-telegram-make/">бот для заявок через Make</a>.</li>
+<li>Квиз с ветками – отдельный продукт; здесь нейтральная розетка. См. <a href="/kviz-lidov-make-telegram/">квиз лидов</a>.</li>
+<li>Нативный модуль Google Forms – удобно, если форма уже в Google. Custom Webhook нужен, когда источник любой: Tilda, свой лендинг, Postman. См. <a href="/google-forms-make-zayavki/">Google Forms → Make</a>.</li>
+</ul>
+<p>Ориентир на сегодня: входящий вебхук принимает событие; исходящий – вы сами стучитесь наружу. Для заявок с сайта вам нужен входящий. Webhooks telegram в выдаче часто про ботов – не путайте с входящим URL в Make.</p>
+<p></p>
+<h2>Подготовьте лист и уведомления за 15 минут</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/webhook-make-pervyj-scenarij-inline-02.jpg" alt="Схема подготовки: лист Google Sheets и Telegram-уведомления" loading="lazy"><br>
+</figure>
+<p>Не делайте боевую CRM первой остановкой. На практике новичок боится "сломать таблицу" – снимите страх отдельным листом. Если тест пойдёт криво, пострадает только "Заявки_тест", а не клиентская база.</p>
+<ol>
+<li>Создайте Google-таблицу с листом "Заявки_тест".</li>
+<li>Добавьте колонки: дата, источник, имя, контакт, текст.</li>
+<li>Откройте аккаунт Make и новый пустой сценарий.</li>
+<li>Подготовьте Telegram-бота для пинга себе: модуль описан в <a target="_blank" href="https://apps.make.com/telegram">apps.make.com/telegram</a>.</li>
+<li>Держите под рукой Postman, форму или Tilda – любой источник тестового POST.</li>
+<li>Проверьте, что таблица доступна тому Google-аккаунту, которым подключите Make.</li>
+</ol>
+<p>Прогресс-маркер: лист готов, бот на связи, сценарий пустой – можно ставить розетку. Шаг подготовки экономит час отладки, когда позже окажется, что колонки названы иначе, чем поля формы.</p>
+<h2>Создайте Custom Webhook и скопируйте URL</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/webhook-make-pervyj-scenarij-inline-03.jpg" alt="Чеклист: создать Custom Webhook в Make и скопировать URL" loading="lazy"><br>
+</figure>
+<p>В сценарии добавьте триггер Webhooks → Custom Webhook → Add. Make покажет уникальный webhook url. Скопируйте его целиком, без пробелов в начале и в конце. Как создать вебхук без кода – ровно этот клик: модуль сам выдаёт адрес.</p>
+<ol>
+<li>Сделайте триггер Custom Webhook первым модулем сценария.</li>
+<li>Скопируйте URL в блокнот (не в общий чат и не в сторис).</li>
+<li>Не делайте этот же URL вторым сценарием – официально один webhook = один сценарий; для второй цепи нужен новый адрес.</li>
+<li>Если URL уже светили публично – уберите его из чатов и создайте новый webhook.</li>
+<li>Опционально позже: API key в заголовке X-Make-Apikey или IP restrictions в настройках модуля (<a target="_blank" href="https://apps.make.com/gateway">apps.make.com/gateway</a>).</li>
+<li>Для исходящих запросов из Make к чужим API используйте <a target="_blank" href="https://apps.make.com/http">HTTP-модуль</a> – это другой инструмент, не путайте с входящей розеткой.</li>
+<li>Официальный шаблон цепочки webhook → строка в Sheets есть в <a target="_blank" href="https://github.com/integromat/make-skills/blob/main/skills/make-scenario-building/blueprint-construction.md">make-skills на GitHub</a>.</li>
+</ol>
+<p>Прогресс-маркер: URL у вас в блокноте, сценарий ещё выключен – рано вставлять в прод-форму. Сначала научите Make "узнавать" поля на тесте.</p>
+<p></p>
+<h2>Как принять тест: Listening (режим ожидания), поля и типичная ошибка</h2>
+<p>Типичная ошибка из комьюнити Make: отправили POST, а полей для маппинга нет. Очередь сообщений ≠ структура данных. Нужен Run once: Listening – это режим "слушаю тест", плюс реальный payload. Без этого шаг маппинга в Sheets кликать некуда.</p>
+<ol>
+<li>Нажмите Run once на сценарии – модуль перейдёт в Listening (режим ожидания).</li>
+<li>Отправьте тестовый JSON, например: name, phone, message, source.</li>
+<li>Дождитесь, пока Make покажет поля (Determine / Detect data structure – "запомнить поля из теста").</li>
+<li>Проверьте, что в модуле видны имя, контакт и текст – не "unknown structure".</li>
+<li>Если поля пустые – повторите Run once и свежий POST; не мапьте вслепую.</li>
+<li>Для Tilda: отметьте сервис WEBHOOK в блоке формы, вставьте HTTPS URL Make, опубликуйте страницу; ответ должен уложиться в ~5 секунд (<a target="_blank" href="https://help.tilda.cc/forms/webhook">help Tilda</a>). Make по умолчанию отвечает 200 Accepted – этого обычно достаточно.</li>
+</ol>
+<p>Например, после удачного теста вы кликаете по полям в следующем модуле – без этого Sheets останется пустым, даже если History что-то показывает. Часто ломается связка именно здесь: человек смотрит историю, видит "Accepted" и думает, что маппинг уже готов.</p>
+<h2>Добавьте Google Sheets и Telegram – доведите до строки и пинга</h2>
+<p>Workflow: Custom Webhook → Google Sheets Add a Row → Telegram Send a Message. Модуль таблиц: <a target="_blank" href="https://apps.make.com/google-sheets">apps.make.com/google-sheets</a>. Это минимальная цепочка, которая уже спасает заявки от ручного копирования.</p>
+<ol>
+<li>Добавьте Google Sheets → Add a Row, выберите лист "Заявки_тест".</li>
+<li>Смапьте поля webhook на колонки дата / источник / имя / контакт / текст.</li>
+<li>Добавьте Telegram → Send a Message: "Новая заявка: {{name}}, {{phone}}".</li>
+<li>Снова Run once и тот же тестовый POST.</li>
+<li>Проверьте: новая строка в Sheets и сообщение в Telegram.</li>
+<li>Включите сценарий ON (для webhook – сразу, immediately).</li>
+<li>Избегайте публикации URL в открытых чатах после включения.</li>
+<li>Чеклист успеха: поля видны → строка есть → пинг пришёл → сценарий ON → URL не светится.</li>
+</ol>
+<p>В реальном проекте этого MVP хватает на вечер: заявки уже не теряются в почте формы. Дальше можно вести сделку в CRM – см. <a href="/amocrm-make-zayavki-sajt/">amoCRM через Make</a>. Пока CRM не подключена, таблица плюс пинг уже дают понятный первый результат.</p>
+<p></p>
+<h2>Чеклист стабильности: Tilda, 200 Accepted и безопасность</h2>
+<p>Часто ломается связка "форма шлёт – Make молчит" не из-за "сломался webhook", а из-за публикации страницы, HTTP вместо HTTPS или медленного ответа. На Tilda без галочки WEBHOOK и без publish данные просто не уходят.</p>
+<table>
+<thead>
+<tr>
+<th>Риск</th>
+<th>Что сделать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tilda ретраит заявку</td>
+<td>HTTPS URL Make, быстрый 200 Accepted, чекбокс WEBHOOK + publish</td>
+</tr>
+<tr>
+<td>Спам на URL</td>
+<td>Не светить ссылку; IP / API key; при утечке – новый webhook</td>
+</tr>
+<tr>
+<td>Нужен свой текст ответа</td>
+<td>Модуль Webhook Response (таймаут ответа до 180 с)</td>
+</tr>
+<tr>
+<td>Два сценария на один URL</td>
+<td>Нельзя: сделайте второй Custom Webhook</td>
+</tr>
+</tbody>
+</table>
+<p>Сделайте короткий прогон ещё раз тем же тестом: если строка и пинг на месте – круг замкнулся. Тот же POST, что утром ушёл в тишину, теперь даёт видимый результат. Это и есть критерий "готово": не теория про API, а строка в листе и сообщение в телефоне.</p>
+<p>Если форма ещё на стадии сборки в Cursor – рядом гайд <a href="/forma-zayavki-cursor-make/">форма заявки Cursor + Make</a>. Сравнить Make и n8n (это другой конструктор сценариев без кода): <a href="/make-ili-n8n-dlya-marketinga/">Make или n8n для маркетинга</a>. Когда одного сценария мало и нужны агенты по хуку – <a href="/cursor-cloud-agents-avtomatizaciya/">Cloud Agents</a> и <a href="/make-ai-agents-mcp-avtomatizaciya/">Make и AI-агенты</a>. Для Tilda-контента рядом полезен <a target="_blank" href="https://github.com/Horosheff/Tilda-AI-Agent-Feeds">Tilda AI Agent Feeds</a>. Готовые цепочки – в <a target="_blank" href="https://kv-ai.ru/blyuprinty-make-com-podpiska">папке блюпринтов</a>; разбор хуков и Automations – в канале <a target="_blank" href="https://t.me/maya_pro">Telegram Ковчег</a> и в <a target="_blank" href="https://max.ru/maya_pro">MAX</a>. Системно пройти Make – <a target="_blank" href="https://kv-ai.ru/obuchenie-po-make">курс по Make</a>.</p>
+<blockquote>
+<p>Материал проверен: Артур Хорошев, CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>. Профиль: <a target="_blank" href="https://kv-ai.ru/artur-horosheff">kv-ai.ru/artur-horosheff</a>.</p>
+<p>Опора на источники: Make Webhooks (apps.make.com/gateway), Telegram/HTTP/Sheets apps, Tilda Help Forms Webhook, GitHub integromat/make-skills, Make Community (unknown data structure); Wordstat по "webhook"/"вебхук" на 2026-07-17.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Чем webhook отличается от API?</h3>
+<p>API часто значит "вы сами запрашиваете данные". Webhook – событие пришло само на ваш URL. Для заявок с сайта удобнее входящий вебхук: форма дернула розетку, Make уже пишет строку.</p>
+<h3>Что такое webhook URL и куда его вставлять?</h3>
+<p>Это адрес из модуля Custom Webhook. Вставьте его в приёмник формы, Tilda (сервис WEBHOOK) или в Postman как URL для POST. Не публикуйте в открытых чатах.</p>
+<h3>Как создать вебхук в Make без кода?</h3>
+<p>Новый сценарий → Webhooks → Custom Webhook → Add → скопируйте URL. Дальше Run once, тестовый POST, Determine structure, затем Sheets и Telegram.</p>
+<h3>Можно ли принимать заявки с Tilda через webhook?</h3>
+<p>Да: HTTPS URL Make, чекбокс WEBHOOK в блоке формы, публикация страницы. Ответ уложится в лимит Tilda, если оставить стандартный 200 Accepted.</p>
+<h3>Почему после теста в Make пусто?</h3>
+<p>Проверьте Run once / Listening, свежий POST без пробела в URL и появление полей структуры. Очередь в History без Determine structure не даст маппинг в Sheets.</p>
+<h3>Чем это отличается от бота заявок в Telegram?</h3>
+<p>Бот ждёт сообщение от человека. Custom Webhook ждёт POST с сайта. Если нужен диалог в мессенджере – берите гайд про бота; если лендинг шлёт заявку – этот сценарий.</p>
+<h3>Нужен ли n8n, если есть Make webhook?</h3>
+<p>Для MVP заявок → Sheets + Telegram достаточно Make. n8n (другой конструктор сценариев) имеет смысл при других ограничениях стека – см. сравнение Make и n8n по ссылке выше.</p>

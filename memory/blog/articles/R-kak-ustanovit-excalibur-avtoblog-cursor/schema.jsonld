@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/#webpage",
+      "url": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/",
+      "name": "ИИ для блога: трафик из research, не вода из чата",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Установка, preflight и research PASS до writer. Без skip gate и публикации наугад."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/#webpage"
+      },
+      "headline": "ИИ для блога: трафик из research, не вода из чата",
+      "description": "Установка, preflight и research PASS до writer. Без skip gate и публикации наугад.",
+      "datePublished": "2026-07-23",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли доступ к WordPress в первый прогон?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Цель – локальные research-notes и черновик при publish: no. Доступ к сайту подключайте после ручной проверки текста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему две ссылки на GitHub?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EXCALIBUR – канон плагина из анонса. excalibur-blog-cloud-public даёт читаемый README быстрого старта, когда в каноне README нет."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это лучше одного чата \"напиши статью\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Роли разделены: research собирает факты в файл, затем пишется черновик. Один Composer смешивает всё в одном контексте и чаще выдаёт воду без источников – это как раз боль, из которой люди ищут \"ии для блога\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли сразу поставить Ядрышко или офис страниц?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Технически да, практически я бы не стал: смешаете критерий \"готово\" и отладку. Сначала один dry-run Excalibur до файлов статьи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это только для программистов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Маршрут тот же, что у других готовых плагинов Cursor: скачать → положить → Reload → одна команда. Код с нуля писать не нужно. Нужны Cursor, GitHub и готовность проверить папку с файлами."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли пропустить research gate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Без PASS research writer не должен стартовать – иначе получите воду и выдуманные цифры. Сначала research-notes-gate.json PASS."
+          }
+        }
+      ]
+    }
+  ]
+}

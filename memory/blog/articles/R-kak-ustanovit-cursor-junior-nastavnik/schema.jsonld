@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/#webpage",
+      "url": "https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/",
+      "name": "Вайбкодинг обучение: быстрее старт с наставником в Cursor",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Установка, Reload, first-run и один учебный прогон. Без ожидания магии."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/#webpage"
+      },
+      "headline": "Вайбкодинг обучение: быстрее старт с наставником в Cursor",
+      "description": "Установка, Reload, first-run и один учебный прогон. Без ожидания магии.",
+      "datePublished": "2026-07-24",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем это отличается от YouTube-курса по вайбкодингу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Курс даёт общую программу на недели. Junior стоит внутри вашего Cursor и разбирает ваш пост, лендинг или автоматизацию здесь и сейчас. Вайбкодинг обучение бесплатно на старте – через MIT-репозиторий, без оплаты школы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой ИИ выбрать новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На первый вечер – встроенный агент Cursor и наставник Junior. \"Лучшие ии для вайбкодинга\" в рейтингах можно смотреть позже; до первой своей задачи сравнение моделей обычно только тормозит."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Junior не является?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это не полный тур по всем кнопкам редактора и не установка роя агентов. И не замена соседним гайдам про Rules или MCP: те темы имеют смысл после того, как наставник уже дал вам три шага."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если команды нет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вернитесь к пути плагина и Reload. Пока cursor-jr не виден в Customize, вызывать нечего. Вложенная папка и запрет local imports на Enterprise – две самые частые причины \"тишины\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как понять, что Junior установлен?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Плагин виден в Customize после Reload Window, first-run проходит без ошибок пути. Если Customize пуст – проверьте ~/.cursor/plugins/local/."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли заменить Junior обычным чатом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если вы уже уверенно пишете промпты и Rules. Junior ускоряет старт новичка, но не обязателен для каждого проекта."
+          }
+        }
+      ]
+    }
+  ]
+}

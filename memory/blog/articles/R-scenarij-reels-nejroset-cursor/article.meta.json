@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-scenarij",
+  "slug": "scenarij-reels-nejroset-cursor",
+  "title": "Сценарий для рилс нейросетью: раскадровка, чтобы ролик досматривали",
+  "wp_post_id": 14435,
+  "primary_query": "сценарий для рилс",
+  "secondary_queries": [
+    "раскадровка reels",
+    "сценарий нейросеть",
+    "хук reels"
+  ],
+  "char_count": 9587,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/scenarij-reels-nejroset-cursor/",
+  "datePublished": "2026-07-19",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "сценарий Reels в Cursor",
+    "раскадровка 3–5 кадров",
+    "хук и CTA",
+    "снять сегодня"
+  ],
+  "meta_ab": {
+    "title_seo": "Сценарий для рилс нейросетью: раскадровка досмотра",
+    "title_ctr": "Ролик не досматривают? Хук и 3–5 кадров",
+    "title_aeo": "Как написать сценарий для Reels нейросетью?",
+    "description_seo": "Одна мысль, хук, раскадровка и CTA. Без длинного сценария, который не снимете.",
+    "description_ctr": "Нужен ролик на сегодня, не пьеса. Соберите короткую раскадровку.",
+    "description_aeo": "Сценарий Reels: структура, ошибки воды и критерий готово."
+  }
+}

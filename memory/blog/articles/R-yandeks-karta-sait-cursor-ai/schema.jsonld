@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/yandeks-karta-sait-cursor-ai/#webpage",
+      "url": "https://mayai.ru/yandeks-karta-sait-cursor-ai/",
+      "name": "Яндекс карта на сайт в Cursor без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Одна карта, адрес текстом и проверка на телефоне. Без лишнего JS."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/yandeks-karta-sait-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/yandeks-karta-sait-cursor-ai/#webpage"
+      },
+      "headline": "Яндекс карта на сайт в Cursor без кода",
+      "description": "Одна карта, адрес текстом и проверка на телефоне. Без лишнего JS.",
+      "datePublished": "2026-07-10",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/yandeks-karta-sait-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/yandeks-karta-sait-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/yandeks-karta-sait-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли API-ключ для Яндекс.Карты на сайт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для базовой метки из Конструктора – нет. Скопируйте iframe или script без apikey и вставьте на страницу. Ключ добавляйте только если нужны поиск, маршруты или панорамы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем iframe отличается от JS API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iframe – готовое окошко из Конструктора без программирования. JS API v3 – код для разработчиков с ключом в quickstart. Сегодня берите вкладку iframe и не открывайте docs JS API."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как вставить Яндекс.Карту на сайт в HTML через Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Скопируйте код из Конструктора, создайте map-embed.mdc и попросите Agent вставить iframe под адресом с width 100% и loading=lazy. Не принимайте package.json и React."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли поставить карту без отдельной страницы \"Контакты\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Разместите виджет на лендинге или услугах рядом с адресом и tel:. Отдельная страница контактов удобна, но не обязательна для первого результата."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему карта-картинка хуже виджета?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Картинка не открывает балун и не даёт интерактив. Замените img на iframe из Конструктора, заполните балун телефоном и проверьте клик с телефона."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если Cursor снова предлагает apikey и React?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Остановите генерацию, усильте map-embed.mdc с alwaysApply: true и повторите промпт: \"только готовый iframe Конструктора, без npm и API-ключа\". Не оставляйте YOUR_API_KEY в коде."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/#webpage",
+      "url": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/",
+      "name": "Отложенный постинг в нужный час: очередь в Sheets + Make без SaaS",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Очередь, часовой пояс и тестовый слот. Без сложного сценария при 3 постах в неделю."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/#webpage"
+      },
+      "headline": "Отложенный постинг в нужный час: очередь в Sheets + Make без SaaS",
+      "description": "Очередь, часовой пояс и тестовый слот. Без сложного сценария при 3 постах в неделю.",
+      "datePublished": "2026-07-18",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/otlozhennyj-posting-make-google-sheets/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли очередь в Sheets маркетологу без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Нужны таблица, токен бота и визуальный сценарий в Make. Код писать не требуется: колонки и Filter Date закрывают слот. Если Make новый для вас, начните с простого входа: webhook (ссылка-розетка: сервис сам стучится в Make) разобран в гайде первый сценарий Make ; для отложки основной триггер всё же Schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем отложенный постинг отличается от автопоста сразу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Автопост сразу реагирует на новую строку. Отложенный постинг ждёт дату и время в ячейке, берёт статус \"в_очереди\" и только потом шлёт. Граница с гайдом \"сразу\" – не дубль, а выбор режима под задачу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли отдельный бот отложки в Telegram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Отдельный \"бот-календарь\" не обязателен. Обычный бот через BotFather достаточен как курьер; календарь – колонки даты и статуса. Нативная отложка schedule_date у ботов недоступна (SCHEDULE_BOT_NOT_ALLOWED)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли из той же таблицы позже выйти в Instagram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Технически колонку канала расширяют, но Instagram – отдельный контур правил и доступов. Сначала стабилизируйте Telegram или VK одной тестовой строкой, не тащите все площадки в первый вечер."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если время слота прошло, а статус ещё \"в_очереди\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте Filter Date и часовой пояс, затем Run once. Если Filter зелёный, а Send красный – смотрите токен и права бота в канале. После успешной отправки сразу обновите статус, иначе будет дубль на следующем прогоне."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько ждать между проверками на бесплатном Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир Free – около 15 минут между scheduled runs. Ставьте тестовую строку с запасом окна, не \"через 2 минуты\". Для более частого опроса смотрите тарифы в кабинете Make по apps.make.com."
+          }
+        }
+      ]
+    }
+  ]
+}

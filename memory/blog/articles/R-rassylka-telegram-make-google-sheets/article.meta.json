@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-rassylka",
+  "slug": "rassylka-telegram-make-google-sheets",
+  "title": "Рассылка в телеграм через Make и Sheets — тёплые в личку, не копипаст",
+  "wp_post_id": 14475,
+  "primary_query": "рассылка в телеграм",
+  "secondary_queries": [
+    "рассылка make sheets",
+    "telegram личка make",
+    "сегмент базы"
+  ],
+  "char_count": 9878,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/rassylka-telegram-make-google-sheets/",
+  "datePublished": "2026-07-20",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "рассылка через Make",
+    "тёплые в личку",
+    "Sheets сегмент",
+    "лимит в день"
+  ],
+  "meta_ab": {
+    "title_seo": "Рассылка в Telegram через Make и Sheets",
+    "title_ctr": "Копипаст в личку убивает время? Сегмент и лимит",
+    "title_aeo": "Как сделать рассылку в Telegram через Make?",
+    "description_seo": "Сегмент в Sheets, тест на себе и дневной лимит. Без спама холодной базе.",
+    "description_ctr": "Один текст всем – риск жалоб. Соберите тёплый сегмент.",
+    "description_aeo": "Рассылка Telegram: Sheets, Make, согласия и типичные ошибки."
+  }
+}

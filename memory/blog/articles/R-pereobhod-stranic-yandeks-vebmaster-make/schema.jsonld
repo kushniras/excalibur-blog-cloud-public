@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/#webpage",
+      "url": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/",
+      "name": "Переобход страниц в Яндекс Вебмастере через Make за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Приоритетный список URL, сценарий Make и статусы в Sheets. Без спама одной ссылкой."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/#webpage"
+      },
+      "headline": "Переобход страниц в Яндекс Вебмастере через Make за вечер",
+      "description": "Приоритетный список URL, сценарий Make и статусы в Sheets. Без спама одной ссылкой.",
+      "datePublished": "2026-07-15",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем переобход страниц отличается от IndexNow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IndexNow уведомляет поисковики об изменении URL. Переобход ставит адрес в приоритетную очередь обхода Яндекс Вебмастера. Можно совмещать, но сначала выберите задачу: \"стукнуть\" или \"попросить робота прийти раньше\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько URL в сутки можно отправить на переобход?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Смотрите свою квоту через GET recrawl/quota (daily_quota и quota_remainder). В кабинете лимит тоже суточный и обновляется ежедневно. Не копируйте чужие цифры \"20 или 10000\" без проверки своего host-id."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли OAuth или хватит кабинета Вебмастера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для пары URL вручную хватит раздела \"Переобход страниц\". Для Make и автопубликации нужен OAuth-токен и API. Токен кладите только в Connection, не в чат."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли слать URL сразу после публикации в Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, сразу после того как страница отдаёт 200 и не закрыта от индексации. Иначе в кабинете увидите статус \"Ошибка\", а квота уже потрачена."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать при QUOTA_EXCEEDED или URL_ALREADY_ADDED?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При 429 остановите сценарий и дождитесь сброса квоты. При 409 URL уже в очереди – не отправляйте повторно сегодня. Запишите код ошибки в колонку status, чтобы не гадать по History."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему \"Заявка обработана\" не значит, что страница в индексе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это значит, что робот посетил URL. Данные могут обновляться до двух недель, а индексация всё равно зависит от robots, meta и качества страницы. Переобход ускоряет визит, но не покупает место в выдаче."
+          }
+        }
+      ]
+    }
+  ]
+}

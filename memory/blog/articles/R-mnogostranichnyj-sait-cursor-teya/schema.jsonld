@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/mnogostranichnyj-sait-cursor-teya/#webpage",
+      "url": "https://mayai.ru/mnogostranichnyj-sait-cursor-teya/",
+      "name": "Многостраничный сайт в Cursor: сетка SEO-страниц за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Карта 3–5 страниц, уникальные H1 и перелинковка. Без thin-хвоста за ночь."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/mnogostranichnyj-sait-cursor-teya/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/mnogostranichnyj-sait-cursor-teya/#webpage"
+      },
+      "headline": "Многостраничный сайт в Cursor: сетка SEO-страниц за вечер",
+      "description": "Карта 3–5 страниц, уникальные H1 и перелинковка. Без thin-хвоста за ночь.",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/mnogostranichnyj-sait-cursor-teya/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/mnogostranichnyj-sait-cursor-teya/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/mnogostranichnyj-sait-cursor-teya/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько страниц нужно для старта многостраничника?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте вечерний минимум: 3–5 страниц плюс карта из 5–10 URL. Не гонитесь за \"сразу 50\" – сначала живые адреса и меню."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли собрать многостраничный сайт на Тильде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, Тильда умеет страницы и меню. Но страницы сами по себе не равны SEO-сетке: сначала кластеры и URL-карта, потом конструктор или Cursor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем многостраничник лучше лендинга для поиска?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "У лендинга слабый SEO-запас: мало мест под разные запросы. Сетка даёт отдельный адрес на группу формулировок и больше точек входа из поиска без оплаты за каждый клик."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли программист или студия за 150 тысяч?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для вечернего минимума – нет. Нужны карта URL и 3 живые страницы. Студия – опция для дизайна и сроков, не обязательный старт."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда ставить TEYA, а не только Офис страниц?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда ручной минимум готов и нужен масштаб 20–200 с ядром и блогом. На day-1 не делайте 19 ролей: сначала простой плагин, потом Офис, потом TEYA с Release Gate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как не получить дубли в Яндексе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Один смысл – один канонический URL. Проверьте меню и тексты; избегайте копипаста одной услуги на два адреса. Сверяйте статус \"Дубль\" в Вебмастере."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С чего начать, если Cursor ещё не установлен?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Соберите карту URL в таблице и три страницы там, где удобно. Параллельно освойте Cursor и плагины – затем перенесите сетку в агентный порядок шагов."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/ustanovka-openclaw-make-cursor/#webpage",
+      "url": "https://mayai.ru/ustanovka-openclaw-make-cursor/",
+      "name": "Установка OpenClaw: gateway, skill и связка с Make за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Gateway, один skill и связка с Make. Без зоопарка без проверки."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/ustanovka-openclaw-make-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/ustanovka-openclaw-make-cursor/#webpage"
+      },
+      "headline": "Установка OpenClaw: gateway, skill и связка с Make за вечер",
+      "description": "Gateway, один skill и связка с Make. Без зоопарка без проверки.",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/ustanovka-openclaw-make-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/ustanovka-openclaw-make-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/ustanovka-openclaw-make-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как установить OpenClaw на Windows новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте PowerShell и выполните официальный install.ps1 с docs.openclaw.ai/install. Проверьте openclaw –version, затем onboard и gateway status. Не публикуйте порт 18789 наружу – хватит localhost и dashboard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли OpenClaw, если уже есть Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не всегда. Если Make закрывает доставку и интеграции – сначала доведите один сценарий до конца. OpenClaw имеет смысл, когда нужен локальный агент со skills и чатом \"всегда на связи\", а Make остаётся курьером."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем OpenClaw отличается от Cursor Cloud Agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenClaw – self-hosted gateway у вас на машине. Cursor Cloud Agents работают в экосистеме Cursor над проектом и длинными задачами. Для маркетинга часто хватает Cursor + Make; OpenClaw – отдельный слой воркера."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие OpenClaw skills поставить первыми (безопасно)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Один skill с проверяемым автором: SEO+GEO или Яндекс Метрика с GitHub Horosheff. Прогоните verify, добавьте в allowlist, уберите случайные community-пакеты без README."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит первый месяц (API + риски overnight)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сам OpenClaw open-source, платите за модель (Claude/API и аналоги). Ориентир риска: heartbeat каждые 30 минут уже сжигал ~$20 overnight. Отключите лишний пульс, поставьте лимит и дешёвую модель на тесте; утром сверьте usage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда класть skills и как проверить, что агент отвечает?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skills – каталоги с SKILL.md; приоритет workspace → ~/.agents/skills → ~/.openclaw/skills. После install откройте dashboard на :18789 и отправьте тестовое сообщение – ответ в UI значит gateway жив."
+          }
+        }
+      ]
+    }
+  ]
+}

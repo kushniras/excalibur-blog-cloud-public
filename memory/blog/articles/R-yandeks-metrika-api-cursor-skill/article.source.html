@@ -1,0 +1,117 @@
+<p>Оля ведёт лендинг и Директ: счётчик уже стоит, а каждое утро снова открывает кабинет Метрики, кликает пресеты и забывает, что смотрела вчера. Боль знакома – &#171;яндекс метрика api&#187; в поиске ведёт в курсы Python и Logs API, и кажется, что без программиста не обойтись. Ответ за один вечер: skill в Cursor, OAuth с правом чтения статистики и вопрос &#171;покажи визиты за 7 дней&#187; – цифры в чате без кода.</p>
+<blockquote><p>API Метрики – это не &#171;ещё один код на сайт&#187;, а способ спросить отчёты программно. Новичку нужен Reporting API (чтение готовых сводок), а не Logs API с сырыми хитами. Workflow: счётчик уже копит данные → skill → токен metrika:read → &#171;список счётчиков&#187; → &#171;визиты за 7 дней&#187;. Parent &#171;яндекс метрика&#187; – около 112521 показов/мес, primary &#171;яндекс метрика api&#187; – 356 (Яндекс Вордстат, Россия, 14.07.2026). Квота отчётов жёсткая: до 200 запросов к /stat/v1/data за 5 минут – иначе 429.</p></blockquote>
+<p>Если счётчика на сайте ещё нет – сначала поставьте его по гайду <a href="/yandeks-metrika-sait-cursor-ai/">Яндекс Метрика на сайт через Cursor</a>. Здесь только связка &#171;токен + агент&#187;: как получить api яндекс метрики без Python и как посмотреть данные яндекс метрики обычным вопросом в чате.</p>
+<h2 id="counter-vs-api">Разведите счётчик на сайте и API отчётов</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/yandeks-metrika-api-cursor-skill-inline-01.jpg" alt="Сравнение: счётчик на сайте против Reporting API отчётов" loading="lazy"><br />
+</figure>
+<p><!-- cover:inline_1 after this H2 --></p>
+<p>Типичная ошибка – гуглить &#171;яндекс метрика api&#187; и сразу лезть в head страницы или в tag.js. Это другая задача. Счётчик собирает визиты; API (Application Programming Interface – &#171;окно&#187;, через которое программа просит данные у сервиса) отдаёт уже собранные отчёты. На практике Оле не нужен новый код на лендинг: ей нужен доступ &#171;прочитать статистику&#187;.</p>
+<p>Сделайте паузу и проверьте: в кабинете Метрики есть счётчик, цифры за вчера не пустые. Не делайте из этой статьи установку счётчика – иначе потеряете вечер. Ориентир простой: данные уже есть → идём в OAuth и skill.</p>
+<h2 id="cabinet-vs-skill">Сравнение: кабинет, Python+Logs и skill в Cursor</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/yandeks-metrika-api-cursor-skill-inline-02.jpg" alt="Схема: кабинет vs Python+Logs vs skill в Cursor" loading="lazy"><br />
+</figure>
+<p><!-- cover:inline_2 after this H2 --></p>
+<p>Боль &#171;API = писать Python / ClickHouse&#187; закрывается выбором пути, а не мотивацией. Reporting API – это готовые таблицы (визиты, источники, страницы). Logs API – сырые хиты для своей базы: для первого отчёта маркетологу почти никогда не нужен.</p>
+<table>
+<thead>
+<tr>
+<th>Путь</th>
+<th>Что получите</th>
+<th>Сложность для новичка</th>
+<th>Когда брать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Кабинет Метрики</b></td>
+<td>Клики по пресетам</td>
+<td>Низкая, но легко забыть вчерашний срез</td>
+<td>Разовый взгляд &#171;здесь и сейчас&#187;</td>
+</tr>
+<tr>
+<td><b>Python + Logs API</b></td>
+<td>Сырые данные, своя БД</td>
+<td>Высокая</td>
+<td>Аналитик с пайплайном выгрузки</td>
+</tr>
+<tr>
+<td><b>Skill в Cursor / OpenClaw</b></td>
+<td>Отчёт по фразе на русском</td>
+<td>Низкая за вечер</td>
+<td>Ежедневный вопрос &#171;откуда трафик&#187;</td>
+</tr>
+<tr>
+<td><b>MCP-серверы Метрики</b></td>
+<td>Инструменты в чате Claude/Cursor</td>
+<td>Средняя (env, npx)</td>
+<td>Когда уже освоен MCP</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>
+<b>Вердикт:</b> для первого вечера используйте skill и Reporting API. Избегайте Logs API и курсов &#171;под ClickHouse&#187;, пока не умеете читать один отчёт визитов в чате. Про MCP как розетку для инструментов – в <a href="/podklyuchenie-mcp-cursor/">подключении MCP в Cursor</a>; про агента у себя – в <a href="/ustanovka-openclaw-make-cursor/">установке OpenClaw</a>.
+</p></blockquote>
+<p>Важный нюанс из официального Reporting API: в одном запросе нельзя смешивать префиксы ym:s: (визиты) и ym:pv: (просмотры страниц). На практике это типичная 400 у новичков и у агентов без skill, которые &#171;угадывают&#187; метрики сами.</p>
+<h2 id="oauth-metrika-read">Получите OAuth-токен с правом metrika:read</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/yandeks-metrika-api-cursor-skill-inline-03.jpg" alt="Чеклист OAuth: metrika:read и секрет токена" loading="lazy"><br />
+</figure>
+<p><!-- cover:inline_3 after this H2 --></p>
+<p>OAuth здесь – это &#171;пропуск&#187; Яндекса: вы создаёте приложение и один раз разрешаете читать статистику. Scope (галочка прав) для отчётов – metrika:read: получение статистики, чтение параметров и список счётчиков. Write нужен только если агент будет менять цели или настройки счётчика – в первый вечер его не включайте без нужды.</p>
+<ol>
+<li>Шаг 1. Откройте oauth.yandex.ru и создайте приложение &#171;для API / отладки&#187;.</li>
+<li>Шаг 2. В Redirect URI укажите https://oauth.yandex.ru/verification_code – как в <a rel="noopener noreferrer" href="https://github.com/Horosheff/yandex-metrika-assistant/blob/main/docs/INSTALL-FOR-HUMANS-RU.md" target="_blank">INSTALL-FOR-HUMANS-RU</a>.</li>
+<li>Шаг 3. Отметьте галочку чтения статистики (metrika:read); сохраните Client ID.</li>
+<li>Шаг 4. Откройте ссылку authorize с response_type=token и своим client_id.</li>
+<li>Шаг 5. Скопируйте access_token из фрагмента URL после # – это и есть получить api яндекс метрики на практике.</li>
+<li>Шаг 6. Сохраните токен в переменную YANDEX_METRIKA_OAUTH_TOKEN или в поле oauthToken плагина; опционально добавьте defaultCounterId.</li>
+</ol>
+<p>Не делайте скрин токена в публичный чат и не коммитьте его в git. Уберите токен из истории переписки, если уже вставили &#171;на всякий случай&#187;. Без токена или с битым – HTTP 401; без нужного scope – 403. Официальная шпаргалка прав: <a rel="noopener noreferrer" href="https://yandex.com/dev/metrika/en/intro/authorization" target="_blank">документация Authorization</a>.</p>
+<h2 id="install-skill">Поставьте skill в Cursor или через ClawHub</h2>
+<p>Skill – это папка с файлом SKILL.md: инструкция для агента &#171;как ходить в Метрику&#187;. Cursor подхватывает skills из .cursor/skills/ (см. <a rel="noopener noreferrer" href="https://cursor.com/docs/skills" target="_blank">документацию Cursor Skills</a>). Канон канала – репозиторий <a rel="noopener noreferrer" href="https://github.com/Horosheff/yandex-metrika-assistant" target="_blank">Horosheff/yandex-metrika-assistant</a> (MIT, зеркало на <a rel="noopener noreferrer" href="https://clawhub.ai/horosheff/yandex-metrika-assistant" target="_blank">ClawHub</a>).</p>
+<ol>
+<li>Шаг 1. Склонируйте репозиторий или скопируйте папку в .cursor/skills/yandex-metrika-assistant/.</li>
+<li>Шаг 2. Для OpenClaw: openclaw skills install yandex-metrika-assistant с ClawHub – если gateway уже стоит.</li>
+<li>Шаг 3. Проверьте, что в чате Agent skill виден (агент ссылается на инструкции Метрики).</li>
+<li>Шаг 4. Убедитесь, что токен лежит в env/конфиге, а не в тексте промпта.</li>
+<li>Шаг 5. Спросите: &#171;Покажи список моих счётчиков Метрики&#187; – живой OAuth даст список, не отказ.</li>
+<li>Шаг 6. Если агент молчит про skill – перезапустите чат Agent и проверьте путь папки.</li>
+<li>Шаг 7. Не ставьте сразу три MCP Метрики &#171;на всякий случай&#187;: один skill проще отладить.</li>
+</ol>
+<p>В реальном проекте хватает одного пакета. Если Cursor ещё непривычен – сначала <a href="/vajbkoding-marketing-cursor-ai/">вайбкодинг маркетинга в Cursor</a>, затем вернитесь к Метрике. Для длинных задач в облаке смотрите <a href="/cursor-cloud-agents-avtomatizaciya/">Cursor Cloud Agents</a>.</p>
+<h2 id="first-report">Запросите первый отчёт: визиты за 7 дней</h2>
+<p>После списка счётчиков сделайте один отчёт – не &#171;проверь всё&#187;. Reporting API отвечает на GET /stat/v1/data: агент спрашивает метрики и группировки, вы видите таблицу или markdown в чате. Например: &#171;Визиты по дням за последние 7 дней&#187;, затем &#171;источники трафика&#187; и &#171;топ страниц&#187;. Цели в яндекс метрике – следующий слой, когда визиты уже совпали с кабинетом.</p>
+<p>Проверьте цифры глазами в личном кабинете Метрики за тот же период. Если расхождение огромное – чаще всего неверный counter id, а не &#171;сломанный API&#187;. Используйте одну фразу за раз: спам отчётов упирается в квоту 200 запросов за 5 минут (и лимиты 30 rps / 3 параллельных / 5000 в сутки по <a rel="noopener noreferrer" href="https://yandex.ru/dev/metrika/ru/intro/quotas" target="_blank">квотам API</a>).</p>
+<p>Часто ломается сценарий, когда агент без skill сам собирает URL и мешает namespaces – skill как раз держит &#171;маршрут&#187; запросов. Анализ данных яндекс метрики на старте – это не дашборд в DataLens, а короткий ответ агента, который можно сохранить в файл проекта. Не делайте массовый обход всех пресетов в первый вечер: сначала один ясный срез &#171;вчера vs 7 дней&#187;.</p>
+<h2 id="evening-checklist">Чеклист вечера: токен, квоты и критерий успеха</h2>
+<p>Ниже – чеклист stop-light перед тем, как звать Logs API или SEO-аудит.</p>
+<ul>
+<li>Счётчик на сайте уже копит данные (иначе – sibling про установку).</li>
+<li>Токен metrika:read в env/плагине, не в git и не в публичном чате.</li>
+<li>Агент показал список счётчиков.</li>
+<li>Отчёт визитов за 7 дней совпал по порядку величины с кабинетом.</li>
+<li>Не смешивали ym:s: и ym:pv: в одном запросе.</li>
+<li>Не упёрлись в 429: 1–2 отчёта, пауза при ошибке.</li>
+<li>Следующий слой: цели или <a href="/seo-audit-sajta-cursor-geo-skill/">SEO-аудит skill</a> по money-page – не Logs &#171;потому что модно&#187;.</li>
+</ul>
+<p>Критерий успеха: агент ответил списком счётчиков или таблицей визитов/источников за выбранный период; токен не светится в истории чата и не лежит в репозитории; вы понимаете, что это Reporting API (чтение отчётов), а не код счётчика в head и не Logs API. Сделайте паузу на этом результате – этого достаточно на сегодня.</p>
+<p>Если нужна система вокруг Make и агентов без самописного Python – есть <a rel="noopener noreferrer" href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курс Make.com и вайбкодинга</a>; разборы skills канала – в <a rel="noopener noreferrer" href="https://t.me/maya_pro" target="_blank">Telegram Ковчег</a>.</p>
+<blockquote><p>
+<b>Материал проверен:</b> <a rel="noopener noreferrer" href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br />
+<b>Опора на источники:</b> yandex.ru/dev/metrika (виды API, Reporting, квоты), Authorization scopes metrika:read, GitHub Horosheff/yandex-metrika-assistant + INSTALL-FOR-HUMANS-RU; частотность &#171;яндекс метрика api&#187; / parent &#171;яндекс метрика&#187; – Яндекс Вордстат на 14.07.2026.
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Чем яндекс метрика api отличается от кабинета?</h3>
+<p>Кабинет – клики руками. API – программный запрос отчётов. Сделайте skill и спросите визиты текстом; кабинет оставьте для сверки цифр.</p>
+<h3>Нужен ли OAuth или хватит номера счётчика?</h3>
+<p>Номера счётчика мало: без OAuth-токена API ответит 401. Проверьте, что токен с metrika:read лежит в env, а counter id – отдельно.</p>
+<h3>Можно ли тот же skill через OpenClaw?</h3>
+<p>Да: поставьте пакет с ClawHub (yandex-metrika-assistant) и используйте тот же токен. Сначала живой gateway – см. гайд по установке OpenClaw.</p>
+<h3>С какого отчёта начать новичку?</h3>
+<p>Список счётчиков → визиты по дням за 7 дней → источники. Избегайте Logs API и целей, пока визиты не совпали с кабинетом.</p>
+<h3>Как не слить токен в git?</h3>
+<p>Уберите токен из файлов проекта: только секрет окружения или поле плагина. Не делайте commit с .env и не вставляйте токен в чат.</p>
+<h3>Зачем вообще logs api яндекс метрики?</h3>
+<p>Для выгрузки сырых хитов в свою систему. Для ежедневного &#171;откуда трафик&#187; используйте Reporting API через skill – Logs отложите.</p>

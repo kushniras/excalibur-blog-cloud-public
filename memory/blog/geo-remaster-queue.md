@@ -12,7 +12,7 @@
 | Волна | Scope | Статус |
 |-------|-------|--------|
 | A | Technical foundation (robots AI bots, sitemap) | mostly done on live |
-| B | 84 URL из llms.txt + local B01–B10 | in_progress |
+| B | 84 URL из llms.txt + local B01–B10 | remastered_local done |
 | C | Thin/scaled tail (score≤2) | queued — editor decision, no auto-delete |
 | D | Multi-engine measurement baseline | after B |
 
@@ -65,45 +65,45 @@
 | 43 | 10 | 9 | R-ofis | 2026-07-25 | `kak-ustanovit-ofis-veb-stranits-cursor` | updated | remastered_local |
 | 44 | 10 | 9 | R-vybrat | 2026-07-25 | `kak-vybrat-cloud-agents-automations-sdk-cursor` | updated | remastered_local |
 | 45 | 10 | 9 | R-karusel | 2026-07-25 | `karusel-instagram-nejroseti-cursor` | updated | remastered_local |
-| 46 | 10 | 9 | — | 2026-07-15 | `kviz-lidov-make-telegram` | updated | pending |
-| 47 | 10 | 9 | — | 2026-07-20 | `lidogeneraciya-make-telegram-cursor` | updated | pending |
-| 48 | 10 | 9 | — | 2026-07-14 | `mudbord-nejroset-cursor-marketing` | updated | pending |
-| 49 | 10 | 9 | — | 2026-07-14 | `napisat-statyu-nejrosetyu-cursor` | updated | pending |
-| 50 | 10 | 9 | — | 2026-07-19 | `nejroset-dlya-reklamy-cursor` | updated | pending |
-| 51 | 10 | 9 | — | 2026-07-20 | `nejroset-dlya-sozdaniya-video-make-cursor` | updated | pending |
-| 52 | 10 | 9 | — | 2026-07-13 | `nejroset-montazh-video-reels-cursor` | updated | pending |
-| 53 | 10 | 9 | — | 2026-07-17 | `oblozhka-dlya-posta-nejroset-mcp` | updated | pending |
-| 54 | 10 | 9 | — | 2026-07-18 | `opisanie-tovara-nejroset-cursor` | updated | pending |
-| 55 | 10 | 9 | — | 2026-07-15 | `pereobhod-stranic-yandeks-vebmaster-make` | updated | pending |
-| 56 | 10 | 9 | — | 2026-07-15 | `plaginy-cursor-ai-marketing` | updated | pending |
-| 57 | 10 | 9 | — | 2026-07-20 | `podbor-klyuchevyh-slov-cursor-wordstat` | updated | pending |
-| 58 | 10 | 9 | — | 2026-07-12 | `progrev-akkauntov-pered-avtopostingom` | updated | pending |
-| 59 | 10 | 9 | — | 2026-07-20 | `rassylka-telegram-make-google-sheets` | updated | pending |
-| 60 | 10 | 9 | — | 2026-07-19 | `scenarij-reels-nejroset-cursor` | updated | pending |
-| 61 | 10 | 9 | — | 2026-07-09 | `stranica-404-cursor-ai` | updated | pending |
-| 62 | 10 | 9 | — | 2026-07-09 | `stranica-faq-cursor-ai` | updated | pending |
-| 63 | 10 | 9 | — | 2026-07-08 | `stranica-otzyvov-cursor-ai` | updated | pending |
-| 64 | 10 | 9 | — | 2026-07-09 | `stranica-portfolio-cursor-ai` | updated | pending |
-| 65 | 10 | 9 | — | 2026-07-11 | `telegram-mini-app-cursor-ai` | updated | pending |
-| 66 | 10 | 9 | — | 2026-07-14 | `ustanovka-openclaw-make-cursor` | updated | pending |
-| 67 | 10 | 9 | — | 2026-07-11 | `vajbkoding-marketing-cursor-ai` | updated | pending |
-| 68 | 10 | 9 | — | 2026-07-17 | `webhook-make-pervyj-scenarij` | updated | pending |
-| 69 | 10 | 9 | — | 2026-07-15 | `wordstat-api-make-google-sheets` | updated | pending |
-| 70 | 10 | 9 | — | 2026-07-10 | `yandeks-karta-sait-cursor-ai` | updated | pending |
-| 71 | 10 | 9 | — | 2026-07-14 | `yandeks-metrika-api-cursor-skill` | updated | pending |
-| 72 | 8 | 9 | — | 2026-07-17 | `avtoposting-threads-make-google-sheets` | table | pending |
-| 73 | 8 | 9 | — | 2026-07-22 | `kak-ustanovit-giperion-reels-subagent-cursor` | table | pending |
-| 74 | 8 | 9 | — | 2026-07-17 | `mnogostranichnyj-sait-cursor-teya` | table | pending |
+| 46 | 10 | 9 | R-kviz | 2026-07-25 | `kviz-lidov-make-telegram` | updated | remastered_local |
+| 47 | 10 | 9 | R-lido | 2026-07-25 | `lidogeneraciya-make-telegram-cursor` | updated | remastered_local |
+| 48 | 10 | 9 | R-mudbord | 2026-07-25 | `mudbord-nejroset-cursor-marketing` | updated | remastered_local |
+| 49 | 10 | 9 | R-statya | 2026-07-25 | `napisat-statyu-nejrosetyu-cursor` | updated | remastered_local |
+| 50 | 10 | 9 | R-reklama | 2026-07-25 | `nejroset-dlya-reklamy-cursor` | updated | remastered_local |
+| 51 | 10 | 9 | R-video | 2026-07-25 | `nejroset-dlya-sozdaniya-video-make-cursor` | updated | remastered_local |
+| 52 | 10 | 9 | R-montazh | 2026-07-25 | `nejroset-montazh-video-reels-cursor` | updated | remastered_local |
+| 53 | 10 | 9 | R-oblozhka | 2026-07-25 | `oblozhka-dlya-posta-nejroset-mcp` | updated | remastered_local |
+| 54 | 10 | 9 | R-opisanie | 2026-07-25 | `opisanie-tovara-nejroset-cursor` | updated | remastered_local |
+| 55 | 10 | 9 | R-pereobhod | 2026-07-25 | `pereobhod-stranic-yandeks-vebmaster-make` | updated | remastered_local |
+| 56 | 10 | 9 | R-plaginy | 2026-07-25 | `plaginy-cursor-ai-marketing` | updated | remastered_local |
+| 57 | 10 | 9 | R-podbor | 2026-07-25 | `podbor-klyuchevyh-slov-cursor-wordstat` | updated | remastered_local |
+| 58 | 10 | 9 | R-progrev | 2026-07-25 | `progrev-akkauntov-pered-avtopostingom` | updated | remastered_local |
+| 59 | 10 | 9 | R-rassylka | 2026-07-25 | `rassylka-telegram-make-google-sheets` | updated | remastered_local |
+| 60 | 10 | 9 | R-scenarij | 2026-07-25 | `scenarij-reels-nejroset-cursor` | updated | remastered_local |
+| 61 | 10 | 9 | R-404 | 2026-07-25 | `stranica-404-cursor-ai` | updated | remastered_local |
+| 62 | 10 | 9 | R-faq-page | 2026-07-25 | `stranica-faq-cursor-ai` | updated | remastered_local |
+| 63 | 10 | 9 | R-otzyvy | 2026-07-25 | `stranica-otzyvov-cursor-ai` | updated | remastered_local |
+| 64 | 10 | 9 | R-portfolio | 2026-07-25 | `stranica-portfolio-cursor-ai` | updated | remastered_local |
+| 65 | 10 | 9 | R-miniapp | 2026-07-25 | `telegram-mini-app-cursor-ai` | updated | remastered_local |
+| 66 | 10 | 9 | R-openclaw | 2026-07-25 | `ustanovka-openclaw-make-cursor` | updated | remastered_local |
+| 67 | 10 | 9 | R-vajb | 2026-07-25 | `vajbkoding-marketing-cursor-ai` | updated | remastered_local |
+| 68 | 10 | 9 | R-webhook-make | 2026-07-25 | `webhook-make-pervyj-scenarij` | updated | remastered_local |
+| 69 | 10 | 9 | R-wordstat-api | 2026-07-25 | `wordstat-api-make-google-sheets` | updated | remastered_local |
+| 70 | 10 | 9 | R-karta | 2026-07-25 | `yandeks-karta-sait-cursor-ai` | updated | remastered_local |
+| 71 | 10 | 9 | R-metrika | 2026-07-25 | `yandeks-metrika-api-cursor-skill` | updated | remastered_local |
+| 72 | 8 | 9 | R-threads | 2026-07-25 | `avtoposting-threads-make-google-sheets` | table | remastered_local |
+| 73 | 8 | 9 | R-giperion | 2026-07-25 | `kak-ustanovit-giperion-reels-subagent-cursor` | table | remastered_local |
+| 74 | 8 | 9 | R-teya | 2026-07-25 | `mnogostranichnyj-sait-cursor-teya` | table | remastered_local |
 | 75 | 5 | 0 | B01 | 2026-07-25 | `primer-seo-stati` | unknown | remastered_local |
-| 76 | 0 | 10 | — | 2026-07-19 | `avtomatizaciya-marketinga-make-cursor` | ok | pending |
-| 77 | 0 | 10 | — | 2026-07-16 | `bot-dlya-zayavok-telegram-make` | ok | pending |
-| 78 | 0 | 10 | — | 2026-07-10 | `cookie-banner-sait-cursor-ai` | ok | pending |
-| 79 | 0 | 10 | — | 2026-07-24 | `kak-ustanovit-cursor-junior-nastavnik` | ok | pending |
-| 80 | 0 | 10 | — | 2026-07-23 | `kak-ustanovit-excalibur-avtoblog-cursor` | ok | pending |
-| 81 | 0 | 10 | — | 2026-07-16 | `make-ili-n8n-dlya-marketinga` | ok | pending |
-| 82 | 0 | 10 | — | 2026-07-18 | `otlozhennyj-posting-make-google-sheets` | ok | pending |
-| 83 | 0 | 10 | — | 2026-07-09 | `stranica-o-kompanii-cursor-ai` | ok | pending |
-| 84 | 0 | 10 | — | 2026-07-14 | `tilda-ai-agent-potoki-nejroset` | ok | pending |
+| 76 | 0 | 10 | R-avtomark | 2026-07-25 | `avtomatizaciya-marketinga-make-cursor` | ok | remastered_local |
+| 77 | 0 | 10 | R-bot-zayavok | 2026-07-25 | `bot-dlya-zayavok-telegram-make` | ok | remastered_local |
+| 78 | 0 | 10 | R-cookie | 2026-07-25 | `cookie-banner-sait-cursor-ai` | ok | remastered_local |
+| 79 | 0 | 10 | R-junior | 2026-07-25 | `kak-ustanovit-cursor-junior-nastavnik` | ok | remastered_local |
+| 80 | 0 | 10 | R-excalibur | 2026-07-25 | `kak-ustanovit-excalibur-avtoblog-cursor` | ok | remastered_local |
+| 81 | 0 | 10 | R-make-n8n | 2026-07-25 | `make-ili-n8n-dlya-marketinga` | ok | remastered_local |
+| 82 | 0 | 10 | R-otlozh | 2026-07-25 | `otlozhennyj-posting-make-google-sheets` | ok | remastered_local |
+| 83 | 0 | 10 | R-about | 2026-07-25 | `stranica-o-kompanii-cursor-ai` | ok | remastered_local |
+| 84 | 0 | 10 | R-tilda | 2026-07-25 | `tilda-ai-agent-potoki-nejroset` | ok | remastered_local |
 
 ## Wave C — thin sample (no auto-delete)
 

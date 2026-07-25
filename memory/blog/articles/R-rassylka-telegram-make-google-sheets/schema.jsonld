@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/rassylka-telegram-make-google-sheets/#webpage",
+      "url": "https://mayai.ru/rassylka-telegram-make-google-sheets/",
+      "name": "Рассылка в телеграм через Make и Sheets — тёплые в личку, не копипаст",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Сегмент в Sheets, тест на себе и дневной лимит. Без спама холодной базе."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/rassylka-telegram-make-google-sheets/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/rassylka-telegram-make-google-sheets/#webpage"
+      },
+      "headline": "Рассылка в телеграм через Make и Sheets — тёплые в личку, не копипаст",
+      "description": "Сегмент в Sheets, тест на себе и дневной лимит. Без спама холодной базе.",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/rassylka-telegram-make-google-sheets/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/rassylka-telegram-make-google-sheets/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/rassylka-telegram-make-google-sheets/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли рассылка через Make без опыта кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Маршрут выше – BotFather, колонки Sheets и три модуля Make. Программист не нужен для MVP на 3–5 своих."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем эта рассылка отличается от автоответчика?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Автоответчик ждёт входящее и отвечает. Здесь вы сами запускаете кампанию списку pending из таблицы. Если нужен ответ \"здесь и сейчас\" – берите гайд про автоответчик."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где взять chat_id, если таблица пустая?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Только после /start у бота. Для теста впишите свои id вручную. Для потока – допишите Watch Updates → Add a Row из гайда заявок, но ядро B65 – исходящее Send, не склад лидов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если Run once шлёт всем сразу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Добавьте Filter status=pending и лимит 3–5. После Send обязательно Update sent. Без статуса community-сценарии часто дублируют."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли писать тем, кто не нажимал /start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Бот не начинает диалог с холодным. Парсинг чужих и \"софт без бана\" – не этот гайд и не безопасный путь."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что значит ошибка 429 при большой базе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Telegram просит подождать: bulk через Bot API (это официальный канал бота к Telegram) около 30 сообщений в секунду. Сделайте паузу, растяните рассылку, не долбите повторным Run once без статуса."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли сразу платный Paid Broadcasts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Для новичка в первый вечер – Free-лимиты и тест на троих. Paid Broadcasts в BotFather – про рост, не про первую кампанию."
+          }
+        }
+      ]
+    }
+  ]
+}

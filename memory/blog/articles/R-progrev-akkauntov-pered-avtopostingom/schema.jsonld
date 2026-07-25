@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/#webpage",
+      "url": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/",
+      "name": "Прогрев аккаунта перед автопостингом: чеклист для Make",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Ручные действия, первый живой пост и только потом очередь Make. Без пачки одинаковых текстов."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/#webpage"
+      },
+      "headline": "Прогрев аккаунта перед автопостингом: чеклист для Make",
+      "description": "Ручные действия, первый живой пост и только потом очередь Make. Без пачки одинаковых текстов.",
+      "datePublished": "2026-07-12",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/progrev-akkauntov-pered-avtopostingom/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько дней греть аккаунт перед Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир для новорега – 7–14 дней. Зрелый аккаунт с историей можно сократить, но не делайте полный автопост в день один. Сначала ручные посты, потом один слот Make."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли греть и постить одновременно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: редкие посты вручную в фазе прогрева нормальны. Полный автопостинг и кросспост – после базового траста, когда в таблице стоит \"можно автопост\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем прогрев отличается от накрутки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Прогрев – ваши живые действия в своём профиле. Накрутка и \"купить прогретый\" – покупка метрик или чужого аккаунта; политики площадок это запрещают. Уберите серые пункты из плана старта."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли отдельный аккаунт под автопостинг?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Новичку лучше один основной. Отдельный – только если готовы снова пройти чеклист с нуля. Не делайте второй аккаунт ради обхода бана в тот же день."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать после action block или FloodWait?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Остановите Make на 24–72 часа, читайте ленту, при необходимости подайте апелляцию. Потом вернитесь на 25–50% объёма. Проверьте логи на 429 и не ретрайте без паузы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С какого лимита безопасно стартовать в Instagram Graph?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Официальный потолок – до 100 API-постов за 24 часа, но это не цель. Используйте 1 пост в день после ручной фазы 7–10 дней. Карусель считается одним постом."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где взять мягкий сценарий Make после прогрева?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Соберите сами по гайду автопостинга без кода или возьмите каркас из папки блюпринтов выше. Сначала чеклист прогрева, потом один слот – усиливайте частоту только после дней без сигналов стоп."
+          }
+        }
+      ]
+    }
+  ]
+}

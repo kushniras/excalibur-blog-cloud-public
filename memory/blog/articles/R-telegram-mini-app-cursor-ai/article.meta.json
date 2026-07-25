@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-miniapp",
+  "slug": "telegram-mini-app-cursor-ai",
+  "title": "Telegram Mini App в Cursor AI без кода",
+  "wp_post_id": 14192,
+  "primary_query": "telegram mini app",
+  "secondary_queries": [
+    "mini app cursor",
+    "webapp telegram без кода",
+    "форма в telegram"
+  ],
+  "char_count": 9672,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/telegram-mini-app-cursor-ai/",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Mini App без React",
+    "WebApp форма",
+    "BotFather и HTML",
+    "один экран"
+  ],
+  "meta_ab": {
+    "title_seo": "Telegram Mini App в Cursor AI без кода",
+    "title_ctr": "Нужна форма в Telegram, не React? Mini App за вечер",
+    "title_aeo": "Как сделать Telegram Mini App в Cursor?",
+    "description_seo": "Static HTML + WebApp, один экран с формой. Без React ради кнопки.",
+    "description_ctr": "Бота с кнопками мало? Соберите простой Mini App.",
+    "description_aeo": "Mini App: когда нужен, установка, типичные ошибки пути."
+  }
+}

@@ -1,0 +1,127 @@
+<p>Ирина час копировала топ с wordstat.yandex.ru в Google Sheets, перепутала две колонки и отдала автору ТЗ с "мёртвыми" ключами. Друг сказал "подключи API" – она открыла Python-гайд и закрыла вкладку: "я не программист". Боль знакома: хочется автоматизировать частотности, но страшно сломать таблицу и непонятно, куда в Make вставить ключ. Ответ за вечер – три кубика Make и 10–20 строк phrase+count без копипаста.</p>
+<h2 id="constraints-wordstat-api">Когда Wordstat API не подключать</h2>
+<p>Если хватает ручного кабинета Wordstat на 10 фраз – API избыточен. Если нет доступа к API и понимания лимитов – не ломайте сценарий. Типичная ошибка: выгрузка тысяч строк без кластера. На практике Make → Sheets → 5–15 приоритетных фраз.</p>
+
+<blockquote><p>Вордстат API в 2026 – это не отдельный "секретный" сервис для кодеров, а Wordstat API внутри Yandex Search API (AI Studio): вы отправляете семя фразы и получаете JSON с топом. Workflow новичка: Api-Key + folderId → HTTP POST topRequests → Iterator → Google Sheets Add a Row. Parent "вордстат" – около 108119 показов/мес, "вордстат api" – 178 (Яндекс Вордстат, регион 225, 15.07.2026). Официальная справка Яндекса уже ведёт в Search API; старый Bearer на api.wordstat.yandex.net – отдельная история, её не смешивайте с Api-Key.</p></blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<p>Ниже – спокойный путь маркетолога без Cursor и без Key Collector: чем API отличается от сайта, как взять ключ в AI Studio, как собрать сценарий в Make и почему в таблице бывает одна строка вместо топа. Сделаете один Run once – сможете завтра подставлять частотности в контент-план, а не перебивать их руками.</p>
+<h2 id="api-vs-browser">Сравните сайт Вордстата и API: зачем таблица без копипаста</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/wordstat-api-make-google-sheets-inline-01.jpg" alt="Сравнение: сайт Вордстата, Wordstat API через Make и Cursor – когда брать таблицу без копипаста" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Боль "опять перепутал частотности" закрывается не новым скриптом, а повторяемым сценарием. Сайт wordstat.yandex.ru удобен глазами: кликнули, посмотрели, скопировали. API (application programming interface – "окошко", через которое сервис отдаёт данные по запросу) нужен, когда те же цифры должны сами лечь в лист.</p>
+<p>На практике маркетолог с контент-планом в Sheets выигрывает на повторe: одно семя ниши → топ фраз → колонки phrase и count. Не делайте день-1 "полное семантическое ядро": сначала сырой топ, кластеры – потом. Ориентир для первого вечера – 10–20 строк, не тысяча.</p>
+<table>
+<thead>
+<tr>
+<th>Критерий</th>
+<th>Сайт wordstat.yandex.ru</th>
+<th>Wordstat API + Make → Sheets</th>
+<th>Cursor / Ядрышко</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Что даёт</b></td>
+<td>Ручной просмотр топа</td>
+<td>Строки phrase+count в таблице</td>
+<td>Кластеры и брифы</td>
+</tr>
+<tr>
+<td><b>Нужен код?</b></td>
+<td>Нет</td>
+<td>Нет (кубики Make)</td>
+<td>Нет, но другой стек</td>
+</tr>
+<tr>
+<td><b>Когда брать</b></td>
+<td>Разовая проверка</td>
+<td>Регулярная выгрузка</td>
+<td>После сырого топа</td>
+</tr>
+<tr>
+<td><b>День-1 новичка</b></td>
+<td>Копипаст, риск путаницы</td>
+<td>Да: HTTP → Iterator → Sheets</td>
+<td>Next-step, не старт</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>
+<b>Вердикт:</b> если нужно "посмотреть глазами" – сайт. Если нужен контент-план без ручного копирования – Make и Sheets. Кластеры в Cursor и <a href="https://github.com/Horosheff/yadryshko-semantic-core-subagent" target="_blank">Ядрышко</a> оставьте на завтра: гайд по ядру – в <a href="/semanticheskoe-yadro-cursor-wordstat/">семантическом ядре Cursor + Wordstat</a>.
+</p></blockquote>
+<h2 id="ai-studio-key">Получите Api-Key и folderId в AI Studio без Python</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/wordstat-api-make-google-sheets-inline-02.jpg" alt="Схема: Api-Key и folderId в AI Studio – шесть шагов без Python" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Боль "API только для программистов" лечится двумя строками из кабинета, не курсом Python. В Cloud-пути ключ выглядит как Api-Key, а не как старый OAuth Bearer. Плюс нужен folderId – идентификатор папки в Yandex Cloud (часто виден в URL вида /folders/…). Без него API отвечает INVALID_ARGUMENT: запрос "пустой" для системы.</p>
+<ol>
+<li>Шаг 1. Откройте AI Studio / Yandex Cloud и создайте Api-Key для Search API.</li>
+<li>Шаг 2. Скопируйте Folder ID из URL папки – сохраните рядом с ключом в менеджере паролей.</li>
+<li>Шаг 3. Выдайте роль search-api.webSearch.user (без роли часто прилетает 403).</li>
+<li>Шаг 4. Проверьте биллинг и привязку карты: 403 бывает и из-за "нет оплаты", не только из-за опечатки.</li>
+<li>Шаг 5. Сверьте чеклист доступа в <a href="https://mcp-kv.ru/docs/wordstat-mcp-setup" target="_blank">документации Wordstat MCP</a> – те же креды пригодятся позже для агентов.</li>
+<li>Шаг 6. Уберите ключ из черновиков в Telegram и из скриншотов: только поле Connection/модуля в Make.</li>
+</ol>
+<p>Типичная ошибка – смешать заголовки: Authorization: Bearer … от старых гайдов и Api-Key … от Cloud. Избегайте этого: один путь за вечер. Тарифы Search API меняются – не обещайте себе "навсегда бесплатно", просто откройте тарифы AI Studio на сегодня перед серией запросов.</p>
+<h2 id="make-http-iterator">Соберите сценарий Make: HTTP → Iterator → Google Sheets</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/wordstat-api-make-google-sheets-inline-03.jpg" alt="Мокап Make: HTTP topRequests → Iterator → Google Sheets Add a Row" loading="lazy"><br>
+</figure>
+<p></p>
+<p>Боль "куда писать Authorization и почему одна строка" закрывается тремя модулями. Make – конструктор сценариев: кубики крутятся в облаке без вашего сервера. HTTP – "курьер", который стучится в API. Iterator – "раздатчик": берёт массив results и отдаёт по одной фразе. Google Sheets Add a Row – пишет строку в лист.</p>
+<blockquote><p>
+<b>Схема дня-1:</b><br>
+Семя ниши → HTTP POST topRequests → массив results → Iterator → Add a Row (phrase, count) → лист wordstat_raw
+</p></blockquote>
+<ol>
+<li>Шаг 1. Создайте отдельный Google Sheet с заголовками phrase | count | seed | checked_at – не трогайте рабочий контент-план, заведите лист wordstat_raw.</li>
+<li>Шаг 2. В Make новый scenario: ручной триггер или Schedule.</li>
+<li>Шаг 3. Добавьте модуль <a href="https://apps.make.com/http" target="_blank">HTTP</a> Make a request: POST на searchapi.api.cloud.yandex.net/v2/wordstat/topRequests.</li>
+<li>Шаг 4. В Headers укажите Authorization: Api-Key … (ваш ключ). В теле JSON: phrase, numPhrases: 20, regions: ["225"], folderId.</li>
+<li>Шаг 5. Подключите Tools → <a href="https://help.make.com/iterator" target="_blank">Iterator</a> по массиву results (не пишите весь JSON в одну ячейку).</li>
+<li>Шаг 6. Добавьте <a href="https://apps.make.com/google-sheets" target="_blank">Google Sheets</a> Add a Row: phrase и count из bundle Iterator.</li>
+<li>Шаг 7. Используйте Run once на одном семени; если mapping пустой – сначала Run this module only на HTTP, чтобы Make увидел поля ответа.</li>
+</ol>
+<p>Например, в Community Make давно канон: HTTP → (при необходимости Parse JSON) → Iterator → Add a Row. В реальном проекте новички часто кладут весь ответ в одну ячейку – и думают, что "API сломан". Проверьте History: зелёный прогон и пачка bundles после Iterator – норма.</p>
+<p>Если уже есть доступ к папке блюпринтов, можно взять готовый модуль Wordstat вместо ручного HTTP – см. <a href="https://kv-ai.ru/blyuprinty-make-com-podpiska" target="_blank">папку блюпринтов Make</a>. Для старта хватит и ручной сборки.</p>
+<h2 id="first-run">Проверьте первый прогон: 10–20 строк и зелёная History</h2>
+<p>Боль "в таблице одна строка вместо топа" почти всегда про забытый Iterator или пустой mapping. Сделайте прогон на одном семени ниши – том, которое уже в контент-плане. Ориентир успеха: колонки phrase и count заполнены, строк 10–20, History без 401/403/INVALID_ARGUMENT.</p>
+<p>Часто ломается так: регион не указан, и цифры "плывут" относительно привычного кабинета. Добавьте regions: ["225"] (Россия) или осознанный город – и зафиксируйте это в заметке к сценарию. Ещё сюрприз из практики: в блоке associations частотность иногда выше "красивой" фразы из results – не пугайтесь, это связанные запросы, их можно позже брать для H1.</p>
+<p>Между серией семян заложите паузу Sleep около 0.2–1 с, иначе легко поймать 429 (слишком частые запросы). Не делайте тысячу вызовов в первый вечер: сначала один зелёный Run once.</p>
+<h2 id="checklist-next">Чеклист ошибок и куда идти после Sheets</h2>
+<p>Боль "путаю с Метрикой API / сразу лезу в ядро" лечится границей задачи. Здесь только Wordstat topRequests. Метрика – другой API и другие ключи (см. отдельно skill Метрики). Ядрышко и Cursor – когда сырой топ уже лежит в таблице.</p>
+<p><b>Чеклист перед серией семян:</b></p>
+<ul>
+<li>Authorization = Api-Key (не Bearer от старого гайда).</li>
+<li>folderId в теле запроса есть.</li>
+<li>Роль search-api.webSearch.user и биллинг в порядке.</li>
+<li>Iterator по results, не одна ячейка с JSON.</li>
+<li>Ключ не в чатах и не на скринах.</li>
+<li>Регион 225 или явный город.</li>
+</ul>
+<p>Когда 10–20 строк стабильно появляются, перенесите частотности в контент-план – удобный соседний гайд: <a href="/kontent-plan-google-sheets-make/">контент-план в Google Sheets и Make</a>. Для кластеров откройте <a href="/semanticheskoe-yadro-cursor-wordstat/">семантическое ядро Cursor + Wordstat</a>. Контекст Make и агентов – в <a href="/make-ai-agents-mcp-avtomatizaciya/">Make, AI-агентах и MCP</a>; соседний Яндекс-модуль – <a href="/indexnow-yandex-make/">IndexNow через Make</a>. Документация MCP Wordstat и хаб <a href="https://mcp-kv.ru/" target="_blank">MCP-KV</a> пригодятся, когда дойдёте до Cursor.</p>
+<p>Критерий, что вечер удался: в Sheets есть живые phrase и count; History зелёный; ключ не светится снаружи; регион осознанный. Это и есть ваш первый результат без команды разработчиков.</p>
+<p>Если хотите системно собирать такие сценарии дальше – разбор Make с нуля есть в <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курсе по Make.com</a>; для новостей стека можно заглянуть в <a href="https://t.me/maya_pro" target="_blank">канал @maya_pro</a>.</p>
+<blockquote><p>
+<b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>
+<b>Опора на источники:</b> справка Яндекса "API Вордстата" → Yandex Search API; Habr 1030276 (endpoint topRequests, Api-Key, folderId); docs Make HTTP / Google Sheets / Iterator; чеклист mcp-kv.ru/docs/wordstat-mcp-setup; частотности – Яндекс Вордстат на 15.07.2026 (регион 225).
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Чем Wordstat API отличается от сайта wordstat.yandex.ru?</h3>
+<p>Сайт – ручной интерфейс для глаз. API отдаёт JSON, который Make раскладывает по строкам Sheets. Операторы вроде ! + [] из веба в API не гарантируют ту же "точную" частотность – ориентируйтесь на results и count как на рабочий топ для плана.</p>
+<h3>Нужен ли Cursor, если уже есть Make?</h3>
+<p>Для выгрузки частотностей за вечер – нет. Cursor и Ядрышко нужны, когда из сырого топа собираете кластеры и брифы. Сначала зелёная History и таблица, потом агенты.</p>
+<h3>Где взять ключ API Вордстата?</h3>
+<p>В AI Studio / Yandex Cloud: Api-Key + Folder ID и роль search-api.webSearch.user. Не смешивайте с legacy Bearer на api.wordstat.yandex.net. Пошаговый чеклист доступа – на <a href="https://mcp-kv.ru/docs/wordstat-mcp-setup" target="_blank">mcp-kv.ru/docs/wordstat-mcp-setup</a>.</p>
+<h3>Сколько фраз хватит новичку на старт?</h3>
+<p>10–20 на одно семя (numPhrases около 20). Не гоните тысячу фраз в первый вечер: сначала один прогон, потом серия с Sleep.</p>
+<h3>Можно ли сразу собрать семантическое ядро без Ядрышко?</h3>
+<p>Сырой топ в Sheets – да, это и есть день-1. Чистое ядро с кластерами – next-step по гайду <a href="/semanticheskoe-yadro-cursor-wordstat/">семантическое ядро Cursor + Wordstat</a>.</p>
+<h3>Это не путаница с API Яндекс Метрики?</h3>
+<p>Другой продукт и другие ключи. Здесь только Wordstat topRequests → Sheets. Метрику к этому сценарию не подключайте в тот же вечер.</p>
+<h3>Почему INVALID_ARGUMENT или пустой ответ?</h3>
+<p>Чаще всего нет folderId, неверная роль или смешан Authorization. Проверьте тело запроса и чеклист выше; после правки снова Run once и смотрите History.</p>

@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-podbor",
+  "slug": "podbor-klyuchevyh-slov-cursor-wordstat",
+  "title": "Подбор ключевых слов под трафик: 5–15 фраз Wordstat, не тысяча строк",
+  "wp_post_id": 14462,
+  "primary_query": "подбор ключевых слов",
+  "secondary_queries": [
+    "wordstat cursor",
+    "семантика 5-15 фраз",
+    "ключи для страницы"
+  ],
+  "char_count": 9511,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/podbor-klyuchevyh-slov-cursor-wordstat/",
+  "datePublished": "2026-07-20",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "5–15 фраз Wordstat",
+    "подбор ключей под страницу",
+    "не тысяча строк",
+    "кластер за вечер"
+  ],
+  "meta_ab": {
+    "title_seo": "Подбор ключевых слов: 5–15 фраз Wordstat, не тысяча строк",
+    "title_ctr": "Тысяча ключей и ступор? Возьмите 5–15 под страницу",
+    "title_aeo": "Как подобрать ключевые слова через Wordstat и Cursor?",
+    "description_seo": "Кластер, 5–15 рабочих фраз и одна страница. Без бесконечной выгрузки.",
+    "description_ctr": "Семантика должна вести к тексту, а не к таблице на год.",
+    "description_aeo": "Подбор ключей: Wordstat, кластер, критерий готово для новичка."
+  }
+}

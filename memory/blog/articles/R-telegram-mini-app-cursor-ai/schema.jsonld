@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/telegram-mini-app-cursor-ai/#webpage",
+      "url": "https://mayai.ru/telegram-mini-app-cursor-ai/",
+      "name": "Telegram Mini App в Cursor AI без кода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Static HTML + WebApp, один экран с формой. Без React ради кнопки."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/telegram-mini-app-cursor-ai/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/telegram-mini-app-cursor-ai/#webpage"
+      },
+      "headline": "Telegram Mini App в Cursor AI без кода",
+      "description": "Static HTML + WebApp, один экран с формой. Без React ради кнопки.",
+      "datePublished": "2026-07-11",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/telegram-mini-app-cursor-ai/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/telegram-mini-app-cursor-ai/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/telegram-mini-app-cursor-ai/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как создать telegram mini apps новичку без опыта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте бота в @BotFather, попросите Cursor одну HTML-страницу с разделами и CTA, выложите на HTTPS и вставьте URL в Menu Button. Проверьте открытие на телефоне по t.me/ИмяБота?startapp – это и есть первый рабочий прототип."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли React для Mini App?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет для v1. Используйте статику и скрипт telegram-web-app.js. React-шаблоны удобны командам со сборкой, но новичку достаточно plain HTML; ориентир – vanilla-js boilerplate без npm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Mini App отличается от обычного бота?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Бот общается сообщениями в чате. Mini App показывает полноценный экран (каталог, квиз, оффер) внутри Telegram. На практике бот остаётся \"дверью\", а Mini App – \"витриной\", куда ведёт меню или startapp-ссылка."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где хостить Mini App бесплатно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Подойдут Vercel, GitHub Pages или Netlify – главное валидный HTTPS. Не делайте Menu Button на localhost: Telegram отклонит незащищённый HTTP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени на первый прототип?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир – один вечер: бот, страница в Cursor, деплой, привязка URL, тест на телефоне. Избегайте React-курса и оплаты конструктора, пока не проверили гипотезу полки на своей аудитории."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если Mini App не открывается?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте HTTPS и сертификат, обновите Menu Button, сбросьте кэш параметром ?v=2, откройте именно в клиенте Telegram, а не в обычном браузере. Уберите из URL http:// и любые локальные адреса."
+          }
+        }
+      ]
+    }
+  ]
+}

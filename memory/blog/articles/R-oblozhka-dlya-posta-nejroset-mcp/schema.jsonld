@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/#webpage",
+      "url": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/",
+      "name": "Обложка для поста: 3 размера за вечер без дизайнера",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "MCP, три размера и проверка читаемости заголовка. Файл сразу в папке проекта."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/#webpage"
+      },
+      "headline": "Обложка для поста: 3 размера за вечер без дизайнера",
+      "description": "MCP, три размера и проверка читаемости заголовка. Файл сразу в папке проекта.",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли обложка через Cursor человеку без дизайнера?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Нужны таблица размеров, бриф на 3–5 слов и зелёный MCP. Дизайнер и Midjourney не обязательны для первого кликабельного кадра. AURA подключайте, когда нужна серия в одном стиле."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли одну картинку на VK, Telegram и Instagram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не стоит как основной план. Одна картинка почти всегда режет оффер. Сделайте три aspect_ratio из одного брифа: 1:1, 16:9, 3:4. Так выше шанс клика в каждой ленте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем обложка поста отличается от обложки сообщества VK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Обложка поста – кадр к публикации (часто 1080×1080). Обложка сообщества – широкая шапка около 1920×768. Шаблоны \"обложка вк\" из поиска чаще про шапку; для поста берите квадрат или вертикаль из таблицы выше."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если кириллица на кадре поплыла?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Укоротите оффер, усильте контраст, перегенерируйте. Проверьте full-size на телефоне. Если буквы снова ломаются – другая модель в MCP или текст поверх только как запасной путь после трёх файлов в covers/."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой размер взять для Instagram, если нет 4:5 в генераторе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Используйте 3:4 (до 1080×1440) – это ближе к официальному потолку Meta. При необходимости слегка кропните до 1080×1350 (4:5). Не растягивайте квадрат VK на вертикаль ленты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "С чего начать новичку, если MCP ещё не подключен?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сначала гайд подключение MCP в Cursor до зелёного статуса mcp-kv. Затем вернитесь к брифу и трём aspect_ratio. Не начинайте с карусели и не копируйте шапку VK как картинку к посту."
+          }
+        }
+      ]
+    }
+  ]
+}

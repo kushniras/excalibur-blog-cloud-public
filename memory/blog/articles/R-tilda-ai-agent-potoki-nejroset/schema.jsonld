@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/#webpage",
+      "url": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/",
+      "name": "Потоки Тильда: Tilda AI Agent и статья нейросетью за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Один поток, черновик статьи и ручная правка фактов. Без выдуманных метрик."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/#webpage"
+      },
+      "headline": "Потоки Тильда: Tilda AI Agent и статья нейросетью за вечер",
+      "description": "Один поток, черновик статьи и ручная правка фактов. Без выдуманных метрик.",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/tilda-ai-agent-potoki-nejroset/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как добавить поток в Тильде новичку?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте: Настройки → Подключаемые модули → Потоки → Подключить → создать поток → добавить пост. Проверьте, что раздел Потоки виден в панели."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли Тильда, если уже есть WordPress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Если сайт на Тильде – ведите блог в Потоках, не переносите всё ради API. WP удобнее для write-API; Тильда – для скорости лендинга. Не делайте двойной блог без причины."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Tilda AI Agent отличается от автопостинга в Make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Agent Feeds заполняет поля Потоков в браузере. Make чаще доставляет пост в соцсети и таблицы. Используйте агент для Тильды, Make – для доставки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли генерировать обложку вместе со статьёй?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: обложка входит в \"Заполнить всё\" через kie.ai. После генерации проверьте кириллицу и смысл кадра. При слабом результате замените обложку вручную."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько черновиков безопасно в день?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир – 1–3 черновика с вычиткой, не конвейер \"20 в прод\". Избегайте пачки без проверки SEO Title/Description."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что делать, если панели агента нет?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Проверьте: расширение включено, выбран manifest.json, открыт пост Потоков, вкладка обновлена. Уберите конфликтующие расширения на tilda.cc. Иначе – переустановите папку по README GitHub."
+          }
+        }
+      ]
+    }
+  ]
+}

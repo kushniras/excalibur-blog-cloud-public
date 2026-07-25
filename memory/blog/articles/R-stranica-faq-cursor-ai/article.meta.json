@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-faq-page",
+  "slug": "stranica-faq-cursor-ai",
+  "title": "FAQ на сайте: faq.html в Cursor без кода",
+  "wp_post_id": 14146,
+  "primary_query": "faq на сайте",
+  "secondary_queries": [
+    "faq.html cursor",
+    "частые вопросы страница",
+    "faq без кода"
+  ],
+  "char_count": 9476,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/stranica-faq-cursor-ai/",
+  "datePublished": "2026-07-09",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "faq.html в Cursor",
+    "5–7 реальных вопросов",
+    "ссылка с главной",
+    "без выдуманного FAQ"
+  ],
+  "meta_ab": {
+    "title_seo": "FAQ на сайте: faq.html в Cursor без кода",
+    "title_ctr": "Одни и те же вопросы в Директе? Соберите FAQ",
+    "title_aeo": "Как сделать страницу FAQ в Cursor AI?",
+    "description_seo": "5–7 пар вопрос–ответ из реальных обращений и ссылка с главной. Без пустого SEO-FAQ.",
+    "description_ctr": "Закройте типовые возражения одной страницей.",
+    "description_aeo": "FAQ-страница: структура, ошибки и проверка в браузере."
+  }
+}

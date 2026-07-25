@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-portfolio",
+  "slug": "stranica-portfolio-cursor-ai",
+  "title": "Портфолио на сайт: portfolio.html в Cursor без кода",
+  "wp_post_id": 14125,
+  "primary_query": "портфолио на сайт",
+  "secondary_queries": [
+    "portfolio.html",
+    "кейсы на сайт",
+    "портфолио без кода"
+  ],
+  "char_count": 9824,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/stranica-portfolio-cursor-ai/",
+  "datePublished": "2026-07-09",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "portfolio.html",
+    "3 кейса задача-результат",
+    "превью со ссылкой",
+    "портфолио за вечер"
+  ],
+  "meta_ab": {
+    "title_seo": "Портфолио на сайт: portfolio.html в Cursor без кода",
+    "title_ctr": "Красивые превью без результата? 3 кейса с метрикой",
+    "title_aeo": "Как сделать портфолио на сайт в Cursor AI?",
+    "description_seo": "3 кейса: задача, действие, результат. Без сетки из 20 пустых карточек.",
+    "description_ctr": "Заказчик хочет доказательства. Соберите portfolio.html.",
+    "description_aeo": "Портфолио: структура карточки, ошибки и проверка ссылок."
+  }
+}

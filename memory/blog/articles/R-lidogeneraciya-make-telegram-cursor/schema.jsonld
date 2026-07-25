@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/lidogeneraciya-make-telegram-cursor/#webpage",
+      "url": "https://mayai.ru/lidogeneraciya-make-telegram-cursor/",
+      "name": "Лидогенерация без агентства: свой канал заявок до покупки CPL",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Один вход, Sheets и уведомление. Проверьте тестовую заявку до бюджета на рекламу."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/lidogeneraciya-make-telegram-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/lidogeneraciya-make-telegram-cursor/#webpage"
+      },
+      "headline": "Лидогенерация без агентства: свой канал заявок до покупки CPL",
+      "description": "Один вход, Sheets и уведомление. Проверьте тестовую заявку до бюджета на рекламу.",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/lidogeneraciya-make-telegram-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/lidogeneraciya-make-telegram-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/lidogeneraciya-make-telegram-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "С чего начать: свой канал или агентство?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На старте – свой ящик заявок. Агентство на CPL имеет смысл, когда труба уже пишет строки и шлёт пуши: иначе вы платите за контакты в никуда. Свой канал не запрещает потом купить лиды – он даёт куда их складывать и сколько времени вы реально тратите на ответ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Хватит ли бесплатного Make на первую трубу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для одного сценария \"триггер → Sheets → Telegram\" Free обычно хватает: лимит credits и два активных сценария. Не включайте пять активных схем day-1 – упрётесь в лимит раньше, чем в заявки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Подойдёт ли маршрут маркетологу без кода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если остаётесь в модулях Make и BotFather. Код и сервер не нужны для MVP. Сложный лендинг или Mini App можно углубить отдельным гайдом, когда труба уже зелёная."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему нельзя настроить все каналы сразу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Потому что без одной рабочей проверки вы не отличите поломку канала от поломки трубы. Один вход → строка → пуш → ON. Второй канал – только после этого. Если очень хочется \"на всякий случай\" второй вход – запишите его в заметку на завтра, не на холст Make сегодня."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что считать готовым каналом заявок?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Есть один вход (форма или бот), строка в Sheets и уведомление вам. Без записи в таблице канал ещё не готов, даже если схема в Make красивая."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли сразу покупать рекламу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала проверьте, что тестовая заявка доходит до вас. Иначе CPL уйдёт в пустоту. На практике один тестовый лид важнее бюджета."
+          }
+        }
+      ]
+    }
+  ]
+}
