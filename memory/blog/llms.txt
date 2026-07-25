@@ -3,27 +3,87 @@
 
 ## Blog Articles
 
+- [Как сделать карусель Instagram нейросетью в Cursor?](https://mayai.ru/karusel-instagram-nejroseti-cursor/): Карусель в Cursor: размер, хук, кириллица, чеклист перед выкладкой.
+- [Как сохранить контекст субагентов в Cursor?](https://mayai.ru/kak-sohranit-kontekst-subagentov-cursor/): Контекст субагентов: чем не «память нейросети», шаблоны memory/ и типичные ошибки.
+- [Что выбрать маркетологу: Make или n8n?](https://mayai.ru/make-ili-n8n-dlya-marketinga/): Make vs n8n: таблица, когда self-host, типичные ошибки выбора.
+- [Как сделать отложенный постинг через Make и Sheets?](https://mayai.ru/otlozhennyj-posting-make-google-sheets/): Отложенный постинг: Sheets, Make, ошибки timezone.
+- [Как написать описание товара нейросетью в Cursor?](https://mayai.ru/opisanie-tovara-nejroset-cursor/): Описание товара: бриф, структура, ошибки копирования чужих гарантий.
+- [Как подобрать ключевые слова через Wordstat и Cursor?](https://mayai.ru/podbor-klyuchevyh-slov-cursor-wordstat/): Подбор ключей: Wordstat, кластер, критерий готово для новичка.
 - [Как собрать семантическое ядро новичку через Wordstat MCP в Cursor?](https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/): Семантическое ядро – карта спроса с частотностями и URL под каждый интент. В Cursor это связка Wordstat MCP и кластеров, а не Excel на 10 тысяч строк.
+- [Как сделать многостраничный сайт в Cursor с TEYA?](https://mayai.ru/mnogostranichnyj-sait-cursor-teya/): Многостраничник: лендинг vs сетка vs thin, шаги TEYA.
+- [Что такое вайбкодинг для маркетинга в Cursor?](https://mayai.ru/vajbkoding-marketing-cursor-ai/): Вайбкодинг: отличие от заказа разработки, шаги и ошибки.
 - [Как добавить микроразметку JSON-LD FAQ и Article без плагина?](https://mayai.ru/mikrorazmetka-sajta-json-ld/): Микроразметка JSON-LD – машиночитаемые факты страницы (автор, даты, FAQ). Успех вечера – галочка валидатора, а не FAQ-аккордеон в Google.
 - [Как удалить фон нейросетью через MCP в Cursor?](https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/): Удаление фона в Cursor: MCP vs remove.bg vs промпт, чеклист и когда не ставить Recraft.
+- [Как настроить автопостинг в Threads через Make?](https://mayai.ru/avtoposting-threads-make-google-sheets/): Автопостинг Threads: сравнение с ручным, риски бана, шаги Make.
+- [Как подключить Яндекс Диск API к Make для контент-завода?](https://mayai.ru/yandeks-disk-api-make-kontent-zavod/): Яндекс Диск в Make: OAuth, 409, publish и когда API не нужен.
 - [Как создать ИИ чат-бот для бизнеса в Telegram за 7-14 дней?](https://mayai.ru/ii-chat-bot-dlya-biznesa-workflow/): Чат боты для бизнеса в 2026: выбор задачи, RAG на FAQ, AI Agent в n8n или Make, передача оператору и целевые метрики 60-80% без человека.
+- [Как подключить Яндекс Метрику API в Cursor?](https://mayai.ru/yandeks-metrika-api-cursor-skill/): Метрика API: skill Cursor, Secrets, ошибки новичков.
+- [Как сделать DESIGN.md в Cursor AI?](https://mayai.ru/design-md-cursor-ai/): DESIGN.md: зачем контракт стиля, как подключить правило и проверить вторую секцию.
+- [Как сделать автоответчик в Telegram через Make?](https://mayai.ru/avtootvetchik-telegram-make/): Автоответчик Telegram: Away vs бот vs таблица, антипетля и проверка.
 - [Как настроить ruleset и Skill в Cursor?](https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/): Rules vs Skill в Cursor: когда alwaysApply, как проверить новый чат и чем Skill не MCP.
 - [Как развернуть локальную LLM через Ollama для бизнеса?](https://mayai.ru/ollama-lokalnaya-llm-dlya-biznesa/): Ollama для бизнеса – установка, выбор модели под железо, OpenAI-совместимый API и подключение к n8n. Когда оставить облачный fallback для критичных ответов.
+- [Как сделать фавикон для сайта в Cursor?](https://mayai.ru/favicon-sait-cursor-ai/): Фавикон: чем не логотип в шапке, какой размер и как проверить в браузере.
 - [Как сделать внутреннюю перелинковку статей после публикации?](https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/): Внутренняя перелинковка – кликабельные ссылки между страницами сайта. После контент-завода это первый шаг, а не задача "для SEO-профи".
+- [Как писать промты для нейросети в Cursor?](https://mayai.ru/kak-pisat-promty-dlya-nejroseti-cursor/): Промпты Cursor: сравнение короткой фразы и карточки ТЗ, чеклист границ и Secrets.
 - [Как сделать SEO-аудит одной страницы через SEO+GEO skill в Cursor?](https://mayai.ru/seo-audit-sajta-cursor-geo-skill/): SEO-аудит в Cursor через skill – локальный отчёт MD+JSON по одной странице с отдельными блоками Google, Яндекс и GEO.
+- [Как начать автоматизацию маркетинга в Make?](https://mayai.ru/avtomatizaciya-marketinga-make-cursor/): Автоматизация маркетинга: с чего начать, ошибки, критерий готово.
+- [Как генерировать картинки в Cursor через MCP?](https://mayai.ru/generaciya-kartinok-mcp-cursor-marketing/): MCP vs Midjourney: когда нужен кадр в папке, как снять фон и проверить кириллицу.
+- [Как сделать рассылку в Telegram через Make?](https://mayai.ru/rassylka-telegram-make-google-sheets/): Рассылка Telegram: Sheets, Make, согласия и типичные ошибки.
 - [Как создать llms.txt для сайта и проверить файл?](https://mayai.ru/sozdat-llms-txt-dlya-sajta/): Чтобы создать llms.txt, соберите важные URL, оформите Markdown-файл, выложите его в корень сайта и проверьте HTTP 200, ссылки и Lighthouse.
+- [Как добавить отзывы на сайт в Cursor AI?](https://mayai.ru/stranica-otzyvov-cursor-ai/): Страница отзывов: структура, этика и типичные ошибки.
+- [Как создать мудборд нейросетью в Cursor?](https://mayai.ru/mudbord-nejroset-cursor-marketing/): Мудборд: зачем палитра, как дать референсы агенту и проверить единство.
+- [Как сделать cookie-баннер на сайт в Cursor?](https://mayai.ru/cookie-banner-sait-cursor-ai/): Cookie-баннер: когда нужен, текст, ошибки вёрстки.
+- [Как настроить роли субагентов и оркестратор в Cursor?](https://mayai.ru/roli-subagentov-cursor-orchestrator/): Субагенты Cursor: матрица владеет/не трогает, research→draft и когда не нужен рой.
 - [Как настроить автопостинг в Telegram через Cloud Agents?](https://mayai.ru/kak-nastroit-avtoposting-telegram-cloud-agents/): Автопостинг через Cloud Agents Cursor: бот, chat_id, dry-run, posted_news.tsv и только потом cron.
+- [Как написать сценарий для Reels нейросетью?](https://mayai.ru/scenarij-reels-nejroset-cursor/): Сценарий Reels: структура, ошибки воды и критерий готово.
+- [Чем Cloud Agents отличаются от Automations в Cursor?](https://mayai.ru/cursor-cloud-agents-avtomatizaciya/): Cloud Agents vs Automations vs Make: когда какой контур для маркетинга.
 - [Как подключить MCP сервер субагентам Cursor?](https://mayai.ru/kak-podklyuchit-mcp-subagentam-cursor/): MCP сервер простыми словами: розетка tools для роли, не ещё один чат. Чеклист на один вечер.
+- [Как добавить Яндекс карту на сайт в Cursor?](https://mayai.ru/yandeks-karta-sait-cursor-ai/): Яндекс карта: когда нужна, вставка, типичные ошибки.
 - [Как запустить локальный AI-агент через Cursor SDK?](https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/): Cursor SDK: чем отличается от Cloud Agents и чата, лимиты Free, типичные ошибки первого запуска.
 - [Как настроить geo оптимизацию сайта для попадания в ответы нейросетей?](https://mayai.ru/geo-optimizaciya-sajta-2026/): Geo оптимизация сайта – настройка robots.txt, answer-first блоков, FAQPage Schema и мониторинга промптов, чтобы нейросети цитировали ваш бренд как источник.
+- [Как прогреть аккаунт перед автопостингом?](https://mayai.ru/progrev-akkauntov-pered-avtopostingom/): Прогрев: зачем, сколько ручных шагов и когда включать Make.
 - [Как построить RAG-систему с векторной базой знаний в 2026?](https://mayai.ru/postroenie-rag-sistemy-vektornaya-baza/): RAG система - это поиск фрагментов документов в векторной базе и ответ LLM только по найденному контексту. Чанкинг 300-512 токенов, pgvector или Qdrant, eval на 10-15 вопросах.
+- [Как создать Skill в Cursor для маркетинга?](https://mayai.ru/cursor-skills-dlya-marketinga/): Cursor Skills: когда нужен навык, как запустить /create-skill и проверить повтор.
+- [Как пользоваться Cursor Composer для маркетинга?](https://mayai.ru/cursor-composer-dlya-marketinga/): Composer vs чат: модель 2.5, Standard/Fast и безопасные правки.
 - [Как писать SEO-статьи и что такое GEO в одном материале?](https://mayai.ru/primer-seo-stati/): SEO-статья закрывает запрос человека и упакована для AI-ответов: lead 350–500 знаков, атомарные H2, BlogPosting + FAQPage, llms.txt. Объём — по SERP, не по мифической норме.
+- [Как установить Гиперион для монтажа Reels в Cursor?](https://mayai.ru/kak-ustanovit-giperion-reels-subagent-cursor/): Гиперион: установка, сравнение с CapCut, критерий готово.
 - [Как проверить лимиты Cursor перед запуском агента?](https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/): Cursor лимиты: два usage pool, spend limit, Composer 2.5 и критерий готово за один вечер.
+- [Как настроить Cursor Automations по расписанию?](https://mayai.ru/kak-nastroit-cursor-automations-po-raspisaniyu/): Automations Cursor: отличие от чата, CRON_TZ, Max Mode и критерий успешного Test run.
+- [Как сделать эффект параллакса Hero в Cursor?](https://mayai.ru/effekt-parallaksa-hero-cursor/): Параллакс в Cursor: когда хватит CSS, как собрать слои и проверить читаемость.
 - [Как создать автономный контент-завод на нейросетях без навыков программирования?](https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/): ИИ-контент-завод — это система автономных ИИ-агентов (исследователь, копирайтер, критик) на no-code движках (n8n/Make) для генерации, проверки и автодистрибуции контента.
+- [Как выбрать Cloud Agents, Automations или SDK в Cursor?](https://mayai.ru/kak-vybrat-cloud-agents-automations-sdk-cursor/): Сравнение Cloud, Automation, SDK и Make: ложные развилки и критерий готово за вечер.
+- [Как сделать обложку для поста нейросетью в Cursor?](https://mayai.ru/oblozhka-dlya-posta-nejroset-mcp/): Обложка поста: размеры, MCP, кириллица и типичные ошибки.
+- [Как сделать страницу О компании в Cursor AI?](https://mayai.ru/stranica-o-kompanii-cursor-ai/): Страница О компании: структура, ошибки воды, проверка.
+- [Как не сжечь бюджет на AI-агентах в Cursor?](https://mayai.ru/cursor-ekonomika-ai-agentov/): Экономика AI-агентов: Composer vs флагман, Cloud Agent, лимиты и чеклист месяца.
 - [Как установить AURA дизайн-субагент в Cursor?](https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/): AURA: субагенты дизайна в Cursor, референс, Reviewer и ограничения первого вечера.
+- [Как настроить первый webhook в Make?](https://mayai.ru/webhook-make-pervyj-scenarij/): Webhook Make: шаги, Test и типичные ошибки новичков.
+- [Как сделать видео нейросетью через Make и Cursor?](https://mayai.ru/nejroset-dlya-sozdaniya-video-make-cursor/): AI-видео: формат 9:16, цепочка Make/Cursor и типичные ошибки.
+- [Как сделать лендинг в Cursor AI без кода?](https://mayai.ru/cursor-ai-lending-bez-koda/): Лендинг Cursor: Tailwind CDN, Formspree, Vercel Drop и чек-лист запуска.
+- [Как выгрузить Wordstat API в Google Sheets через Make?](https://mayai.ru/wordstat-api-make-google-sheets/): Wordstat API: доступ, сценарий Make, лимиты и ошибки.
+- [Как установить плагин в Cursor для маркетинга?](https://mayai.ru/plaginy-cursor-ai-marketing/): Плагины Cursor: установка, проверка Customize и типичные ошибки.
+- [Как сделать бота для заявок в Telegram через Make?](https://mayai.ru/bot-dlya-zayavok-telegram-make/): Бот заявок: модули Make, ошибки Watch Updates, критерий готово.
 - [Как настроить Cursor Automations по webhook?](https://mayai.ru/kak-nastroit-cursor-automations-po-webhook/): Cursor webhook: отличие от cron и Discord, тестовый POST, типичные ошибки и критерий готово.
+- [Как установить Карусельку для Instagram-каруселей в Cursor?](https://mayai.ru/kak-ustanovit-karuselka-instagram-subagent-cursor/): Установка Карусельки: путь плагина, .env, директор и критерий 9 панелей.
+- [Как установить офис веб-страниц в Cursor?](https://mayai.ru/kak-ustanovit-ofis-veb-stranits-cursor/): Офис веб-страниц: установка плагина, first-run, что отложить и как проверить результат.
+- [Как сделать страницу 404 в Cursor AI?](https://mayai.ru/stranica-404-cursor-ai/): Страница 404: зачем, что написать и как проверить.
+- [Как сделать Telegram Mini App в Cursor?](https://mayai.ru/telegram-mini-app-cursor-ai/): Mini App: когда нужен, установка, типичные ошибки пути.
+- [Как написать статью с помощью нейросети в Cursor?](https://mayai.ru/napisat-statyu-nejrosetyu-cursor/): Статья нейросетью: структура, запрет выдуманных %, критерий готово.
 - [Как настроить IndexNow для Яндекса через Make.com?](https://mayai.ru/indexnow-yandex-make/): IndexNow – уведомление поисковикам о новом или изменённом URL. Яндекс принимает; Google протокол в 2026 не принимает.
+- [Как установить OpenClaw и связать с Make?](https://mayai.ru/ustanovka-openclaw-make-cursor/): OpenClaw: шаги установки, skill, ошибки и критерий готово.
+- [Как сделать лидогенерацию через Make и Telegram?](https://mayai.ru/lidogeneraciya-make-telegram-cursor/): Лидогенерация: бот vs форма, критерий готово и ошибки Run once.
 - [Как настроить ИИ-агентов в n8n для автоматизации бизнеса?](https://mayai.ru/avtomatizaciya-n8n-ai-agents/): Автоматизация n8n с ИИ-агентами: Chat Trigger, AI Agent node, System Message, tools и Simple Memory. Когда выбрать Make.com вместо self-host n8n.
+- [Как использовать Tilda AI Agent и Потоки?](https://mayai.ru/tilda-ai-agent-potoki-nejroset/): Потоки Тильда: когда хватает, ограничения, критерий готово.
+- [Как смонтировать Reels нейросетью в Cursor?](https://mayai.ru/nejroset-montazh-video-reels-cursor/): Монтаж Reels: когда хватит CapCut, когда Cursor, чеклист превью.
+- [Как сделать страницу FAQ в Cursor AI?](https://mayai.ru/stranica-faq-cursor-ai/): FAQ-страница: структура, ошибки и проверка в браузере.
+- [Как настроить переобход страниц Яндекса через Make?](https://mayai.ru/pereobhod-stranic-yandeks-vebmaster-make/): Переобход Вебмастера: когда нужен, лимиты и связка с Make.
 - [Как настроить автоматизацию Make с AI Agents и MCP?](https://mayai.ru/make-ai-agents-mcp-avtomatizaciya/): Автоматизация Make с AI Agents и MCP строится как управляемый workflow: обычные модули делают правила, агент решает сложные случаи, человек подтверждает риск.
 - [Как подключить MCP-серверы в Cursor для автоматизации?](https://mayai.ru/podklyuchenie-mcp-cursor/): Cursor MCP – подключение серверов через Tools & MCP или mcp.json (stdio/url), проверка статуса, allowlist и исправление красного индикатора через MCP Logs.
+- [Как установить Ядрышко SEO-субагент в Cursor?](https://mayai.ru/kak-ustanovit-yadryshko-seo-subagent-cursor/): Ядрышко Cursor: MCP Wordstat, установка, /core и критерий готового пакета.
+- [Как установить Cursor Junior наставник?](https://mayai.ru/kak-ustanovit-cursor-junior-nastavnik/): Junior: кому нужен, установка, отличие от обычного чата.
+- [Как создать квиз для лидов в Telegram через Make?](https://mayai.ru/kviz-lidov-make-telegram/): Квиз для лидов: отличие от викторины, модули Make и типичные ошибки Watch Updates.
 - [С чего начать продвижение в нейросетях и проверку цитат Алисы?](https://mayai.ru/prodvizhenie-v-nejrosetyah-alisa-checklist/): Продвижение в нейросетях для новичка – индекс, answer-first блок 40–80 слов, FAQ и ручная проверка цитат в Алисе плюс Вебмастер.
+- [Как создать AI-агента для маркетинга в Cursor без кода?](https://mayai.ru/ai-agent-marketing-cursor-subagents/): AI-агент маркетинг: роли, субагенты Cursor и первый артефакт за вечер.
+- [Как добавить Open Graph на сайт в Cursor AI?](https://mayai.ru/open-graph-sait-cursor-ai/): Open Graph vs title: размер og:image, абсолютный URL и сброс кэша Telegram.
+- [Как сделать портфолио на сайт в Cursor AI?](https://mayai.ru/stranica-portfolio-cursor-ai/): Портфолио: структура карточки, ошибки и проверка ссылок.
+- [Как написать рекламный текст нейросетью в Cursor?](https://mayai.ru/nejroset-dlya-reklamy-cursor/): Нейросеть для рекламы: структура промпта, ошибки и проверка оффера.
+- [Как установить Excalibur автоблог в Cursor?](https://mayai.ru/kak-ustanovit-excalibur-avtoblog-cursor/): Excalibur: установка, gates, что не публиковать без QA.

@@ -47,4 +47,6 @@ ChatGPT и Алиса отвечают без клика? GEO — структу
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer Wave B 2026-07-25: +2 outbound → /mikrorazmetka-sajta-json-ld/ (JSON-LD, FAQPage Schema). B09 opportunities=0. llms.txt: 24 статьи (memory/blog). Publish не запускался. Skipped weak B03→ruleset («настройка cursor» в контексте MCP).

@@ -6,7 +6,45 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 ## Open incidents
 
-(нет open; Wave B GEO remaster 2026-07-25 — INC-20260725-1426 → needs-human ниже)
+(open: INC-20260725-1434-indexer-weak-anchor-filter; needs-human: INC-20260725-1426-publish-missing-cloud-secrets)
+
+## INC-20260725-1434-indexer-weak-anchor-filter
+status: open
+run_date: 2026-07-25
+role: excalibur-blog-indexer
+topic_id: multi
+article_dir: memory/blog/articles
+severity: medium
+category: script
+
+### What went wrong
+- Full-corpus dry-run на 84 remastered articles дал 172 opportunities; большинство — generic якоря (`один прогон`, `Reload Window`, `критерий готово`, `файл в проекте`, byline `вайбкодинг`).
+- Слепой `--apply` на весь отчёт сломал бы интент (UI-chrome → product URL, exclusion mentions → hub).
+- После topical filter всё равно пришлось вручную откатить 2 связи: FAQ→JSON-LD (негативное упоминание) и favicon→вайбкодинг (`правило Cursor`).
+- Генерация `promotion-checklist.md` на все 84 перезаписала 16 уже curated checklists (B01–B10 + GEO R-*); восстановлены через `git checkout`.
+
+### How the agent recovered this run
+- Dry-run → Python-фильтр (weak denylist + topic overlap + caps 2 out / 3 in) → apply 24 → revert 2 → net 22 canonical `/{slug}/`.
+- Канонизация residual `href="/blog/{slug}/"` для slug из корпуса (0 residual).
+- llms.txt/llms-full.txt пересобраны на 84 URL; publish не запускался.
+- Curated promotion-checklists восстановлены; для остальных 68 созданы из template.
+
+### Durable fix needed before next run
+- В `excalibur_blog_interlinker.py`: denylist generic/UI якорей + skip exclusion/negative contexts; не полагаться только на skill prose.
+- Indexer skill: promotion-checklist — не перезаписывать существующий файл без `--force`; только create-if-missing.
+- Опционально: `--max-out` / `--max-in` CLI caps.
+
+### Suggested files to inspect/change
+- `scripts/excalibur_blog_interlinker.py`
+- `skills/indexer-excalibur-blog/SKILL.md`
+- `.cursor/skills/indexer-excalibur-blog/SKILL.md`
+- `shared/agent-pipeline-pitfalls.md`
+
+### Secrets
+- none recorded
+
+### Fixer resolution
+- pending
 
 ## INC-20260725-1426-publish-missing-cloud-secrets
 status: needs-human

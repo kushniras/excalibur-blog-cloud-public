@@ -68,7 +68,7 @@
 <li>Шаг 1. Создайте сценарий в Make и поставьте Schedule на Free с интервалом от 15 минут – чаще бесплатный план не даёт.</li>
 <li>Шаг 2. Добавьте Search Rows – это поиск строк по условию: статус = в_очереди, Limit 1. Без лимита community Make показывает пачку сообщений сразу.</li>
 <li>Шаг 3. Поставьте Filter Date – это проверка "время из ячейки уже наступило"; сравнивайте датами, не "как число" (Numeric vs Date ломает слот).</li>
-<li>Шаг 4. Подключите Send a Text Message через <a target="_blank" href="https://apps.make.com/telegram">модуль Telegram</a>: бот из BotFather, бот – админ канала.</li>
+<li>Шаг 4. Подключите Send a Text Message через <a target="_blank" href="https://apps.make.com/telegram">модуль Telegram</a>: бот из <a href="/bot-dlya-zayavok-telegram-make/">BotFather</a>, бот – админ канала.</li>
 <li>Шаг 5. Сразу после Send сделайте Update a Row: статус → "опубликовано". Иначе следующий прогон снова найдёт ту же строку.</li>
 <li>Шаг 6. Для VK добавьте отдельную ветку по колонке канала – не смешивайте текст двух площадок в одном Send.</li>
 <li>Шаг 7. Сохраните сценарий, но Scheduling пока OFF – сначала Run once на тесте.</li>

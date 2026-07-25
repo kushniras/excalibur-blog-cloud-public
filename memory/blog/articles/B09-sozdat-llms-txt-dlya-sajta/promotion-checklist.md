@@ -47,4 +47,6 @@ llms.txt — карта важных URL для AI-агентов, не сигн
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer Wave B 2026-07-25: interlinker opportunities=0 (якоря B09 уже покрыты/нет безопасных вставок). Включён в memory/blog/llms.txt (24 URL). Publish не запускался.

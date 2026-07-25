@@ -47,4 +47,6 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer Wave B: +1 outbound → /mikrorazmetka-sajta-json-ld/ (FAQPage schema). В llms.txt.

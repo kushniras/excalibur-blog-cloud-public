@@ -61,7 +61,7 @@
 <p>На момент проверки документации (июль 2026) актуальный npm latest пакета – <b>1.0.24</b>. Если что-то падает на моделях или auth, сначала обновите пакет, потом ищите "SDK сломан".</p>
 <p>Официальный быстрый старт лежит в репозитории <a target="_blank" href="https://github.com/cursor/cookbook">cursor/cookbook</a> – можно свериться с примерами; для первого файла достаточно своего скрипта ниже.</p>
 <h2>Один скрипт run-agent.mjs</h2>
-<p>Создайте файл <b>run-agent.mjs</b> (модуль ESM). <b>cwd</b> – папка проекта, в которой агент читает и пишет файлы. Модель в примере – <b>composer-2.5</b>: старые id вроде composer-2 / composer-2-fast по changelog Cursor перенаправляются на Composer 2.5, но в новом коде лучше сразу писать актуальный id.</p>
+<p>Создайте файл <b>run-agent.mjs</b> (модуль ESM). <b>cwd</b> – папка проекта, в которой агент читает и пишет файлы. Модель в примере – <b>composer-2.5</b>: старые id вроде composer-2 / composer-2-fast по changelog Cursor перенаправляются на <a href="/cursor-composer-dlya-marketinga/">Composer 2.5</a>, но в новом коде лучше сразу писать актуальный id.</p>
 <blockquote>
 <p>import { Agent } from "@cursor/sdk";</p>
 <p>const agent = await Agent.create({<br>

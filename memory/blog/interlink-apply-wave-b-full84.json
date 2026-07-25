@@ -1,0 +1,207 @@
+{
+  "site_base": "https://mayai.ru",
+  "total_articles": 84,
+  "raw_opportunities": 172,
+  "skipped_reasons": {
+    "low_topic_overlap": 22,
+    "byline_vibe": 20,
+    "weak_keyword": 86,
+    "exclusion_mention": 1,
+    "short_single": 3
+  },
+  "selected_count": 22,
+  "applied": 24,
+  "canonicalized_files": 6,
+  "residual_blog_prefix": [],
+  "links": [
+    {
+      "source": "B08-ii-chat-bot-dlya-biznesa-workflow",
+      "target": "R-make-ili-n8n-dlya-marketinga",
+      "href": "/make-ili-n8n-dlya-marketinga/",
+      "keyword": "n8n или make",
+      "matched_text": "n8n или Make",
+      "context": "думывает цены и не пишет лиды в CRM. Ниже - один workflow в n8n или Make за 7-14 дней: база знаний, эскалация оператору, метрики зап"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "R-make-ili-n8n-dlya-marketinga",
+      "href": "/make-ili-n8n-dlya-marketinga/",
+      "keyword": "n8n или make",
+      "matched_text": "n8n или Make",
+      "context": "контент завод на нейросетях самостоятельно?</h3> <p>Свяжите n8n или Make.com с API языковых моделей через визуальный интерфейс сцена"
+    },
+    {
+      "source": "R-cursor-ekonomika-ai-agentov",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "href": "/cursor-composer-dlya-marketinga/",
+      "keyword": "cursor composer",
+      "matched_text": "Cursor Composer",
+      "context": "лько после дешёвого пилота и лимитов</td> </tr> <tr> <td><b>Cursor Composer</b></td> <td>Редактор + модель думает и правит файлы</td> <"
+    },
+    {
+      "source": "R-ustanovka-openclaw-make-cursor",
+      "target": "R-webhook-make-pervyj-scenarij",
+      "href": "/webhook-make-pervyj-scenarij/",
+      "keyword": "Custom Webhook",
+      "matched_text": "Custom webhook",
+      "context": "uote> <ol> <li>Шаг 1. В Make создайте сценарий с Webhooks → Custom webhook или HTTP.</li> <li>Шаг 2. Подключите вызов агента (HTTP к /"
+    },
+    {
+      "source": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "target": "R-semanticheskoe-yadro-cursor-wordstat",
+      "href": "/semanticheskoe-yadro-cursor-wordstat/",
+      "keyword": "wordstat mcp",
+      "matched_text": "Wordstat MCP",
+      "context": "ne.py только diagnostic); пост @maya_pro #1332; частотности Wordstat MCP, прогон 2026-07-22.</p> </blockquote> <table> <thead> <tr>"
+    },
+    {
+      "source": "R-kak-ustanovit-karuselka-instagram-subagent-cursor",
+      "target": "R-semanticheskoe-yadro-cursor-wordstat",
+      "href": "/semanticheskoe-yadro-cursor-wordstat/",
+      "keyword": "wordstat mcp",
+      "matched_text": "Wordstat MCP",
+      "context": "ple (только KIE_API_KEY); пост @maya_pro #1330; частотности Wordstat MCP, прогон 2026-07-22.</p> </blockquote> <h2>Частые вопросы</h"
+    },
+    {
+      "source": "R-design-md-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "href": "/kak-nastroit-ruleset-i-skill-cursor/",
+      "keyword": "cursor rules",
+      "matched_text": "Cursor Rules",
+      "context": "ингу).<br> <b>Достоверность данных:</b> паттерн DESIGN.md + Cursor Rules сверен с cursor.com/docs/rules и designmd.app; сигналы AURA"
+    },
+    {
+      "source": "R-favicon-sait-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "href": "/kak-nastroit-ruleset-i-skill-cursor/",
+      "keyword": "cursor rules",
+      "matched_text": "Cursor Rules",
+      "context": "PNG и положил файл не туда. На Vercel Drop иконки не было. Cursor Rules работают только как .mdc в .cursor/rules/; обычный .md аген"
+    },
+    {
+      "source": "R-stranica-otzyvov-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "href": "/kak-nastroit-ruleset-i-skill-cursor/",
+      "keyword": "cursor rules",
+      "matched_text": "Cursor Rules",
+      "context": "файл .cursor/rules/reviews.mdc. В официальной документации Cursor Rules нужны frontmatter и alwaysApply: true – иначе агент может и"
+    },
+    {
+      "source": "R-kak-zapustit-lokalnyy-ai-agent-cursor-sdk",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "href": "/cursor-composer-dlya-marketinga/",
+      "keyword": "Composer 2.5",
+      "matched_text": "Composer 2.5",
+      "context": "2 / composer-2-fast по changelog Cursor перенаправляются на Composer 2.5, но в новом коде лучше сразу писать актуальный id.</p> <blo"
+    },
+    {
+      "source": "R-kak-proverit-limity-cursor-pered-agentami",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "href": "/cursor-composer-dlya-marketinga/",
+      "keyword": "Composer 2.5",
+      "matched_text": "Composer 2.5",
+      "context": "ереносится. Monthly Limit ставьте до газа. Для пробы берите Composer 2.5. Ultra, Automations и \"обход лимитов\" в тот же вечер не вхо"
+    },
+    {
+      "source": "R-opisanie-tovara-nejroset-cursor",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "href": "/kak-ustanovit-yadryshko-seo-subagent-cursor/",
+      "keyword": "wordstat mcp",
+      "matched_text": "Wordstat MCP",
+      "context": "8-ФЗ и галлюцинации карточек (vc.ru); ориентиры SellerMoon; Wordstat MCP parent \"описание товара\" 35297 / cluster \"описание товара н"
+    },
+    {
+      "source": "R-podbor-klyuchevyh-slov-cursor-wordstat",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "href": "/kak-ustanovit-yadryshko-seo-subagent-cursor/",
+      "keyword": "wordstat mcp",
+      "matched_text": "Wordstat MCP",
+      "context": "у страницу – это не тысяча строк в парсере. Сначала зелёный Wordstat MCP (инструмент спроса в чате Cursor), один parent ниши, чистка"
+    },
+    {
+      "source": "R-semanticheskoe-yadro-cursor-wordstat",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "href": "/kak-ustanovit-yadryshko-seo-subagent-cursor/",
+      "keyword": "wordstat mcp",
+      "matched_text": "Wordstat MCP",
+      "context": "li> </ol> <blockquote><p> <b>Схема workflow:</b><br> Ниша → Wordstat MCP (цифра) → чистка мусора → кластеры → URL-карта → 3 брифа →"
+    },
+    {
+      "source": "R-avtoposting-threads-make-google-sheets",
+      "target": "R-otlozhennyj-posting-make-google-sheets",
+      "href": "/otlozhennyj-posting-make-google-sheets/",
+      "keyword": "очередь в Sheets",
+      "matched_text": "очередь в Sheets",
+      "context": "ts → один тестовый пост → лимит в день.</p>  <p>На практике очередь в Sheets спасает от хаоса вкладок, но не от бана: одинаковые посты п"
+    },
+    {
+      "source": "R-otlozhennyj-posting-make-google-sheets",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "href": "/bot-dlya-zayavok-telegram-make/",
+      "keyword": "BotFather",
+      "matched_text": "BotFather",
+      "context": "https://apps.make.com/telegram\">модуль Telegram</a>: бот из BotFather, бот – админ канала.</li> <li>Шаг 5. Сразу после Send сдела"
+    },
+    {
+      "source": "B08-ii-chat-bot-dlya-biznesa-workflow",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "href": "/bot-dlya-zayavok-telegram-make/",
+      "keyword": "BotFather",
+      "matched_text": "BotFather",
+      "context": "ат-бота для бизнеса в Telegram?</h3> <p>Создайте бота через BotFather, включите Business-режим, в n8n поставьте Telegram Trigger"
+    },
+    {
+      "source": "R-kak-nastroit-avtoposting-telegram-cloud-agents",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "href": "/bot-dlya-zayavok-telegram-make/",
+      "keyword": "BotFather",
+      "matched_text": "BotFather",
+      "context": "вал оба стека.</p> <blockquote><p><b>Схема на вечер:</b><br>BotFather + chat_id → форк rss-ai-telegram → Secrets → dry-run → один"
+    },
+    {
+      "source": "R-avtomatizaciya-marketinga-make-cursor",
+      "target": "R-lidogeneraciya-make-telegram-cursor",
+      "href": "/lidogeneraciya-make-telegram-cursor/",
+      "keyword": "тестовая заявка",
+      "matched_text": "Тестовая заявка",
+      "context": "лица → уведомление в Telegram либо строка в Sheets</td> <td>Тестовая заявка пришла без ручного копирования</td> </tr> <tr> <td>Контент<"
+    },
+    {
+      "source": "R-nejroset-dlya-reklamy-cursor",
+      "target": "R-kak-pisat-promty-dlya-nejroseti-cursor",
+      "href": "/kak-pisat-promty-dlya-nejroseti-cursor/",
+      "keyword": "промпт cursor",
+      "matched_text": "промпт Cursor",
+      "context": "ая настройка ставок. Сделайте один оффер, вставьте лимиты в промпт Cursor, проверьте факты и сохраните файл. Агентство и директолог н"
+    },
+    {
+      "source": "R-opisanie-tovara-nejroset-cursor",
+      "target": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "href": "/kak-ustanovit-cursor-junior-nastavnik/",
+      "keyword": "Cursor Junior",
+      "matched_text": "Cursor Junior",
+      "context": "кодом. Первый результат – один .md на диске. Карта кнопок – Cursor Junior на GitHub.</p> <h3>Чем этот способ лучше онлайн-генератора"
+    },
+    {
+      "source": "R-plaginy-cursor-ai-marketing",
+      "target": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "href": "/kak-ustanovit-cursor-junior-nastavnik/",
+      "keyword": "Cursor Junior",
+      "matched_text": "Cursor Junior",
+      "context": "я в пустой чат. Ответ за вечер – один готовый плагин (лучше Cursor Junior), а не оркестр с нуля: установите пакет, увидите агента и с"
+    }
+  ],
+  "reverted": [
+    {
+      "source": "R-stranica-faq-cursor-ai",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "reason": "negative/exclusion mention of JSON-LD"
+    },
+    {
+      "source": "R-favicon-sait-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "reason": "weak anchor правило Cursor → vibe article"
+    }
+  ],
+  "applied_net": 22
+}

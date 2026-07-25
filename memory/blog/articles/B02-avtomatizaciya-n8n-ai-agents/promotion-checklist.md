@@ -45,4 +45,6 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer: 0 interlink changes (B01 — SEO/GEO, B02 — n8n/AI; пересечения anchor_variants в текстах нет). После публикации B01 на mayai.ru — перезапустить `excalibur_blog_interlinker.py --apply --site-base https://mayai.ru`. llms.txt обновлён: 2 статьи в `memory/blog/llms.txt`.

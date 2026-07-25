@@ -45,4 +45,6 @@ Cursor без MCP не видит ваши сервисы — подключит
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer: interlinker --apply — 0 автоматических вставок (anchor_variants B03 не встречаются в B01/B02; B03 уже содержит 3× ссылку на B02). llms.txt обновлён: 3 статьи в `memory/blog/llms.txt`. После publish — перезапустить interlinker с `--site-base https://mayai.ru` для inbound-ссылок из B02.

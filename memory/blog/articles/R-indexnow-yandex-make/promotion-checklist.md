@@ -47,4 +47,6 @@ IndexNow через Make: пинг Яндексу после публикаци�
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer Wave B: opportunities=0. Включён в llms.txt.

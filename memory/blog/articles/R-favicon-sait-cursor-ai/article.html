@@ -67,7 +67,7 @@
 <p>Положите файлы в корень рядом с index.html: пути /favicon.ico и /favicon.svg. Не кладите в app/, public/ из Next.js или node_modules – частая ловушка, когда Cursor "угадывает" React. Workflow: генератор → корень → link в head.</p>
 <p>Сделайте минимум один ico в корне. Не делайте двадцать размеров "на всякий случай".</p>
 <h2 id="pravilo-mdc">Зафиксируйте правило favicon.mdc, чтобы Cursor не тянул Next.js</h2>
-<p>Страх Марины сбылся: она попросила Agent "добавь фавикон", и он создал app/favicon.ico под Next.js, пять link с разными PNG и положил файл не туда. На Vercel Drop иконки не было. Cursor Rules работают только как .mdc в .cursor/rules/; обычный .md агент может игнорировать.</p>
+<p>Страх Марины сбылся: она попросила Agent "добавь фавикон", и он создал app/favicon.ico под Next.js, пять link с разными PNG и положил файл не туда. На Vercel Drop иконки не было. <a href="/kak-nastroit-ruleset-i-skill-cursor/">Cursor Rules</a> работают только как .mdc в .cursor/rules/; обычный .md агент может игнорировать.</p>
 <p>Откройте папку сайта рядом с index.html и создайте .cursor/rules/favicon.mdc с alwaysApply: true:</p>
 <blockquote>
 <p>alwaysApply: true<br>

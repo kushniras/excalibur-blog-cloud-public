@@ -11,7 +11,7 @@
   <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-avtoposting-telegram-cloud-agents-inline-01.jpg" alt="Схема сравнения: Cloud Agent сам тянет RSS против отложки, где текст пишете вы" loading="lazy"><br>
 </figure>
 <p>Отложка – вы сами готовите черновик. Cloud Agent – программа в облаке Cursor, которая запускается по кнопке Test run или позже по расписанию. Automations в Cursor – это таймер и триггеры поверх такого агента. Make остаётся нормальным соседним путём, если нужен мультипостинг в Telegram и VK без кода; для первого вечера я бы не смешивал оба стека.</p>
-<blockquote><p><b>Схема на вечер:</b><br>BotFather + chat_id → форк rss-ai-telegram → Secrets → dry-run → один живой пост → проверка TSV → только потом cron</p></blockquote>
+<blockquote><p><b>Схема на вечер:</b><br><a href="/bot-dlya-zayavok-telegram-make/">BotFather</a> + chat_id → форк rss-ai-telegram → Secrets → dry-run → один живой пост → проверка TSV → только потом cron</p></blockquote>
 <ol>
 <li>Создайте бота в @BotFather и сохраните TELEGRAM_BOT_TOKEN вне чатов.</li>
 <li>Добавьте бота админом тестового чата и узнайте TELEGRAM_CHAT_ID.</li>

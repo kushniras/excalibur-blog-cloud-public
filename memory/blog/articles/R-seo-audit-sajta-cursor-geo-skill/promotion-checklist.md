@@ -47,4 +47,6 @@ SEO+GEO skill в Cursor: одна money-page и 5 правок за вечер.
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Indexer Wave B: +1 outbound → /mikrorazmetka-sajta-json-ld/ (JSON-LD). В llms.txt.

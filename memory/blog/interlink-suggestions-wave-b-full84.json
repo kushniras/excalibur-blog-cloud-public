@@ -1,0 +1,1211 @@
+{
+  "site_base": "https://mayai.ru",
+  "total_articles": 84,
+  "opportunities_found": 172,
+  "suggestions": [
+    {
+      "source": "B08-ii-chat-bot-dlya-biznesa-workflow",
+      "target": "R-make-ili-n8n-dlya-marketinga",
+      "keyword": "n8n или make",
+      "context": "думывает цены и не пишет лиды в CRM. Ниже - один workflow в n8n или Make за 7-14 дней: база знаний, эскалация оператору, метрики зап",
+      "link_replacement": "<a href=\"/make-ili-n8n-dlya-marketinga/\">n8n или Make</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "R-make-ili-n8n-dlya-marketinga",
+      "keyword": "n8n или make",
+      "context": "контент завод на нейросетях самостоятельно?</h3> <p>Свяжите n8n или Make.com с API языковых моделей через визуальный интерфейс сцена",
+      "link_replacement": "<a href=\"/make-ili-n8n-dlya-marketinga/\">n8n или Make</a>"
+    },
+    {
+      "source": "R-avtoposting-threads-make-google-sheets",
+      "target": "R-otlozhennyj-posting-make-google-sheets",
+      "keyword": "очередь в Sheets",
+      "context": "ts → один тестовый пост → лимит в день.</p>  <p>На практике очередь в Sheets спасает от хаоса вкладок, но не от бана: одинаковые посты п",
+      "link_replacement": "<a href=\"/otlozhennyj-posting-make-google-sheets/\">очередь в Sheets</a>"
+    },
+    {
+      "source": "R-avtoposting-threads-make-google-sheets",
+      "target": "R-otlozhennyj-posting-make-google-sheets",
+      "keyword": "тестовый слот",
+      "context": "инаковые посты пачкой – типичная ошибка. Живой пример: один тестовый слот → проверка текста в Threads → только потом дневной лимит.</",
+      "link_replacement": "<a href=\"/otlozhennyj-posting-make-google-sheets/\">тестовый слот</a>"
+    },
+    {
+      "source": "R-kak-nastroit-cursor-automations-po-raspisaniyu",
+      "target": "R-otlozhennyj-posting-make-google-sheets",
+      "keyword": "часовой пояс",
+      "context": "файла нет – вернитесь к Test run. Из практики чаще ломается часовой пояс и слишком длинный промпт, а не \"магия cron\".</p> <blockquot",
+      "link_replacement": "<a href=\"/otlozhennyj-posting-make-google-sheets/\">часовой пояс</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "target": "R-semanticheskoe-yadro-cursor-wordstat",
+      "keyword": "wordstat mcp",
+      "context": "ne.py только diagnostic); пост @maya_pro #1332; частотности Wordstat MCP, прогон 2026-07-22.</p> </blockquote> <table> <thead> <tr>",
+      "link_replacement": "<a href=\"/semanticheskoe-yadro-cursor-wordstat/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-karuselka-instagram-subagent-cursor",
+      "target": "R-semanticheskoe-yadro-cursor-wordstat",
+      "keyword": "wordstat mcp",
+      "context": "ple (только KIE_API_KEY); пост @maya_pro #1330; частотности Wordstat MCP, прогон 2026-07-22.</p> </blockquote> <h2>Частые вопросы</h",
+      "link_replacement": "<a href=\"/semanticheskoe-yadro-cursor-wordstat/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-semanticheskoe-yadro-cursor-wordstat",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Достоверность данных:</b> частотности parent/how-t",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-avtoposting-threads-make-google-sheets",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Опора на источники:</b> Meta Threads Posts / Overv",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-favicon-sait-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "правило Cursor",
+      "context": "ломается не генерация ico, а путь: файл не в том корне или правило Cursor тянет шаблон Next.js. Проверьте вкладку после жёсткого обно",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">правило Cursor</a>"
+    },
+    {
+      "source": "R-favicon-sait-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Опора на источники:</b> Google Search Central (к",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "B09-sozdat-llms-txt-dlya-sajta",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "</b> Артур Хорошев, CEO Maya AI и автор курса по Make.com и вайбкодингу. Факты сверены с llmstxt.org, Google Search Central, Chrome",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-stranica-otzyvov-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Достоверность данных:</b> правила Cursor (.curso",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-cookie-banner-sait-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Достоверность данных:</b> справка Яндекс.Метрики",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-yandeks-karta-sait-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Опора на источники:</b> справка Конструктора кар",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "B04-geo-optimizaciya-sajta-2026",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Источники по теме:</b> Google Search Central (AI",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-progrev-akkauntov-pered-avtopostingom",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Достоверность данных:</b> лимиты и запреты сверены",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Опора на источники:</b> README, docs/INSTALL.md и",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "B05-avtonomnyj-kontent-zavod-nejroseti",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "нтов под задачи своего бизнеса и внедрять продвинутые фишки вайбкодинга, приходите на наш <a href=\"https://kv-ai.ru/obuchenie-po-ma",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодинга</a>"
+    },
+    {
+      "source": "R-stranica-o-kompanii-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "вы, политика конфиденциальности. Если хотите глубже освоить вайбкодинг без кода, загляните в <a href=\"https://kv-ai.ru/obuchenie-p",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодинг</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-aura-dizajn-subagent-cursor",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Достоверность данных:</b> репозиторий Horosheff/",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-cursor-ai-lending-bez-koda",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "ылка после публикации на сайте).</p> <p>Хотите углубиться в вайбкодинг и автоматизацию без кода – в <a target=\"_blank\" href=\"https",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодинг</a>"
+    },
+    {
+      "source": "R-wordstat-api-make-google-sheets",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Опора на источники:</b> справка Яндекса \"API Вордс",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-bot-dlya-zayavok-telegram-make",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Опора на источники:</b> core.telegram.org/bots и",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-stranica-404-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Опора на источники:</b> Vercel KB Custom 404 (20",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-lidogeneraciya-make-telegram-cursor",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).</p> <p><b>Опора на источники:</b> apps.make.com/telegram,",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "B02-avtomatizaciya-n8n-ai-agents",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "arget=\"_blank\">обучение по Make</a>: там разбор AI Agents и вайбкодинга на живых сценариях.</li> </ol>  <p>Вопросы по нодам и ошибк",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодинга</a>"
+    },
+    {
+      "source": "R-nejroset-montazh-video-reels-cursor",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Опора на источники:</b> OpenAI Whisper README и cr",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-stranica-faq-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">простым ИИ-чат-ботом для бизнеса</a>. Для более глубокого вайбкодинга без кода – <a href=\"https://kv-ai.ru/obuchenie-po-make\" tar",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодинга</a>"
+    },
+    {
+      "source": "R-pereobhod-stranic-yandeks-vebmaster-make",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Опора на источники:</b> справка Яндекса \"Переобх",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-kviz-lidov-make-telegram",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Опора на источники:</b> каталог Telegram Bot и how",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-open-graph-sait-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br> <b>Источники сверки:</b> обязательные свойства OG – o",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-stranica-portfolio-cursor-ai",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "и грузятся, кнопка CTA не уехала за край.</p> <p>Глубже про вайбкодинг и заявки – в <a href=\"https://kv-ai.ru/obuchenie-po-make\" t",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодинг</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-excalibur-avtoblog-cursor",
+      "target": "R-vajbkoding-marketing-cursor-ai",
+      "keyword": "вайбкодинг",
+      "context": "\">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и вайбкодингу).<br>   <b>Опора на источники:</b> GitHub Horosheff/EXCALIB",
+      "link_replacement": "<a href=\"/vajbkoding-marketing-cursor-ai/\">вайбкодингу</a>"
+    },
+    {
+      "source": "R-stranica-faq-cursor-ai",
+      "target": "R-mikrorazmetka-sajta-json-ld",
+      "keyword": "json-ld",
+      "context": "бязательна. Делайте живые ответы и CTA; не тратьте вечер на JSON-LD ради формата, которого уже нет в выдаче.</p> <h2 id=\"menu-d",
+      "link_replacement": "<a href=\"/mikrorazmetka-sajta-json-ld/\">JSON-LD</a>"
+    },
+    {
+      "source": "R-rassylka-telegram-make-google-sheets",
+      "target": "R-avtoposting-threads-make-google-sheets",
+      "keyword": "лимит в день",
+      "context": "ан за спам. На практике Sheets с сегментом → тест на себе → лимит в день.</p>  <blockquote> <p>Соберите Google Sheets с колонками ch",
+      "link_replacement": "<a href=\"/avtoposting-threads-make-google-sheets/\">лимит в день</a>"
+    },
+    {
+      "source": "R-kak-nastroit-cursor-automations-po-raspisaniyu",
+      "target": "R-avtootvetchik-telegram-make",
+      "keyword": "ответ на заявку",
+      "context": "а разовая и вы у ноутбука – обычный чат дешевле. Если нужен ответ на заявку \"прямо сейчас\" – смотрите webhook, не cron. Боль утра – сно",
+      "link_replacement": "<a href=\"/avtootvetchik-telegram-make/\">ответ на заявку</a>"
+    },
+    {
+      "source": "R-design-md-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "ингу).<br> <b>Достоверность данных:</b> паттерн DESIGN.md + Cursor Rules сверен с cursor.com/docs/rules и designmd.app; сигналы AURA",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "R-favicon-sait-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "PNG и положил файл не туда. На Vercel Drop иконки не было. Cursor Rules работают только как .mdc в .cursor/rules/; обычный .md аген",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "R-stranica-otzyvov-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "файл .cursor/rules/reviews.mdc. В официальной документации Cursor Rules нужны frontmatter и alwaysApply: true – иначе агент может и",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "R-cookie-banner-sait-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "ласия \"из облака\"; для маленького лендинга он часто лишний. Cursor Rules работают только как файлы .mdc в папке .cursor/rules/; обыч",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "R-yandeks-karta-sait-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "ли npm-пакет вроде react-yandex-maps-constructor. Например, Cursor Rules работают только как .mdc в .cursor/rules/; обычный .md аген",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "R-stranica-o-kompanii-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "HTML\" агент часто выдаёт React и package.json. Официальные Cursor Rules работают только как .mdc в .cursor/rules/; обычный .md аген",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "R-stranica-faq-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "\"один static HTML\" агент часто выдаёт React и npm install. Cursor Rules работают только как .mdc в .cursor/rules/; обычный .md аген",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "настройка cursor",
+      "context": ": не откроет сайт, не подтянет документацию, не тронет CMS. Настройка cursor mcp занимает 15–30 минут. Ниже – подключение через Tools &a",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Настройка cursor</a>"
+    },
+    {
+      "source": "R-stranica-portfolio-cursor-ai",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "cursor rules",
+      "context": "айл .cursor/rules/portfolio.mdc. В официальной документации Cursor Rules нужны frontmatter и alwaysApply: true – иначе агент может и",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Cursor Rules</a>"
+    },
+    {
+      "source": "R-pereobhod-stranic-yandeks-vebmaster-make",
+      "target": "R-favicon-sait-cursor-ai",
+      "keyword": "favicon.ico",
+      "context": "ги, карточки.</li> <li>Не делайте переобход для robots.txt, favicon.ico и Sitemap – у них другие разделы Вебмастера.</li> <li>Добав",
+      "link_replacement": "<a href=\"/favicon-sait-cursor-ai/\">favicon.ico</a>"
+    },
+    {
+      "source": "R-nejroset-dlya-reklamy-cursor",
+      "target": "R-kak-pisat-promty-dlya-nejroseti-cursor",
+      "keyword": "промпт cursor",
+      "context": "ая настройка ставок. Сделайте один оффер, вставьте лимиты в промпт Cursor, проверьте факты и сохраните файл. Агентство и директолог н",
+      "link_replacement": "<a href=\"/kak-pisat-promty-dlya-nejroseti-cursor/\">промпт Cursor</a>"
+    },
+    {
+      "source": "R-kak-udalit-fon-nejrosetyu-mcp-cursor",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "параллакс-агента в задачу \"убери фон с одного PNG\".</p> <p>Критерий готово: файл в проекте, прозрачность видна на цветной подложке, пу",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "Внешний Wordstat или диск – это MCP, не ещё один SKILL.md. Критерий готово: новый чат пишет в вашем тоне без ритуала.</p> <blockquote>",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-favicon-sait-cursor-ai",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "трее, чем ещё один промпт \"сделай фавикон красивее\".</p> <p>Критерий готово: во вкладке ваша иконка, не серый лист. Результат вечера –",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-kak-pisat-promty-dlya-nejroseti-cursor",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "картинок в текстовый чат. Часто ломается связка \"запреты + критерий готово\". Результат – папка шаблонов и один чистый черновик поста б",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">критерий готово</a>"
+    },
+    {
+      "source": "R-roli-subagentov-cursor-orchestrator",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "тения статуса)<br> Задача: собрать факты по теме поста.<br> Критерий готово: в brief.md есть оффер, аудитория и 3–5 фактов с источникам",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-cursor-cloud-agents-avtomatizaciya",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "ём конкурентам, черновик поста или RSS-дайджест в Telegram. Критерий готово – не \"ИИ подумал\", а файл md, сообщение в тестовом канале и",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-kak-zapustit-lokalnyy-ai-agent-cursor-sdk",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "ursor-orchestrator/\">агент Cursor</a>, только из терминала. Критерий готово – файл на диске, например <b>brief.md</b>. \"Локальный\" в do",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-cursor-skills-dlya-marketinga",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "> (что делает + когда вызывать). В теле – вход → действия → критерий готово. Секреты (токены, пароли) – только в env, не в тексте навык",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">критерий готово</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "блог\" и \"ещё сетку\" – один запрос, одна посадочная.</p> <p>Критерий готово:</p> <ul> <li>есть HTML или PHP-файл черновика;</li> <li>од",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-ustanovka-openclaw-make-cursor",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "один сценарий Make",
+      "context": "nclaw\">Когда OpenClaw не ставить сегодня</h2> <p>Если нужен один сценарий Make без gateway – не усложняйте стек. Если нет времени на skill",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">один сценарий Make</a>"
+    },
+    {
+      "source": "R-pereobhod-stranic-yandeks-vebmaster-make",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "один сценарий Make",
+      "context": "ь\" квоту. Ответ проще страха: таблица URL в Google Sheets и один сценарий Make с HTTP POST в очередь переобхода. За вечер вы получите task",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">один сценарий Make</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "кажется, что плагин не работает.</p> <blockquote><p>Сначала критерий готово и один узкий шаг, потом расширение стека. Типичная ошибка –",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">критерий готово</a>"
+    },
+    {
+      "source": "R-ai-agent-marketing-cursor-subagents",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "статьи, отчёт по трём конкурентам или пакет из трёх постов. Критерий готово – не \"ИИ подумал\", а файл в папке: brief.md или draft-post.",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-excalibur-avtoblog-cursor",
+      "target": "R-avtomatizaciya-marketinga-make-cursor",
+      "keyword": "критерий готово",
+      "context": "веряемыми фактами, не абзац из воздуха.</p> <blockquote> <p>Критерий готово: команда <i>/excalibur-blog-run … publish: no</i> (или явна",
+      "link_replacement": "<a href=\"/avtomatizaciya-marketinga-make-cursor/\">Критерий готово</a>"
+    },
+    {
+      "source": "R-avtoposting-threads-make-google-sheets",
+      "target": "R-rassylka-telegram-make-google-sheets",
+      "keyword": "лимит в день",
+      "context": "вые посты пачкой. На практике Sheets → один тестовый пост → лимит в день.</p>  <p>На практике очередь в Sheets спасает от хаоса вкла",
+      "link_replacement": "<a href=\"/rassylka-telegram-make-google-sheets/\">лимит в день</a>"
+    },
+    {
+      "source": "R-kak-zapustit-lokalnyy-ai-agent-cursor-sdk",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "keyword": "Composer 2.5",
+      "context": "2 / composer-2-fast по changelog Cursor перенаправляются на Composer 2.5, но в новом коде лучше сразу писать актуальный id.</p> <blo",
+      "link_replacement": "<a href=\"/cursor-composer-dlya-marketinga/\">Composer 2.5</a>"
+    },
+    {
+      "source": "R-kak-proverit-limity-cursor-pered-agentami",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "keyword": "Composer 2.5",
+      "context": "ереносится. Monthly Limit ставьте до газа. Для пробы берите Composer 2.5. Ultra, Automations и \"обход лимитов\" в тот же вечер не вхо",
+      "link_replacement": "<a href=\"/cursor-composer-dlya-marketinga/\">Composer 2.5</a>"
+    },
+    {
+      "source": "R-kak-vybrat-cloud-agents-automations-sdk-cursor",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "keyword": "Composer 2.5",
+      "context": "</p> <p>Для рутины – более дешёвая first-party модель вроде Composer 2.5. Дорогую оставьте разовому разбору, не ночному cron с max c",
+      "link_replacement": "<a href=\"/cursor-composer-dlya-marketinga/\">Composer 2.5</a>"
+    },
+    {
+      "source": "R-cursor-ekonomika-ai-agentov",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "keyword": "Composer 2.5",
+      "context": "п-кран, потом облако.</p>  <blockquote><p>Для рутины берите Composer 2.5 / Auto в first-party пуле Cursor, а не Claude Opus \"потому",
+      "link_replacement": "<a href=\"/cursor-composer-dlya-marketinga/\">Composer 2.5</a>"
+    },
+    {
+      "source": "R-cursor-ekonomika-ai-agentov",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "keyword": "cursor composer",
+      "context": "лько после дешёвого пилота и лимитов</td> </tr> <tr> <td><b>Cursor Composer</b></td> <td>Редактор + модель думает и правит файлы</td> <",
+      "link_replacement": "<a href=\"/cursor-composer-dlya-marketinga/\">Cursor Composer</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "keyword": "Composer 2.5",
+      "context": "Office Page\". Пост канала #1320 описывает ту же сборку под Composer 2.5: 12 субагентов и оркестратор, скачать можно с GitHub или че",
+      "link_replacement": "<a href=\"/cursor-composer-dlya-marketinga/\">Composer 2.5</a>"
+    },
+    {
+      "source": "R-napisat-statyu-nejrosetyu-cursor",
+      "target": "R-cursor-composer-dlya-marketinga",
+      "keyword": "Composer 2.5",
+      "context": "\"факты к проверке\" → human-in-the-loop </p></blockquote> <p>Composer 2.5 в Cursor заточен под длинные задачи с правкой файлов – удоб",
+      "link_replacement": "<a href=\"/cursor-composer-dlya-marketinga/\">Composer 2.5</a>"
+    },
+    {
+      "source": "R-semanticheskoe-yadro-cursor-wordstat",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "a>) ставится одной командой install.sh / install.ps1, после Reload Window запускается как /core с URL сайта и регионом. На выходе: cl",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-mnogostranichnyj-sait-cursor-teya",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "альные плагины Cursor (~/.cursor/plugins/local/teya), затем Reload Window.</li> <li>Запустите фазу /teya-phase1 по README; не выклады",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-nejroset-dlya-sozdaniya-video-make-cursor",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "монтаж эфира",
+      "context": "оитесь, что без студии и кода не выйдет; соседние гайды про монтаж эфира, а у вас только текст акции. Ниже путь через Make (это сцен",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">монтаж эфира</a>"
+    },
+    {
+      "source": "R-plaginy-cursor-ai-marketing",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "е плодите плагины. Если нет пути ~/.cursor/plugins/local/ и Reload Window – установка застрянет. Типичная ошибка: ставить три плагина",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-karuselka-instagram-subagent-cursor",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "ursor: клон репозитория → папка в ~/.cursor/plugins/local → Reload Window → \"Каруселька\" в Customize → ключ Kie в .env → пакет из 9 с",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "в ~/.cursor/plugins/local/nero-network-office-page, делаете Reload Window – и в Customize появляется \"Nero Network Office Page\". Даль",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-nejroset-montazh-video-reels-cursor",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "превью до автопоста",
+      "context": "ка в первые 3 секунды. На практике одна нарезка, субтитры и превью до автопоста.</p>  <blockquote><p>Нейросеть для монтажа видео новичкам –",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">превью до автопоста</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": ":</b> Перезапустите Cursor или выполните Command Palette → \"Reload Window\".</li>   <li><b>Шаг 5:</b> Убедитесь, что статус сервера ак",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "проекте есть .cursor/agents/core.md (или виден /core после Reload Window); в Settings → Tools &amp; MCP сервер Wordstat зелёный и те",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "рне этой папки. Затем Restart Cursor или команда Developer: Reload Window. С июня 2026 (Cursor 3.9) plugins, skills, MCP и субагенты",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-excalibur-avtoblog-cursor",
+      "target": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "keyword": "Reload Window",
+      "context": "ючить через Customize или папку локальных плагинов, сделать Reload Window, запустить прогон с publish: no и проверить, что в папке те",
+      "link_replacement": "<a href=\"/kak-ustanovit-giperion-reels-subagent-cursor/\">Reload Window</a>"
+    },
+    {
+      "source": "R-generaciya-kartinok-mcp-cursor-marketing",
+      "target": "R-oblozhka-dlya-posta-nejroset-mcp",
+      "keyword": "кириллица на кадре",
+      "context": "/td> <td>Тот же чат, где пишете пост</td> </tr> <tr> <td><b>Кириллица на кадре</b></td> <td>Часто \"красиво, но без текста\"</td> <td>GPT Im",
+      "link_replacement": "<a href=\"/oblozhka-dlya-posta-nejroset-mcp/\">Кириллица на кадре</a>"
+    },
+    {
+      "source": "R-mudbord-nejroset-cursor-marketing",
+      "target": "R-oblozhka-dlya-posta-nejroset-mcp",
+      "keyword": "файл в проекте",
+      "context": "дры в Cursor → curation до 6–9 кадров → 3–5 HEX + запреты → файл в проекте → только потом DESIGN.md или hero. Parent \"мудборд\" – около",
+      "link_replacement": "<a href=\"/oblozhka-dlya-posta-nejroset-mcp/\">файл в проекте</a>"
+    },
+    {
+      "source": "R-cursor-composer-dlya-marketinga",
+      "target": "R-oblozhka-dlya-posta-nejroset-mcp",
+      "keyword": "файл в проекте",
+      "context": "рнёмся к началу: вечером у вас не простыня чата в Notion, а файл в проекте. Тот же Composer, но уже без путаницы окна и модели – и с к",
+      "link_replacement": "<a href=\"/oblozhka-dlya-posta-nejroset-mcp/\">файл в проекте</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "target": "R-oblozhka-dlya-posta-nejroset-mcp",
+      "keyword": "файл в проекте",
+      "context": "ого этажа.</p> <p>Сохраните ответ: скопируйте в заметку или файл в проекте. Это ваш маршрут на завтра, а не повод ставить ещё пять пла",
+      "link_replacement": "<a href=\"/oblozhka-dlya-posta-nejroset-mcp/\">файл в проекте</a>"
+    },
+    {
+      "source": "R-ai-agent-marketing-cursor-subagents",
+      "target": "R-oblozhka-dlya-posta-nejroset-mcp",
+      "keyword": "файл в проекте",
+      "context": "нт</b></td> <td>Сотрудник с доступом к папке</td> <td>Нужен файл в проекте, не только текст в окне</td> </tr> <tr> <td><b>Субагент</b>",
+      "link_replacement": "<a href=\"/oblozhka-dlya-posta-nejroset-mcp/\">файл в проекте</a>"
+    },
+    {
+      "source": "R-cursor-cloud-agents-avtomatizaciya",
+      "target": "R-cursor-ekonomika-ai-agentov",
+      "keyword": "бесплатные ai агенты",
+      "context": "d/Automations навсегда нет: нужен платный план и API usage. Бесплатные ai агенты в рекламе обычно про демо или локальные чаты. Для бизнеса ч",
+      "link_replacement": "<a href=\"/cursor-ekonomika-ai-agentov/\">Бесплатные ai агенты</a>"
+    },
+    {
+      "source": "R-ustanovka-openclaw-make-cursor",
+      "target": "R-webhook-make-pervyj-scenarij",
+      "keyword": "Custom Webhook",
+      "context": "uote> <ol> <li>Шаг 1. В Make создайте сценарий с Webhooks → Custom webhook или HTTP.</li> <li>Шаг 2. Подключите вызов агента (HTTP к /",
+      "link_replacement": "<a href=\"/webhook-make-pervyj-scenarij/\">Custom webhook</a>"
+    },
+    {
+      "source": "R-opisanie-tovara-nejroset-cursor",
+      "target": "R-wordstat-api-make-google-sheets",
+      "keyword": "5–15 фраз",
+      "context": "ечер – хватит короткого брифа.</p> <ol> <li>Шаг 1. Выпишите 5–15 фраз, как покупатель ищет товар (из кабинета, подсказок поиска и",
+      "link_replacement": "<a href=\"/wordstat-api-make-google-sheets/\">5–15 фраз</a>"
+    },
+    {
+      "source": "R-mnogostranichnyj-sait-cursor-teya",
+      "target": "R-wordstat-api-make-google-sheets",
+      "keyword": "5–15 фраз",
+      "context": "а – сетка SEO-страниц раздует поддержку. Если нет семантики 5–15 фраз – TEYA усилит тонкий контент. Типичная ошибка: 20 пустых ст",
+      "link_replacement": "<a href=\"/wordstat-api-make-google-sheets/\">5–15 фраз</a>"
+    },
+    {
+      "source": "R-kak-sohranit-kontekst-subagentov-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "Сократите facts.md, усильте правило \"читай файл\", повторите один прогон.</p> <p>Когда схема уже работает, можно углубить роли в <a",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-make-ili-n8n-dlya-marketinga",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "ернете написали бесплатный\". </p></blockquote> <p>Например, один прогон из 10 модулей на Make сжигает около 10 credits, а на n8n Cl",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-semanticheskoe-yadro-cursor-wordstat",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "Reload Window",
+      "context": "a>) ставится одной командой install.sh / install.ps1, после Reload Window запускается как /core с URL сайта и регионом. На выходе: cl",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">Reload Window</a>"
+    },
+    {
+      "source": "R-yandeks-disk-api-make-kontent-zavod",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "озню. За вечер соберите склад медиа: ключ доступа к Диску и один прогон – тестовая обложка в облаке, ссылка открывается с телефона,",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-pisat-promty-dlya-nejroseti-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "та кода?</h3> <p>Да. Первый вечер – пять текстовых файлов и один прогон поста. Код сайта не трогаете. Если интерфейс пугает – верни",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-podklyuchit-mcp-subagentam-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "ила файл с живыми данными в handoff.</p> <blockquote> <p>За один прогон одной роли – Researcher к Wordstat или Designer к image MCP",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "Reload Window",
+      "context": "плагин ради моды. Типичная ошибка: установить и не сделать Reload Window. На практике плагин виден в Customize, один прогон и превью",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "делать Reload Window. На практике плагин виден в Customize, один прогон и превью Reels до автопоста.</p>  <p>CapCut на один ролик с",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-nastroit-cursor-automations-po-raspisaniyu",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "опка в редакторе\". Отдельного лимита \"не дороже N рублей за один прогон\" в UI Automations на момент проверки форума не было: есть м",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-vybrat-cloud-agents-automations-sdk-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "роверка</h2> <p>Дальше не собирать сразу несколько агентов. Один прогон: Cloud – один Test run; Automation – один cron или один web",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">Один прогон</a>"
+    },
+    {
+      "source": "R-oblozhka-dlya-posta-nejroset-mcp",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "/i></p>  <p>Сначала таблица размеров и короткий бриф. Потом один прогон генерации на три пропорции кадра и проверка с телефона. Тол",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-cursor-ekonomika-ai-agentov",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "й: агенты = куча подписок и счёт как зарплата. Ответ проще: один прогон в Cursor на Composer, критерий готовности и чеклист лимитов",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-nejroset-dlya-sozdaniya-video-make-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "прос \"по тексту\". На практике выигрывает не бренд модели, а один прогон с понятным статусом и скачанным файлом. Если уже есть длинн",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-wordstat-api-make-google-sheets",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "es около 20). Не гоните тысячу фраз в первый вечер: сначала один прогон, потом серия с Sleep.</p> <h3>Можно ли сразу собрать семант",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-karuselka-instagram-subagent-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "Reload Window",
+      "context": "ursor: клон репозитория → папка в ~/.cursor/plugins/local → Reload Window → \"Каруселька\" в Customize → ключ Kie в .env → пакет из 9 с",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-karuselka-instagram-subagent-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "local plugins",
+      "context": "гда можно показать коллеге</h2> <p>Порядок простой: clone → local plugins → Reload → Customize → pip и .env → прогон директора → откр",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">local plugins</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "Reload Window",
+      "context": "в ~/.cursor/plugins/local/nero-network-office-page, делаете Reload Window – и в Customize появляется \"Nero Network Office Page\". Даль",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "овика. Типичная ошибка: сразу TEYA, FTP и live. На практике один прогон: тема → черновик с H1 и H2 в проекте.</p>  <p>Плагин – это",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-ustanovka-openclaw-make-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "elegram, email или Google Sheets.</li> <li>Шаг 4. Проверьте один прогон вручную: короткий бриф → ответ → сообщение вам.</li> <li>Ша",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-lidogeneraciya-make-telegram-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "story пусто и сценарий \"спит\". Дубль Watch Updates – иногда один прогон проходит, следующий молчит. Забытый Run once – холст красив",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "Reload Window",
+      "context": ":</b> Перезапустите Cursor или выполните Command Palette → \"Reload Window\".</li>   <li><b>Шаг 5:</b> Убедитесь, что статус сервера ак",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "Reload Window",
+      "context": "проекте есть .cursor/agents/core.md (или виден /core после Reload Window); в Settings → Tools &amp; MCP сервер Wordstat зелёный и те",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">Reload Window</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "skill и пачку соседних подключений. Цель – один SEO-агент и один прогон.</p> <h2>Вызвать /core с URL и регионом</h2> <p>В чате Curs",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-ai-agent-marketing-cursor-subagents",
+      "target": "R-plaginy-cursor-ai-marketing",
+      "keyword": "один прогон",
+      "context": "draft → draft-post.md. Workflow: одна задача → два файла → один прогон → критерий \"готово\".</p></blockquote> <p><i>Обновлено: 25.0",
+      "link_replacement": "<a href=\"/plaginy-cursor-ai-marketing/\">один прогон</a>"
+    },
+    {
+      "source": "R-karusel-instagram-nejroseti-cursor",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "азбирают связку агентов, MCP и аккуратный автопост без \"жми Run once в день один\".</p> <blockquote><p> <b>Материал проверен:</b>",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-make-ili-n8n-dlya-marketinga",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": ", не в чат и не в публичный пост.</li> <li>Шаг 5: запустите Run once / Execute workflow один раз вручную.</li> <li>Шаг 6: провер",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-make-ili-n8n-dlya-marketinga",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "watch updates",
+      "context": "rkflow).</li> <li>Шаг 2: поставьте триггер – webhook формы, Watch Updates бота или ручной запуск.</li> <li>Шаг 3: добавьте 2–4 действ",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Watch Updates</a>"
+    },
+    {
+      "source": "R-otlozhennyj-posting-make-google-sheets",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "Шаг 7. Сохраните сценарий, но Scheduling пока OFF – сначала Run once на тесте.</li> </ol> <p>Цепочка в одну строку: Schedule → S",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-otlozhennyj-posting-make-google-sheets",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "BotFather",
+      "context": "https://apps.make.com/telegram\">модуль Telegram</a>: бот из BotFather, бот – админ канала.</li> <li>Шаг 5. Сразу после Send сдела",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">BotFather</a>"
+    },
+    {
+      "source": "R-avtoposting-threads-make-google-sheets",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "огоните Run once и зафиксируйте первый пост</h2> <p>Нажмите Run once на сценарии. Проверьте History: оба HTTP зелёные, между ним",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-yandeks-disk-api-make-kontent-zavod",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "th (это разрешение сервису работать от вашего имени) и один Run once в Make через модуль HTTP (это запросы к Диску по адресу без",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "B08-ii-chat-bot-dlya-biznesa-workflow",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "BotFather",
+      "context": "ат-бота для бизнеса в Telegram?</h3> <p>Создайте бота через BotFather, включите Business-режим, в n8n поставьте Telegram Trigger",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">BotFather</a>"
+    },
+    {
+      "source": "R-kak-nastroit-avtoposting-telegram-cloud-agents",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "BotFather",
+      "context": "вал оба стека.</p> <blockquote><p><b>Схема на вечер:</b><br>BotFather + chat_id → форк rss-ai-telegram → Secrets → dry-run → один",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">BotFather</a>"
+    },
+    {
+      "source": "R-progrev-akkauntov-pered-avtopostingom",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "блица → пост в Telegram + VK + Instagram\". Друг сказал: жми Run once на всё сразу. В первый день ушло 6 одинаковых постов со ссы",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-nejroset-dlya-sozdaniya-video-make-cursor",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "им аватаром) дают клип 15–30 секунд за вечер после зелёного Run once (один тестовый прогон сценария). Результат: сможете выложит",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-wordstat-api-make-google-sheets",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "ему в таблице бывает одна строка вместо топа. Сделаете один Run once – сможете завтра подставлять частотности в контент-план, а",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-telegram-mini-app-cursor-ai",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "BotFather",
+      "context": ". Ответ проще – одна HTML-страница в Cursor, HTTPS-ссылка в BotFather и полка разделов внутри Telegram уже сегодня вечером.</p> <",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">BotFather</a>"
+    },
+    {
+      "source": "R-ustanovka-openclaw-make-cursor",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "рку – отложите. Типичная ошибка: поставить всё и не сделать Run once. На практике gateway → один skill → связка с Make и один ус",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-pereobhod-stranic-yandeks-vebmaster-make",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "сработало ли\". Критерий простой и видимый.</p> <p>Сделайте Run once на одном тестовом URL, который уже отдаёт 200 и не закрыт о",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "B06-make-ai-agents-mcp-avtomatizaciya",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "CRM.</li>   <li>Создайте тестовый сценарий Make и включите Run once.</li>   <li>Передайте 10-20 тестовых заявок, включая пустые",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-kviz-lidov-make-telegram",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Sheets и пуш",
+      "context": "ет за вечер: 3–5 вопросов в Telegram-боте на Make, строка в Sheets и пуш в чат – без Marquiz и программиста.</p> <h2 id=\"constraints",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Sheets и пуш</a>"
+    },
+    {
+      "source": "R-kviz-lidov-make-telegram",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "Run once",
+      "context": "вок. Друг скинул \"бота в Make\" – она собрала модули, забыла Run once, написала /start и решила, что без кода не выйдет. Боль: хо",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Run once</a>"
+    },
+    {
+      "source": "R-kviz-lidov-make-telegram",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "BotFather",
+      "context": "осов → контакт), а не викторина про кино. Workflow новичка: BotFather → Watch Updates → Data Store (шаг) → Router → Google Sheets",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">BotFather</a>"
+    },
+    {
+      "source": "R-kviz-lidov-make-telegram",
+      "target": "R-bot-dlya-zayavok-telegram-make",
+      "keyword": "watch updates",
+      "context": "кт), а не викторина про кино. Workflow новичка: BotFather → Watch Updates → Data Store (шаг) → Router → Google Sheets + уведомление в",
+      "link_replacement": "<a href=\"/bot-dlya-zayavok-telegram-make/\">Watch Updates</a>"
+    },
+    {
+      "source": "R-mnogostranichnyj-sait-cursor-teya",
+      "target": "R-telegram-mini-app-cursor-ai",
+      "keyword": "один экран",
+      "context": "lazy\"><br> </figure> <p></p> <p>Лендинг удобен под рекламу: один экран, один оффер, клик оплачен. В органике у него слабый запас:",
+      "link_replacement": "<a href=\"/telegram-mini-app-cursor-ai/\">один экран</a>"
+    },
+    {
+      "source": "R-stranica-o-kompanii-cursor-ai",
+      "target": "R-telegram-mini-app-cursor-ai",
+      "keyword": "один экран",
+      "context": "айте так.</p> <p>Сядьте на 15 минут с блокнотом. Без ИИ. На один экран выпишите только то, что можете подтвердить:</p> <ol> <li>Че",
+      "link_replacement": "<a href=\"/telegram-mini-app-cursor-ai/\">один экран</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-napisat-statyu-nejrosetyu-cursor",
+      "keyword": "черновик на диске",
+      "context": "ишу. FTP/SSH-поля можно оставить пустыми: пока нужен только черновик на диске, не выкладка на live. Пароли в диалог с агентом не отдавайт",
+      "link_replacement": "<a href=\"/napisat-statyu-nejrosetyu-cursor/\">черновик на диске</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-napisat-statyu-nejrosetyu-cursor",
+      "keyword": "черновик seo",
+      "context": "ce Page\". Дальше одна ниша и 1–3 ключа: офис ролей собирает черновик SEO-страницы (HTML/PHP) с одним H1 и понятными H2. Live и TEYA",
+      "link_replacement": "<a href=\"/napisat-statyu-nejrosetyu-cursor/\">черновик SEO</a>"
+    },
+    {
+      "source": "R-kak-sohranit-kontekst-subagentov-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "Сократите facts.md, усильте правило \"читай файл\", повторите один прогон.</p> <p>Когда схема уже работает, можно углубить роли в <a",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-yandeks-disk-api-make-kontent-zavod",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "озню. За вечер соберите склад медиа: ключ доступа к Диску и один прогон – тестовая обложка в облаке, ссылка открывается с телефона,",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-pisat-promty-dlya-nejroseti-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "та кода?</h3> <p>Да. Первый вечер – пять текстовых файлов и один прогон поста. Код сайта не трогаете. Если интерфейс пугает – верни",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-roli-subagentov-cursor-orchestrator",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "т. Когда это видно в папке проекта, добавьте ещё две роли и один прогон research→draft.</p> </blockquote> <p><i>Обновлено: 25.07.20",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-podklyuchit-mcp-subagentam-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "ила файл с живыми данными в handoff.</p> <blockquote> <p>За один прогон одной роли – Researcher к Wordstat или Designer к image MCP",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "делать Reload Window. На практике плагин виден в Customize, один прогон и превью Reels до автопоста.</p>  <p>CapCut на один ролик с",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-nastroit-cursor-automations-po-raspisaniyu",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "опка в редакторе\". Отдельного лимита \"не дороже N рублей за один прогон\" в UI Automations на момент проверки форума не было: есть м",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-vybrat-cloud-agents-automations-sdk-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "роверка</h2> <p>Дальше не собирать сразу несколько агентов. Один прогон: Cloud – один Test run; Automation – один cron или один web",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">Один прогон</a>"
+    },
+    {
+      "source": "R-oblozhka-dlya-posta-nejroset-mcp",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "/i></p>  <p>Сначала таблица размеров и короткий бриф. Потом один прогон генерации на три пропорции кадра и проверка с телефона. Тол",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-cursor-ekonomika-ai-agentov",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "й: агенты = куча подписок и счёт как зарплата. Ответ проще: один прогон в Cursor на Composer, критерий готовности и чеклист лимитов",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-nejroset-dlya-sozdaniya-video-make-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "прос \"по тексту\". На практике выигрывает не бренд модели, а один прогон с понятным статусом и скачанным файлом. Если уже есть длинн",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-wordstat-api-make-google-sheets",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "es около 20). Не гоните тысячу фраз в первый вечер: сначала один прогон, потом серия с Sleep.</p> <h3>Можно ли сразу собрать семант",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-plaginy-cursor-ai-marketing",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "b-пакет → поставить через Customize или локальный install → один прогон → чеклист на завтра. Parent \"cursor ai\" – около 13562 показ",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "овика. Типичная ошибка: сразу TEYA, FTP и live. На практике один прогон: тема → черновик с H1 и H2 в проекте.</p>  <p>Плагин – это",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-lidogeneraciya-make-telegram-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "story пусто и сценарий \"спит\". Дубль Watch Updates – иногда один прогон проходит, следующий молчит. Забытый Run once – холст красив",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "skill и пачку соседних подключений. Цель – один SEO-агент и один прогон.</p> <h2>Вызвать /core с URL и регионом</h2> <p>В чате Curs",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-ai-agent-marketing-cursor-subagents",
+      "target": "R-ustanovka-openclaw-make-cursor",
+      "keyword": "один прогон",
+      "context": "draft → draft-post.md. Workflow: одна задача → два файла → один прогон → критерий \"готово\".</p></blockquote> <p><i>Обновлено: 25.0",
+      "link_replacement": "<a href=\"/ustanovka-openclaw-make-cursor/\">один прогон</a>"
+    },
+    {
+      "source": "R-avtomatizaciya-marketinga-make-cursor",
+      "target": "R-lidogeneraciya-make-telegram-cursor",
+      "keyword": "тестовая заявка",
+      "context": "лица → уведомление в Telegram либо строка в Sheets</td> <td>Тестовая заявка пришла без ручного копирования</td> </tr> <tr> <td>Контент<",
+      "link_replacement": "<a href=\"/lidogeneraciya-make-telegram-cursor/\">Тестовая заявка</a>"
+    },
+    {
+      "source": "R-cursor-ai-lending-bez-koda",
+      "target": "R-lidogeneraciya-make-telegram-cursor",
+      "keyword": "тестовая заявка",
+      "context": "ха: один рабочий index.html, Hero и преимущества на экране, тестовая заявка в почте, https-страница открывается с мобильного.</p> <h2 i",
+      "link_replacement": "<a href=\"/lidogeneraciya-make-telegram-cursor/\">тестовая заявка</a>"
+    },
+    {
+      "source": "R-kviz-lidov-make-telegram",
+      "target": "R-lidogeneraciya-make-telegram-cursor",
+      "keyword": "лидогенерация",
+      "context": "ли в конце нет контакта и сегмента \"горячий/тёплый\", это не лидогенерация. На практике поиск по \"создать квиз\" забит майКвиз, Waygrou",
+      "link_replacement": "<a href=\"/lidogeneraciya-make-telegram-cursor/\">лидогенерация</a>"
+    },
+    {
+      "source": "R-avtoposting-threads-make-google-sheets",
+      "target": "R-pereobhod-stranic-yandeks-vebmaster-make",
+      "keyword": "статус в Sheets",
+      "context": "p> <p>Критерий успеха до FAQ: History зелёный на двух HTTP, статус в Sheets обновлён, пост виден в приложении, токен не светится в чата",
+      "link_replacement": "<a href=\"/pereobhod-stranic-yandeks-vebmaster-make/\">статус в Sheets</a>"
+    },
+    {
+      "source": "R-indexnow-yandex-make",
+      "target": "R-pereobhod-stranic-yandeks-vebmaster-make",
+      "keyword": "переобход в Вебмастере",
+      "context": "Всегда нужна, в том числе для Google</td> </tr> <tr> <td><b>Переобход в Вебмастере</b></td> <td>Ручной запрос по URL</td> <td>Разовые правки,",
+      "link_replacement": "<a href=\"/pereobhod-stranic-yandeks-vebmaster-make/\">Переобход в Вебмастере</a>"
+    },
+    {
+      "source": "R-opisanie-tovara-nejroset-cursor",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "keyword": "wordstat mcp",
+      "context": "8-ФЗ и галлюцинации карточек (vc.ru); ориентиры SellerMoon; Wordstat MCP parent \"описание товара\" 35297 / cluster \"описание товара н",
+      "link_replacement": "<a href=\"/kak-ustanovit-yadryshko-seo-subagent-cursor/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-podbor-klyuchevyh-slov-cursor-wordstat",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "keyword": "wordstat mcp",
+      "context": "у страницу – это не тысяча строк в парсере. Сначала зелёный Wordstat MCP (инструмент спроса в чате Cursor), один parent ниши, чистка",
+      "link_replacement": "<a href=\"/kak-ustanovit-yadryshko-seo-subagent-cursor/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-semanticheskoe-yadro-cursor-wordstat",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "keyword": "wordstat mcp",
+      "context": "li> </ol> <blockquote><p> <b>Схема workflow:</b><br> Ниша → Wordstat MCP (цифра) → чистка мусора → кластеры → URL-карта → 3 брифа →",
+      "link_replacement": "<a href=\"/kak-ustanovit-yadryshko-seo-subagent-cursor/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-giperion-reels-subagent-cursor",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "keyword": "wordstat mcp",
+      "context": "ne.py только diagnostic); пост @maya_pro #1332; частотности Wordstat MCP, прогон 2026-07-22.</p> </blockquote> <table> <thead> <tr>",
+      "link_replacement": "<a href=\"/kak-ustanovit-yadryshko-seo-subagent-cursor/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-karuselka-instagram-subagent-cursor",
+      "target": "R-kak-ustanovit-yadryshko-seo-subagent-cursor",
+      "keyword": "wordstat mcp",
+      "context": "ple (только KIE_API_KEY); пост @maya_pro #1330; частотности Wordstat MCP, прогон 2026-07-22.</p> </blockquote> <h2>Частые вопросы</h",
+      "link_replacement": "<a href=\"/kak-ustanovit-yadryshko-seo-subagent-cursor/\">Wordstat MCP</a>"
+    },
+    {
+      "source": "R-opisanie-tovara-nejroset-cursor",
+      "target": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "keyword": "Cursor Junior",
+      "context": "кодом. Первый результат – один .md на диске. Карта кнопок – Cursor Junior на GitHub.</p> <h3>Чем этот способ лучше онлайн-генератора",
+      "link_replacement": "<a href=\"/kak-ustanovit-cursor-junior-nastavnik/\">Cursor Junior</a>"
+    },
+    {
+      "source": "R-opisanie-tovara-nejroset-cursor",
+      "target": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "keyword": "cursor junior",
+      "context": "кодом. Первый результат – один .md на диске. Карта кнопок – Cursor Junior на GitHub.</p> <h3>Чем этот способ лучше онлайн-генератора",
+      "link_replacement": "<a href=\"/kak-ustanovit-cursor-junior-nastavnik/\">Cursor Junior</a>"
+    },
+    {
+      "source": "R-plaginy-cursor-ai-marketing",
+      "target": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "keyword": "Cursor Junior",
+      "context": "я в пустой чат. Ответ за вечер – один готовый плагин (лучше Cursor Junior), а не оркестр с нуля: установите пакет, увидите агента и с",
+      "link_replacement": "<a href=\"/kak-ustanovit-cursor-junior-nastavnik/\">Cursor Junior</a>"
+    },
+    {
+      "source": "R-plaginy-cursor-ai-marketing",
+      "target": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "keyword": "cursor junior",
+      "context": "я в пустой чат. Ответ за вечер – один готовый плагин (лучше Cursor Junior), а не оркестр с нуля: установите пакет, увидите агента и с",
+      "link_replacement": "<a href=\"/kak-ustanovit-cursor-junior-nastavnik/\">Cursor Junior</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-kak-ustanovit-cursor-junior-nastavnik",
+      "keyword": "first-run",
+      "context": "те плагин ролей. Если нет темы и бренда в .env без паролей, first-run упрётся в пустой бриф. Боль новичка – \"нейросеть для сайтов",
+      "link_replacement": "<a href=\"/kak-ustanovit-cursor-junior-nastavnik/\">first-run</a>"
+    },
+    {
+      "source": "R-kak-nastroit-avtoposting-telegram-cloud-agents",
+      "target": "R-kak-ustanovit-excalibur-avtoblog-cursor",
+      "keyword": "автоблог",
+      "context": ">Не ставьте рядом рой субагентов, Офис, Hyperion или полный автоблог Excalibur – это другой уровень сложности. Не ищите \"ТОП-10",
+      "link_replacement": "<a href=\"/kak-ustanovit-excalibur-avtoblog-cursor/\">автоблог</a>"
+    },
+    {
+      "source": "R-kak-ustanovit-ofis-veb-stranits-cursor",
+      "target": "R-kak-ustanovit-excalibur-avtoblog-cursor",
+      "keyword": "автоблог",
+      "context": "ицы с H1/H2, сетка 20–200 только размазывает фокус. То же с автоблогом Excalibur и отдельным дизайн-плагином AURA: они про другие",
+      "link_replacement": "<a href=\"/kak-ustanovit-excalibur-avtoblog-cursor/\">автоблогом</a>"
+    }
+  ]
+}

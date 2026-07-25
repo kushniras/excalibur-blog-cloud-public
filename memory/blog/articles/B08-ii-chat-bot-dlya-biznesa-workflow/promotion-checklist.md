@@ -46,4 +46,6 @@ No-code бот назвал скидку 30%, которой не было, и �
 
 ## Notes
 
+- Indexer pass 2026-07-25: llms.txt full 84; selective R-* interlinks; publish skipped
+
 Interlinker (2026-06-16): 0 новых контекстных ссылок — статья уже содержит 3 internal links (RAG B07, n8n B02, Make MCP B06). llms.txt обновлён (8 статей).
