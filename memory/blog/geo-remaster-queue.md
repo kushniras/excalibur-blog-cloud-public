@@ -1,11 +1,18 @@
-# GEO remaster queue — mayai.ru
+# GEO remaster queue — ARCHIVED (wrong target)
 
-`created`: 2026-07-25
-`rules`: shared/geo-collider-remediation-rules.md
-`audit`: memory/blog/geo-site-audit-2026-07-25.json
-`llms_txt_urls`: 84
-`site_posts_total`: 5122
-`site_pages_total`: 232
+`created`: 2026-07-25  
+`status`: **superseded / wrong target**  
+`rules`: shared/geo-collider-remediation-rules.md  
+`audit`: memory/blog/geo-site-audit-2026-07-25.json  
+
+> **⚠ Ошибка scope:** этот queue/audit относится к `mayai.ru` — сайту **автора плагина**, не к сайтам клиента.  
+> **Никогда не продолжать** live remaster/publish на mayai.ru.  
+> Канон: `shared/forbidden-target-sites.md`. Новый remaster — только после клиентского `PUBLIC_SITE_URL` + своего brief.
+
+`llms_txt_urls`: 84  
+`site_posts_total`: 5122  
+`site_pages_total`: 232  
+`target_was`: https://mayai.ru *(FORBIDDEN)*
 
 ## Волны
 

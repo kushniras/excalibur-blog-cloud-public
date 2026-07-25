@@ -206,7 +206,7 @@ def find_linking_opportunities(articles: list[dict[str, Any]], site_base: str) -
         if not target_slug:
             continue
 
-        # Live mayai.ru permalinks are /{slug}/ ( /blog/{slug}/ only 301s ).
+        # Prefer /{slug}/ when blog_path is root; never hardcode mayai.ru (forbidden customer target).
         target_url = f"{site_base}/{target_slug}/"
         # Prioritize natural anchor variants for diversification, then primary, then secondary queries
         raw_keywords = target.get("anchor_variants", []) + [target["primary_query"]] + target["secondary_queries"]

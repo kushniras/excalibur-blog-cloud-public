@@ -1,6 +1,9 @@
 {
   "audited_at": "2026-07-25",
   "source": "GEO_AI_SEO_MASTER_KNOWLEDGE_BASE_COLLIDER_EXPANDED_2026-07-19",
+  "target_site": "https://mayai.ru",
+  "scope_error": "WRONG TARGET — mayai.ru is plugin author demo site, not customer. Do not repeat. See shared/forbidden-target-sites.md",
+  "status": "archived_wrong_target",
   "total_posts": 5122,
   "gap_counts": {
     "table": 4477,

@@ -1,5 +1,12 @@
 # Excalibur BLOG — типичные сбои пайплайна
 
+## Target site (критично)
+
+- **`mayai.ru` — не сайт клиента.** Это домен автора плагина (Maya AI / «Ковчег»). Нельзя брать его для live audit, GEO remaster «всех страниц», robots/llms crawl или publish «на мой сайт».
+- Канон запрета: `shared/forbidden-target-sites.md`.
+- Целевой URL только из клиентского `PUBLIC_SITE_URL` / явного `site_url` клиента. Brief с `mayai.ru` или пустые secrets → `❌ TARGET SITE BLOCKER`, не fallback на mayai.ru.
+- User correction 2026-07-25: агент ошибочно прогнал GEO audit/remaster на mayai.ru — больше никогда.
+
 ## Cloud / Task
 
 - Cloud не принимает `excalibur-blog-*` как Task types → fallback `Task(generalPurpose)` + `.cursor/agents/<role>.md` + skill path.
@@ -51,6 +58,6 @@
 ## Indexer
 
 - В Cloud shell используй `python3` для interlinker/llms generator; `python` может отсутствовать.
-- mayai.ru permalinks: канон `/{slug}/` (и llms `--blog-path /`). Не вставляй `/blog/{slug}/` — это только 301.
+- Permalink/llms `--site-base` и `--blog-path` — только с **клиентского** `PUBLIC_SITE_URL` / brief. Не hardcode `mayai.ru` (forbidden target).
 - Dry-run перед `--apply`. Quality filter в `excalibur_blog_interlinker.py` (default ON): denylist generic/UI якорей, byline «вайбкодинг», exclusion/negative contexts, topic overlap; для full-corpus ставь `--max-out 2 --max-in 3`. Не слепой `--apply` на сырой отчёт и не `--no-quality-filter` в production.
 - `promotion-checklist.md`: только create-if-missing через `excalibur_blog_promotion_checklist.py`; не перезаписывай curated без явного `--force`.

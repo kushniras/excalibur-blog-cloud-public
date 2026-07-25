@@ -2,6 +2,14 @@
 
 Язык работы: русский.
 
+## Запрет целевого сайта (обязательно)
+
+**Никогда** не анализировать и не remaster-ить `mayai.ru` (Maya AI / «Ковчег») как сайт клиента.
+
+Это сайт **автора плагина**, не сайты пользователя. Канон: `shared/forbidden-target-sites.md`.
+
+Целевой сайт только из клиентского `PUBLIC_SITE_URL` / явного `site_url` клиента. Если brief или fallback указывает на mayai.ru — `❌ TARGET SITE BLOCKER`.
+
 ## Главное правило
 
 Для полной SEO/GEO статьи **нельзя** выполнять весь пайплайн одним Cloud Agent.
@@ -41,6 +49,7 @@ shell today + research_start
 - Writer стартует без `research-notes-gate.json` PASS.
 - GEO QA пропускает `human-voice-report.json`.
 - Publish без обновления `shared/published-articles.md`.
+- Live audit / remaster / publish на `mayai.ru` без явной команды владельца домена (см. `shared/forbidden-target-sites.md`).
 
 ## Handoff и fragments
 
@@ -75,7 +84,7 @@ shell today + research_start
 | Cloud agents | `.cursor/agents/` |
 | Cloud skills | `.cursor/skills/` |
 
-Перед пайплайном прочитай `shared/agent-pipeline-pitfalls.md`.
+Перед пайплайном прочитай `shared/agent-pipeline-pitfalls.md` и `shared/forbidden-target-sites.md`.
 
 ## Preflight (обязательно)
 

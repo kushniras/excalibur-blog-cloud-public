@@ -10,22 +10,23 @@ description: Excalibur BLOG Indexer — interlink между статьями + 
 ## Shell
 
 ```bash
+# --site-base = клиентский PUBLIC_SITE_URL (никогда не mayai.ru — см. forbidden-target-sites.md)
 # Сначала dry-run (без --apply). Quality filter включён по умолчанию.
 python3 scripts/excalibur_blog_interlinker.py \
   --article-dir memory/blog/articles/<topic_id>-<slug> \
-  --site-base https://mayai.ru \
+  --site-base "" \
   --max-out 2 --max-in 3 \
   --include-skipped
 
 # --apply только после просмотра report / skipped_reasons
 python3 scripts/excalibur_blog_interlinker.py --apply \
   --article-dir memory/blog/articles/<topic_id>-<slug> \
-  --site-base https://mayai.ru \
+  --site-base "" \
   --max-out 2 --max-in 3
 
 python3 scripts/excalibur_blog_llms_generator.py \
   --blog-dir memory/blog/articles \
-  --site-base https://mayai.ru \
+  --site-base "" \
   --blog-path / \
   --out-dir memory/blog
 
@@ -37,9 +38,10 @@ python3 scripts/excalibur_blog_promotion_checklist.py \
 Полный корпус: тот же dry-run → смотри `skipped_reasons` → `--apply` с `--max-out`/`--max-in`.  
 Не делай слепой `--apply` на сырой отчёт без quality filter.
 
-## Permalink (mayai.ru)
+## Permalink
 
-- Канон внутренних ссылок и llms: `https://mayai.ru/{slug}/` / href `/{slug}/`.
+- Канон внутренних ссылок и llms берётся из **клиентского** `PUBLIC_SITE_URL` + `blog_path` в brief (не hardcode).
+- **Запрещено** подставлять `https://mayai.ru` как site-base: это сайт автора плагина (`shared/forbidden-target-sites.md`).
 - Не использовать `/blog/{slug}/` в новых вставках (на сайте это только 301).
 
 ## Quality filter (в скрипте, default ON)

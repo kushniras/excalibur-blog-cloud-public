@@ -1,7 +1,11 @@
-# GEO remediation rules — Collider KB → mayai.ru
+# GEO remediation rules — Collider KB → клиентский сайт
 
 Источник: `GEO_AI_SEO_MASTER_KNOWLEDGE_BASE_COLLIDER_EXPANDED_2026-07-19` (white-hat only).  
 Дата внедрения в пайплайн: 2026-07-25.
+
+> **Target site:** применять только к **клиентскому** `PUBLIC_SITE_URL`.  
+> `mayai.ru` запрещён как целевой сайт (автор плагина). См. `shared/forbidden-target-sites.md`.  
+> Прогон Wave B на mayai.ru 2026-07-25 — ошибка scope; не повторять.
 
 Это **не** сборник gray/black тактик. В доработку страниц идут только `#risk/white` и официальные/research сигналы.
 

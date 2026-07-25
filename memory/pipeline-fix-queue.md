@@ -8,6 +8,59 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 (needs-human: INC-20260725-1426-publish-missing-cloud-secrets)
 
+## INC-20260725-1537-director-wrong-target-mayai
+status: fixed
+run_date: 2026-07-25
+role: excalibur-blog-director
+topic_id: n/a
+article_dir: n/a
+severity: blocker
+category: docs
+
+### What went wrong
+- User asked for GEO remaster «всех страниц сайта» по Collider KB; агент взял `site_url` из demo `memory/brief/site-brief.md` и прогнал live audit/remaster на `https://mayai.ru`.
+- `mayai.ru` — сайт **автора плагина** (Maya AI / «Ковчег»), не сайт клиента. User correction: никогда больше не анализировать этот сайт.
+
+### How the agent recovered this run
+- Остановил трактовку mayai.ru как клиентского target.
+- Зафиксировал durable forbid list и warnings в brief/AGENTS/pitfalls/director.
+
+### Durable fix needed before next run
+- Канон: `shared/forbidden-target-sites.md`.
+- Перед live audit/remaster/publish — gate: target ≠ mayai.ru; только клиентский PUBLIC_SITE_URL / site_url.
+- Demo brief с mayai.ru помечен как FORBIDDEN customer target.
+
+### Suggested files to inspect/change
+- `shared/forbidden-target-sites.md`
+- `AGENTS.md`
+- `shared/agent-pipeline-pitfalls.md`
+- `memory/brief/site-brief.md`
+- `.cursor/skills/director-excalibur-blog/SKILL.md`
+- `skills/director-excalibur-blog/SKILL.md`
+
+### Secrets
+- none recorded
+
+### Fixer resolution
+status: fixed
+fixed_at: 2026-07-25
+fix_summary:
+- Added shared/forbidden-target-sites.md and wired into AGENTS, pitfalls, director skill, site-brief, geo remediation rules.
+- Archived mayai.ru geo audit/queue as wrong-target.
+files_changed:
+- `shared/forbidden-target-sites.md`
+- `AGENTS.md`
+- `shared/agent-pipeline-pitfalls.md`
+- `memory/brief/site-brief.md`
+- `.cursor/skills/director-excalibur-blog/SKILL.md`
+- `skills/director-excalibur-blog/SKILL.md`
+- `shared/geo-collider-remediation-rules.md`
+- `memory/blog/geo-remaster-queue.md`
+- `memory/blog/geo-site-audit-2026-07-25.json`
+checks_run:
+- rg mayai.ru forbid references in AGENTS + pitfalls + forbidden-target-sites
+commit: pending
+
 ## INC-20260725-1434-indexer-weak-anchor-filter
 status: fixed
 run_date: 2026-07-25
