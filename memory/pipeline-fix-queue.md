@@ -55,7 +55,7 @@ checks_run:
 - `python3 -m py_compile scripts/excalibur_blog_interlinker.py`
 - dry-run remaining=1 (skipped B03→ruleset)
 - live check: `/{slug}/` 200, `/blog/{slug}/` 301
-commit: pending
+commit: a367517
 
 ## INC-20260725-1418-geo-qa-b04-human-voice-remaster
 status: fixed
