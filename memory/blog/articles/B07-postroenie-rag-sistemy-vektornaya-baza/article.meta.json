@@ -23,7 +23,7 @@
     "как сделать rag систему",
     "rag система python"
   ],
-  "char_count": 8568,
+  "char_count": 9024,
   "article_mode": "B",
   "author_id": "artur-horoshev",
   "anchor_variants": [
@@ -39,5 +39,6 @@
     "description_ctr": "Демо RAG отвечает уверенно и неверно? Пошаговый workflow: документы, векторная БД, rerank и golden set 8/10. Две дорожки - LangChain и n8n.",
     "description_aeo": "RAG система - это поиск фрагментов документов в векторной базе и ответ LLM только по найденному контексту. Чанкинг 300-512 токенов, pgvector или Qdrant, eval на 10-15 вопросах."
   },
-  "cover_family": "brand_collage"
+  "cover_family": "brand_collage",
+  "dateModified": "2026-07-25"
 }

@@ -7,7 +7,7 @@
       "headline": "Как писать SEO-статьи, которые читают люди",
       "description": "Пошаговый workflow SEO + GEO: семантика, структура longread, FAQ, schema и чеклист перед публикацией. Без переспама и воды — для людей и нейропоиска.",
       "datePublished": "2026-06-10",
-      "dateModified": "2026-06-10",
+      "dateModified": "2026-07-25",
       "inLanguage": "ru",
       "url": "https://example.com/blog/primer-seo-stati/",
       "mainEntityOfPage": {
@@ -21,21 +21,7 @@
         "height": 675
       },
       "author": {
-        "@type": "Person",
-        "@id": "https://example.com/#author-elena-kovaleva",
-        "name": "Елена Ковалева",
-        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
-        "image": "https://kv-ai.ru/assets/team/elena-kovaleva.jpg",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Пример Блога",
-          "url": "https://example.com/"
-        },
-        "sameAs": [
-          "https://habr.com/ru/users/elena_kovaleva_seo/",
-          "https://github.com/elena-kov-seo",
-          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
-        ]
+        "@id": "https://mayai.ru/#author-artur-horoshev"
       },
       "publisher": {
         "@type": "Organization",
@@ -43,13 +29,26 @@
         "url": "https://example.com/"
       },
       "keywords": "как писать seo статьи, seo текст для блога, geo оптимизация статьи, сколько символов в seo статье, что такое geo в seo",
-      "wordCount": 8894,
+      "wordCount": 9348,
       "articleSection": "SEO",
       "isPartOf": {
         "@type": "Blog",
         "name": "Пример Блога",
         "url": "https://example.com/blog/"
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mayai.ru/#author-artur-horoshev",
+      "name": "Артур Хорошев",
+      "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "image": "https://kv-ai.ru/artur-horosheff",
+      "sameAs": [
+        "https://kv-ai.ru/artur-horosheff",
+        "https://mayai.ru/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
+      ]
     },
     {
       "@type": "FAQPage",
@@ -100,7 +99,7 @@
           "name": "Что такое llms.txt и нужен ли он блогу?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "llms.txt — файл подсказок для AI-краулеров (стандарт с сентября 2024). Полезный дополнительный сигнал рядом с sitemap, не замена индексации. Для блога с нейропоиском — разумная инвестиция."
+            "text": "llms.txt - файл-карта важных страниц для части AI-агентов (стандарт с сентября 2024). Google Search не использует его как специальный сигнал. Полезен как housekeeping рядом с sitemap, не замена индексации и не обещание цитат."
           }
         },
         {

@@ -1,6 +1,8 @@
 <p>Cursor пишет код и отвечает в чате, но без MCP (Model Context Protocol) агент не видит ваши сервисы: не откроет сайт, не подтянет документацию, не тронет CMS. Настройка cursor mcp занимает 15–30 минут. Ниже – подключение через Tools &amp; MCP или файл mcp.json. Вы увидите зелёный статус сервера, вызовете первый tool из Agent и соберёте минимальный стек под автоматизацию.</p>
 
-<blockquote><b>TL;DR / Быстрый инсайт:</b> MCP в Cursor – "розетки" для внешних инструментов (браузер, GitHub, CMS). Конфиг: ~/.cursor/mcp.json или .cursor/mcp.json в проекте. Подключение – кнопка "Add to Cursor" или JSON с command/args (stdio) / url (облако). После правки перезапустите Cursor. Agent по умолчанию спрашивает подтверждение перед вызовом tool.</blockquote>
+<blockquote>MCP в Cursor – "розетки" для внешних инструментов (браузер, GitHub, CMS). Конфиг: ~/.cursor/mcp.json или .cursor/mcp.json в проекте. Подключение – кнопка "Add to Cursor" или JSON с command/args (stdio) / url (облако). После правки перезапустите Cursor. Agent по умолчанию спрашивает подтверждение перед вызовом tool.</blockquote>
+
+<p><i>Обновлено: 25.07.2026</i></p>
 
 <p>MCP – открытый стандарт Anthropic (ноябрь 2024): способ дать нейросети доступ к данным вне чата. API (Application Programming Interface) – "розетка" между Cursor и сервисом: Agent вызывает tool, а не копирует пароли в prompt. MCP дополняет n8n и Make: в IDE готовите черновик, а <a href="/avtomatizaciya-n8n-ai-agents/">автоматизация n8n с ИИ-агентами</a> публикует и шлёт уведомления 24/7.</p>
 

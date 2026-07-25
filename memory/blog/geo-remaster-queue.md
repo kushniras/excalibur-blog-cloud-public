@@ -20,17 +20,17 @@
 
 | # | weight | score | local | modified | slug | gaps | status |
 |---|--------|-------|-------|----------|------|------|--------|
-| 1 | 60 | 6 | B05 | 2026-06-11 | `avtonomnyj-kontent-zavod-nejroseti` | lead, updated, tldr_antipattern | pending |
-| 2 | 60 | 9 | B04 | 2026-06-11 | `geo-optimizaciya-sajta-2026` | tldr_antipattern | pending |
-| 3 | 60 | 9 | B09 | 2026-06-16 | `sozdat-llms-txt-dlya-sajta` | tldr_antipattern | pending |
-| 4 | 53 | 7 | B06 | 2026-06-16 | `make-ai-agents-mcp-avtomatizaciya` | table, updated, tldr_antipattern | pending |
-| 5 | 45 | 8 | B02 | 2026-06-11 | `avtomatizaciya-n8n-ai-agents` | updated, tldr_antipattern | pending |
-| 6 | 45 | 8 | B08 | 2026-06-16 | `ii-chat-bot-dlya-biznesa-workflow` | updated, tldr_antipattern | pending |
-| 7 | 45 | 8 | B03 | 2026-06-11 | `podklyuchenie-mcp-cursor` | updated, tldr_antipattern | pending |
+| 1 | 60 | 6 | B05 | 2026-07-25 | `avtonomnyj-kontent-zavod-nejroseti` | lead, updated, tldr_antipattern | remastered_local |
+| 2 | 60 | 9 | B04 | 2026-07-25 | `geo-optimizaciya-sajta-2026` | tldr_antipattern | remastered_local |
+| 3 | 60 | 9 | B09 | 2026-07-25 | `sozdat-llms-txt-dlya-sajta` | tldr_antipattern | remastered_local |
+| 4 | 53 | 7 | B06 | 2026-07-25 | `make-ai-agents-mcp-avtomatizaciya` | table, updated, tldr_antipattern | remastered_local |
+| 5 | 45 | 8 | B02 | 2026-07-25 | `avtomatizaciya-n8n-ai-agents` | updated, tldr_antipattern | remastered_local |
+| 6 | 45 | 8 | B08 | 2026-07-25 | `ii-chat-bot-dlya-biznesa-workflow` | updated, tldr_antipattern | remastered_local |
+| 7 | 45 | 8 | B03 | 2026-07-25 | `podklyuchenie-mcp-cursor` | updated, tldr_antipattern | remastered_local |
 | 8 | 43 | 8 | — | 2026-07-17 | `mikrorazmetka-sajta-json-ld` | table, updated | pending |
 | 9 | 35 | 9 | — | 2026-07-12 | `indexnow-yandex-make` | updated | pending |
-| 10 | 35 | 9 | B10 | 2026-06-17 | `ollama-lokalnaya-llm-dlya-biznesa` | tldr_antipattern | pending |
-| 11 | 35 | 9 | B07 | 2026-06-16 | `postroenie-rag-sistemy-vektornaya-baza` | tldr_antipattern | pending |
+| 10 | 35 | 9 | B10 | 2026-07-25 | `ollama-lokalnaya-llm-dlya-biznesa` | tldr_antipattern | remastered_local |
+| 11 | 35 | 9 | B07 | 2026-07-25 | `postroenie-rag-sistemy-vektornaya-baza` | tldr_antipattern | remastered_local |
 | 12 | 35 | 9 | — | 2026-07-11 | `semanticheskoe-yadro-cursor-wordstat` | updated | pending |
 | 13 | 35 | 9 | — | 2026-07-14 | `seo-audit-sajta-cursor-geo-skill` | updated | pending |
 | 14 | 35 | 9 | — | 2026-07-16 | `vnutrennyaya-perelinkovka-statej-kontent-zavod` | updated | pending |
@@ -94,7 +94,7 @@
 | 72 | 8 | 9 | — | 2026-07-17 | `avtoposting-threads-make-google-sheets` | table | pending |
 | 73 | 8 | 9 | — | 2026-07-22 | `kak-ustanovit-giperion-reels-subagent-cursor` | table | pending |
 | 74 | 8 | 9 | — | 2026-07-17 | `mnogostranichnyj-sait-cursor-teya` | table | pending |
-| 75 | 5 | 0 | B01 |  | `primer-seo-stati` | unknown | pending |
+| 75 | 5 | 0 | B01 | 2026-07-25 | `primer-seo-stati` | unknown | remastered_local |
 | 76 | 0 | 10 | — | 2026-07-19 | `avtomatizaciya-marketinga-make-cursor` | ok | pending |
 | 77 | 0 | 10 | — | 2026-07-16 | `bot-dlya-zayavok-telegram-make` | ok | pending |
 | 78 | 0 | 10 | — | 2026-07-10 | `cookie-banner-sait-cursor-ai` | ok | pending |
