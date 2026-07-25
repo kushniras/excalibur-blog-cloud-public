@@ -1,0 +1,114 @@
+<p>Чтобы сделать вебхук, который будит агента Cursor на заявку, создайте Automation с триггером Webhook – это входящий HTTP-адрес: на него приходит POST, и агент стартует сам. Сохраните URL, отправьте тестовый POST и дождитесь артефакта. Боль знакома: вручную открывать чат на каждую форму. Результат вечера: заявка будит агента без вашего клика в IDE сегодня.</p>
+<h2 id="constraints-webhook">Когда webhook Automation не нужен</h2>
+<p>Если задача разовая – ответить на один вопрос в чате – хватит обычного Agent. Если нужен тик по времени без внешнего события – берите расписание, не webhook. Если нет понятного payload от формы или Make, сначала соберите минимальный JSON, иначе агент будет стартовать "в пустоту".</p>
+<p>Не путайте URL Automation с webhooks Cloud Agents API из другой документации: смотрите тот экран, где создаёте Automation. Успех вечера – один тестовый POST и один наблюдаемый результат агента, не зоопарк интеграций.</p>
+<blockquote><p>Webhook Automation – не то же самое, что Discord-бот, Make сам по себе или cron. Сначала один URL и один тестовый POST. GitHub нужен, если агент пишет в репозиторий; пустой URL на этапе настройки – ещё не готово. Make может слать POST на этот адрес после формы.</p></blockquote>
+<p><i>Обновлено: 25.07.2026</i></p>
+
+<p>В поиске по "как сделать вебхук" чаще выпадают Discord и Битрикс. Вам нужен другой результат: событие с формы или CRM стучится в Cursor, а агент сам пишет бриф или ответ клиенту – без ручного открытия чата. Репозиторий GitHub для этого прогона не нужен.</p>
+<h2>Чем это отличается от Discord, Make и расписания</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-cursor-automations-po-webhook-inline-01.jpg" alt="Схема сравнения: Cursor Webhook будит агента, Discord/Make/расписание – нет" loading="lazy"><br>
+</figure>
+<p>В Cursor Automations триггер Webhook создаёт закрытый endpoint: после Save появляются URL и API key, запрос – HTTP POST на этот адрес. Официально так и описано в документации Cursor.</p>
+<table>
+<thead>
+<tr>
+<th>Триггер</th>
+<th>Как будит агента</th>
+<th>Когда нужен</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Webhook Automation</b></td>
+<td>Входящий HTTP POST на URL Cursor</td>
+<td>Заявка с формы / Make / CRM</td>
+</tr>
+<tr>
+<td><b>Schedule / cron</b></td>
+<td>Таймер по расписанию</td>
+<td>Регулярный отчёт, не событие</td>
+</tr>
+<tr>
+<td><b>Make HTTP</b></td>
+<td>Сценарий шлёт POST на webhook</td>
+<td>Связка форм и таблиц без кода</td>
+</tr>
+<tr>
+<td><b>Ручной чат Agent</b></td>
+<td>Вы пишете промпт сами</td>
+<td>Разовый разбор, не поток заявок</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p><b>Итоговый вердикт:</b> для ответа на заявку без ручного чата берите Webhook Automation. Расписание – другой сценарий, не подменяйте одно другим.</p></blockquote>
+
+<p>Коротко по развилке, чтобы не смешать соседние задачи:</p>
+<ul>
+<li><b>Cursor Automations + Webhook</b> – событие будит думающего агента, который читает поля заявки и пишет текст.</li>
+<li><b>Расписание (Scheduled)</b> – запуск по времени, не по заявке. Если позже понадобится cron, это отдельный гайд про <a href="/kak-nastroit-cursor-automations-po-raspisaniyu/">Automations по расписанию</a>.</li>
+<li><b>Make Custom Webhook</b> – сценарий Make принимает данные и гоняет модули. Полезно, но это не "<a href="/roli-subagentov-cursor-orchestrator/">агент Cursor</a> ответил на JSON". См. <a href="/webhook-make-pervyj-scenarij/">первый сценарий Make с вебхуком</a>.</li>
+<li><b>Cloud Agents API status webhooks</b> – исходящие уведомления о статусе агента (ERROR/FINISHED) с HMAC. Другой контур: Cursor сообщает наружу, а не принимает вашу заявку как триггер.</li>
+</ul>
+<p>Я бы начинал именно с входящего Webhook в Automations. Один адрес, один промпт, один тестовый POST – этого достаточно, чтобы проверить пользу.</p>
+<h2>Что подготовить до кликов</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-cursor-automations-po-webhook-inline-02.jpg" alt="Схема подготовки: аккаунт Automations, способ POST, режим без репозитория" loading="lazy"><br>
+</figure>
+<p>Нужен аккаунт Cursor с доступом к Cloud Agents / Automations и способ отправить один HTTP POST: curl, Postman или HTTP-модуль в Make. Репозиторий подключать не обязательно: для текстового брифа подходит режим без репозитория – агент не клонирует код и не открывает pull request.</p>
+<p>Интерфейс Automations открывается по пути <i>cursor.com/automations</i> в браузере или через Agents Window в продукте. Ссылку на этот UI в статье не кликаю намеренно: у ботов и части CDN он отдаёт 403. Рабочие страницы с описанием – в <a href="https://cursor.com/docs/cloud-agent/automations" target="_blank">документации Automations</a> и <a href="https://cursor.com/help/ai-features/automations" target="_blank">help Cursor</a>.</p>
+<p>Помните про оплату: Automations считаются как использование cloud agent; в обзорах Learn Cursor отмечают, что они идут в Max Mode – режиме полной мощности модели. Для первого теста это нормально, но не гоняйте десяток пустых POST "на всякий случай".</p>
+<h2>Создаём Automation с триггером Webhook</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-cursor-automations-po-webhook-inline-03.jpg" alt="Чеклист создания Automation: Webhook, промпт, Save, URL и API key" loading="lazy"><br>
+</figure>
+<p>Откройте Automations → New Automation. В триггерах выберите Webhook. Можно добавить несколько триггеров позже; сегодня достаточно одного.</p>
+<p>Промпт держите узким. Пример смысла, не дословный шаблон канала:</p>
+<blockquote>
+<p>В конце сообщения будет JSON заявки. Прочитай поля name, service и question. Составь короткий бриф для менеджера: кто написал, какая услуга, в чём вопрос, что ответить первым сообщением. Код не правь, репозиторий не трогай, ответь только текстом.</p>
+</blockquote>
+<p>Repository: <b>No repository</b> – без репозитория. Так вы снимаете страх "сломаю код": агент работает с текстом события. Tools вроде Memories для недоверенного ввода с формы на первом прогоне лучше не включать без нужды.</p>
+<p>Сохраните и активируйте Automation. Только после Save появляются webhook URL и API key. До сохранения адрес "пустой" – это не баг, так устроен продукт. Ключ никуда не публикуйте: ни в общий чат, ни в скриншот для Telegram.</p>
+<h2>Тестовый POST: что отправить и что считать успехом</h2>
+<p>Отправьте POST на скопированный URL. В заголовке укажите авторизацию Bearer с API key. В теле – простой JSON, как от формы: <i>{"name":"Анна","service":"консультация","question":"Сколько длится созвон и что подготовить?"}</i>.</p>
+<p>Важный факт из форума Cursor (сотрудник Colin, 9 марта 2026): тело webhook передаётся as-is в конец промпта Automation. Отдельный парсер формата не нужен. Часть людей получала от email-поддержки обратное мнение – пока сами не посмотрели историю прогонов. Ориентируйтесь на то, что видно в history после вашего POST.</p>
+<p>Критерий "получилось" простой:</p>
+<ol>
+<li>Automation сохранена с триггером Webhook;</li>
+<li>после Save видны URL и API key;</li>
+<li>в history есть успешный прогон именно от тестового POST;</li>
+<li>в ответе агента узнаются поля заявки – имя, услуга, вопрос.</li>
+</ol>
+<p>Если прогона нет – проверьте, что Automation активна, URL скопирован целиком, в заголовке именно Bearer-ключ этой автоматизации, метод POST, а не GET. Если ключ "умер" после смены прав на Team Owned – по документации нужно заново сгенерировать webhook API key; старый перестанет подходить.</p>
+<h2>Типичные ошибки вечера</h2>
+<p>Самая частая путаница – принять любой "вебхук из выдачи" за путь к агенту Cursor. Discord шлёт сообщения в канал, Битрикс крутится вокруг CRM, Make пишет в сценарий, исходящий status-webhook Cloud Agents API сообщает, что агент закончил работу. Сегодня нужен входящий endpoint Automations.</p>
+<p>Вторая ошибка – подключить репозиторий "на вырост": для брифа по заявке это лишний риск. Третья – повесить сразу schedule и webhook на одну задачу: несколько триггеров продукт допускает, но вечером мешает понять, что разбудило агента.</p>
+<p>Не обещайте себе "агент 24/7 без вас" после одного клика Save. Без тестового POST и проверки history у вас есть только форма в UI. Сначала один чистый прогон, потом подключайте реальную форму, Tilda или HTTP-модуль Make как отправителя того же POST – не как новую тему вечера.</p>
+<h2>Критерий готово и следующий шаг</h2>
+<p>У вас есть рабочий вход для агента: событие стучится само, а вы не открываете чат вручную на каждую заявку. Дальше можно заменить тестовый JSON на поля реальной формы и слать тот же POST из своего стека. Документация – на <a href="https://cursor.com/docs/cloud-agent/automations" target="_blank">cursor.com/docs/cloud-agent/automations</a>; краткая таблица триггеров – в <a href="https://cursor.com/help/ai-features/automations" target="_blank">help по Automations</a>; обзор продукта – в <a href="https://cursor.com/blog/automations" target="_blank">блоге Cursor</a>.</p>
+<p>Когда history уже показывает успешный ответ на JSON, отдельно можно разобрать соседние задачи – не как условие сегодня:</p>
+<ul>
+<li><a href="/kak-nastroit-cursor-automations-po-raspisaniyu/">Automations по расписанию</a></li>
+<li><a href="/webhook-make-pervyj-scenarij/">Webhook в Make: первый сценарий</a></li>
+<li><a href="/cursor-cloud-agents-avtomatizaciya/">Cloud Agents и автоматизация в Cursor</a></li>
+<li><a href="/kak-vybrat-cloud-agents-automations-sdk-cursor/">Как выбрать Cloud Agents, Automations или SDK</a></li>
+</ul>
+<p>Разборы агентских связок – в канале <a href="https://t.me/maya_pro" target="_blank">t.me/maya_pro</a> и зеркале <a href="https://max.ru/maya_pro" target="_blank">max.ru/maya_pro</a>. HTTP как отправитель POST в Make – на <a href="https://apps.make.com/http" target="_blank">apps.make.com/http</a>; курс по Make – на <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">kv-ai.ru/obuchenie-po-make</a>, уже после первого прогона в Cursor, не вместо него.</p>
+<blockquote>
+<p><b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).</p>
+<p><b>Опора на источники:</b> docs и help Cursor Automations (триггер Webhook, URL/API key после Save, No repository, биллинг cloud agent / Max Mode), блог Cursor про Automations, forum.cursor.com (Colin, 2026-03-09: payload as-is в конец промпта; regenerate key после Team Owned), docs Cloud Agents API webhooks (исходящие statusChange + HMAC – другой контур). Проверено 2026-07-24.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Нужен ли GitHub, чтобы вебхук заработал?</h3>
+<p>Нет. Для текстового ответа на заявку достаточно No repository. Репозиторий понадобится, когда агент должен править код или открывать PR – это уже другая задача.</p>
+<h3>Почему URL пустой, пока я настраиваю форму?</h3>
+<p>Потому что endpoint появляется после Save. Сначала сохраните и активируйте Automation, потом копируйте URL и ключ.</p>
+<h3>Можно ли слать POST из Make?</h3>
+<p>Да, как из любого HTTP-клиента: URL Automations + Bearer + JSON. Это опциональный отправитель. Не путайте с Make Custom Webhook как главной целью вечера – сегодня цель в history Cursor, а не в модулях сценария.</p>
+<h3>Это то же самое, что webhooks в Cloud Agents API?</h3>
+<p>Нет. API webhooks – исходящие statusChange с подписью HMAC. Automations Webhook – входящий POST, который будит агента по вашему событию.</p>
+<h3>Что считать успехом тестового POST?</h3>
+<p>URL Automation сохранён, тестовый POST вернул ожидаемый статус, агент стартовал и оставил артефакт или лог. Пустой URL на этапе настройки – ещё не готово.</p>
+<h3>Нужно ли сразу подключать Discord и CRM?</h3>
+<p>Нет. Сначала один webhook и один понятный payload. Discord, CRM и цепочки Make добавляйте после ручного успеха.</p>

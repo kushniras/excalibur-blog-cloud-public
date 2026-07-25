@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-ruleset",
+  "slug": "kak-nastroit-ruleset-i-skill-cursor",
+  "title": "Настройка Cursor: меньше рутины — правило + skill",
+  "wp_post_id": 14500,
+  "primary_query": "настройка cursor",
+  "secondary_queries": [
+    "cursor rules",
+    "cursor skill",
+    "alwaysApply cursor"
+  ],
+  "char_count": 9268,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-nastroit-ruleset-i-skill-cursor/",
+  "datePublished": "2026-07-21",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "правило и Skill в Cursor",
+    "настройка Cursor без ритуала",
+    "alwaysApply на 5–10 строк",
+    "Skill на бриф поста"
+  ],
+  "meta_ab": {
+    "title_seo": "Настройка Cursor: правило alwaysApply и один Skill",
+    "title_ctr": "Опять копируете тон в чат? Правило + Skill за вечер",
+    "title_aeo": "Как настроить ruleset и Skill в Cursor?",
+    "description_seo": "Одна договорённость 5–10 строк, проверка новым чатом и Skill на бриф поста. Без зоопарка Always Apply и без путаницы с MCP.",
+    "description_ctr": "Агент забывает тон через три сообщения? Положите правило alwaysApply и один Skill – без ритуала копипаста.",
+    "description_aeo": "Rules vs Skill в Cursor: когда alwaysApply, как проверить новый чат и чем Skill не MCP."
+  }
+}

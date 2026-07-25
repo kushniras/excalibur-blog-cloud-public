@@ -1,0 +1,14 @@
+{
+  "site_base": "https://mayai.ru",
+  "total_articles": 24,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "R-kak-podklyuchit-mcp-subagentam-cursor",
+      "target": "R-semanticheskoe-yadro-cursor-wordstat",
+      "keyword": "wordstat mcp",
+      "context": "бочие ветки day-1. Researcher тянет живые частотности через Wordstat MCP (как в пакете <a target=\"_blank\" href=\"https://github.com/H",
+      "link_replacement": "<a href=\"/blog/semanticheskoe-yadro-cursor-wordstat/\">Wordstat MCP</a>"
+    }
+  ]
+}

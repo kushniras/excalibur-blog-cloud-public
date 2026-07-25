@@ -1,0 +1,51 @@
+<p><a href="/avtoposting-threads-make-google-sheets/">Автопостинг</a> в Telegram через Cloud Agents Cursor настраивается так: форк репозитория <a rel="noopener noreferrer" target="_blank" href="https://github.com/Horosheff/rss-ai-telegram">rss-ai-telegram</a>, токен бота только в секретах кабинета Cursor, пробный прогон без отправки в канал, затем один живой пост из RSS в тестовый чат. Это не календарь отложки и не сценарий Make на первый вечер.</p>
+<p>ControllеrBot и SMMplanner ждут, что вы сами напишете текст и поставите время. Здесь другая задача: программа в облаке Cursor сама читает ленту новостей сайта и кладёт один пост, пока ноутбук закрыт. Внешние ключи к нейросетям шаблону не нужны — достаточно Telegram Bot API, встроенного RSS и списка уже отправленных ссылок.</p>
+<h2>Чем Cloud Agent отличается от отложки</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-avtoposting-telegram-cloud-agents-inline-01.jpg" alt="Схема сравнения: Cloud Agent сам тянет RSS против отложки, где текст пишете вы" loading="lazy"><br />
+</figure>
+<p>Отложка — вы сами готовите черновик. Cloud Agent — программа в облаке Cursor, которая запускается по кнопке Test run или позже по расписанию. Automations в Cursor — это таймер и триггеры поверх такого агента. Make остаётся нормальным соседним путём, если нужен мультипостинг в Telegram и VK без кода; для первого вечера я бы не смешивал оба стека.</p>
+<p>Шаблон из репозитория за один цикл публикует максимум одну новую ссылку. Это не «залить канал лентой». Повторный запуск не должен слать тот же URL: состояние хранится в SQLite и в файле state/posted_news.tsv, а после успешной отправки скрипт коммитит и пушит TSV. Раньше без такого state облачное расписание дублировало новости — это закрыли в issue #6 репозитория.</p>
+<p>Нужен платный план Cursor: без него Cloud Agents не стартуют. Секреты кладут во вкладку Dashboard → Cloud Agents → Secrets, а не в README и не в git.</p>
+<h2>Бот, chat_id и тестовый канал</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-avtoposting-telegram-cloud-agents-inline-02.jpg" alt="Схема шагов: BotFather, права админа канала и chat_id тестового чата" loading="lazy"><br />
+</figure>
+<p>В Telegram откройте @BotFather, команда /newbot. Сохраните TELEGRAM_BOT_TOKEN вне чатов и вне репозитория. Добавьте бота администратором тестового канала или чата с правом публиковать сообщения. Без админки сценарий может быть «зелёным», а пост не появится.</p>
+<p>TELEGRAM_CHAT_ID узнайте через GetMyID или getUpdates. У каналов идентификатор часто выглядит как −100… — минус в начале важен. Для первого боевого прогона я бы брал отдельный тестовый чат, а не основной канал с аудиторией.</p>
+<p>Лимит Bot API на текст sendMessage — от 1 до 4096 символов, поддерживается HTML-разметка. Если пост обрежется или разметка «поедет», смотрите длину текста и теги, а не «магию агента».</p>
+<h2>Форк, Secrets и команда запуска</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-nastroit-avtoposting-telegram-cloud-agents-inline-03.jpg" alt="Чеклист: форк rss-ai-telegram, Secrets с токеном и команда run_once.sh" loading="lazy"><br />
+</figure>
+<p>Форкните <a rel="noopener noreferrer" target="_blank" href="https://github.com/Horosheff/rss-ai-telegram">github.com/Horosheff/rss-ai-telegram</a>, ветка main. Откройте news_bot/config.py и при необходимости замените RSS_FEEDS на ленты своей ниши: отраслевые сайты, блоги вендоров, пресс-релизы. Если оставить чужие фиды «как в демо», в канал уедут не ваши новости — это не баг агента, а неверный список источников.</p>
+<p>Подключите форк к Cloud Agents в Cursor. В Secrets добавьте TELEGRAM_BOT_TOKEN и при необходимости TELEGRAM_CHAT_ID. В env.example репозитория те же имена переменных плюс пути к базе и к posted_news — ориентир, что именно агент ждёт из окружения. Токен в коде, в issue или в чате «на пять минут» — плохая идея: его потом сложно отозвать из всех копий.</p>
+<p>Канон команды из README репозитория:</p>
+<p><b>pip install -r requirements.txt &amp;&amp; ./scripts/run_once.sh</b></p>
+<p>Именно её ставьте в Test run агента. Окружение подтянет секреты как переменные среды; если агент пишет, что secrets aren&#8217;t available, откройте cursor.com/dashboard/cloud-agents и проверьте Secrets там, а не файлы в git.</p>
+<h2>Сначала dry-run, потом один живой пост</h2>
+<p>Поставьте PIPELINE_DRY_RUN=true в Secrets или в переменных запуска. Dry-run (пробный прогон) собирает текст кандидата, но не отправляет сообщение в Telegram и не пишет запись в базу. Смотрите JSON-статус в логе: есть кандидат из RSS, нет ошибки парсинга, chat_id на месте. Если кандидата нет — проверьте, что фиды отдают свежие URL и что список в config.py не пустой.</p>
+<p>Уберите dry-run (PIPELINE_DRY_RUN=false или удалите флаг) и запустите боевой Test run. Критерий «получилось»: в тестовом чате или канале виден один новый пост из RSS. Откройте репозиторий на GitHub и проверьте, что state/posted_news.tsv обновился и ушёл в remote — иначе следующий cron снова не будет помнить отправленные URL. Пока TSV не в remote, облачный запуск на чистой машине каждый раз «забывает» историю.</p>
+<p>Сразу сделайте второй ручной запуск на том же репозитории. Ожидайте либо нового кандидата, либо статус вроде all_duplicates — но не второй такой же ссылки. Если дубль пришёл, почти всегда виноват непопушенный state или второй chat_id, а не «Telegram сам захотел».</p>
+<h2>Расписание — только после ручной проверки</h2>
+<p>Automation с cron имеет смысл, когда ручной Test run на том же репозитории уже дал пост без дубля. В настройках Automations для code-репо явно укажите repository: cron по умолчанию может оказаться без репозитория, и агент будет крутиться впустую.</p>
+<p>Я бы не ставил расписание в тот же час, когда только получили токен. Сначала два ручных прогона: dry-run и боевой. Потом таймер.</p>
+<h2>Что не тащить в тот же вечер</h2>
+<p>Не ставьте рядом рой субагентов, Офис, Hyperion или полный автоблог Excalibur — это другой уровень сложности. Не ищите «ТОП-10 ботов автопостинга» как замену Secrets и dry-run. Не обещайте себе ленту из десяти постов за один цикл: шаблон сознательно режет до одной публикации за запуск.</p>
+<p>Если позже понадобится мультипостинг Telegram + VK без кода — соседний маршрут на Make: <a href="/avtoposting-telegram-vk-make-bez-koda/">автопостинг в Telegram и VK через Make</a> и модуль <a rel="noopener noreferrer" target="_blank" href="https://apps.make.com/telegram">apps.make.com/telegram</a>. Обзор режимов Cloud Agents, Automations и SDK — в <a href="/cursor-cloud-agents-avtomatizaciya/">гайде по Cloud Agents</a> и в <a href="/kak-vybrat-cloud-agents-automations-sdk-cursor/">сравнении режимов Cursor</a>.</p>
+<h2>Как понять, что вечер закрыт</h2>
+<p>Готово, если одновременно верно три вещи: в Telegram есть один новый пост из RSS; повторный run не шлёт тот же URL; TELEGRAM_BOT_TOKEN лежит только в Dashboard Secrets. Дальше можно включать Automation на том же форке и убрать ручной копипаст новостей из ежедневной работы.</p>
+<p>Разбор Cloud Agents, Automations и шаблонов автоматизаций — в канале <a rel="noopener noreferrer" target="_blank" href="https://t.me/maya_pro">t.me/maya_pro</a> и в зеркале <a rel="noopener noreferrer" target="_blank" href="https://max.ru/maya_pro">max.ru/maya_pro</a>. Практикум по Make, если упрётесь в мультипостинг без репозитория: <a rel="noopener noreferrer" target="_blank" href="https://kv-ai.ru/obuchenie-po-make">курс по Make</a>.</p>
+<blockquote><p>
+  <b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank" rel="noopener">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).<br />
+  <b>Опора на источники:</b> GitHub Horosheff/rss-ai-telegram (README, env.example, issue #6), docs Cursor Cloud Agents и Automations, Telegram BotFather / Bot API (sendMessage 1–4096, HTML), Wordstat parent «автопостинг телеграм» = 195 на 2026-07-23. Проверено 2026-07-23.
+</p></blockquote>
+<h2>Частые вопросы</h2>
+<h3>Нужны ли ключи OpenAI или другого LLM?</h3>
+<p>Нет. Репозиторий rss-ai-telegram рассчитан на TELEGRAM_BOT_TOKEN и при необходимости TELEGRAM_CHAT_ID. Внешние LLM API для первого вечера не обязательны.</p>
+<h3>Почему бот молчит, хотя лог без ошибки?</h3>
+<p>Чаще всего бот не админ канала или неверен chat_id. Проверьте право публиковать и формат −100… для каналов.</p>
+<h3>Можно ли сразу лить в основной канал?</h3>
+<p>Технически да, практично — нет. Сначала тестовый чат, dry-run, один боевой пост, проверка, что повторный run не дублирует URL. Потом тот же Secrets и тот же репозиторий на боевой chat_id.</p>
+<h3>Чем это лучше ControllеrBot и SMMplanner?</h3>
+<p>Тем, что вам не нужна пачка подписок на отложку, если цель — агент, который сам тянет RSS. Если цель — вручную писать посты и ставить время, SaaS-календарь может быть уместнее. Для «новости сами, пока я занят» я бы начинал с форка и Cloud Agent.</p>

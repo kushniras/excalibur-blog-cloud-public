@@ -1,0 +1,122 @@
+{
+  "source": "/workspace/memory/blog/articles/R-prodvizhenie-v-nejrosetyah-alisa-checklist/article.html",
+  "total_links": 12,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/geo-optimizaciya-sajta-2026/"
+    },
+    {
+      "url": "https://github.com/Horosheff/yadryshko-semantic-core-subagent",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://mayai.ru/indexnow-yandex-make/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/indexnow-yandex-make/"
+    },
+    {
+      "url": "https://mayai.ru/sozdat-llms-txt-dlya-sajta/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/sozdat-llms-txt-dlya-sajta/"
+    },
+    {
+      "url": "https://github.com/Horosheff/google-yandex-seo-skill",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://clawhub.ai/Horosheff/google-yandex-seo-skills",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/"
+    },
+    {
+      "url": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/"
+    },
+    {
+      "url": "https://mayai.ru/vajbkoding-marketing-cursor-ai/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/vajbkoding-marketing-cursor-ai/"
+    },
+    {
+      "url": "https://kv-ai.ru/obuchenie-po-make",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/maya_pro",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://kv-ai.ru/artur-horosheff",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

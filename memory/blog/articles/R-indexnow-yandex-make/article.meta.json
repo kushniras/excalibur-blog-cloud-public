@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-indexnow",
+  "slug": "indexnow-yandex-make",
+  "title": "IndexNow через Make: ускорить индексацию в Яндексе",
+  "wp_post_id": 14218,
+  "primary_query": "indexnow яндекс",
+  "secondary_queries": [
+    "indexnow make",
+    "ускорить индексацию",
+    "api indexnow"
+  ],
+  "char_count": 8933,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/indexnow-yandex-make/",
+  "datePublished": "2026-07-12",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "IndexNow через Make",
+    "ускорить индексацию в Яндексе",
+    "настройка IndexNow без плагина",
+    "пинги IndexNow после публикации"
+  ],
+  "meta_ab": {
+    "title_seo": "IndexNow через Make: ускорить индексацию в Яндексе",
+    "title_ctr": "IndexNow без страха: ключ .txt и один POST из Make?",
+    "title_aeo": "Как настроить IndexNow для Яндекса через Make.com?",
+    "description_seo": "Ключ IndexNow в корне сайта, сценарий Make publish → POST, коды 200/202 и антиспам-чеклист. Sitemap остаётся, Google этим пингом не закрывается.",
+    "description_ctr": "Статьи есть, а в Яндексе \"новые\" через неделю? Положите ключ и повесьте HTTP POST после публикации – без CMS-плагина.",
+    "description_aeo": "IndexNow – уведомление поисковикам о новом или изменённом URL. Яндекс принимает; Google протокол в 2026 не принимает."
+  }
+}

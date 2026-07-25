@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-limity",
+  "slug": "kak-proverit-limity-cursor-pered-agentami",
+  "title": "Cursor лимиты: как не сжечь бюджет одним Agent",
+  "wp_post_id": 14621,
+  "primary_query": "cursor лимиты",
+  "secondary_queries": [
+    "cursor pro лимиты",
+    "cursor spending",
+    "cursor monthly limit"
+  ],
+  "char_count": 8772,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-proverit-limity-cursor-pered-agentami/",
+  "datePublished": "2026-07-25",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "проверка лимитов Cursor перед Agent",
+    "вкладка Spending в Cursor",
+    "Monthly Limit до агента",
+    "не сжечь бюджет Cursor"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor лимиты: Spending, Monthly Limit и короткий Agent",
+    "title_ctr": "Боитесь счёта за Agent? Сначала Spending, потом Composer",
+    "title_aeo": "Как проверить лимиты Cursor перед запуском агента?",
+    "description_seo": "Spending по двум пулам, дата сброса, Disabled/Fixed Monthly Limit и один прогон на Composer. Без Ultra и без обхода.",
+    "description_ctr": "Usage $ пугает? Смотрите Spending % и поставьте тормоз доплаты до любого длинного Agent.",
+    "description_aeo": "Cursor лимиты: два usage pool, spend limit, Composer 2.5 и критерий готово за один вечер."
+  }
+}

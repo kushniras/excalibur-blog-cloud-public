@@ -49,3 +49,5 @@
 ## Indexer
 
 - В Cloud shell используй `python3` для interlinker/llms generator; `python` может отсутствовать.
+- mayai.ru permalinks: канон `/{slug}/` (и llms `--blog-path /`). Не вставляй `/blog/{slug}/` — это только 301.
+- Dry-run перед `--apply`; пропускай слабые якоря вне интента target (пример: «настройка cursor» в контексте MCP → ruleset).

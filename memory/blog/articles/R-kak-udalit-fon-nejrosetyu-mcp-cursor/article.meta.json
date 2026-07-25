@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-bg-remove",
+  "slug": "kak-udalit-fon-nejrosetyu-mcp-cursor",
+  "title": "Удалить фон нейросеть: быстрее PNG для поста без срыва сроков",
+  "wp_post_id": 14628,
+  "primary_query": "удалить фон нейросеть",
+  "secondary_queries": [
+    "remove background cursor",
+    "png без фона mcp",
+    "вырезать фон нейросеть"
+  ],
+  "char_count": 8562,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/",
+  "datePublished": "2026-07-25",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "удалить фон нейросетью в Cursor",
+    "MCP вырезка фона",
+    "PNG с прозрачностью для поста",
+    "remove-background tool"
+  ],
+  "meta_ab": {
+    "title_seo": "Удалить фон нейросетью: MCP-вырезка PNG в Cursor",
+    "title_ctr": "Промпт не даёт прозрачность? Вызовите tool на кадр",
+    "title_aeo": "Как удалить фон нейросетью через MCP в Cursor?",
+    "description_seo": "Готовый кадр, tool remove-background, проверка альфа-канала на цветной подложке. Без надежды на промпт transparent.",
+    "description_ctr": "Срок поста горит? Один вызов MCP-вырезки и честный PNG в проекте – быстрее вкладки remove.bg.",
+    "description_aeo": "Удаление фона в Cursor: MCP vs remove.bg vs промпт, чеклист и когда не ставить Recraft."
+  }
+}

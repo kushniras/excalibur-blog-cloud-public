@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/#webpage",
+      "url": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/",
+      "name": "Локальный ai агент без рутины чата: Cursor SDK пишет файл сам",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Ключ в env, Node 22.13+, @cursor/sdk и один run-agent.mjs. Без коммита секретов и без sandbox в первый день."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/#webpage"
+      },
+      "headline": "Локальный ai агент без рутины чата: Cursor SDK пишет файл сам",
+      "description": "Ключ в env, Node 22.13+, @cursor/sdk и один run-agent.mjs. Без коммита секретов и без sandbox в первый день.",
+      "datePublished": "2026-07-21T23:58:18",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Нужен ли интернет для \"локального\" агента Cursor SDK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Local в docs Cursor – про цикл агента и доступ к файлам на машине. Сама модель остаётся в облаке Cursor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем это лучше чата в IDE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Тем же агентом можно пользоваться из скрипта: повторять задачу, встроить в свой сценарий, не копировать ответ руками каждый раз. Для разового вопроса чат в IDE проще; для повторяемого брифа или черновика – скрипт."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли на Free-плане?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не обещайте себе бесплатный старт без проверки. В сообществе Free иногда получает 403 на проверке моделей при local create. Рабочий путь – Pro или иной доступ, где API и список моделей реально открыты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли sandbox в первый день?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не обязателен для старта. Важно сузить задачу (\"только файл X\") и не запускать агента на всём продакшен-репозитории с широким промптом. Песочница и автопроверка инструментов – следующий слой контроля, когда сценарий уже живой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какую модель указать в коде?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для нового скрипта берите composer-2.5 . Старые id Composer 2 в changelog перенаправляют на 2.5, но явно актуальный id меньше путаницы при чтении кода через полгода."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Куда смотреть официальный пример?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Документация TypeScript SDK на cursor.com/docs/sdk/typescript и репозиторий cookbook на GitHub."
+          }
+        }
+      ]
+    }
+  ]
+}

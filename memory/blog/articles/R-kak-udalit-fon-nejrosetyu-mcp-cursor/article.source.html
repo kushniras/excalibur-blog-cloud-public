@@ -1,0 +1,75 @@
+<p>Чтобы удалить фон нейросетью и быстрее получить PNG для поста, в Cursor вызовите инструмент вырезки на готовый кадр — не вкладку remove.bg и не промпт «сделай transparent» — и сохраните файл с настоящей прозрачностью в папку проекта.</p>
+<p>Нужен один файл: стикер, слой для hero или обложка, где фон уже «прилип». Результат — PNG с клетчатым preview (это альфа, настоящая прозрачность), объект на месте, края приемлемы для вставки в пост или лендинг.</p>
+<h2>Почему «просто напиши прозрачный» не работает</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-udalit-fon-nejrosetyu-mcp-cursor-inline-01.jpg" alt="Схема сравнения: вырезка remove-background даёт альфу, промпт transparent у gpt-image-2 — клетку в пикселях" loading="lazy"><br />
+</figure>
+<p>Сайты и совет «попроси модель без фона» для кадра, который уже лежит в Cursor, часто ведут в тупик.</p>
+<p>Модель генерации картинок и инструмент вырезки — разные вещи. У OpenAI прямо сказано: <b>gpt-image-2</b> сейчас не поддерживает background: «transparent». Просите «прозрачный фон» — получаете клетку в пикселях, сплошной цвет или отказ. Это не альфа: при вставке остаётся белая «подложка».</p>
+<p>Вкладка remove.bg ок как запасной прогон. Для файла в Cursor я бы не начинал с неё: уходите из проекта, ловите preview низкого разрешения, а HD снова упирается в кредиты. Бесплатный контур API remove.bg — порядка 50 вызовов в месяц, типично в preview. Для одного стикера иногда хватает. Когда файл уже здесь, быстрее вызвать вырезку из того же редактора.</p>
+<blockquote><p>Генерация кадра ≠ вырезка с альфой. Сначала нужен готовый PNG/JPG/WEBP, потом отдельный tool remove-background.</p></blockquote>
+<h2>Что подготовить до вызова</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-udalit-fon-nejrosetyu-mcp-cursor-inline-02.jpg" alt="Схема подготовки кадра к вызову: формат, URL и лимиты размера до remove-background" loading="lazy"><br />
+</figure>
+<p>Возьмите один кадр. Форматы для tool <b>recraft_remove_background</b> в MCP-KV: PNG, JPG или WEBP. Вход — URL картинки. Лимиты схемы на сегодня:</p>
+<ul>
+<li>файл не больше 5&nbsp;MB;</li>
+<li>не больше 16 мегапикселей;</li>
+<li>сторона не длиннее 4096&nbsp;px;</li>
+<li>меньшая сторона не короче 256&nbsp;px.</li>
+</ul>
+<p>Если картинка тяжелее или огромнее — уменьшите до лимита до вызова. Иначе tool упадёт на размере, а не на «качестве нейросети».</p>
+<p>Картинку положите так, чтобы агент мог отдать на неё URL (публичная ссылка или то, что ваш MCP принимает как вход). Цель одна: не сгенерировать новый кадр и не собрать три размера обложки — только вырезать фон у уже готового файла.</p>
+<h2>Зелёный MCP: куда смотреть</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img decoding="async" src="https://mayai.ru/wp-content/uploads/2026/07/kak-udalit-fon-nejrosetyu-mcp-cursor-inline-03.jpg" alt="Чеклист зелёного MCP: Settings Tools MCP, mcp-kv или Recraft remote, tool вырезки виден" loading="lazy"><br />
+</figure>
+<p><b>MCP</b> в Cursor — это подключённые инструменты, которыми агент может пользоваться после вашего одобрения. Проверка: Settings → Tools &amp; MCP. Нужен зелёный сервер, где есть вырезка фона.</p>
+<p>Два рабочих входа:</p>
+<ol>
+<li><b>MCP-KV</b> («Всё подключено») — путь канала: один сервер с картинками и tool recraft_remove_background. Старт: <a rel="noopener noreferrer" target="_blank" href="https://mcp-kv.ru/">mcp-kv.ru</a>.</li>
+<li><b>Recraft remote</b> — официальный путь вендора: в ~/.cursor/mcp.json или project .cursor/mcp.json указываете remote URL https://mcp.recraft.ai/mcp, логин через OAuth. Документация: <a rel="noopener noreferrer" target="_blank" href="https://www.recraft.ai/docs/mcp-reference/remote-server">Recraft remote MCP</a> и <a rel="noopener noreferrer" target="_blank" href="https://cursor.com/docs/mcp">Cursor MCP</a>.</li>
+</ol>
+<p>Локальный npm-пакет @recraft-ai/mcp-recraft-server помечен Deprecated. README репозитория просит уходить на remote. Я бы не ставил deprecated local «на вечер» — только remote или уже зелёный MCP-KV.</p>
+<p>После правки конфига перезапустите MCP/агент по подсказке Cursor и снова откройте Settings → Tools &amp; MCP: сервер зелёный, tool вырезки виден. Без этого шага «попросить удалить фон» останется обычным текстом в чате.</p>
+<h2>Один вызов: remove-background на кадр</h2>
+<p>В Agent напишите прямо: вызови tool remove-background / recraft_remove_background на этот кадр (укажите файл или URL), сохрани PNG в папку проекта. Не «сделай прозрачный фон промптом» — именно tool вырезки.</p>
+<p>Когда Cursor покажет запрос на одобрение инструмента — одобрите. Дождитесь ответа без ошибки размера или лимита. Сохраните результат рядом с исходником, например sticker-cutout.png.</p>
+<p>Кредиты: в Recraft Studio Remove background = 1 credit; MCP-tool вырезки списывает subscription credits так же, как в Studio. Отдельный Recraft API balance — другой счётчик: background removal ≈ $0.01 / 10 API credits за запрос. Не путайте studio-кредиты и API balance в кабинете Recraft.</p>
+<h2>Как понять, что получилось</h2>
+<p>Откройте PNG в превью. Клетчатый фон вокруг объекта — признак альфы. Объект на месте, без дыр в середине. Края на 100% zoom: логотип, рука, край стикера. Для поста или слоя hero «приемлемо» важнее «идеальные волосы».</p>
+<p>Вставьте PNG в макет hero, обложку или стикер. Если появляется белая или цветная подложка — это не альфа, а картинка с нарисованной клеткой. Тогда вернитесь к вызову tool, а не к новому промпту «transparent».</p>
+<p>Волосы, мех и стекло часто рвут край. Не обещайте себе идеал за один проход. При браке: другой кадр с более простым контуром или один запасной прогон на remove.bg. Self-host rembg и Python-GPU в тот же вечер я бы не трогал — это уже другой заход, не первый PNG.</p>
+<h2>Куда вставить сегодня — и что не делать</h2>
+<p>Готовый cutout сразу идёт в:</p>
+<ul>
+<li>стикер или карусель в соцсеть;</li>
+<li>отдельный слой поверх фона hero;</li>
+<li>обложку поста, где нужен объект без «коробки» фона.</li>
+</ul>
+<p>Не смешивайте задачи. Генерация кадра с нуля, три размера обложки, полный параллакс hero и установка дизайн-субагента — соседние темы. Сегодняшний критерий: PNG с альфой лежит в проекте, tool отработал, вставка без подложки.</p>
+<p>Если MCP ещё не подключали или хотите отдельно разобрать генерацию и обложку после cutout — это optional, не условие этой статьи: <a href="/podklyuchenie-mcp-cursor/">подключение MCP в Cursor</a>, <a href="/generaciya-kartinok-mcp-cursor-marketing/">генерация картинок через MCP</a>, <a href="/oblozhka-dlya-posta-nejroset-mcp/">обложка для поста</a>, <a href="/effekt-parallaksa-hero-cursor/">эффект параллакса в hero</a>.</p>
+<h2>Короткий чеклист</h2>
+<ol>
+<li>Кадр в лимитах (≤5&nbsp;MB, ≤16&nbsp;MP, сторона 256–4096).</li>
+<li>Settings → Tools &amp; MCP: зелёный mcp-kv или Recraft remote.</li>
+<li>В Agent — явный вызов remove-background / recraft_remove_background.</li>
+<li>PNG в папке проекта, клетчатый preview, края ок для стикера/слоя.</li>
+<li>Вставка в макет без белой подложки.</li>
+</ol>
+<p>Готово = все пять пунктов. Не готово = tool красный, ошибка размера, или «прозрачность» только нарисована пикселями.</p>
+<blockquote>
+<p><b>Материал проверен:</b> <a href="https://kv-ai.ru/artur-horosheff" target="_blank" rel="noopener">Артур Хорошев</a> (CEO Maya AI, автор курса по Make.com и <a href="/vajbkoding-marketing-cursor-ai/">вайбкодингу</a>).</p>
+<p><b>Опора на источники:</b> схема MCP-KV recraft_remove_background (лимиты 5&nbsp;MB / 16&nbsp;MP / сторона 256–4096); Recraft remote MCP docs и GitHub mcp-recraft-server (Deprecated → remote); OpenAI image generation (gpt-image-2 без transparent); Recraft credits и API pricing; Cursor MCP docs; remove.bg API (~50 free preview/мес). Частотность «удалить фон нейросеть» — по Яндекс Вордстат на 2026-07-25.</p>
+</blockquote>
+<h2>Частые вопросы</h2>
+<h3>Можно ли обойтись одной вкладкой remove.bg?</h3>
+<p>Можно для разового превью. Для файла, который уже в Cursor, я бы шёл через MCP: меньше прыжков и результат сразу в проекте. Вкладка — запасной план при браке краёв.</p>
+<h3>Почему не попросить gpt-image-2 сразу без фона?</h3>
+<p>Потому что transparent у этой модели сейчас не поддерживается. Вырезка — отдельный шаг после готового кадра.</p>
+<h3>Ставить ли локальный Recraft MCP из npm?</h3>
+<p>Нет для первого вечера. Официальный local пакет Deprecated; канон — remote https://mcp.recraft.ai/mcp или зелёный MCP-KV.</p>
+<h3>Нужен ли AURA или параллакс-агент сегодня?</h3>
+<p>Нет. Сегодня достаточно одного tool вырезки. Субагенты — когда cutout уже стабильно получается и вы сознательно расширяете пайплайн.</p>
+<p>Разборы MCP, вырезки и сборки контента в Cursor — в канале <a rel="noopener noreferrer" target="_blank" href="https://t.me/maya_pro">t.me/maya_pro</a> и в MAX <a rel="noopener noreferrer" target="_blank" href="https://max.ru/maya_pro">max.ru/maya_pro</a>. Если после первого PNG захотите системно связать нейросети и автоматизацию маркетинга — курс <a rel="noopener noreferrer" target="_blank" href="https://kv-ai.ru/obuchenie-po-make">kv-ai.ru/obuchenie-po-make</a>.</p>

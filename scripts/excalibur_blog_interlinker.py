@@ -58,7 +58,8 @@ def find_linking_opportunities(articles: list[dict[str, Any]], site_base: str) -
         if not target_slug:
             continue
 
-        target_url = f"{site_base}/blog/{target_slug}/"
+        # Live mayai.ru permalinks are /{slug}/ ( /blog/{slug}/ only 301s ).
+        target_url = f"{site_base}/{target_slug}/"
         # Prioritize natural anchor variants for diversification, then primary, then secondary queries
         raw_keywords = target.get("anchor_variants", []) + [target["primary_query"]] + target["secondary_queries"]
         # Remove duplicates while preserving order
@@ -185,7 +186,7 @@ def apply_interlinks(suggestions: list[dict[str, Any]], articles: list[dict[str,
             end = sug["end_idx"]
 
             if content[start:end] == matched_text:
-                link_html = f'<a href="/blog/{sug["target_slug"]}/">{matched_text}</a>'
+                link_html = f'<a href="/{sug["target_slug"]}/">{matched_text}</a>'
                 content = content[:start] + link_html + content[end:]
                 applied_count += 1
 
@@ -233,7 +234,7 @@ def main() -> int:
                 "target": s["target_dir"],
                 "keyword": s["keyword"],
                 "context": s["context"],
-                "link_replacement": f'<a href="/blog/{s["target_slug"]}/">{s["matched_text"]}</a>'
+                "link_replacement": f'<a href="/{s["target_slug"]}/">{s["matched_text"]}</a>'
             }
             for s in suggestions
         ]

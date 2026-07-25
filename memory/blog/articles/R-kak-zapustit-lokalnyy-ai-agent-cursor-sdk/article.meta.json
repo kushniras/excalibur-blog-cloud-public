@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-sdk",
+  "slug": "kak-zapustit-lokalnyy-ai-agent-cursor-sdk",
+  "title": "Локальный ai агент без рутины чата: Cursor SDK пишет файл сам",
+  "wp_post_id": 14520,
+  "primary_query": "локальный ai агент",
+  "secondary_queries": [
+    "cursor sdk",
+    "agent.create cursor",
+    "@cursor/sdk"
+  ],
+  "char_count": 8875,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-zapustit-lokalnyy-ai-agent-cursor-sdk/",
+  "datePublished": "2026-07-21",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "локальный агент Cursor SDK",
+    "скрипт Agent.create",
+    "@cursor/sdk на Node",
+    "ai агент пишет файл сам"
+  ],
+  "meta_ab": {
+    "title_seo": "Локальный AI-агент на Cursor SDK: скрипт пишет файл",
+    "title_ctr": "Надоел чат в IDE? Agent.create кладёт файл сам",
+    "title_aeo": "Как запустить локальный AI-агент через Cursor SDK?",
+    "description_seo": "Ключ в env, Node 22.13+, @cursor/sdk и один run-agent.mjs. Без коммита секретов и без sandbox в первый день.",
+    "description_ctr": "Хотите повторяемый агент без ручного чата? SDK-скрипт: ключ → create → файл на диске.",
+    "description_aeo": "Cursor SDK: чем отличается от Cloud Agents и чата, лимиты Free, типичные ошибки первого запуска."
+  }
+}

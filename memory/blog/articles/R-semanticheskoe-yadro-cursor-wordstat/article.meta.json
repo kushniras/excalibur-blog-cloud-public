@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-semyadro",
+  "slug": "semanticheskoe-yadro-cursor-wordstat",
+  "title": "Семантическое ядро в Cursor через Wordstat MCP",
+  "wp_post_id": 14179,
+  "primary_query": "семантическое ядро",
+  "secondary_queries": [
+    "wordstat mcp",
+    "семантическое ядро cursor",
+    "ядро без key collector"
+  ],
+  "char_count": 9250,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/semanticheskoe-yadro-cursor-wordstat/",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "семантическое ядро в Cursor",
+    "собрать ядро через Wordstat MCP",
+    "кластеры и URL-карта за вечер",
+    "семантика без Key Collector"
+  ],
+  "meta_ab": {
+    "title_seo": "Семантическое ядро в Cursor через Wordstat MCP",
+    "title_ctr": "Ядро без Key Collector: живые частотности за вечер?",
+    "title_aeo": "Как собрать семантическое ядро новичку через Wordstat MCP в Cursor?",
+    "description_seo": "Подключите Wordstat MCP, снимите parent-запрос, соберите кластеры, URL-карту и 3 брифа. Без выдуманных частотностей и без Windows-парсера.",
+    "description_ctr": "12 ключей из головы дали ноль из поиска? За вечер получите clusters + url-map + 3 ТЗ через Cursor и Wordstat.",
+    "description_aeo": "Семантическое ядро – карта спроса с частотностями и URL под каждый интент. В Cursor это связка Wordstat MCP и кластеров, а не Excel на 10 тысяч строк."
+  }
+}

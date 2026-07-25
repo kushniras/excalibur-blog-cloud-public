@@ -1,0 +1,34 @@
+{
+  "topic_id": "R-mikro",
+  "slug": "mikrorazmetka-sajta-json-ld",
+  "title": "Микроразметка сайта: JSON-LD FAQ и Article за вечер",
+  "wp_post_id": 14370,
+  "primary_query": "микроразметка сайта",
+  "secondary_queries": [
+    "json-ld",
+    "faqpage schema",
+    "валидатор микроразметки",
+    "blogposting"
+  ],
+  "char_count": 9467,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/mikrorazmetka-sajta-json-ld/",
+  "datePublished": "2026-07-17",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "микроразметка сайта JSON-LD",
+    "как добавить FAQPage и BlogPosting",
+    "валидатор микроразметки Яндекса",
+    "JSON-LD без плагина Schema"
+  ],
+  "meta_ab": {
+    "title_seo": "Микроразметка сайта: JSON-LD FAQ и Article за вечер",
+    "title_ctr": "Микроразметка за вечер: два блока JSON-LD до галочки валидатора?",
+    "title_aeo": "Как добавить микроразметку JSON-LD FAQ и Article без плагина?",
+    "description_seo": "Практический гайд: BlogPosting и FAQPage в JSON-LD на одной статье, проверка в валидаторе Яндекса и Schema.org без плагина на весь сайт.",
+    "description_ctr": "Вставили чужой JSON-LD и валидатор молчит? За вечер соберите поля, два скрипта и дойдите до распознанных типов без \"магии AI\".",
+    "description_aeo": "Микроразметка JSON-LD – машиночитаемые факты страницы (автор, даты, FAQ). Успех вечера – галочка валидатора, а не FAQ-аккордеон в Google."
+  }
+}

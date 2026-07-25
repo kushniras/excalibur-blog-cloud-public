@@ -43,7 +43,7 @@
     <tr>
       <td><b>Техника</b></td>
       <td>Мета, alt, Wordstat, перелинковка</td>
-      <td>Schema JSON-LD, FAQ в HTML; llms.txt опционально</td>
+      <td>Schema <a href="/mikrorazmetka-sajta-json-ld/">JSON-LD</a>, FAQ в HTML; llms.txt опционально</td>
     </tr>
   </tbody>
 </table>
@@ -91,11 +91,11 @@
 
 <h2>Подключите schema JSON-LD к статье</h2>
 
-<p>Блок ответов на вопросы в HTML - не декор. Вопросы совпадают с реальными запросами (сколько символов, что такое geo, нужна ли schema). Ответы 2-4 предложения: готовые чанки для AI и расширенных сниппетов. Для блога базовый набор - BlogPosting (или Article) плюс FAQPage в JSON-LD; разметка живёт в meta/schema, не дублируется видимым JSON в body.</p>
+<p>Блок ответов на вопросы в HTML - не декор. Вопросы совпадают с реальными запросами (сколько символов, что такое geo, нужна ли schema). Ответы 2-4 предложения: готовые чанки для AI и расширенных сниппетов. Для блога базовый набор - <a href="/mikrorazmetka-sajta-json-ld/">BlogPosting</a> (или Article) плюс FAQPage в JSON-LD; разметка живёт в meta/schema, не дублируется видимым JSON в body.</p>
 
 <p>Schema.org помогает поисковику и нейропоиску сопоставить вопрос и ответ на странице. Текст в HTML-блоке вопросов и в JSON-LD должен совпадать - расхождение ломает доверие к разметке. Alt у изображений описывает содержание картинки, не "seo картинка ключ".</p>
 
-<p>Если ведёте блог на WordPress или статике, заведите шаблон: article.html, article.meta.json, schema.jsonld, cover — один пайплайн на каждую тему. Так <a href="/blog/geo-optimizaciya-sajta-2026/">geo оптимизация</a> статьи не превращается в ручной хаос перед каждой публикацией.</p>
+<p>Если ведёте блог на WordPress или статике, заведите шаблон: article.html, article.meta.json, schema.jsonld, cover — один пайплайн на каждую тему. Так <a href="/geo-optimizaciya-sajta-2026/">geo оптимизация</a> статьи не превращается в ручной хаос перед каждой публикацией.</p>
 
 <h2>Чеклист перед публикацией</h2>
 <figure class="inline-quad" data-slot="inline_3">

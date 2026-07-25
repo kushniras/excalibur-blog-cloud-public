@@ -1,0 +1,33 @@
+{
+  "topic_id": "R-webhook",
+  "slug": "kak-nastroit-cursor-automations-po-webhook",
+  "title": "Как сделать вебхук в Cursor: ответ на заявку без ручного чата",
+  "wp_post_id": 14615,
+  "primary_query": "вебхук cursor",
+  "secondary_queries": [
+    "cursor automations webhook",
+    "webhook agent cursor",
+    "автоматизация заявок cursor"
+  ],
+  "char_count": 9055,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "remaster": true,
+  "source_url": "https://mayai.ru/kak-nastroit-cursor-automations-po-webhook/",
+  "datePublished": "2026-07-24",
+  "dateModified": "2026-07-25",
+  "anchor_variants": [
+    "Automation по webhook в Cursor",
+    "вебхук для агента Cursor",
+    "POST будит Agent",
+    "заявка без ручного чата"
+  ],
+  "meta_ab": {
+    "title_seo": "Webhook в Cursor Automations: заявка будит агента",
+    "title_ctr": "Форма сама зовёт Agent? Один Webhook без ручного чата",
+    "title_aeo": "Как настроить Cursor Automations по webhook?",
+    "description_seo": "Создайте Automation с триггером Webhook, сохраните URL, отправьте тестовый POST и проверьте артефакт. Make может слать тот же POST.",
+    "description_ctr": "Надоело открывать чат на каждую заявку? Webhook Automation стартует агента по HTTP POST.",
+    "description_aeo": "Cursor webhook: отличие от cron и Discord, тестовый POST, типичные ошибки и критерий готово."
+  }
+}

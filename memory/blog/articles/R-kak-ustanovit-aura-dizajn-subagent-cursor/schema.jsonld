@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/#webpage",
+      "url": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/",
+      "name": "Своя страница по референсу без чужого шаблона: нейросеть для создания дизайна экономит время",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Тестовая папка, install.py или файлы агентов, карта возможностей, один референс и Reviewer по чеклисту. Без зоопарка MCP в первый вечер."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/#webpage"
+      },
+      "headline": "Своя страница по референсу без чужого шаблона: нейросеть для создания дизайна экономит время",
+      "description": "Тестовая папка, install.py или файлы агентов, карта возможностей, один референс и Reviewer по чеклисту. Без зоопарка MCP в первый вечер.",
+      "datePublished": "2026-07-21T19:53:46",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-ustanovit-aura-dizajn-subagent-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Это \"нейросеть для дизайна интерьера\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Здесь угол – веб-страница или лендинг в Cursor по референсу сайта или скрина. Запросы про комнату по фото ведут в другой класс инструментов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли писать DESIGN.md руками?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для этого вечера – нет. AURA сам пишет AURADESIGN.md. Ручной контракт – отдельный сценарий позже, если правите токены без агента."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сломаю ли я другие проекты?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "При –scope project и копировании только в .cursor/agents/ текущей папки – нет. Не путайте корень проекта с домашней ~/.cursor/agents/."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему без референса снова фиолетовый шаблон?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Без зафиксированных токенов модель тянется к среднему AI-slop. Референс плюс контракт держат стиль; \"сделай красивее\" в общем чате якоря не даёт."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обязателен ли MCP для картинок в первый вечер?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. MCP – подключаемые инструменты агента; для первой страницы они не обязательны. Сначала HTML и читаемый CTA. Ассеты – вторым проходом, когда композиция уже читается."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем reviewer лучше ещё одного \"проверь сам\" в чате?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "У него чеклист и режим readonly: визуальные провалы до клиента, а не новая генерация \"на вкус\". Прозрачная кнопка – пункт из списка ревьюера, не общий промпт \"поярче\"."
+          }
+        }
+      ]
+    }
+  ]
+}

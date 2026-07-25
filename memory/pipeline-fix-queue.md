@@ -6,6 +6,57 @@ Contract: `shared/pipeline-incident-fix-contract.md`
 
 ## Open incidents
 
+## INC-20260725-1425-indexer-interlink-blog-prefix
+status: fixed
+run_date: 2026-07-25
+role: excalibur-blog-indexer
+topic_id: multi
+article_dir: memory/blog/articles
+severity: medium
+category: script
+
+### What went wrong
+- `excalibur_blog_interlinker.py` hardcodил href `/blog/{slug}/`, тогда как live mayai.ru permalinks — `/{slug}/` (`/blog/{slug}/` только 301).
+- llms generator уже использует `--blog-path /` → рассинхрон internal links vs llms.txt/canonical.
+- Отдельно: ложный opportunity B03→R-ruleset по якорю «настройка cursor» в фразе «Настройка cursor mcp» (другой интент) — не применяли.
+
+### How the agent recovered this run
+- Dry-run → `--apply` только GEO-cluster: R-mikro hub (6) + R-semyadro inbound (1); B09=0; B03→ruleset skipped.
+- Переписал вставленные href на канон `/{slug}/` (+ pre-existing B01→B04 в том же файле).
+- Исправил `scripts/excalibur_blog_interlinker.py` (target_url / apply / report) на `/{slug}/`.
+- Пересобрал `memory/blog/llms.txt` + `llms-full.txt` (24 статьи). Publish не запускался.
+
+### Durable fix needed before next run
+- Зафиксировать в pitfalls/indexer skill: mayai.ru internal links = `/{slug}/`, не `/blog/{slug}/`.
+- Опционально: фильтр «слабых» якорей (короткий generic «настройка cursor») или require word-boundary + topic overlap перед apply.
+- Пройти оставшиеся `href="/blog/..."` в статьях вне GEO-кластера (напр. vajbkoding) — 301 ок, но лучше канон.
+
+### Suggested files to inspect/change
+- `scripts/excalibur_blog_interlinker.py`
+- `skills/indexer-excalibur-blog/SKILL.md`
+- `.cursor/skills/indexer-excalibur-blog/SKILL.md`
+- `shared/agent-pipeline-pitfalls.md`
+
+### Secrets
+- none recorded
+
+### Fixer resolution
+status: fixed
+fixed_at: 2026-07-25
+fix_summary:
+- Interlinker пишет `/{slug}/`; indexer skill + pitfalls документируют канон и dry-run/skip weak anchors.
+- GEO-cluster HTML href нормализованы; residual `/blog/vajbkoding-...` вне scope Wave B.
+files_changed:
+- `scripts/excalibur_blog_interlinker.py`
+- `skills/indexer-excalibur-blog/SKILL.md`
+- `.cursor/skills/indexer-excalibur-blog/SKILL.md`
+- `shared/agent-pipeline-pitfalls.md`
+checks_run:
+- `python3 -m py_compile scripts/excalibur_blog_interlinker.py`
+- dry-run remaining=1 (skipped B03→ruleset)
+- live check: `/{slug}/` 200, `/blog/{slug}/` 301
+commit: pending
+
 ## INC-20260725-1418-geo-qa-b04-human-voice-remaster
 status: fixed
 run_date: 2026-07-25

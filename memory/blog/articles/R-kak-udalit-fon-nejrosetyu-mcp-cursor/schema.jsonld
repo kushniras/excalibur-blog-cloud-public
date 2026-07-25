@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/#webpage",
+      "url": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/",
+      "name": "Удалить фон нейросеть: быстрее PNG для поста без срыва сроков",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Готовый кадр, tool remove-background, проверка альфа-канала на цветной подложке. Без надежды на промпт transparent."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/#webpage"
+      },
+      "headline": "Удалить фон нейросеть: быстрее PNG для поста без срыва сроков",
+      "description": "Готовый кадр, tool remove-background, проверка альфа-канала на цветной подложке. Без надежды на промпт transparent.",
+      "datePublished": "2026-07-25T15:23:56",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/kak-udalit-fon-nejrosetyu-mcp-cursor/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли обойтись одной вкладкой remove.bg?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Можно для разового превью. Для файла, который уже в Cursor, я бы шёл через MCP: меньше прыжков и результат сразу в проекте. Вкладка – запасной план при браке краёв."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему не попросить gpt-image-2 сразу без фона?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Потому что transparent у этой модели сейчас не поддерживается. Вырезка – отдельный шаг после готового кадра."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ставить ли локальный Recraft MCP из npm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет для первого вечера. Официальный local пакет Deprecated; канон – remote https://mcp.recraft.ai/mcp или зелёный MCP-KV."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли AURA или параллакс-агент сегодня?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сегодня достаточно одного tool вырезки. Субагенты – когда cutout уже стабильно получается и вы сознательно расширяете пайплайн."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как понять, что PNG действительно без фона?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте файл на клетчатом или цветном фоне в просмотрщике. Если вокруг объекта шахматная прозрачность или виден цвет подложки – альфа на месте. Серый \"псевдофон\" в превью модели не считается."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли вырезать сразу пачку кадров?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На первый вечер лучше один кадр и один вызов tool. Пакет имеет смысл, когда путь сохранения и качество уже проверены на одном примере."
+          }
+        }
+      ]
+    }
+  ]
+}

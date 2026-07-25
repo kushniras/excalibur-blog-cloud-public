@@ -1,0 +1,14 @@
+{
+  "site_base": "https://mayai.ru",
+  "total_articles": 24,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "B03-podklyuchenie-mcp-cursor",
+      "target": "R-kak-nastroit-ruleset-i-skill-cursor",
+      "keyword": "настройка cursor",
+      "context": ": не откроет сайт, не подтянет документацию, не тронет CMS. Настройка cursor mcp занимает 15–30 минут. Ниже – подключение через Tools &a",
+      "link_replacement": "<a href=\"/kak-nastroit-ruleset-i-skill-cursor/\">Настройка cursor</a>"
+    }
+  ]
+}

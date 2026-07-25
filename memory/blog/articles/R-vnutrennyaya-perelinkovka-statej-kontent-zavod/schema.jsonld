@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/#webpage",
+      "url": "https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/",
+      "name": "Внутренняя перелинковка: чеклист после контент-завода",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Чеклист day-1: мини-карта кластера, 3–5 исходящих и 2–3 входящие, описательные анкоры. Sitemap не заменяет контекстные ссылки."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/#webpage"
+      },
+      "headline": "Внутренняя перелинковка: чеклист после контент-завода",
+      "description": "Чеклист day-1: мини-карта кластера, 3–5 исходящих и 2–3 входящие, описательные анкоры. Sitemap не заменяет контекстные ссылки.",
+      "datePublished": "2026-07-16T19:21:43",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/vnutrennyaya-perelinkovka-statej-kontent-zavod/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое внутренняя перелинковка простыми словами?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это ссылки с одной вашей страницы на другую внутри того же сайта. Сделайте их в тексте статьи обычной ссылкой с понятным анкором – так и читатель, и робот видят следующий шаг по теме."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько внутренних ссылок ставить на одну статью?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ориентир для старта: 3–5 контекстных исходящих в теле плюс навигация. Добавьте 2–3 входящие на новый URL со старых соседей. Не делайте \"все со всеми\" в футере вместо контекста."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем анкор отличается от URL?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "URL – адрес страницы (/slug/), анкор – текст, по которому кликают. Используйте в анкоре тему целевой статьи, уберите \"подробнее\" и \"тут\"."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли автоматизировать перелинковку агентом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, позже: в пайплайне завода есть шаг Indexer, в канале обсуждают морфологический перелинковщик. Но day-1 проверьте руками 3–5 статей – автоматизация ускоряет, а не заменяет понимание карты кластера."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли перелинковка, если статей меньше десяти?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Даже у пяти URL легко получить сироту после публикации. Проверьте хаб и спицы: у каждой новой страницы должны появиться входящие соседи в тот же вечер."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Меню сайта заменяет контекстные ссылки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Меню помогает ходить по разделам, но робот и читатель лучше считывают ссылки внутри абзаца. Избегайте считать футер \"похожие материалы\" достаточным чеклистом после завода."
+          }
+        }
+      ]
+    }
+  ]
+}

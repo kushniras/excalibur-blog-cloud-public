@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/#webpage",
+      "url": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/",
+      "name": "SEO аудит сайта в Cursor через SEO+GEO skill: 5 правок за вечер",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "description": "Поставьте IndexLift SEO+GEO skill в Cursor, прогоните одну money-page и закройте 5 правок: критично / важно / бонус. Слои Google, Яндекс и GEO."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/#webpage"
+      },
+      "headline": "SEO аудит сайта в Cursor через SEO+GEO skill: 5 правок за вечер",
+      "description": "Поставьте IndexLift SEO+GEO skill в Cursor, прогоните одну money-page и закройте 5 правок: критично / важно / бонус. Слои Google, Яндекс и GEO.",
+      "datePublished": "2026-07-14T00:07:40",
+      "dateModified": "2026-07-25",
+      "mainEntityOfPage": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "url": "https://mayai.ru/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/seo-audit-sajta-cursor-geo-skill/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Чем seo аудит отличается от GEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO-аудит смотрит классическую выдачу: title, сниппет, индексацию, технику. GEO добавляет слой \"удобно ли страницу цитировать нейропоиску\": прямой ответ в лиде, FAQ, schema. В IndexLift это отдельные блоки отчёта – не два разных проекта на месяц."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Wordstat в первый вечер аудита?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала почините одну страницу по отчёту skill. Wordstat и кластеры подключайте через Ядрышко, когда top-5 правок закрыты и вы готовы к карте тем, а не к ещё одному PDF."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Бесплатный seo аудит сайта в Cursor лучше онлайн-сервиса?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для новичка с одной money-page – чаще да: локальный MD+JSON, слои Яндекс и GEO, без лимита \"3 проверки в день\". Онлайн-сервис удобен как быстрый скрин, но редко даёт план из пяти дел под ваш CMS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что править первым на лендинге курса или услуги?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сделайте порядок: уникальный title → одна H1 → description → answer-first лид → FAQ со schema. Уберите вторую H1 и воду в первом экране. Скорость и OG – после этого."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как часто повторять технический seo аудит сайта?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После каждой пачки правок – сразу повторный прогон skill. Затем ориентир: раз в квартал или после крупного релиза шаблона/темы. Не гоняйте полный crawl каждую неделю без причины."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где взять seo аудит сайта чек лист без агентства?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Используйте отчёт IndexLift как живой чеклист: приоритеты уже внутри. Дополнительно сверяйте спорные места с Google Search Central и Яндекс Вебмастером – не с чужим списком на 200 строк без дат и источников."
+          }
+        }
+      ]
+    }
+  ]
+}
